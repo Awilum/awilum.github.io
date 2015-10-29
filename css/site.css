@@ -1,0 +1,148 @@
+html,
+body {
+    background: url(../img/monstra-life-light.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: Lato,sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #292929;
+}
+
+.container {
+    margin-top: 40px;
+    padding: 25px;
+}
+
+a.project-tag {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 3px 10px;
+
+    text-decoration: none;
+
+    color: #fff;
+    background: rgba(3,8,35,.7);
+}
+
+a.project-tag:hover {
+    color: #fff;
+    background: #030823;
+}
+
+a.skill-tag {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 3px 10px;
+
+    cursor: default;
+    text-decoration: none;
+
+    color: #fff;
+    background: rgba(84,20,53,.7);
+}
+
+a.skill-tag:hover {
+    color: #fff;
+    background: rgba(84,20,53,.7);
+}
+
+a.work-tag {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 3px 10px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    color: #fff;
+    background: rgba(13,79,54,.7);
+}
+
+a.work-tag:hover {
+    color: #fff;
+    background: #0d4f36;
+}
+
+a.social-tag {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 3px 10px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    color: #fff;
+    background: rgba(214,17,17,.7);
+}
+
+a.social-tag:hover {
+    color: #fff;
+    background: #d61111;
+}
+
+.project-header {
+    color: rgba(3,8,35,.7);
+}
+
+.skill-header {
+    color: rgba(84,20,53,.7);
+}
+
+.work-header {
+    color: rgba(13,79,54,.7);
+}
+
+.social-header {
+    color: rgba(214,17,17,.7);
+}
+
+.social-icon {
+    margin-right: 5px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 600px;
+    }
+}
