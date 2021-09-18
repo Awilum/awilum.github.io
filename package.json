@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-purgecss": "^4.0.3",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss-import": "^14.0.2",
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "tailwindcss": "^2.2.15"
+  }
+}
