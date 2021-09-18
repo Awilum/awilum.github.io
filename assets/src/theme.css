@@ -1,0 +1,50 @@
+
+@font-face {
+    font-family: BenguiatNormal;
+    src: url(../../../assets/fonts/BenguiatNormal.ttf);
+}
+
+@font-face {
+    font-family: BenguiatBold;
+    src: url(../../../assets/fonts/BenguiatBold.ttf);
+}
+
+@font-face {
+    font-family: BenguiatRegular;
+    src: url(../../../assets/fonts/BenguiatRegular.ttf);
+}
+
+.font-b-normal {
+    font-family: BenguiatNormal;
+}
+
+.font-b-bold {
+    font-family: BenguiatBold;
+}
+
+.font-b-regular {
+    font-family: BenguiatRegular;
+}
+
+body {
+    background: #17112a;
+    @apply text-pink-200;
+    font-family: BenguiatRegular;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h1 {
+    @apply text-pink-700;
+    text-transform: uppercase;
+    font-family: BenguiatBold;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.item-bg {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #444cf755, #444cf7 );
+}
