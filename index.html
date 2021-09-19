@@ -8,27 +8,29 @@
     <link rel='stylesheet' href='assets/dist/css/build.min.css'>
   </head>
   <body>
-  <header class="container mx-auto flex-row text-center items-center w-full top-0 px-4 py-10 border-pink-700 border-b-4 lg:text-left lg:flex">
-    <img src="assets/img/sergey-romanenko.png" alt="" class="mx-auto mb-10 lg:mb-0 w-24 rounded-full lg:mr-10 border-4 border-pink-700">
-    <h1 class="mb-10 lg:mb-0">Sergey Romanenko</h1>
-    <p class="lg:ml-10 text-pink-200">
-      Full Stack Developer with strong will for learning and researching new technologies and architectural solutions. I like creating and using specialised tools for making development processes as efficient as possible. I have experience with big projects and big development teams.
-    </p>
+  <header class="border-pink-700 border-b-4" style="box-shadow: 0px 0px 100px rgb(190,24,93)">
+    <div class="container mx-auto flex-row text-center items-center w-full top-0 px-4 py-10 lg:text-left lg:flex">
+      <img src="assets/img/sergey-romanenko.png" alt="" class="mx-auto mb-10 lg:mb-0 w-24 rounded-full lg:mr-10 border-4 border-pink-700" style="box-shadow: 0px 0px 10px rgb(190,24,93);">
+      <h1 class="mb-10 lg:mb-0">Sergey Romanenko</h1>
+      <p class="lg:ml-10 text-pink-200">
+        Full Stack Developer with strong will for learning and researching new technologies and architectural solutions. I like creating and using specialised tools for making development processes as efficient as possible. I have experience with big projects and big development teams.
+      </p>
+    </div>
   </header>
   <div class="container mx-auto mt-24 px-4">
     <h3 class="text-5xl text-pink-700 text-center mb-24 font-b-bold">PROJECTS</h3>
     <div class="flex-row lg:flex w-full">
-      <div class="border-4 bg-gray-900 border-pink-700 p-8 w-full lg:w-1/2 mb-4 lg:mb-0 lg:mr-2" style="background-color: #0b0b26;">
+      <div class="border-4 bg-gray-900 border-pink-700 p-8 w-full lg:w-1/2 mb-4 lg:mb-0 lg:mr-2" style="background-color: #0b0b26; box-shadow: 0px 0px 100px rgb(190,24,93); border-radius: 20px;">
         <h3 class="text-3xl text-pink-700">Flextype</h3>
         <p class="pt-10" style="min-height: 180px;">
           Flextype is an open-source Hybrid Content Management System with the freedom of a headless CMS and with the full functionality of a traditional CMS. The underlying architecture of Flextype is built using well established and best-in-class technologies. 
         </p>
         <p class="pt-5 flex">
-          <h3 class="text-pink-700">Technologies used:</h3>
+          <h3 class="text-pink-700">Technologies used</h3>
           PHP, HTML, CSS, JAVASCRIPT
         </p>
         <p class="pt-5 flex">
-          <h3 class="text-pink-700">License:</h3>
+          <h3 class="text-pink-700">License</h3>
           MIT
         </p>
         <p class="pt-10 flex">
@@ -56,17 +58,17 @@
           </a>
         </p>
       </div>
-      <div class="border-4 border-pink-700 p-8 w-full lg:w-1/2 ml-0 lg:ml-2" style="background-color: #0b0b26;">
+      <div class="border-4 border-pink-700 p-8 w-full lg:w-1/2 ml-0 lg:ml-2" style="background-color: #0b0b26; box-shadow: 0px 0px 100px rgb(190,24,93); border-radius: 20px;">
         <h3 class="text-3xl text-pink-700">Atomastic</h3>
         <p class="pt-10" style="min-height: 180px;">
           A set of well tested enterprise-ready decoupled and reusable PHP building blocks for kickass Web Applications. 
         </p>
         <p class="pt-5 flex">
-          <h3 class="text-pink-700">Technologies used:</h3>
+          <h3 class="text-pink-700">Technologies used</h3>
           PHP
         </p>
         <p class="pt-5 flex">
-          <h3 class="text-pink-700">License:</h3>
+          <h3 class="text-pink-700">License</h3>
           MIT
         </p>
         <p class="pt-10 flex">
@@ -97,19 +99,28 @@
     </div>
   </div>
   <div class="container mx-auto mt-24 px-4">
-    <h3 class="text-5xl text-pink-700 text-center mb-24 font-b-bold">CONTRIBUTIONS TOWARD OPENSOURCE</h3>
+    <h3 class="text-5xl text-pink-700 text-center mb-24 font-b-bold">OPENSOURCE CONTRIBUTIONS</h3>
     <div class="flex-row lg:flex w-full">
-      <div class="border-4 border-pink-700 p-8 w-full" style="background-color: #0b0b26;">
-        <p class="pt-5"><h3 class="text-pink-700">Lines of code added:</h3> 1 800 000</p>
-        <p class="pt-5"><h3 class="text-pink-700">Lines of code removed:</h3> 853 000</p>
-        <p class="pt-5"><h3 class="text-pink-700">Commits:</h3> 20 283</p>
-        <img src="https://raw.githubusercontent.com/Awilum/awilum/master/github-metrics.svg" alt="">
+      <div class="flex-row lg:flex border-4 border-pink-700 p-8 w-full" style="background-color: #0b0b26; box-shadow: 0px 0px 100px rgb(190,24,93); border-radius: 20px;">
+        <div class="w-full lg:w-4/12">
+          <p class="pt-5"><h3 class="text-pink-700">Lines of code added</h3> <span class="github-lines-added"></span></p>
+          <p class="pt-5"><h3 class="text-pink-700">Repositories created</h3> <span class="github-repositories"></span></p>
+          <p class="pt-5"><h3 class="text-pink-700">Most used languages</h3> <span class="github-languages-used"></span></p>
+        </div>
+        <div class="w-full lg:w-4/12">
+          <p class="pt-5"><h3 class="text-pink-700">Lines of code deleted</h3> <span class="github-lines-deleted"></span></p>
+          <p class="pt-5"><h3 class="text-pink-700">Repositories contributed</h3> <span class="github-repositories-contributed-to"></span></p>
+        </div>
+        <div class="w-full lg:w-4/12">
+          <p class="pt-5"><h3 class="text-pink-700">Commits</h3> <span class="github-commits"></span></p>
+          <p class="pt-5"><h3 class="text-pink-700">Prefers license</h3> <span class="github-favorite-license"></span></p>
+        </div>
       </div>
   </div>
   <div class="container mx-auto mt-24 px-4">
     <h3 class="text-5xl text-pink-700 text-center mb-24 font-b-bold">WORK EXPERIENCES</h3>
     <div class="flex-row lg:flex w-full">
-      <div class="border-4 border-pink-700 p-8 w-full lg:w-4/12 mb-4 mr-0 lg:mb-0 lg:mr-4" style="background-color: #0b0b26;">
+      <div class="border-4 border-pink-700 p-8 w-full lg:w-4/12 mb-4 mr-0 lg:mb-0 lg:mr-4" style="background-color: #0b0b26; box-shadow: 0px 0px 100px rgb(190,24,93); border-radius: 20px;">
         <h3 class="text-3xl text-pink-700">IT Freelance</h3>
         <p class="opacity-80">Freelance</p>
         <p class="opacity-50 text-xs">May 2018 - Present</p>
@@ -123,8 +134,11 @@
             <li>&#8627;	Frontend and backend architecture development.</li>
             <li>&#8627;	Projects documentation development.</li>
             <li>&#8627;	Localization.</li>
+            <li>&#8627;	Localization Testing.</li>
             <li>&#8627; Unit Testing.</li>
             <li>&#8627; Manual Testing.</li>
+            <li>&#8627;	Peromance Testing.</li>
+            <li>&#8627;	UI/UX Testing.</li>
           </ul>
         </p>
         <p class="pt-5 flex">
@@ -132,7 +146,7 @@
           UNIT TESTING, PHP, APACHE, COMPOSER, NPM, HTML, CSS, JAVASCRIPT, SASS, LESS, POSTCSS, TAILWIND, BOOTSTRAP, YAML, NEON, JSON, XML, GULP, POSTMAN, SYMFONY, SLIMPHP, LARAVEL, CROWDIN, GIT, GITHUB, DISCORD.
         </p>
       </div>
-      <div class="border-4 border-pink-700 p-8 w-full lg:w-4/12 mb-4 mr-0 lg:mb-0 lg:mr-4" style="background-color: #0b0b26;">
+      <div class="border-4 border-pink-700 p-8 w-full lg:w-4/12 mb-4 mr-0 lg:mb-0 lg:mr-4" style="background-color: #0b0b26; box-shadow: 0px 0px 100px rgb(190,24,93); border-radius: 20px;">
         <h3 class="text-3xl text-pink-700">IT CONSULTING</h3>
         <p class="opacity-80">Self Employed</p>
         <p class="opacity-50 text-xs">Jan 2015 - Apr 2018</p>
@@ -146,6 +160,7 @@
             <li>&#8627;	Frontend architecture development.</li>
             <li>&#8627;	Projects documentation development.</li>
             <li>&#8627;	Emails development.</li>
+            <li>&#8627;	Localization.</li>
           </ul>
         </p>
         <p class="pt-5 flex">
@@ -153,7 +168,7 @@
           PHP, HTML, CSS, JAVASCRIPT, GIT, MERCURIAL, GITHUB, SVN, GULP, GRUNT, LESS, COMPOSER, SCRUM, JIRA, BASECAMP, SLACK, ZURB FOUNDATION, ZURB EMAILS, BOOTSTRAP.
         </p>
       </div>
-      <div class="border-4 border-pink-700 p-8 w-full lg:w-4/12" style="background-color: #0b0b26;">
+      <div class="border-4 border-pink-700 p-8 w-full lg:w-4/12" style="background-color: #0b0b26; box-shadow: 0px 0px 100px rgb(190,24,93); border-radius: 20px;">
         <h3 class="text-3xl text-pink-700">Onix-Systems</h3>
         <p class="opacity-80">Senior Front End Developer</p>
         <p class="opacity-50 text-xs">Sep 2010 - May 2014</p>
@@ -205,5 +220,22 @@
   <div class="mt-20 px-20">
     <h3 class="text-5xl text-pink-700 text-center mb-20 font-b-bold"></h3>
   </div>
+  <script>
+    var formatter = new Intl.NumberFormat('en-US');
+
+    fetch('https://raw.githubusercontent.com/Awilum/awilum/master/github-metrics.json')
+      .then(response => response.json())
+      .then(function(data) { 
+        document.querySelector(".github-commits").innerHTML = formatter.format(data.computed.commits);
+        document.querySelector(".github-lines-added").innerHTML = formatter.format(data.plugins.lines.added);
+        document.querySelector(".github-lines-deleted").innerHTML = formatter.format(data.plugins.lines.deleted);
+        document.querySelector(".github-repositories").innerHTML = formatter.format(data.user.repositories.totalCount);
+        document.querySelector(".github-repositories-contributed-to").innerHTML = formatter.format(data.user.repositoriesContributedTo.totalCount);
+        document.querySelector(".github-favorite-license").innerHTML = data.computed.licenses.favorite[0];
+        document.querySelector(".github-languages-used").innerHTML = Object.keys(data.plugins.languages.stats);
+        document.querySelector(".github-languages-used").innerHTML = document.querySelector(".github-languages-used").innerHTML.replaceAll(',', ', ').replaceAll(', Hack', '');
+        console.log(data);
+      });
+  </script>
   </body>
 </html>
