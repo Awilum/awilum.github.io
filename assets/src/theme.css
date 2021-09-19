@@ -1,17 +1,20 @@
 
 @font-face {
     font-family: BenguiatNormal;
-    src: url(../../../assets/fonts/BenguiatNormal.ttf);
+    src: url(../../../assets/fonts/BenguiatNormal.ttf),
+         url(../../../assets/fonts/BenguiatBold.woff);
 }
 
 @font-face {
     font-family: BenguiatBold;
-    src: url(../../../assets/fonts/BenguiatBold.ttf);
+    src: url(../../../assets/fonts/BenguiatBold.ttf),
+         url(../../../assets/fonts/BenguiatBold.woff);
 }
 
 @font-face {
     font-family: BenguiatRegular;
-    src: url(../../../assets/fonts/BenguiatRegular.ttf);
+    src: url(../../../assets/fonts/BenguiatRegular.ttf),
+         url(../../../assets/fonts/BenguiatBold.woff);
 }
 
 .font-b-normal {
