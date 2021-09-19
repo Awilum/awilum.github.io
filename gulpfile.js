@@ -24,7 +24,7 @@ gulp.task("css", function() {
   return gulp
     .src(mainCSS)
     .pipe(postcss([atimport(), tailwindcss(tailwindConfig)]))
-    /*.pipe(
+    .pipe(
         purgecss({
           content: ["index.html"],
           defaultExtractor: content => content.match(/[\w-:/]+(?<!:)/g) || []
@@ -35,7 +35,7 @@ gulp.task("css", function() {
             "last 1 version"
         ],
         cascade: false
-    }))*/
+    }))
     .pipe(csso())
     .pipe(concat('build.min.css'))
     .pipe(gulp.dest("assets/dist/css/"));
