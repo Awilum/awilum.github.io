@@ -42,8 +42,8 @@ h1 {
     @apply text-pink-700;
     text-transform: uppercase;
     font-family: BenguiatBold;
-    font-size: 48px;
-    line-height: 48px;
+    /*font-size: 48px;
+    line-height: 48px;*/
 }
 
 .item-bg {
