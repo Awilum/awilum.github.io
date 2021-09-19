@@ -9,7 +9,7 @@
   <body>
   <header class="border-pink-700 border-b-2 world-shadow">
     <div class="container mx-auto flex-row text-center items-center w-full top-0 px-4 py-10 lg:text-left lg:flex">
-      <img src="assets/img/sergey-romanenko.png" data-world="real" onclick="goUpsideDown();" onmouseover="this.src='assets/img/sergey-romanenko-upside-down.png'" onmouseout="this.src='assets/img/sergey-romanenko.png'" alt="Sergey Romaneko" class="mx-auto mb-10 lg:mb-0 w-28 rounded-full lg:mr-10 border-2 world-shadow border-pink-700">
+      <img src="assets/img/sergey-romanenko.png" onclick="theGate();" alt="Sergey Romaneko" class="logo mx-auto mb-10 lg:mb-0 w-28 rounded-full lg:mr-10 border-2 cursor-pointer world-shadow border-pink-700">
       <h1 class="mb-10 text-pink-700 uppercase font-b-bold lg:mb-0 text-4xl lg:text-6xl">Sergey Romanenko</h1>
       <p class="lg:ml-10 text-pink-200">
         Full Stack Developer with strong will for learning and researching new technologies and architectural solutions. I like creating and using specialised tools for making development processes as efficient as possible. I have experience with big projects and big development teams.
@@ -240,41 +240,56 @@
         document.querySelector(".github-languages-used").innerHTML = document.querySelector(".github-languages-used").innerHTML.replaceAll(',', ', ').replaceAll(', Hack', '');
       });
 
-
-      function goUpsideDown()  
+      function theGate()  
       {
-        items = document.querySelectorAll(".text-pink-700");
-        items.forEach(function(items) {
+        var gate = document.querySelector(".logo");
+
+        let world = gate.classList.toggle("world");
+        
+        if(world) {
+
+          document.querySelector(".logo").src = 'assets/img/sergey-romanenko-upside-down.png';
+
+          items = document.querySelectorAll(".text-pink-700");
+          items.forEach(function(items) {
           items.classList.add('text-blue-700');
           items.classList.remove('text-pink-700');
-        });
+          });
 
-        items = document.querySelectorAll(".border-pink-700");
-        items.forEach(function(items) {
+          items = document.querySelectorAll(".border-pink-700");
+          items.forEach(function(items) {
           items.classList.add('border-blue-700');
           items.classList.remove('border-pink-700');
-        });
-        
-        items = document.querySelectorAll(".world-shadow");
-        items.forEach(function(items) {
+          });
+
+          items = document.querySelectorAll(".world-shadow");
+          items.forEach(function(items) {
           items.classList.add('upside-down-shadow');
           items.classList.remove('world-shadow');
-        });
-      }
+          });
+          
+      }  else {
+        document.querySelector(".logo").src = 'assets/img/sergey-romanenko.png';
 
-      function goRealworld()  
-      {
-        items = document.querySelectorAll(".text-blue-700");
-        items.forEach(function(items) {
+          items = document.querySelectorAll(".text-blue-700");
+          items.forEach(function(items) {
           items.classList.add('text-pink-700');
           items.classList.remove('text-blue-700');
-        });
+          });
 
-        items = document.querySelectorAll(".world-shadow");
-        items.forEach(function(items) {
-          items.classList.add('upside-down-shadow');
-          items.classList.remove('world-shadow');
-        });
+          items = document.querySelectorAll(".border-blue-700");
+          items.forEach(function(items) {
+          items.classList.add('border-pink-700');
+          items.classList.remove('border-blue-700');
+          });
+
+          items = document.querySelectorAll(".upside-down-shadow");
+          items.forEach(function(items) {
+          items.classList.remove('upside-down-shadow');
+          items.classList.add('world-shadow');
+          });
+
+        }
       }
       
   </script>
