@@ -1727,10 +1727,6 @@ a.brand-logo:hover > svg {
   z-index: 50;
 }
 
-.float-right {
-  float: right;
-}
-
 .m-0 {
   margin: 0px;
 }
@@ -2045,6 +2041,10 @@ a.brand-logo:hover > svg {
   border-bottom-width: 2px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-l {
   border-left-width: 1px;
 }
@@ -2100,11 +2100,6 @@ a.brand-logo:hover > svg {
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .stroke-slate-300 {
@@ -2187,6 +2182,21 @@ a.brand-logo:hover > svg {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pl-8 {
@@ -2277,12 +2287,12 @@ a.brand-logo:hover > svg {
   padding-left: 3rem;
 }
 
-.pb-6 {
-  padding-bottom: 1.5rem;
-}
-
 .pl-0 {
   padding-left: 0px;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .text-left {
@@ -2360,10 +2370,6 @@ a.brand-logo:hover > svg {
 
 .italic {
   font-style: italic;
-}
-
-.tracking-wide {
-  letter-spacing: 0.025em;
 }
 
 .text-black {
@@ -2500,14 +2506,6 @@ a.brand-logo:hover > svg {
     top: 0px;
   }
 
-  .lg\:float-right {
-    float: right;
-  }
-
-  .lg\:float-left {
-    float: left;
-  }
-
   .lg\:m-0 {
     margin: 0px;
   }
@@ -2540,16 +2538,8 @@ a.brand-logo:hover > svg {
     margin-right: 2.5rem;
   }
 
-  .lg\:mr-4 {
-    margin-right: 1rem;
-  }
-
   .lg\:block {
     display: block;
-  }
-
-  .lg\:inline-block {
-    display: inline-block;
   }
 
   .lg\:flex {
@@ -2663,14 +2653,6 @@ a.brand-logo:hover > svg {
 
   .lg\:pl-10 {
     padding-left: 2.5rem;
-  }
-
-  .lg\:text-left {
-    text-align: left;
-  }
-
-  .lg\:text-right {
-    text-align: right;
   }
 
   .lg\:text-lg {
