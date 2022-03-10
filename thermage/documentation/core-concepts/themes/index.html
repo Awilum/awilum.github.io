@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en_US">
+<head>
+            <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Developer with a strong will for learning and researching new technologies and architectural solutions. Founder of Thermage, Flextype, Glowy PHP, Faker JavaScript, Dart Packages and other.">
+        <meta name="keywords" content="flextype, php, cms, thermage, glowyphp, html">
+        <meta name="robots" content="index, follow">
+        <meta name="generator" content="Powered by Flextype"/>
+
+        
+        <title>Themes |
+    AWILUM.DEV</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css">
+
+                
+                                    <link href="http://localhost:8888/projects/awilum.github.io/project/themes/dev/assets/dist/css/dev.min.css" rel="stylesheet">
+                    
+            </head>
+<body class="antialiased text-slate-900 dark:text-slate-300 bg-white dark:bg-slate-900">
+    <header class="bg-white dark:bg-slate-800 border-b border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] plate-shadow">
+        <a href="http://localhost:8888/projects/awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-bold text-center border-r border-slate-900 brand-logo no-underline text-pink-500">
+            AWILUM
+        </a>
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="http://localhost:8888/projects/awilum.github.io/blog">
+            Blog
+        </a>
+        <div class="flex justify-center hidden lg:block">
+            <div
+                x-data="{
+                    open: false,
+                    toggle() {
+                        if (this.open) {
+                            return this.close()
+                        }
+
+                        this.open = true
+                    },
+                    close(focusAfter) {
+                        this.open = false
+
+                        focusAfter && focusAfter.focus()
+                    }
+                }"
+                x-on:keydown.escape.prevent.stop="close($refs.button)"
+                x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
+                x-id="['dropdown-button']"
+                class="relative"
+            >
+                <!-- Button -->
+                <button
+                    x-ref="button"
+                    x-on:click="toggle()"
+                    :aria-expanded="open"
+                    :aria-controls="$id('dropdown-button')"
+                    type="button"
+                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+                >
+                    <span>Projects</span>
+                </button>
+
+                <!-- Panel -->
+                <div
+                    x-ref="panel"
+                    x-show="open"
+                    x-transition.origin.top.left
+                    x-on:click.outside="close($refs.button)"
+                    :id="$id('dropdown-button')"
+                    style="display: none; box-shadow: 3px 3px 0 #0f172a"
+                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 rounded overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+                >
+                    <div>
+                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/thermage">Thermage</a>
+                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/flextype">Flextype</a>
+                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/glowyphp">Glowy PHP</a>
+                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " href="http://localhost:8888/projects/awilum.github.io/sponsors">
+            Sponsors
+        </a>
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " href="http://localhost:8888/projects/awilum.github.io/about">
+            About
+        </a>
+        <div class="flex justify-center lg:hidden">
+    <div
+        x-data="{
+            open: false,
+            toggle() {
+                if (this.open) {
+                    return this.close()
+                }
+
+                this.open = true
+            },
+            close(focusAfter) {
+                this.open = false
+
+                focusAfter && focusAfter.focus()
+            }
+        }"
+        x-on:keydown.escape.prevent.stop="close($refs.button)"
+        x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
+        x-id="['dropdown-button']"
+        class="relative"
+    >
+        <!-- Button -->
+        <button
+            x-ref="button"
+            x-on:click="toggle()"
+            :aria-expanded="open"
+            :aria-controls="$id('dropdown-button')"
+            type="button"
+            class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+        >
+            <span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                class="hover:stroke-pink-500 hover:fill-pink-500 dark:stroke-slate-300 dark:fill-slate-300" width="16" height="18" viewBox="0 0 447 447" style="enable-background:new 0 0 447 447;" xml:space="preserve">
+                <g>
+                    <path d="M447,303.5c0-17.369-14.131-31.5-31.5-31.5H407v-20.931c4.28-2.411,8.845-4.069,16.5-4.069c4.142,0,7.5-3.358,7.5-7.5
+                        s-3.358-7.5-7.5-7.5c-6.821,0-12.107,1.056-16.5,2.611v-12.846c9.29-3.138,16-11.93,16-22.266v-8.998
+                        c0-16.559-4.338-32.53-12.544-46.185c-16.138-26.852-39.856-43.444-56.912-52.635C319.455,73.314,275.702,64,223.5,64
+                        c-52.201,0-95.954,9.314-130.043,27.683c-30.901,16.651-48.005,37.813-56.912,52.635C28.338,157.973,24,173.943,24,190.502v8.998
+                        c0,10.336,6.71,19.128,16,22.266v12.852C35.609,233.059,30.323,232,23.5,232c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5
+                        c7.658,0,12.219,1.665,16.5,4.083V272h-8.5C14.131,272,0,286.131,0,303.5c0,14.784,10.241,27.216,24,30.59v9.41
+                        c0,21.78,17.72,39.5,39.5,39.5h320c21.78,0,39.5-17.72,39.5-39.5v-9.41C436.76,330.716,447,318.285,447,303.5z M392,223v19.72
+                        c-4.941,3.049-9.665,5.28-18.544,5.28c-10.318,0-15.024-3.009-20.982-6.819c-6.73-4.303-14.359-9.181-29.063-9.181
+                        c-14.697,0-22.321,4.878-29.048,9.183c-5.953,3.809-10.654,6.817-20.962,6.817c-10.296,0-14.993-3.008-20.938-6.816
+                        c-6.722-4.305-14.341-9.184-29.028-9.184c-14.693,0-22.315,4.879-29.04,9.183c-5.95,3.809-10.65,6.817-20.954,6.817
+                        c-10.3,0-14.998-3.008-20.946-6.816C145.771,236.879,138.15,232,123.46,232c-14.69,0-22.311,4.879-29.034,9.184
+                        C88.478,244.992,83.78,248,73.48,248c-8.844,0-13.558-2.22-18.48-5.259V223H392z M39,190.502c0-13.837,3.597-27.136,10.401-38.458
+                        c7.94-13.212,23.264-32.119,51.171-47.156C132.451,87.71,173.81,79,223.5,79s91.05,8.71,122.928,25.888
+                        c27.907,15.038,43.23,33.944,51.171,47.156C404.404,163.366,408,176.665,408,190.502v8.998c0,4.687-3.813,8.5-8.5,8.5h-352
+                        c-4.687,0-8.5-3.813-8.5-8.5V190.502z M55,259.624C59.764,261.59,65.6,263,73.48,263c14.69,0,22.311-4.879,29.034-9.184
+                        c5.948-3.809,10.646-6.816,20.946-6.816c10.3,0,14.999,3.008,20.947,6.816c6.724,4.305,14.344,9.184,29.034,9.184
+                        c14.693,0,22.315-4.879,29.041-9.183c5.95-3.809,10.649-6.817,20.953-6.817c10.296,0,14.993,3.008,20.938,6.816
+                        c6.722,4.305,14.341,9.184,29.028,9.184c14.696,0,22.321-4.878,29.047-9.183c5.953-3.809,10.654-6.817,20.963-6.817
+                        c10.318,0,15.024,3.009,20.981,6.818c6.73,4.304,14.359,9.182,29.063,9.182c7.913,0,13.767-1.418,18.544-3.394V272H55V259.624z
+                        M383.5,368h-320C49.991,368,39,357.01,39,343.5V335h369v8.5C408,357.01,397.01,368,383.5,368z M415.5,320H290.319
+                        c2.965-4.802,4.681-10.454,4.681-16.5c0-4.142-3.358-7.5-7.5-7.5s-7.5,3.358-7.5,7.5c0,9.098-7.402,16.5-16.5,16.5h-232
+                        c-9.098,0-16.5-7.402-16.5-16.5S22.402,287,31.5,287h136c9.098,0,16.5,7.402,16.5,16.5c0,4.142,3.358,7.5,7.5,7.5
+                        s7.5-3.358,7.5-7.5c0-6.046-1.716-11.698-4.681-16.5H415.5c9.098,0,16.5,7.402,16.5,16.5C432,312.598,424.599,320,415.5,320z"/>
+                    <path d="M191.5,167c1.919,0,3.839-0.732,5.303-2.197l8-8c2.929-2.929,2.929-7.678,0-10.606c-2.929-2.929-7.678-2.929-10.606,0l-8,8
+                        c-2.929,2.929-2.929,7.678,0,10.606C187.661,166.268,189.581,167,191.5,167z"/>
+                    <path d="M266.197,156.803c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606l-8-8
+                        c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L266.197,156.803z"/>
+                    <path d="M103.5,175c1.919,0,3.839-0.732,5.303-2.197l8-8c2.929-2.929,2.929-7.678,0-10.606c-2.929-2.929-7.678-2.929-10.606,0l-8,8
+                        c-2.929,2.929-2.929,7.678,0,10.606C99.661,174.268,101.581,175,103.5,175z"/>
+                    <path d="M151.5,135c4.142,0,7.5-3.358,7.5-7.5v-8c0-4.142-3.358-7.5-7.5-7.5s-7.5,3.358-7.5,7.5v8
+                        C144,131.642,147.358,135,151.5,135z"/>
+                    <path d="M239.5,191h8c4.142,0,7.5-3.358,7.5-7.5s-3.358-7.5-7.5-7.5h-8c-4.142,0-7.5,3.358-7.5,7.5S235.358,191,239.5,191z"/>
+                    <path d="M311.5,183c1.919,0,3.839-0.732,5.303-2.197l8-8c2.929-2.929,2.929-7.678,0-10.606c-2.929-2.929-7.678-2.929-10.606,0l-8,8
+                        c-2.929,2.929-2.929,7.678,0,10.606C307.662,182.268,309.581,183,311.5,183z"/>
+                    <path d="M218.197,116.803c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606l-8-8
+                        c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L218.197,116.803z"/>
+                    <path d="M154.197,188.803c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606l-8-8
+                        c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L154.197,188.803z"/>
+                    <path d="M278.17,115.492c5.311,0.958,10.51,2.083,15.453,3.344c0.622,0.158,1.245,0.234,1.859,0.234
+                        c3.347,0,6.397-2.257,7.262-5.648c1.023-4.014-1.4-8.097-5.414-9.121c-5.287-1.348-10.837-2.549-16.496-3.571
+                        c-4.075-0.732-7.978,1.973-8.713,6.049C271.386,110.855,274.094,114.756,278.17,115.492z"/>
+                    <path d="M324.299,129.647c25.918,12.175,39.251,27.863,45.872,38.88c2.849,4.74,4.679,10.104,5.441,15.942
+                        c0.493,3.778,3.717,6.531,7.428,6.531c0.323,0,0.65-0.021,0.979-0.064c4.107-0.536,7.002-4.3,6.467-8.407
+                        c-1.03-7.897-3.54-15.208-7.458-21.729c-7.693-12.801-23.021-30.953-52.351-44.731c-3.75-1.759-8.215-0.149-9.977,3.6
+                        C318.939,123.419,320.55,127.886,324.299,129.647z"/>
+                </g>
+                </svg>
+            </span>
+        </button>
+
+        <!-- Panel -->
+        <div
+            x-ref="panel"
+            x-show="open"
+            x-transition.origin.top.left
+            x-on:click.outside="close($refs.button)"
+            :id="$id('dropdown-button')"
+            style="display: none; box-shadow: 3px 3px 0 #0f172a"
+            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+        >
+            <div>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/blog">
+                    Blog
+                </a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/thermage">Thermage</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/flextype">Flextype</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/glowyphp">Glowy PHP</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/sponsors">
+                    Sponsors
+                </a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/about">
+                    About
+                </a>
+            </div>
+        </div>
+    </div>
+</div>        <div class="flex" style="margin-left: auto;">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline" target="_blank" href="https://github.com/Awilum">
+                GITHUB
+            </a>
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline" target="_blank" href="https://twitter.com/_awilum">
+                TWITTER
+            </a>
+        </div>
+    </header>
+
+    <main role="main" class="container mx-auto max-w-[1200px]">
+        <section>
+            <div class="flex justify-around bg-white dark:bg-slate-800 border mt-10 border-slate-900 mx-auto max-w-[450px] plate-shadow">
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 text-pink-500" href="http://localhost:8888/projects/awilum.github.io/thermage">Thermage</a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 " rel="nofollow" href="http://localhost:8888/projects/awilum.github.io/thermage/documentation">Documentation</a>
+  <a class="m-0 p-0 px-3 py-2 border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://github.com/thermage">
+    GITHUB
+  </a>
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/_thermage">
+    TWITTER
+  </a>
+</div>
+
+
+<div class="uppercase text-center pt-24 pb-24 m-0">
+    <div>
+        <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="http://localhost:8888/projects/awilum.github.io/thermage/documentation/core-concepts/themes">Themes</a></h1>
+        <div class="text-sm lg:text-lg">
+            <span class="opacity-60"><a class="no-underline" href="http://localhost:8888/projects/awilum.github.io/thermage/documentation">Documentation</a></span>
+        </div>
+    </div>
+</div>
+<div>
+    <p>Thermage provides ability to create and use custom themes to change the style of command line output with preconfigured themes variables.</p>
+<h3>Default theme variables</h3>
+<pre><code class="language-php">final public function getDefaultVariables(): Collection
+{
+    return collection([
+        // Colors.
+        'colors' =&gt; [
+            'white'   =&gt; '#ffffff',
+            'gray100' =&gt; '#f8f9fa',
+            'gray200' =&gt; '#e9ecef',
+            'gray300' =&gt; '#dee2e6',
+            'gray400' =&gt; '#ced4da',
+            'gray500' =&gt; '#adb5bd',
+            'gray600' =&gt; '#6c757d',
+            'gray700' =&gt; '#495057',
+            'gray800' =&gt; '#343a40',
+            'gray900' =&gt; '#212529',
+            'black'   =&gt; '#000000',
+
+            'blue'    =&gt; '#007bff',
+            'blue100' =&gt; '#a8cbfe',
+            'blue200' =&gt; '#81b4fe',
+            'blue300' =&gt; '#5a9cfe',
+            'blue400' =&gt; '#3485fd',
+            'blue500' =&gt; '#0d6efd',
+            'blue600' =&gt; '#0b5cd5',
+            'blue700' =&gt; '#094bac',
+            'blue800' =&gt; '#073984',
+            'blue900' =&gt; '#05285b',
+
+            'indigo'    =&gt; '#6610f2',
+            'indigo100' =&gt; '#c8a9fa',
+            'indigo200' =&gt; '#af83f8',
+            'indigo300' =&gt; '#975cf6',
+            'indigo400' =&gt; '#7e36f4',
+            'indigo500' =&gt; '#6610f2',
+            'indigo600' =&gt; '#560dcb',
+            'indigo700' =&gt; '#450ba5',
+            'indigo800' =&gt; '#35087e',
+            'indigo900' =&gt; '#250657',
+
+            'purple'    =&gt; '#6f42c1',
+            'purple100' =&gt; '#cbbbe9',
+            'purple200' =&gt; '#b49ddf',
+            'purple300' =&gt; '#9d7ed5',
+            'purple400' =&gt; '#8660cb',
+            'purple500' =&gt; '#6f42c1',
+            'purple600' =&gt; '#5d37a2',
+            'purple700' =&gt; '#4b2d83',
+            'purple800' =&gt; '#3a2264',
+            'purple900' =&gt; '#281845',
+
+            'pink'    =&gt; '#e83e8c',
+            'pink100' =&gt; '#f0b6d3',
+            'pink200' =&gt; '#ea95bf',
+            'pink300' =&gt; '#e374ab',
+            'pink400' =&gt; '#dd5498',
+            'pink500' =&gt; '#d63384',
+            'pink600' =&gt; '#b42b6f',
+            'pink700' =&gt; '#92235a',
+            'pink800' =&gt; '#6f1b45',
+            'pink900' =&gt; '#4d1230',
+
+            'red'    =&gt; '#dc3545',
+            'red100' =&gt; '#f2b6bc',
+            'red200' =&gt; '#ed969e',
+            'red300' =&gt; '#e77681',
+            'red400' =&gt; '#e25563',
+            'red500' =&gt; '#dc3545',
+            'red600' =&gt; '#b92d3a',
+            'red700' =&gt; '#96242f',
+            'red800' =&gt; '#721c24',
+            'red900' =&gt; '#4f1319',
+
+            'orange'    =&gt; '#fd7e14',
+            'orange100' =&gt; '#fed1aa',
+            'orange200' =&gt; '#febc85',
+            'orange300' =&gt; '#fea75f',
+            'orange400' =&gt; '#fd933a',
+            'orange500' =&gt; '#fd7e14',
+            'orange600' =&gt; '#d56a11',
+            'orange700' =&gt; '#ac560e',
+            'orange800' =&gt; '#84420a',
+            'orange900' =&gt; '#5b2d07',
+
+            'yellow'    =&gt; '#ffc107',
+            'yellow100' =&gt; '#ffe9a6',
+            'yellow200' =&gt; '#ffdf7e',
+            'yellow300' =&gt; '#ffd556',
+            'yellow400' =&gt; '#ffcb2f',
+            'yellow500' =&gt; '#ffc107',
+            'yellow600' =&gt; '#d6a206',
+            'yellow700' =&gt; '#ad8305',
+            'yellow800' =&gt; '#856404',
+            'yellow900' =&gt; '#5c4503',
+
+            'green'    =&gt; '#28a745',
+            'green100' =&gt; '#b2dfbc',
+            'green200' =&gt; '#8fd19e',
+            'green300' =&gt; '#6dc381',
+            'green400' =&gt; '#4ab563',
+            'green500' =&gt; '#28a745',
+            'green600' =&gt; '#228c3a',
+            'green700' =&gt; '#1b722f',
+            'green800' =&gt; '#155724',
+            'green900' =&gt; '#0e3c19',
+
+            'teal'    =&gt; '#20c997',
+            'teal100' =&gt; '#afecda',
+            'teal200' =&gt; '#8be3c9',
+            'teal300' =&gt; '#67dab8',
+            'teal400' =&gt; '#44d2a8',
+            'teal500' =&gt; '#20c997',
+            'teal600' =&gt; '#1ba97f',
+            'teal700' =&gt; '#168967',
+            'teal800' =&gt; '#11694f',
+            'teal900' =&gt; '#0c4836',
+
+            'cyan'    =&gt; '#17a2b8',
+            'cyan100' =&gt; '#abdee5',
+            'cyan200' =&gt; '#86cfda',
+            'cyan300' =&gt; '#61c0cf',
+            'cyan400' =&gt; '#3cb1c3',
+            'cyan500' =&gt; '#17a2b8',
+            'cyan600' =&gt; '#13889b',
+            'cyan700' =&gt; '#106e7d',
+            'cyan800' =&gt; '#0c5460',
+            'cyan900' =&gt; '#083a42',
+
+            'primary'   =&gt; '#007bff', // blue
+            'secondary' =&gt; '#6c757d', // gray600
+            'success'   =&gt; '#28a745', // green
+            'info'      =&gt; '#17a2b8', // cyan
+            'warning'   =&gt; '#ffc107', // yellow
+            'danger'    =&gt; '#dc3545', // red
+            'light'     =&gt; '#f8f9fa', // gray100
+            'dark'      =&gt; '#212529', // gray900
+        ],
+
+        // Borders.
+        'borders' =&gt; [
+            'square' =&gt; [
+                'top-left' =&gt; '┌',
+                'top' =&gt; '─',
+                'top-right' =&gt; '┐',
+                'right' =&gt; '│',
+                'left' =&gt; '│',
+                'bottom-right' =&gt; '┘',
+                'bottom' =&gt; '─',
+                'bottom-left' =&gt; '└',
+            ],
+            'rounded' =&gt; [
+                'top-left' =&gt; '╭',
+                'top' =&gt; '─',
+                'top-right' =&gt; '╮',
+                'right' =&gt; '│',
+                'left' =&gt; '│',
+                'bottom-right' =&gt; '╯',
+                'bottom' =&gt; '─',
+                'bottom-left' =&gt; '╰',
+            ],
+            'double' =&gt; [
+                'top-left' =&gt; '╔',
+                'top' =&gt; '═',
+                'top-right' =&gt; '╗',
+                'right' =&gt; '║',
+                'left' =&gt; '║',
+                'bottom-right' =&gt; '╝',
+                'bottom' =&gt; '═',
+                'bottom-left' =&gt; '╚',
+            ],
+            'heavy' =&gt; [
+                'top-left' =&gt; '┏',
+                'top' =&gt; '━',
+                'top-right' =&gt; '┓',
+                'right' =&gt; '┃',
+                'left' =&gt; '┃',
+                'bottom-right' =&gt; '┛',
+                'bottom' =&gt; '━',
+                'bottom-left' =&gt; '┗',
+            ],
+        ],
+        
+        // Spacing.
+        'spacer' =&gt; 1,
+
+        // Alert element.
+        'alert' =&gt; [
+            'text-align' =&gt; 'left',
+            'width-auto' =&gt; false,
+            'width' =&gt; 50,
+            'type' =&gt; [
+                'info' =&gt; [
+                    'bg' =&gt; 'info',
+                    'color' =&gt; 'black',
+                ],
+                'warning' =&gt; [
+                    'bg' =&gt; 'warning',
+                    'color' =&gt; 'black',
+                ],
+                'danger' =&gt; [
+                    'bg' =&gt; 'danger',
+                    'color' =&gt; 'white',
+                ],
+                'success' =&gt; [
+                    'bg' =&gt; 'success',
+                    'color' =&gt; 'black',
+                ],
+                'primary' =&gt; [
+                    'bg' =&gt; 'primary',
+                    'color' =&gt; 'white',
+                ],
+                'secondary' =&gt; [
+                    'bg' =&gt; 'secondary',
+                    'color' =&gt; 'white',
+                ],
+            ],
+        ],
+
+        // Chart element.
+        'chart' =&gt; [
+            'text-align' =&gt; 'left',
+            'border' =&gt; 'filled',
+            'borders' =&gt; [
+                'filled' =&gt; [
+                    'top' =&gt; ' ',
+                ],
+                'thin' =&gt; [
+                    'top' =&gt; '─',
+                ],
+                'double' =&gt; [
+                    'top' =&gt; '═',
+                ],
+                'triple' =&gt; [
+                    'top' =&gt; '≡',
+                ],
+                'heavy' =&gt; [
+                    'top' =&gt; '━'
+                ],
+                'super-heavy' =&gt; [
+                    'top' =&gt; '▬'
+                ],
+                'dashed' =&gt; [
+                    'top' =&gt; '-',
+                ],
+                'rope' =&gt; [
+                    'top' =&gt; '▱'
+                ],
+                'rope-heavy' =&gt; [
+                    'top' =&gt; '▰'
+                ],
+                'brick' =&gt; [
+                    'top' =&gt; '▭'
+                ],
+                'block-small' =&gt; [
+                    'top' =&gt; '▫'
+                ],
+                'block-small-heavy' =&gt; [
+                    'top' =&gt; '▪'
+                ],
+                'block' =&gt; [
+                    'top' =&gt; '◻'
+                ],
+                'noise' =&gt; [
+                    'top' =&gt; '▩'
+                ],
+            ],
+        ],
+
+        // Canvas element.
+        'canvas' =&gt; [
+            'width' =&gt; 16,
+            'height' =&gt; 16,
+            'pixel-width' =&gt; 3,
+        ],
+        
+        // Hr element.
+        'hr' =&gt; [
+            'text-align' =&gt; 'left',
+            'border' =&gt; 'thin',
+            'borders' =&gt; [
+                'thin' =&gt; [
+                    'top' =&gt; '─',
+                ],
+                'double' =&gt; [
+                    'top' =&gt; '═',
+                ],
+                'triple' =&gt; [
+                    'top' =&gt; '≡',
+                ],
+                'heavy' =&gt; [
+                    'top' =&gt; '━'
+                ],
+                'super-heavy' =&gt; [
+                    'top' =&gt; '▬'
+                ],
+                'dashed' =&gt; [
+                    'top' =&gt; '-',
+                ],
+                'arrow-down' =&gt; [
+                    'top' =&gt; '▼'
+                ],
+                'arrow-up' =&gt; [
+                    'top' =&gt; '▲'
+                ],
+                'wave' =&gt; [
+                    'top' =&gt; '~'
+                ],
+                'rope' =&gt; [
+                    'top' =&gt; '▱'
+                ],
+                'rope-heavy' =&gt; [
+                    'top' =&gt; '▰'
+                ],
+                'brick' =&gt; [
+                    'top' =&gt; '▭'
+                ],
+                'block-small' =&gt; [
+                    'top' =&gt; '▫'
+                ],
+                'block-small-heavy' =&gt; [
+                    'top' =&gt; '▪'
+                ],
+                'block' =&gt; [
+                    'top' =&gt; '◻'
+                ],
+                'noise' =&gt; [
+                    'top' =&gt; '▩'
+                ],
+            ],
+        ],
+    ]);
+}
+// ...
+</code></pre>
+<h3>Default theme colors</h3>
+<div class="flex">
+<div class="">
+<div class="p-4 swatch-blue">
+<strong class="d-block">blue</strong>
+#007bff
+</div>
+<div class="p-4 bd-blue100">blue100</div>
+<div class="p-4 bd-blue200">blue200</div>
+<div class="p-4 bd-blue300">blue300</div>
+<div class="p-4 bd-blue400">blue400</div>
+<div class="p-4 bd-blue500">blue500</div>
+<div class="p-4 bd-blue600">blue600</div>
+<div class="p-4 bd-blue700">blue700</div>
+<div class="p-4 bd-blue800">blue800</div>
+<div class="p-4 bd-blue900">blue900</div>
+</div>
+<div class="">
+<div class="p-4 swatch-indigo">
+<strong class="d-block">indigo</strong>
+#6610f2
+</div>
+<div class="p-4 bd-indigo100">indigo100</div>
+<div class="p-4 bd-indigo200">indigo200</div>
+<div class="p-4 bd-indigo300">indigo300</div>
+<div class="p-4 bd-indigo400">indigo400</div>
+<div class="p-4 bd-indigo500">indigo500</div>
+<div class="p-4 bd-indigo600">indigo600</div>
+<div class="p-4 bd-indigo700">indigo700</div>
+<div class="p-4 bd-indigo800">indigo800</div>
+<div class="p-4 bd-indigo900">indigo900</div>
+</div>
+<div class="">
+<div class="p-4 swatch-purple">
+<strong class="d-block">purple</strong>
+#6f42c1
+</div>
+<div class="p-4 bd-purple100">purple100</div>
+<div class="p-4 bd-purple200">purple200</div>
+<div class="p-4 bd-purple300">purple300</div>
+<div class="p-4 bd-purple400">purple400</div>
+<div class="p-4 bd-purple500">purple500</div>
+<div class="p-4 bd-purple600">purple600</div>
+<div class="p-4 bd-purple700">purple700</div>
+<div class="p-4 bd-purple800">purple800</div>
+<div class="p-4 bd-purple900">purple900</div>
+</div>
+<div>
+<div class="p-4 swatch-pink">
+<strong class="d-block">pink</strong>
+#e83e8c
+</div>
+<div class="p-4 bd-pink100">pink100</div>
+<div class="p-4 bd-pink200">pink200</div>
+<div class="p-4 bd-pink300">pink300</div>
+<div class="p-4 bd-pink400">pink400</div>
+<div class="p-4 bd-pink500">pink500</div>
+<div class="p-4 bd-pink600">pink600</div>
+<div class="p-4 bd-pink700">pink700</div>
+<div class="p-4 bd-pink800">pink800</div>
+<div class="p-4 bd-pink900">pink900</div>
+</div>
+<div>
+<div class="p-4 swatch-red">
+<strong class="d-block">red</strong>
+#dc3545
+</div>
+<div class="p-4 bd-red100">red100</div>
+<div class="p-4 bd-red200">red200</div>
+<div class="p-4 bd-red300">red300</div>
+<div class="p-4 bd-red400">red400</div>
+<div class="p-4 bd-red500">red500</div>
+<div class="p-4 bd-red600">red600</div>
+<div class="p-4 bd-red700">red700</div>
+<div class="p-4 bd-red800">red800</div>
+<div class="p-4 bd-red900">red900</div>
+</div>
+<div>
+<div class="p-4 swatch-orange">
+<strong class="d-block">orange</strong>
+#fd7e14
+</div>
+<div class="p-4 bd-orange100">orange100</div>
+<div class="p-4 bd-orange200">orange200</div>
+<div class="p-4 bd-orange300">orange300</div>
+<div class="p-4 bd-orange400">orange400</div>
+<div class="p-4 bd-orange500">orange500</div>
+<div class="p-4 bd-orange600">orange600</div>
+<div class="p-4 bd-orange700">orange700</div>
+<div class="p-4 bd-orange800">orange800</div>
+<div class="p-4 bd-orange900">orange900</div>
+</div>
+<div>
+<div class="p-4 swatch-yellow">
+<strong class="d-block">yellow</strong>
+#ffc107
+</div>
+<div class="p-4 bd-yellow100">yellow100</div>
+<div class="p-4 bd-yellow200">yellow200</div>
+<div class="p-4 bd-yellow300">yellow300</div>
+<div class="p-4 bd-yellow400">yellow400</div>
+<div class="p-4 bd-yellow500">yellow500</div>
+<div class="p-4 bd-yellow600">yellow600</div>
+<div class="p-4 bd-yellow700">yellow700</div>
+<div class="p-4 bd-yellow800">yellow800</div>
+<div class="p-4 bd-yellow900">yellow900</div>
+</div>
+<div>
+<div class="p-4 swatch-green">
+<strong class="d-block">green</strong>
+#28a745
+</div>
+<div class="p-4 bd-green100">green100</div>
+<div class="p-4 bd-green200">green200</div>
+<div class="p-4 bd-green300">green300</div>
+<div class="p-4 bd-green400">green400</div>
+<div class="p-4 bd-green500">green500</div>
+<div class="p-4 bd-green600">green600</div>
+<div class="p-4 bd-green700">green700</div>
+<div class="p-4 bd-green800">green800</div>
+<div class="p-4 bd-green900">green900</div>
+</div>
+<div>
+<div class="p-4 swatch-teal">
+<strong class="d-block">teal</strong>
+#20c997
+</div>
+<div class="p-4 bd-teal100">teal100</div>
+<div class="p-4 bd-teal200">teal200</div>
+<div class="p-4 bd-teal300">teal300</div>
+<div class="p-4 bd-teal400">teal400</div>
+<div class="p-4 bd-teal500">teal500</div>
+<div class="p-4 bd-teal600">teal600</div>
+<div class="p-4 bd-teal700">teal700</div>
+<div class="p-4 bd-teal800">teal800</div>
+<div class="p-4 bd-teal900">teal900</div>
+</div>
+<div>
+<div class="p-4 swatch-cyan">
+<strong class="d-block">cyan</strong>
+#17a2b8
+</div>
+<div class="p-4 bd-cyan100">cyan100</div>
+<div class="p-4 bd-cyan200">cyan200</div>
+<div class="p-4 bd-cyan300">cyan300</div>
+<div class="p-4 bd-cyan400">cyan400</div>
+<div class="p-4 bd-cyan500">cyan500</div>
+<div class="p-4 bd-cyan600">cyan600</div>
+<div class="p-4 bd-cyan700">cyan700</div>  
+<div class="p-4 bd-cyan800">cyan800</div>
+<div class="p-4 bd-cyan900">cyan900</div>
+</div>
+</div>
+<br><br>
+<p>If the terminal doesn’t support true colors, the nearest named color is used.<br />
+E.g. <span style="color: #c0392b;">#c0392b</span> is degraded to <span style="color: red;">red</span> or <span style="color: #f1c40f;">#f1c40f</span> is degraded to <span style="color: yellow;">yellow</span>.</p>
+<p>By default, the Windows command console doesn't support output coloring. The Console component disables output coloring for Windows systems, but if your commands invoke other scripts which emit color sequences, they will be wrongly displayed as raw escape characters. Install the <a href="https://cmder.net/">Cmder</a>, <a href="https://conemu.github.io/">ConEmu</a>, <a href="https://github.com/adoxa/ansicon/">ANSICON</a>, <a href="https://mintty.github.io/">Mintty</a> (used by default in GitBash and Cygwin) or <a href="https://hyper.is/">Hyper</a> free applications to add coloring support to your Windows command console.</p>
+<h3>Create theme</h3>
+<pre><code class="language-php">&lt;?php
+
+declare(strict_types=1);
+
+use Atomastic\Arrays\Arrays as Collection;
+use Thermage\Themes\Theme;
+use Thermage\Themes\ThemeInterface;
+
+use function arrays as collection;
+
+final class RadTheme extends Theme implements ThemeInterface
+{
+    public function getThemeVariables(): Collection
+    {
+        return collection([]);
+    }
+}
+</code></pre>
+<h3>Set theme</h3>
+<pre><code class="language-php">use Thermage\Thermage;
+
+// ... 
+
+Thermage::setTheme(new RadTheme());
+</code></pre>
+
+</div>
+        </section>
+        <footer class="p-10 text-sm text-center">
+            <p class="m-0">Copyright © <a href="https://github.com/Awilum" target="_blank">Sergey Romanenko</a></p>
+                                </footer>
+    </main>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    <script>
+        hljs.highlightAll();
+
+        var $tabs = function (target) {
+        var
+            _elemTabs = (typeof target === 'string' ? document.querySelector(target) : target),
+            _eventTabsShow,
+            _showTab = function (tabsLinkTarget) {
+                var tabsPaneTarget, tabsLinkActive, tabsPaneShow;
+                tabsPaneTarget = document.querySelector(tabsLinkTarget.getAttribute('href'));
+                tabsLinkActive = tabsLinkTarget.parentElement.querySelector('.tabs__link_active');
+                tabsPaneShow = tabsPaneTarget.parentElement.querySelector('.tabs__pane_show');
+                
+                if (tabsLinkTarget === tabsLinkActive) {
+                    return;
+                }
+                
+                if (tabsLinkActive !== null) {
+                    tabsLinkActive.classList.remove('tabs__link_active');
+                }
+
+                if (tabsPaneShow !== null) {
+                    tabsPaneShow.classList.remove('tabs__pane_show');
+                }
+                
+                
+                tabsLinkTarget.classList.add('tabs__link_active');
+                tabsPaneTarget.classList.add('tabs__pane_show');
+                document.dispatchEvent(_eventTabsShow);
+            },
+            _switchTabTo = function (tabsLinkIndex) {
+                var tabsLinks = _elemTabs.querySelectorAll('.tabs__link');
+                if (tabsLinks.length > 0) {
+                    if (tabsLinkIndex > tabsLinks.length) {
+                    tabsLinkIndex = tabsLinks.length;
+                    } else if (tabsLinkIndex < 1) {
+                    tabsLinkIndex = 1;
+                    }
+                    _showTab(tabsLinks[tabsLinkIndex - 1]);
+                }
+            };
+
+            _eventTabsShow = new CustomEvent('tab.show', { detail: _elemTabs });
+
+            _elemTabs.addEventListener('click', function(e) {
+                var target = e.target.closest('.tabs__link');
+                // завершаем выполнение функции, если кликнули не по ссылке
+                if (!target) {
+                return;
+                }
+                // отменяем стандартное действие
+                e.preventDefault();
+                _showTab(target);
+        });
+
+        return {
+            showTab: function (target) {
+            _showTab(target);
+            },
+            switchTabTo: function (index) {
+            _switchTabTo(index);
+            }
+        }
+
+        };
+
+        
+        var formatter = new Intl.NumberFormat('en-US');
+        fetch('https://raw.githubusercontent.com/Awilum/awilum/master/github-metrics.json')
+        .then(response => response.json())
+        .then(function(data) {
+            var ghCommits = document.querySelector(".github-commits");
+            var ghLinesAdded = document.querySelector(".github-lines-added");
+            var ghDeleted = document.querySelector(".github-lines-deleted");
+            var ghContibuteTo = document.querySelector(".github-repositories-contributed-to");
+
+            if (ghCommits != null) ghCommits.innerHTML = formatter.format(data.computed.commits);
+            if (ghLinesAdded != null) ghLinesAdded.innerHTML = formatter.format(data.plugins.lines.added);
+            if (ghDeleted != null) ghDeleted.innerHTML = formatter.format(data.plugins.lines.deleted);
+            if (ghContibuteTo != null) ghContibuteTo.innerHTML = formatter.format(data.user.repositoriesContributedTo.totalCount);
+        });
+
+    </script>
+        </body>
+</html>

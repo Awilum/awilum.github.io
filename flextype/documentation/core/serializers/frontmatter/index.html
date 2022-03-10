@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en_US">
+<head>
+            <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Any file that contains a YAML front matter block will be processed by Flextype as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Between these triple-dashed lines, you can set predefined variables or even create custom ones of your own.">
+        <meta name="keywords" content="flextype, php, cms, thermage, glowyphp, html">
+        <meta name="robots" content="index, follow">
+        <meta name="generator" content="Powered by Flextype"/>
+
+        
+        <title>FRONTMATTER |
+    AWILUM.DEV</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css">
+
+                
+                                    <link href="http://localhost:8888/projects/awilum.github.io/project/themes/dev/assets/dist/css/dev.min.css" rel="stylesheet">
+                    
+            </head>
+<body class="antialiased text-slate-900 dark:text-slate-300 bg-white dark:bg-slate-900">
+    <header class="bg-white dark:bg-slate-800 border-b border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] plate-shadow">
+        <a href="http://localhost:8888/projects/awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-bold text-center border-r border-slate-900 brand-logo no-underline text-pink-500">
+            AWILUM
+        </a>
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="http://localhost:8888/projects/awilum.github.io/blog">
+            Blog
+        </a>
+        <div class="flex justify-center hidden lg:block">
+            <div
+                x-data="{
+                    open: false,
+                    toggle() {
+                        if (this.open) {
+                            return this.close()
+                        }
+
+                        this.open = true
+                    },
+                    close(focusAfter) {
+                        this.open = false
+
+                        focusAfter && focusAfter.focus()
+                    }
+                }"
+                x-on:keydown.escape.prevent.stop="close($refs.button)"
+                x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
+                x-id="['dropdown-button']"
+                class="relative"
+            >
+                <!-- Button -->
+                <button
+                    x-ref="button"
+                    x-on:click="toggle()"
+                    :aria-expanded="open"
+                    :aria-controls="$id('dropdown-button')"
+                    type="button"
+                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+                >
+                    <span>Projects</span>
+                </button>
+
+                <!-- Panel -->
+                <div
+                    x-ref="panel"
+                    x-show="open"
+                    x-transition.origin.top.left
+                    x-on:click.outside="close($refs.button)"
+                    :id="$id('dropdown-button')"
+                    style="display: none; box-shadow: 3px 3px 0 #0f172a"
+                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 rounded overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+                >
+                    <div>
+                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/thermage">Thermage</a>
+                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/flextype">Flextype</a>
+                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/glowyphp">Glowy PHP</a>
+                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " href="http://localhost:8888/projects/awilum.github.io/sponsors">
+            Sponsors
+        </a>
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " href="http://localhost:8888/projects/awilum.github.io/about">
+            About
+        </a>
+        <div class="flex justify-center lg:hidden">
+    <div
+        x-data="{
+            open: false,
+            toggle() {
+                if (this.open) {
+                    return this.close()
+                }
+
+                this.open = true
+            },
+            close(focusAfter) {
+                this.open = false
+
+                focusAfter && focusAfter.focus()
+            }
+        }"
+        x-on:keydown.escape.prevent.stop="close($refs.button)"
+        x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
+        x-id="['dropdown-button']"
+        class="relative"
+    >
+        <!-- Button -->
+        <button
+            x-ref="button"
+            x-on:click="toggle()"
+            :aria-expanded="open"
+            :aria-controls="$id('dropdown-button')"
+            type="button"
+            class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+        >
+            <span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                class="hover:stroke-pink-500 hover:fill-pink-500 dark:stroke-slate-300 dark:fill-slate-300" width="16" height="18" viewBox="0 0 447 447" style="enable-background:new 0 0 447 447;" xml:space="preserve">
+                <g>
+                    <path d="M447,303.5c0-17.369-14.131-31.5-31.5-31.5H407v-20.931c4.28-2.411,8.845-4.069,16.5-4.069c4.142,0,7.5-3.358,7.5-7.5
+                        s-3.358-7.5-7.5-7.5c-6.821,0-12.107,1.056-16.5,2.611v-12.846c9.29-3.138,16-11.93,16-22.266v-8.998
+                        c0-16.559-4.338-32.53-12.544-46.185c-16.138-26.852-39.856-43.444-56.912-52.635C319.455,73.314,275.702,64,223.5,64
+                        c-52.201,0-95.954,9.314-130.043,27.683c-30.901,16.651-48.005,37.813-56.912,52.635C28.338,157.973,24,173.943,24,190.502v8.998
+                        c0,10.336,6.71,19.128,16,22.266v12.852C35.609,233.059,30.323,232,23.5,232c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5
+                        c7.658,0,12.219,1.665,16.5,4.083V272h-8.5C14.131,272,0,286.131,0,303.5c0,14.784,10.241,27.216,24,30.59v9.41
+                        c0,21.78,17.72,39.5,39.5,39.5h320c21.78,0,39.5-17.72,39.5-39.5v-9.41C436.76,330.716,447,318.285,447,303.5z M392,223v19.72
+                        c-4.941,3.049-9.665,5.28-18.544,5.28c-10.318,0-15.024-3.009-20.982-6.819c-6.73-4.303-14.359-9.181-29.063-9.181
+                        c-14.697,0-22.321,4.878-29.048,9.183c-5.953,3.809-10.654,6.817-20.962,6.817c-10.296,0-14.993-3.008-20.938-6.816
+                        c-6.722-4.305-14.341-9.184-29.028-9.184c-14.693,0-22.315,4.879-29.04,9.183c-5.95,3.809-10.65,6.817-20.954,6.817
+                        c-10.3,0-14.998-3.008-20.946-6.816C145.771,236.879,138.15,232,123.46,232c-14.69,0-22.311,4.879-29.034,9.184
+                        C88.478,244.992,83.78,248,73.48,248c-8.844,0-13.558-2.22-18.48-5.259V223H392z M39,190.502c0-13.837,3.597-27.136,10.401-38.458
+                        c7.94-13.212,23.264-32.119,51.171-47.156C132.451,87.71,173.81,79,223.5,79s91.05,8.71,122.928,25.888
+                        c27.907,15.038,43.23,33.944,51.171,47.156C404.404,163.366,408,176.665,408,190.502v8.998c0,4.687-3.813,8.5-8.5,8.5h-352
+                        c-4.687,0-8.5-3.813-8.5-8.5V190.502z M55,259.624C59.764,261.59,65.6,263,73.48,263c14.69,0,22.311-4.879,29.034-9.184
+                        c5.948-3.809,10.646-6.816,20.946-6.816c10.3,0,14.999,3.008,20.947,6.816c6.724,4.305,14.344,9.184,29.034,9.184
+                        c14.693,0,22.315-4.879,29.041-9.183c5.95-3.809,10.649-6.817,20.953-6.817c10.296,0,14.993,3.008,20.938,6.816
+                        c6.722,4.305,14.341,9.184,29.028,9.184c14.696,0,22.321-4.878,29.047-9.183c5.953-3.809,10.654-6.817,20.963-6.817
+                        c10.318,0,15.024,3.009,20.981,6.818c6.73,4.304,14.359,9.182,29.063,9.182c7.913,0,13.767-1.418,18.544-3.394V272H55V259.624z
+                        M383.5,368h-320C49.991,368,39,357.01,39,343.5V335h369v8.5C408,357.01,397.01,368,383.5,368z M415.5,320H290.319
+                        c2.965-4.802,4.681-10.454,4.681-16.5c0-4.142-3.358-7.5-7.5-7.5s-7.5,3.358-7.5,7.5c0,9.098-7.402,16.5-16.5,16.5h-232
+                        c-9.098,0-16.5-7.402-16.5-16.5S22.402,287,31.5,287h136c9.098,0,16.5,7.402,16.5,16.5c0,4.142,3.358,7.5,7.5,7.5
+                        s7.5-3.358,7.5-7.5c0-6.046-1.716-11.698-4.681-16.5H415.5c9.098,0,16.5,7.402,16.5,16.5C432,312.598,424.599,320,415.5,320z"/>
+                    <path d="M191.5,167c1.919,0,3.839-0.732,5.303-2.197l8-8c2.929-2.929,2.929-7.678,0-10.606c-2.929-2.929-7.678-2.929-10.606,0l-8,8
+                        c-2.929,2.929-2.929,7.678,0,10.606C187.661,166.268,189.581,167,191.5,167z"/>
+                    <path d="M266.197,156.803c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606l-8-8
+                        c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L266.197,156.803z"/>
+                    <path d="M103.5,175c1.919,0,3.839-0.732,5.303-2.197l8-8c2.929-2.929,2.929-7.678,0-10.606c-2.929-2.929-7.678-2.929-10.606,0l-8,8
+                        c-2.929,2.929-2.929,7.678,0,10.606C99.661,174.268,101.581,175,103.5,175z"/>
+                    <path d="M151.5,135c4.142,0,7.5-3.358,7.5-7.5v-8c0-4.142-3.358-7.5-7.5-7.5s-7.5,3.358-7.5,7.5v8
+                        C144,131.642,147.358,135,151.5,135z"/>
+                    <path d="M239.5,191h8c4.142,0,7.5-3.358,7.5-7.5s-3.358-7.5-7.5-7.5h-8c-4.142,0-7.5,3.358-7.5,7.5S235.358,191,239.5,191z"/>
+                    <path d="M311.5,183c1.919,0,3.839-0.732,5.303-2.197l8-8c2.929-2.929,2.929-7.678,0-10.606c-2.929-2.929-7.678-2.929-10.606,0l-8,8
+                        c-2.929,2.929-2.929,7.678,0,10.606C307.662,182.268,309.581,183,311.5,183z"/>
+                    <path d="M218.197,116.803c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606l-8-8
+                        c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L218.197,116.803z"/>
+                    <path d="M154.197,188.803c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606l-8-8
+                        c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L154.197,188.803z"/>
+                    <path d="M278.17,115.492c5.311,0.958,10.51,2.083,15.453,3.344c0.622,0.158,1.245,0.234,1.859,0.234
+                        c3.347,0,6.397-2.257,7.262-5.648c1.023-4.014-1.4-8.097-5.414-9.121c-5.287-1.348-10.837-2.549-16.496-3.571
+                        c-4.075-0.732-7.978,1.973-8.713,6.049C271.386,110.855,274.094,114.756,278.17,115.492z"/>
+                    <path d="M324.299,129.647c25.918,12.175,39.251,27.863,45.872,38.88c2.849,4.74,4.679,10.104,5.441,15.942
+                        c0.493,3.778,3.717,6.531,7.428,6.531c0.323,0,0.65-0.021,0.979-0.064c4.107-0.536,7.002-4.3,6.467-8.407
+                        c-1.03-7.897-3.54-15.208-7.458-21.729c-7.693-12.801-23.021-30.953-52.351-44.731c-3.75-1.759-8.215-0.149-9.977,3.6
+                        C318.939,123.419,320.55,127.886,324.299,129.647z"/>
+                </g>
+                </svg>
+            </span>
+        </button>
+
+        <!-- Panel -->
+        <div
+            x-ref="panel"
+            x-show="open"
+            x-transition.origin.top.left
+            x-on:click.outside="close($refs.button)"
+            :id="$id('dropdown-button')"
+            style="display: none; box-shadow: 3px 3px 0 #0f172a"
+            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+        >
+            <div>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/blog">
+                    Blog
+                </a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/thermage">Thermage</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/flextype">Flextype</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/glowyphp">Glowy PHP</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/sponsors">
+                    Sponsors
+                </a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="http://localhost:8888/projects/awilum.github.io/about">
+                    About
+                </a>
+            </div>
+        </div>
+    </div>
+</div>        <div class="flex" style="margin-left: auto;">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline" target="_blank" href="https://github.com/Awilum">
+                GITHUB
+            </a>
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline" target="_blank" href="https://twitter.com/_awilum">
+                TWITTER
+            </a>
+        </div>
+    </header>
+
+    <main role="main" class="container mx-auto max-w-[1200px]">
+        <section>
+            <div class="flex justify-around bg-white dark:bg-slate-800 border mt-10 border-slate-900 mx-auto max-w-[480px] lg:max-w-[680px] plate-shadow">
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 text-pink-500" href="http://localhost:8888/projects/awilum.github.io/flextype">Flextype</a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 " href="http://localhost:8888/projects/awilum.github.io/flextype/downloads">Downloads</a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline " href="http://localhost:8888/projects/awilum.github.io/flextype/documentation">Documentation</a>
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype">
+    GITHUB
+  </a>
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/getflextype">
+    TWITTER
+  </a>
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://discord.gg/CCKPKVG">
+    DISCORD
+  </a>
+</div>
+
+<div class="container mx-auto pb-24">
+
+    <div class="uppercase text-center mt-24 mb-24">
+        <div>
+            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="http://localhost:8888/projects/awilum.github.io/downloads/extend/">FRONTMATTER</a></h1>
+        </div>
+                <div class="opacity-50">
+            <a class="no-underline" href="http://localhost:8888/projects/awilum.github.io/documentation">Documentation</a> <span>/</span>
+                            <a class="no-underline" href="http://localhost:8888/projects/awilum.github.io/documentation/core/">Core Concepts</a> <span>/</span>                            <a class="no-underline" href="http://localhost:8888/projects/awilum.github.io/documentation/core/serializers/">Serializers</a>                     </div>
+            </div>
+    <div class="flex flex-col-reverse lg:flex-row relative">
+        <div class="w-full lg:w-2/12">
+            <h4>Getting Started</h4>
+            <ul class="m-0 p-0 list-none">
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/getting-started/what-is-flextype" class="no-underline">What is Flextype?</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/getting-started/requirements" class="no-underline">Requirements</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/getting-started/installation" class="no-underline">Installation</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/getting-started/configuration" class="no-underline">Configuration</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/getting-started/folder-structure" class="no-underline">Folder Structure</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/getting-started/coc" class="no-underline">Code of Conduct</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/getting-started/getting-help" class="no-underline">Getting Help</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/getting-started/license" class="no-underline">License</a>
+                </li>
+            </ul>
+            <h4 class="pt-8">Core Concepts</h4>
+            <ul class="m-0 p-0 list-none">
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/core/flextype" class="no-underline">Flextype</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/core/entries" class="no-underline">Entries</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/core/plugins" class="no-underline">Plugins</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/core/parsers" class="no-underline">Parsers</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/core/serializers" class="no-underline">Serializers</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/core/registry" class="no-underline">Registry</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/core/media" class="no-underline">Media</a>
+                </li>
+            </ul>
+            <h4 class="pt-8">Rest API</h4>
+            <ul class="m-0 p-0 list-none">
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/rest-api/introduction" class="no-underline">Introduction</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/rest-api/entries" class="no-underline">Entries</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/rest-api/registry" class="no-underline">Registry</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/rest-api/media" class="no-underline">Media</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8888/projects/awilum.github.io/flextype/documentation/rest-api/images" class="no-underline">Images</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w-full lg:w-8/12 px-2">
+            <p>Any file that contains a YAML front matter block will be processed by Flextype as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Between these triple-dashed lines, you can set predefined variables or even create custom ones of your own.</p>
+<h3><a name="methods"></a> Methods</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#methods-encode">encode</a></td>
+            <td>Returns the FRONTMATTER representation of a value.</td>
+        </tr>
+        <tr>
+            <td><a href="#methods-decode">decode</a></td>
+            <td>Takes a FRONTMATTER encoded string and converts it into a PHP variable.</td>
+        </tr>
+    </tbody>
+</table>
+<h3>Methods Details</h3>
+<h5><a name="methods-encode"></a> <code>encode</code></h5>
+<p>Returns the FRONTMATTER representation of a value.</p>
+<p><strong>Examples</strong></p>
+<pre><code class="language-php">$data = [
+                'title' =&gt; 'Revelations',
+                'description' =&gt; 'While still dealing with the loss of Daniel Jackson the SGC is contacted by the Asgard who require assistance dealing with Anubis, who seems to have new shield technology that can repel Asgard weapons.',
+                'director' =&gt; 'Martin Wood',
+                'writers' =&gt; 'Brad Wright, Jonathan Glassner',
+                'stars' =&gt; 'Richard Dean Anderson, Michael Shanks, Amanda Tapping',
+                'content' =&gt; 'Osiris engages in space combat with Thor over a violation of the protected planets treaty. Freyr arrives at the SGC bringing news of Thor\'s death and asking SG-1 to mount a rescue mission to retrieve an Asgard scientist from the planet in question. Upon their arrival Heimdall informs them that Thor still lives and has been taken captive by the Goa\'uld. O\'Neill and Teal\'c transport over to the mothership to rescue him from the clutches of Anubis.'
+        ];
+
+$data = flextype('serializers')-&gt;frontmatter()-&gt;encode($data);
+
+</code></pre>
+<h5><a name="methods-decode"></a> <code>decode</code></h5>
+<p>Takes a FRONTMATTER encoded string and converts it into a PHP variable.</p>
+<p><strong>Examples</strong></p>
+<pre><code class="language-php">$frontmatter = &quot;
+    ---
+    title: Meridian
+    description: As Jackson suffers from a fatal dose of radiation, he struggles with the value of his life while his friends deal with the emotional and diplomatic repercussions.
+    director: William Waring
+    writers: Brad Wright, Jonathan Glassner
+    stars: Richard Dean Anderson, Michael Shanks, Amanda Tapping
+    ---
+    SG-1 returns from an off-world mission to P9Y-3C3 with Daniel Jackson suffering from what is likely a fatal dose of radiation. On the planet, they dealt with the country of Kelowna and their representative Jonas Quinn. That country was at the same stage of development as the United States in the 1940s and well on their way to creating an atomic weapon using Goa'uld technology found in an ancient temple. Daniel argued against the Kelownans developing such a weapon and is accused of attempting to sabotage the project. As members of the team sit by his deathbed, Daniel receives an unexpected offer from someone they once met off-world.&quot;
+
+$data = flextype('serializers')-&gt;frontmatter()-&gt;decode($frontmatter);
+
+</code></pre>
+
+        </div>
+                <div class="w-full lg:w-2/12 block relative">
+            <div class="lg:sticky lg:top-0 lg:overflow-y-auto lg:max-h-screen">
+                <div class="p-0 mb-10 lg:mb-0 lg:pl-10">
+                    <h4 class="m-0 p-0 pb-1">On This Page</h4>
+                    <ul class="list-none m-0 p-0">
+                                                    <li class="mb-1">
+                                <a class="text-decoration-none text-sm" href="#methods">Methods</a>
+                                                                <ul class="list-none m-0 ml-3 p-0">
+                                                                        <li class="mb-1">
+                                        &#8227; <a class="text-decoration-none text-sm" href="#methods-encode">encode</a>
+                                    </li>
+                                                                        <li class="mb-1">
+                                        &#8227; <a class="text-decoration-none text-sm" href="#methods-decode">decode</a>
+                                    </li>
+                                                                    </ul>
+                                                            </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+            </div>
+</div>
+        </section>
+        <footer class="p-10 text-sm text-center">
+            <p class="m-0">Copyright © <a href="https://github.com/Awilum" target="_blank">Sergey Romanenko</a></p>
+                                </footer>
+    </main>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    <script>
+        hljs.highlightAll();
+
+        var $tabs = function (target) {
+        var
+            _elemTabs = (typeof target === 'string' ? document.querySelector(target) : target),
+            _eventTabsShow,
+            _showTab = function (tabsLinkTarget) {
+                var tabsPaneTarget, tabsLinkActive, tabsPaneShow;
+                tabsPaneTarget = document.querySelector(tabsLinkTarget.getAttribute('href'));
+                tabsLinkActive = tabsLinkTarget.parentElement.querySelector('.tabs__link_active');
+                tabsPaneShow = tabsPaneTarget.parentElement.querySelector('.tabs__pane_show');
+                
+                if (tabsLinkTarget === tabsLinkActive) {
+                    return;
+                }
+                
+                if (tabsLinkActive !== null) {
+                    tabsLinkActive.classList.remove('tabs__link_active');
+                }
+
+                if (tabsPaneShow !== null) {
+                    tabsPaneShow.classList.remove('tabs__pane_show');
+                }
+                
+                
+                tabsLinkTarget.classList.add('tabs__link_active');
+                tabsPaneTarget.classList.add('tabs__pane_show');
+                document.dispatchEvent(_eventTabsShow);
+            },
+            _switchTabTo = function (tabsLinkIndex) {
+                var tabsLinks = _elemTabs.querySelectorAll('.tabs__link');
+                if (tabsLinks.length > 0) {
+                    if (tabsLinkIndex > tabsLinks.length) {
+                    tabsLinkIndex = tabsLinks.length;
+                    } else if (tabsLinkIndex < 1) {
+                    tabsLinkIndex = 1;
+                    }
+                    _showTab(tabsLinks[tabsLinkIndex - 1]);
+                }
+            };
+
+            _eventTabsShow = new CustomEvent('tab.show', { detail: _elemTabs });
+
+            _elemTabs.addEventListener('click', function(e) {
+                var target = e.target.closest('.tabs__link');
+                // завершаем выполнение функции, если кликнули не по ссылке
+                if (!target) {
+                return;
+                }
+                // отменяем стандартное действие
+                e.preventDefault();
+                _showTab(target);
+        });
+
+        return {
+            showTab: function (target) {
+            _showTab(target);
+            },
+            switchTabTo: function (index) {
+            _switchTabTo(index);
+            }
+        }
+
+        };
+
+        
+        var formatter = new Intl.NumberFormat('en-US');
+        fetch('https://raw.githubusercontent.com/Awilum/awilum/master/github-metrics.json')
+        .then(response => response.json())
+        .then(function(data) {
+            var ghCommits = document.querySelector(".github-commits");
+            var ghLinesAdded = document.querySelector(".github-lines-added");
+            var ghDeleted = document.querySelector(".github-lines-deleted");
+            var ghContibuteTo = document.querySelector(".github-repositories-contributed-to");
+
+            if (ghCommits != null) ghCommits.innerHTML = formatter.format(data.computed.commits);
+            if (ghLinesAdded != null) ghLinesAdded.innerHTML = formatter.format(data.plugins.lines.added);
+            if (ghDeleted != null) ghDeleted.innerHTML = formatter.format(data.plugins.lines.deleted);
+            if (ghContibuteTo != null) ghContibuteTo.innerHTML = formatter.format(data.user.repositoriesContributedTo.totalCount);
+        });
+
+    </script>
+        </body>
+</html>
