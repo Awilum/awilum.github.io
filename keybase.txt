@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/awilum
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://awilum.github.io
+  * I am awilum (https://keybase.io/awilum) on keybase.
+  * I have a public key ASBuf2Fuhn_PRGA1JnWLY187vFoiKuHnemJCl9ypnSE_awo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206e7f616e867fcf44603526758b635f3bbc5a222ae1e77a624297dca99d213f6b0a",
+      "host": "keybase.io",
+      "kid": "01206e7f616e867fcf44603526758b635f3bbc5a222ae1e77a624297dca99d213f6b0a",
+      "uid": "1c866c820d9d9bf1fb4c9fd91af41a19",
+      "username": "awilum"
+    },
+    "merkle_root": {
+      "ctime": 1647108285,
+      "hash": "bf2dad7ffe62ad6e5999ec1f31efd1bff7ae2f25dd40ecbb7479f949214a1f718aa41c44f4c67331c5a1b029d23d785fbf7d0888202114c3fad1a038ab7fdf10",
+      "hash_meta": "c1c64979da3ecedd2b2a8f21f257eb163053196478a46ecaea2bc6bc896a747f",
+      "seqno": 22066538
+    },
+    "service": {
+      "entropy": "xMCIime+U+WwVI6FnJjIwnzN",
+      "hostname": "awilum.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.9.2"
+  },
+  "ctime": 1647108386,
+  "expire_in": 504576000,
+  "prev": "d6defcf280735beaaf253dce5f2955954dcfcee91753823b5a3667dae1cbad51",
+  "seqno": 22,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgbn9hboZ/z0RgNSZ1i2NfO7xaIirh53piQpfcqZ0hP2sKp3BheWxvYWTESpcCFsQg1t788oBzW+qvJT3OXylVlU3PzukXU4I7WjZn2uHLrVHEIE6lcPwSHVB7fXKAjah+U3JGgXKYqv9s2r+r1EdsS919AgHCo3NpZ8RADN0Vf2xdFgYx8QvwnzfsX6CeX844dgoBuxy3dO5VERtr4gSSel5/dJKsxXb3UV7CgMHXyo+Pi2QhhTaOgyjlBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIE2WdV5fkNt7H2SzI2xRurepzAWQYCGqDgXYtYbU/TL+o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/awilum
+
+==================================================================
