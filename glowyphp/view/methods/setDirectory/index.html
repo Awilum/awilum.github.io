@@ -3,7 +3,7 @@
 <head>
             <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Contact Plugin to manage contact forms in Open Source Hybrid Content Management System">
+        <meta name="description" content="Set views directory.">
         <meta name="keywords" content="flextype, php, cms, thermage, glowyphp, html">
         <meta name="robots" content="index, follow">
         <meta name="generator" content="Powered by Flextype"/>
@@ -12,7 +12,7 @@
         <meta name="google-site-verification" content="QCOiDmY3CImL3EPYu4WstZRkkOZKPr6LGOstWU1ZGXI" />
         
         
-        <title>Get Contact Plugin for Open Source Hybrid Content Management System | Flextype</title>
+        <title>setDirectory | Sergey Romanenko</title>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css">
 
@@ -208,282 +208,108 @@
 
     <main role="main" class="container mx-auto max-w-[1200px]">
         <section>
-            
-
-<div class="container mx-auto text-plate-900 pb-24">
-    <div class="uppercase text-center mt-24 mb-24">
-        <div>
-            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="https://awilum.github.io/flextype/downloads/extend/plugins/">Contact</a></h1>
-        </div>
-        <div>
-            <span class="opacity-50"><a class="no-underline" href="https://awilum.github.io/flextype/downloads">DOWNLOADS</a></span>
-            <span class="opacity-50">/</span>
-            <span class="opacity-50"><a class="no-underline" href="https://awilum.github.io/flextype/downloads/extend">EXTEND</a></span>
-            <span class="opacity-50">/</span>
-            <span class="opacity-50"><a class="no-underline" href="https://awilum.github.io/flextype/downloads/extend/plugins">PLUGINS</a></span>
-        </div>
-    </div>
-    <div>
-                
-        
-        <div class="flex content-center flex-wrap">
-            <div class="w-full lg:w-9/12 pl-2 pr-7 text-left">
-                <div class="text-plate-900 mb-6">
-                    <div class="flex align-middle items-center">
-                        <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
-</svg></span>
-                        <div class="text-left">
-                            <h4 class="text-2xl pb-0 mb-0 block">Contact</h4>
-                            <p class="m-0">
-                                Contact plugin for Flextype.
-                            </p>
-                            <p class="m-0 text-sm">
-                                 <a class="no-underline" href="#"><b>Sergey Romanenko</b></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="mb-6 border-b border-slate-800">
-
-                <h4>Installation</h4>
-<ol>
-<li>Download &amp; Install all required dependencies.</li>
-<li>Create new folder <code>/project/plugins/contact</code>
-</li>
-<li>Download PHP Mailer Plugin and unzip plugin content to the folder <code>/project/plugins/contact</code>
-</li>
-<li>Copy <code>_project</code> folder content into your <code>project</code> folder.</li>
-</ol>
-<h4>Settings</h4>
-<table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>enabled</td>
-<td>true</td>
-<td>true or false to disable the plugin</td>
-</tr>
-<tr>
-<td>priority</td>
-<td>80</td>
-<td>contact plugin priority</td>
-</tr>
-<tr>
-<td>default_subject</td>
-<td>Default subject</td>
-<td>Default subject for email</td>
-</tr>
-<tr>
-<td>message_success</td>
-<td>Email sended.</td>
-<td>Message to show after email send.</td>
-</tr>
-<tr>
-<td>from.name</td>
-<td>Flextype</td>
-<td>From name</td>
-</tr>
-<tr>
-<td>from.email</td>
-<td>sergey.romanenko@flextype.org</td>
-<td>From email</td>
-</tr>
-<tr>
-<td>to.name</td>
-<td>Flextype</td>
-<td>Receiver name.</td>
-</tr>
-<tr>
-<td>to.email</td>
-<td>sergey.romanenko@flextype.org</td>
-<td>Receiver email</td>
-</tr>
-</tbody>
-</table>
-<h4>Create your own contact form</h4>
-<p>here is an example of simple contact form:</p>
-<pre><code class="language-yaml">title: Contact
-default_field: title
-icon:
-  name: envelope
-  set: 'fontawesome|solid'
-size: 6/12
-hide: true
-form:
-  action: 'contact.contactProcess'
-  buttons:
-    submit:
-      type: submit
-      title: 'Send'
-  fields:
-    mailbox:
-      type: hidden
-      default: test
-    subject:
-      title: 'Subject'
-      type: text
-      size: 6/12
-      validation:
-        required: true
-    email:
-      title: 'Email'
-      type: email
-      size: 6/12
-      validation:
-        required: true
-    message:
-      title: 'Message'
-      type: textarea
-      size: 12
-      validation:
-        required: true
-</code></pre>
-<p>Read documentation about creating forms here:<br />
-https://github.com/flextype-plugins/form</p>
-<h3>Usage in the PHP</h3>
-<pre><code class="language-php">// Show success message
-if (isset(flextype('flash')-&gt;getMessages()['success']) and count(flextype('flash')-&gt;getMessages()['success']) &gt; 0)
-    foreach (flextype('flash')-&gt;getMessages()['success'] as $message) {
-        echo $message;
-    }
-}
-
-// Render contact form
-echo flextype('form')
-        -&gt;render(flextype('serializers')
-                    -&gt;yaml()
-                    -&gt;decode(filesystem()
-                                -&gt;file(PATH['project'] . '/fieldsets/contact.yaml')
-                                -&gt;get()), []);
-</code></pre>
-<h3>Usage in the TWIG templates</h3>
-<pre><code class="language-twig">{# Show success message #}
-{% for message in flextype.flash.getMessages()['success'] %}
-    {{ message }}
-{% endfor %}
-
-{# Render contact form #}
-{{ flextype.form.render(flextype.serializers.yaml.decode(filesystem().file(PATH_PROJECT ~ '/fieldsets/contact.yaml').get()), {})|raw }}
-</code></pre>
-
-            </div>
-            <div class="w-full lg:w-3/12 p-2">
-                <div class="text-left p-6 mb-6 border-slate-800 dark:bg-slate-800 border plate-shadow">
-                    <div class="flex content-center flex-wrap">
-                        <div class="w-full">
-                            <p class="m-0 opacity-50">Version</p>
-                            <p>1.9.1</p>
-                        </div>
-                        <div class="w-full">
-                            <p class="m-0 opacity-50">Lincense</p>
-                            <p>MIT</p>
-                        </div>
-                        <div class="w-full">
-                            <p class="m-0 opacity-50">Dependencies</p>
-                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/flextype">flextype</a>: 0.9.16<br>
-                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/phpmailer">phpmailer</a>: &gt;=1.0.0<br>
-                                                        <p></p>
-                        </div>
-                        <div class="w-full">
-                            <p class="m-0 opacity-50">Links</p>
-                            <p>
-                                <a href="https://github.com/flextype-plugins/Contact">Homepage</a><br>                                <a href="https://github.com/flextype-plugins/contact">Documentation</a><br>                                <a href="https://github.com/flextype-plugins/contact">Changelog</a><br>                                <a href="https://github.com/flextype-plugins/Contact/issues">Issues</a>                            </p>
-                        </div>
-                    </div>
-                    <div class="flex content-center flex-wrap">
-                        <div class="w-full">
-                            <p class="m-0 opacity-50">Categories</p>
-                            <p>
-                                                                                                    <a class="no-underline" href="https://awilum.github.io/flextype/downloads/extend/plugins?category=emails">emails</a>                                                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <a class="button"
-                    href="https://github.com/flextype-plugins/contact/releases/download/v1.9.1/contact-1.9.1.zip">DOWNLOAD</a>
-                </div>
-            </div>
-        </div>
-
-        <hr class="mb-6 border-b border-plate-800">
-
-        <div class="p-2 mb-6">
-            <h4>Other plugins by Sergey Romanenko</h4>
-                            
-                                    <div class="flex content-center flex-wrap mt-5">
-                                                                                                                                    <a href="https://awilum.github.io/flextype/downloads/extend/plugins/admin" class="w-full p-2 lg:w-6/12 no-underline ">
-                                <div class="flex p-6 align-middle">
-                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M489.2 287.9h-27.4c-2.6 0-4.6 2-4.6 4.6v32h-36.6V146.2c0-2.6-2-4.6-4.6-4.6h-27.4c-2.6 0-4.6 2-4.6 4.6v32h-36.6v-32c0-2.6-2-4.6-4.6-4.6h-27.4c-2.6 0-4.6 2-4.6 4.6v32h-36.6v-32c0-6-8-4.6-11.7-4.6v-38c8.3-2 17.1-3.4 25.7-3.4 10.9 0 20.9 4.3 31.4 4.3 4.6 0 27.7-1.1 27.7-8v-60c0-2.6-2-4.6-4.6-4.6-5.1 0-15.1 4.3-24 4.3-9.7 0-20.9-4.3-32.6-4.3-8 0-16 1.1-23.7 2.9v-4.9c5.4-2.6 9.1-8.3 9.1-14.3 0-20.7-31.4-20.8-31.4 0 0 6 3.7 11.7 9.1 14.3v111.7c-3.7 0-11.7-1.4-11.7 4.6v32h-36.6v-32c0-2.6-2-4.6-4.6-4.6h-27.4c-2.6 0-4.6 2-4.6 4.6v32H128v-32c0-2.6-2-4.6-4.6-4.6H96c-2.6 0-4.6 2-4.6 4.6v178.3H54.8v-32c0-2.6-2-4.6-4.6-4.6H22.8c-2.6 0-4.6 2-4.6 4.6V512h182.9v-96c0-72.6 109.7-72.6 109.7 0v96h182.9V292.5c.1-2.6-1.9-4.6-4.5-4.6zm-288.1-4.5c0 2.6-2 4.6-4.6 4.6h-27.4c-2.6 0-4.6-2-4.6-4.6v-64c0-2.6 2-4.6 4.6-4.6h27.4c2.6 0 4.6 2 4.6 4.6v64zm146.4 0c0 2.6-2 4.6-4.6 4.6h-27.4c-2.6 0-4.6-2-4.6-4.6v-64c0-2.6 2-4.6 4.6-4.6h27.4c2.6 0 4.6 2 4.6 4.6v64z"/></svg></span>
-                                    <div class="text-left">
-                                        <h4 class="text-xl p-0 m-0 block">Admin</h4>
-                                        <p class="m-0">
-                                            Admin Panel plugin for Flextype.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                                                                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/themes-admin" class="w-full p-2 lg:w-6/12 no-underline ">
-                                <div class="flex p-6 align-middle">
-                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M167.02 309.34c-40.12 2.58-76.53 17.86-97.19 72.3-2.35 6.21-8 9.98-14.59 9.98-11.11 0-45.46-27.67-55.25-34.35C0 439.62 37.93 512 128 512c75.86 0 128-43.77 128-120.19 0-3.11-.65-6.08-.97-9.13l-88.01-73.34zM457.89 0c-15.16 0-29.37 6.71-40.21 16.45C213.27 199.05 192 203.34 192 257.09c0 13.7 3.25 26.76 8.73 38.7l63.82 53.18c7.21 1.8 14.64 3.03 22.39 3.03 62.11 0 98.11-45.47 211.16-256.46 7.38-14.35 13.9-29.85 13.9-45.99C512 20.64 486 0 457.89 0z"/></svg></span>
-                                    <div class="text-left">
-                                        <h4 class="text-xl p-0 m-0 block">Themes Admin</h4>
-                                        <p class="m-0">
-                                            Themes Admin plugin to manage site themes for the website frontend.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                                                                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/page-view-counter" class="w-full p-2 lg:w-6/12 no-underline ">
-                                <div class="flex p-6 align-middle">
-                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/></svg></span>
-                                    <div class="text-left">
-                                        <h4 class="text-xl p-0 m-0 block">Page View Counter</h4>
-                                        <p class="m-0">
-                                            Page View Counter plugin will help you to know how many readers of every page on your website.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                                                                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/feed" class="w-full p-2 lg:w-6/12 no-underline ">
-                                <div class="flex p-6 align-middle">
-                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM112 416c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm157.533 0h-34.335c-6.011 0-11.051-4.636-11.442-10.634-5.214-80.05-69.243-143.92-149.123-149.123-5.997-.39-10.633-5.431-10.633-11.441v-34.335c0-6.535 5.468-11.777 11.994-11.425 110.546 5.974 198.997 94.536 204.964 204.964.352 6.526-4.89 11.994-11.425 11.994zm103.027 0h-34.334c-6.161 0-11.175-4.882-11.427-11.038-5.598-136.535-115.204-246.161-251.76-251.76C68.882 152.949 64 147.935 64 141.774V107.44c0-6.454 5.338-11.664 11.787-11.432 167.83 6.025 302.21 141.191 308.205 308.205.232 6.449-4.978 11.787-11.432 11.787z"/></svg></span>
-                                    <div class="text-left">
-                                        <h4 class="text-xl p-0 m-0 block">Feed</h4>
-                                        <p class="m-0">
-                                            Feed plugin for Flextype supports Atom 1.0, RSS and JSON feed types and allows you to generate feeds for entries.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                                                                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/icon" class="w-full p-2 lg:w-6/12 no-underline ">
-                                <div class="flex p-6 align-middle">
-                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M444.373 359.424c0 7.168-6.144 10.24-13.312 13.312-28.672 12.288-59.392 23.552-92.16 23.552-46.08 0-67.584-28.672-122.88-28.672-39.936 0-81.92 14.336-115.712 29.696-2.048 1.024-4.096 1.024-6.144 2.048v77.824c0 21.405-16.122 34.816-33.792 34.816-19.456 0-34.816-15.36-34.816-34.816V102.4C12.245 92.16 3.029 75.776 3.029 57.344 3.029 25.6 28.629 0 60.373 0s57.344 25.6 57.344 57.344c0 18.432-8.192 34.816-22.528 45.056v31.744c4.124-1.374 58.768-28.672 114.688-28.672 65.27 0 97.676 27.648 126.976 27.648 38.912 0 81.92-27.648 92.16-27.648 8.192 0 15.36 6.144 15.36 13.312v240.64z"/></svg></span>
-                                    <div class="text-left">
-                                        <h4 class="text-xl p-0 m-0 block">Icon</h4>
-                                        <p class="m-0">
-                                            Icon plugin to present most popular icons sets in SVG format for Flextype.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                                                                        </div>
-                                    </div>
-
-        <hr class="mb-6 border-b border-slate-800">
-
-        <div class="p-2">
-            <a href="https://awilum.github.io/flextype/downloads/extend/plugins">More plugins</a>
-        </div>
-    </div>
+                <div class="flex justify-around bg-white dark:bg-slate-800 border mt-10 border-slate-900 mx-auto max-w-[300px] plate-shadow">
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 text-pink-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+  <a class="m-0 p-0 px-3 py-2 border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://github.com/glowyphp">
+    GITHUB
+  </a>
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/glowyphp">
+    TWITTER
+  </a>
 </div>
+
+
+
+            
+                    
+                    
+    
+    <div class="text-center mt-24 mb-24">
+        <h1 class="text-3xl lg:text-6xl mb-0 "><a class="no-underline" href="https://awilum.github.io/glowyphp/view/methods/setDirectory">setDirectory</a></h1>
+        <div class="text-sm lg:text-lg">
+            <span class="opacity-50"><a class="no-underline" href="https://awilum.github.io/glowyphp">PACKAGES</a></span>
+                        <span class="opacity-50">/</span>
+            <span class="opacity-50"><a class="no-underline uppercase" href="https://awilum.github.io/glowyphp/view">View</a></span>
+            <span class="opacity-50">/</span>
+            <span class="opacity-50"><a class="no-underline uppercase" href="https://awilum.github.io/glowyphp/view/methods">METHODS</a></span>
+                                </div>
+    </div>
+
+    <div class="flex flex-wrap">
+        <div class="w-full lg:w-9/12">
+            <pre><code class="language-php">/**
+ * Set views directory.
+ *
+ * @param string $directory Views directory.
+ */
+public static function setDirectory(string $directory): void
+</code></pre>
+<h4>Examples</h4>
+<pre><code class="language-php">View::setDirectory(__DIR__);
+</code></pre>
+
+                    </div>
+        <div class="pt-4 pb-4 lg:pl-10 lg:w-3/12">
+            <div class="lg:sticky lg:top-0 lg:overflow-y-auto lg:max-h-screen">
+                <h4 class="mb-2">Getting Started</h4>
+                <ul>
+                                        <li class="mb-2"><a href="https://awilum.github.io/glowyphp/view/getting-started/installation">Installation</a></li>
+                                        <li class="mb-2"><a href="https://awilum.github.io/glowyphp/view/getting-started/usage">Usage</a></li>
+                                    </ul>
+                <h4 class="mt-4 mb-2">Methods</h4>
+                                    <ul>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="https://awilum.github.io/glowyphp/view/methods/getData" class="block">
+                                getData
+                                <small class="opacity-75 block base-color">
+                                    Share data with all views.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="https://awilum.github.io/glowyphp/view/methods/getShared" class="block">
+                                getShared
+                                <small class="opacity-75 block base-color">
+                                    Share data with all views.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="https://awilum.github.io/glowyphp/view/methods/setDirectory" class="block">
+                                setDirectory
+                                <small class="opacity-75 block base-color">
+                                    Set views directory.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="https://awilum.github.io/glowyphp/view/methods/setExtension" class="block">
+                                setExtension
+                                <small class="opacity-75 block base-color">
+                                    Set views extension.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="https://awilum.github.io/glowyphp/view/methods/share" class="block">
+                                share
+                                <small class="opacity-75 block base-color">
+                                    Share data with all views.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="https://awilum.github.io/glowyphp/view/methods/with" class="block">
+                                with
+                                <small class="opacity-75 block base-color">
+                                    Share data with all views.
+                                </small>
+                            </a>
+                        </li>
+                                            </ul>
+                            </div>
+        </div>
+    </div>
         </section>
         <footer class="py-20 text-sm text-center">
             <p class="m-0">Copyright © <a href="https://awilum.github.io/about">Sergey Romanenko</a></p>
