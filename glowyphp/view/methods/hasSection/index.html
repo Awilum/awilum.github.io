@@ -246,8 +246,10 @@
  */
 public function hasSection(string $section): bool
 </code></pre>
-<h4>Exampless</h4>
-<pre><code class="language-php">$view-&gt;hasSection('foo');
+<h4>Examples</h4>
+<pre><code class="language-php">if ($view-&gt;hasSection('foo')) {
+    // do something...
+}
 </code></pre>
 
                     </div>
@@ -260,6 +262,14 @@ public function hasSection(string $section): bool
                                     </ul>
                 <h4 class="mt-4 mb-2">Methods</h4>
                                     <ul>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="https://awilum.github.io/glowyphp/view/methods/appendSection" class="block">
+                                appendSection
+                                <small class="opacity-75 block base-color">
+                                    Start new append section.
+                                </small>
+                            </a>
+                        </li>
                                                 <li class="mb-2 list-none ml-0">
                             <a href="https://awilum.github.io/glowyphp/view/methods/normalizeName" class="block">
                                 denormalizeName
@@ -401,6 +411,14 @@ public function hasSection(string $section): bool
                                 normalizeName
                                 <small class="opacity-75 block base-color">
                                     Normalize view name.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="https://awilum.github.io/glowyphp/view/methods/prependSection" class="block">
+                                prependSection
+                                <small class="opacity-75 block base-color">
+                                    Start new prepend section.
                                 </small>
                             </a>
                         </li>
