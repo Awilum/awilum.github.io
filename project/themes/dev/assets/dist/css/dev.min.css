@@ -1731,18 +1731,19 @@ a.brand-logo:hover > svg {
   margin: 0px;
 }
 
-.m-2 {
-  margin: 0.5rem;
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
 }
 
 .mt-10 {
@@ -1781,6 +1782,10 @@ a.brand-logo:hover > svg {
   margin-top: 1.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -1809,10 +1814,6 @@ a.brand-logo:hover > svg {
   margin-bottom: 0.25rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -1831,6 +1832,10 @@ a.brand-logo:hover > svg {
 
 .mr-12 {
   margin-right: 3rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
 }
 
 .mt-2 {
@@ -1855,10 +1860,6 @@ a.brand-logo:hover > svg {
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.ml-0 {
-  margin-left: 0px;
 }
 
 .block {
@@ -1949,12 +1950,16 @@ a.brand-logo:hover > svg {
   width: 12rem;
 }
 
-.w-10 {
-  width: 2.5rem;
+.w-8\/12 {
+  width: 66.666667%;
 }
 
-.w-40 {
-  width: 10rem;
+.w-9\/12 {
+  width: 75%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
 }
 
 .max-w-\[1200px\] {
@@ -1985,10 +1990,6 @@ a.brand-logo:hover > svg {
   list-style-type: disc;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col-reverse {
   flex-direction: column-reverse;
 }
@@ -2011,6 +2012,10 @@ a.brand-logo:hover > svg {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .overflow-hidden {
@@ -2053,6 +2058,10 @@ a.brand-logo:hover > svg {
   border-top-width: 2px;
 }
 
+.border-r {
+  border-right-width: 1px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -2065,12 +2074,12 @@ a.brand-logo:hover > svg {
   border-left-width: 1px;
 }
 
-.border-r {
-  border-right-width: 1px;
-}
-
 .border-b-0 {
   border-bottom-width: 0px;
+}
+
+.border-dashed {
+  border-style: dashed;
 }
 
 .border-slate-900 {
@@ -2118,16 +2127,6 @@ a.brand-logo:hover > svg {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-slate-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
 .stroke-slate-300 {
   stroke: #cbd5e1;
 }
@@ -2156,8 +2155,14 @@ a.brand-logo:hover > svg {
   padding: 2rem;
 }
 
-.p-10 {
-  padding: 2.5rem;
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .px-6 {
@@ -2180,16 +2185,6 @@ a.brand-logo:hover > svg {
   padding-bottom: 0.5rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
@@ -2205,24 +2200,14 @@ a.brand-logo:hover > svg {
   padding-right: 0.75rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pl-8 {
@@ -2317,10 +2302,6 @@ a.brand-logo:hover > svg {
   padding-left: 0px;
 }
 
-.pt-14 {
-  padding-top: 3.5rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -2347,6 +2328,11 @@ a.brand-logo:hover > svg {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -2365,11 +2351,6 @@ a.brand-logo:hover > svg {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-3xl {
@@ -2398,6 +2379,11 @@ a.brand-logo:hover > svg {
   font-style: italic;
 }
 
+.text-slate-900 {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -2406,11 +2392,6 @@ a.brand-logo:hover > svg {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-slate-900 {
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 .text-pink-500 {
@@ -2433,6 +2414,10 @@ a.brand-logo:hover > svg {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.opacity-70 {
+  opacity: 0.7;
+}
+
 .opacity-50 {
   opacity: 0.5;
 }
@@ -2447,10 +2432,6 @@ a.brand-logo:hover > svg {
 
 .opacity-60 {
   opacity: 0.6;
-}
-
-.opacity-70 {
-  opacity: 0.7;
 }
 
 .shadow-md {
@@ -2487,59 +2468,14 @@ a.brand-logo:hover > svg {
 }
 
 @media (prefers-color-scheme: dark) {
-  .dark\:border-slate-300 {
-    --tw-border-opacity: 1;
-    border-color: rgb(203 213 225 / var(--tw-border-opacity));
-  }
-
-  .dark\:border-slate-700 {
-    --tw-border-opacity: 1;
-    border-color: rgb(51 65 85 / var(--tw-border-opacity));
-  }
-
   .dark\:border-slate-800 {
     --tw-border-opacity: 1;
     border-color: rgb(30 41 59 / var(--tw-border-opacity));
   }
 
-  .dark\:border-slate-900 {
+  .dark\:border-slate-300 {
     --tw-border-opacity: 1;
-    border-color: rgb(15 23 42 / var(--tw-border-opacity));
-  }
-
-  .dark\:border-gray-700 {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81 / var(--tw-border-opacity));
-  }
-
-  .dark\:border-gray-800 {
-    --tw-border-opacity: 1;
-    border-color: rgb(31 41 55 / var(--tw-border-opacity));
-  }
-
-  .dark\:border-gray-900 {
-    --tw-border-opacity: 1;
-    border-color: rgb(17 24 39 / var(--tw-border-opacity));
-  }
-
-  .dark\:border-black {
-    --tw-border-opacity: 1;
-    border-color: rgb(0 0 0 / var(--tw-border-opacity));
-  }
-
-  .dark\:border-gray-200 {
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235 / var(--tw-border-opacity));
-  }
-
-  .dark\:border-gray-300 {
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219 / var(--tw-border-opacity));
-  }
-
-  .dark\:border-gray-500 {
-    --tw-border-opacity: 1;
-    border-color: rgb(107 114 128 / var(--tw-border-opacity));
+    border-color: rgb(203 213 225 / var(--tw-border-opacity));
   }
 
   .dark\:bg-slate-800 {
@@ -2565,14 +2501,14 @@ a.brand-logo:hover > svg {
     stroke: #cbd5e1;
   }
 
-  .dark\:text-slate-300 {
-    --tw-text-opacity: 1;
-    color: rgb(203 213 225 / var(--tw-text-opacity));
-  }
-
   .dark\:text-slate-200 {
     --tw-text-opacity: 1;
     color: rgb(226 232 240 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-slate-300 {
+    --tw-text-opacity: 1;
+    color: rgb(203 213 225 / var(--tw-text-opacity));
   }
 }
 
