@@ -237,12 +237,12 @@
             <pre><code class="language-php">use Glowy\View\View;
 
 // Create View instance using public method __construct()
-$strings = new View();
+$view = new View('welcome');
 
 // Create View instance using global helper function view()
-$strings = view();
+$view = view('welcome');
 </code></pre>
-<h3>Extending</h3>
+<h3>Extending <a name="extend"></a></h3>
 <p>View are &quot;macroable&quot;, which allows you to add additional methods to the View class at run time. For example, the following code adds a customMethod method to the View class:
 <br><br></p>
 <pre><code class="language-php">use Glowy\Strings\View;
@@ -260,6 +260,11 @@ echo $view-&gt;customMethod(2, 2);
 <h4>The above example will output:</h4>
 <pre><code class="language-text">2
 4
+</code></pre>
+<h3>Escaping helpers <a name="escaping-helpers"></a></h3>
+<pre><code class="language-php">echo e(&quot;&lt;a href='test'&gt;Test&lt;/a&gt;&quot;);
+
+// &amp;lt;a href=&amp;#039;test&amp;#039;&amp;gt;Test&amp;lt;/a&amp;gt;
 </code></pre>
 
                     </div>
