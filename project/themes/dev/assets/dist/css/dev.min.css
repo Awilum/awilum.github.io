@@ -2512,6 +2512,12 @@ a.brand-logo:hover > svg {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:sticky {
     position: -webkit-sticky;
@@ -2614,6 +2620,14 @@ a.brand-logo:hover > svg {
     width: 41.666667%;
   }
 
+  .lg\:w-11\/12 {
+    width: 91.666667%;
+  }
+
+  .lg\:w-1\/12 {
+    width: 8.333333%;
+  }
+
   .lg\:max-w-\[680px\] {
     max-width: 680px;
   }
@@ -2671,6 +2685,14 @@ a.brand-logo:hover > svg {
     padding-left: 2.5rem;
   }
 
+  .lg\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .lg\:text-right {
+    text-align: right;
+  }
+
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -2694,5 +2716,10 @@ a.brand-logo:hover > svg {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
