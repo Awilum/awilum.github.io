@@ -2302,6 +2302,10 @@ a.brand-logo:hover > svg {
   padding-left: 0px;
 }
 
+.pt-32 {
+  padding-top: 8rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2564,6 +2568,10 @@ a.brand-logo:hover > svg {
     display: block;
   }
 
+  .lg\:inline-block {
+    display: inline-block;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -2673,6 +2681,11 @@ a.brand-logo:hover > svg {
     padding-right: 2.5rem;
   }
 
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .lg\:pl-40 {
     padding-left: 10rem;
   }
@@ -2687,6 +2700,14 @@ a.brand-logo:hover > svg {
 
   .lg\:pl-8 {
     padding-left: 2rem;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .lg\:pl-12 {
+    padding-left: 3rem;
   }
 
   .lg\:text-right {
