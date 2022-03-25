@@ -231,11 +231,18 @@ View Package provides basic methods for creating extendable PHP Views.
 </h2>
 <h3>Features</h3>
 <ul>
-<li>Native PHP Views, no new syntax to learn.</li>
-<li>Increase code reuse with view <a href="#extends-and-ingeritance">extends and inheritance</a>.</li>
-<li>Built-in <a href="#escaping-helpers">escaping helpers</a>.</li>
-<li>Easy to <a href="#extend">extend</a> core using macros.</li>
-<li>Framework-agnostic, will work with any project.</li>
+<li>
+<strong>✓</strong> Native PHP Views, no new syntax to learn.</li>
+<li>
+<strong>✓</strong> Increase code reuse with view <a href="#extends-and-ingeritance">extends and inheritance</a>.</li>
+<li>
+<strong>✓</strong> Built-in <a href="#escaping-helpers">escaping helpers</a>.</li>
+<li>
+<strong>✓</strong> Easy to <a href="#extend">extend</a> core using macros.</li>
+<li>
+<strong>✓</strong> Data <a href="{{ url() }}/glowyphp/view/methods/share/">sharing</a> across views.</li>
+<li>
+<strong>✓</strong> Framework-agnostic, will work with any project.</li>
 </ul>
 <h3>Installation</h3>
 <h4>With <a href="https://getcomposer.org">Composer</a></h4>
@@ -249,6 +256,9 @@ $view = new View('welcome');
 
 // Create View instance using global helper function view()
 $view = view('welcome');
+
+// Display View.
+$view-&gt;display();
 </code></pre>
 <h3>Extending <a name="extend"></a></h3>
 <p>View are &quot;macroable&quot;, which allows you to add additional methods to the View class at run time. For example, the following code adds a customMethod method to the View class:
