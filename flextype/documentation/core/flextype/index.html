@@ -14,19 +14,21 @@
         
         <title>Core | Flextype</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
 
-                
                 
                                     <link href="https://awilum.github.io/project/themes/dev/assets/dist/css/dev.min.css" rel="stylesheet">
                     
             </head>
 <body class="antialiased text-slate-900 dark:text-slate-300 bg-white dark:bg-slate-900">
-    <header class="bg-white dark:bg-slate-800 border-b border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] plate-shadow">
-        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-bold text-center border-r border-slate-900 brand-logo no-underline text-pink-500">
+    <header class="bg-white dark:bg-slate-800 dark:border-slate-500 border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg">
+        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 dark:border-slate-500 brand-logo no-underline text-pink-500">
             AWILUM
         </a>
-        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-semibold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
             Blog
         </a>
         <div class="flex justify-center hidden lg:block">
@@ -58,7 +60,7 @@
                     :aria-expanded="open"
                     :aria-controls="$id('dropdown-button')"
                     type="button"
-                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 "
                 >
                     <span>Projects</span>
                 </button>
@@ -70,14 +72,14 @@
                     x-transition.origin.top.left
                     x-on:click.outside="close($refs.button)"
                     :id="$id('dropdown-button')"
-                    style="display: none; box-shadow: 3px 3px 0 #0f172a"
-                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 rounded overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+                    style="display: none;"
+                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 dark:border-slate-500 rounded-lg overflow-hidden z-50 dark:bg-slate-800"
                 >
                     <div>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +113,7 @@
             :aria-expanded="open"
             :aria-controls="$id('dropdown-button')"
             type="button"
-            class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+            class="outline-none hover:text-pink-500 dark:border-slate-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
         >
             <span>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -174,26 +176,23 @@
             x-transition.origin.top.left
             x-on:click.outside="close($refs.button)"
             :id="$id('dropdown-button')"
-            style="display: none; box-shadow: 3px 3px 0 #0f172a"
-            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+            style="display: none;"
+            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 dark:border-slate-500 plate-shadow"
         >
             <div>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/blog">
-                    Blog
-                </a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                 
             </div>
         </div>
     </div>
 </div>        <div class="flex" style="margin-left: auto;">
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
                 Sponsors
             </a>
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline" href="https://awilum.github.io/about">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline" href="https://awilum.github.io/about">
                 About
             </a>
         </div>
@@ -201,34 +200,33 @@
 
     <main role="main" class="container mx-auto max-w-[1200px]">
         <section>
-            <div class="flex justify-around bg-white dark:bg-slate-800 border rounded-md mt-10 border-slate-900 mx-auto lg:max-w-[680px]">
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 text-pink-500" href="https://awilum.github.io/flextype">Flextype</a>
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 " href="https://awilum.github.io/flextype/downloads">Downloads</a>
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/flextype/documentation">Documentation</a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype">
+            <div class="flex justify-around bg-white dark:bg-slate-800  dark:border-slate-500 border rounded-md mt-14 border-slate-900 mx-auto lg:max-w-[780px]">
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 text-pink-500" href="https://awilum.github.io/flextype">Flextype</a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 " href="https://awilum.github.io/flextype/downloads">Downloads</a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/flextype/documentation">Documentation</a>
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype">
     GITHUB
   </a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/getflextype">
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/getflextype">
     TWITTER
   </a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://discord.gg/CCKPKVG">
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://discord.gg/CCKPKVG">
     DISCORD
   </a>
 </div>
 
 <div class="container mx-auto pb-24 px-4 lg:px-0">
-
     <div class="uppercase text-center mt-24 mb-24">
         <div>
-            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="https://awilum.github.io/downloads/extend/">Flextype</a></h1>
+            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="https://awilum.github.io/flextype/documentation/core/flextype">Flextype</a></h1>
         </div>
                 <div class="opacity-50">
-            <a class="no-underline" href="https://awilum.github.io/documentation">Documentation</a> <span>/</span>
-                            <a class="no-underline" href="https://awilum.github.io/documentation/core/">Core Concepts</a>                     </div>
+            <a class="no-underline" href="https://awilum.github.io/flextype/documentation">Documentation</a> <span>/</span>
+                            <a class="no-underline" href="https://awilum.github.io/flextype/documentation/core/">Core Concepts</a>                     </div>
             </div>
     <div class="flex flex-col-reverse lg:flex-row relative">
-        <div class="w-full lg:w-2/12">
-            <h4>Getting Started</h4>
+        <div class="w-full lg:w-3/12">
+            <h4 class="mt-0 pt-0">Getting Started</h4>
             <ul class="m-0 p-0 list-none">
                 <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/what-is-flextype" class="no-underline">What is Flextype?</a>
@@ -246,6 +244,9 @@
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/folder-structure" class="no-underline">Folder Structure</a>
                 </li>
                 <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/getting-started/api" class="no-underline">API Reference</a>
+                </li>
+                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/coc" class="no-underline">Code of Conduct</a>
                 </li>
                 <li class="">
@@ -257,16 +258,10 @@
             </ul>
             <h4 class="pt-8">Core Concepts</h4>
             <ul class="m-0 p-0 list-none">
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/flextype" class="no-underline">Flextype</a>
-                </li>
-                <li class="">
+                                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/entries" class="no-underline">Entries</a>
                 </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/plugins" class="no-underline">Plugins</a>
-                </li>
-                <li class="">
+                                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/parsers" class="no-underline">Parsers</a>
                 </li>
                 <li class="">
@@ -275,8 +270,17 @@
                 <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/registry" class="no-underline">Registry</a>
                 </li>
+            </ul>
+            <h4 class="pt-8">Console</h4>
+            <ul class="m-0 p-0 list-none">
                 <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/media" class="no-underline">Media</a>
+                    <a href="https://awilum.github.io/flextype/documentation/console/entries" class="no-underline">Entries</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/console/tokens" class="no-underline">Tokens</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/console/cache" class="no-underline">Cache</a>
                 </li>
             </ul>
             <h4 class="pt-8">Rest API</h4>
@@ -288,32 +292,116 @@
                     <a href="https://awilum.github.io/flextype/documentation/rest-api/entries" class="no-underline">Entries</a>
                 </li>
                 <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/rest-api/tokens" class="no-underline">Tokens</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/rest-api/cache" class="no-underline">Cache</a>
+                </li>
+                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/rest-api/registry" class="no-underline">Registry</a>
-                </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/rest-api/media" class="no-underline">Media</a>
-                </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/rest-api/images" class="no-underline">Images</a>
                 </li>
             </ul>
         </div>
-        <div class="w-full lg:w-8/12 px-2">
-            <p>Common part of Flextype is a Flextype Core Class that extends <a href="//slimframework.com">Slim Framework</a> that we are using under the hood. Slim is amazing PHP micro framework that helps quickly write simple yet powerful web applications and APIs.</p>
+        <div class="w-full lg:w-9/12">
+                        <div class="w-full block relative">
+                <div class="">
+                    <div class="p-0 mb-10">
+                        <div class="lg:flex">
+                            <div class="w-full p-6 bg-white dark:bg-slate-900 lg:mr-2 border rounded-lg border-slate-900 dark:border-slate-500 plate-shadow">
+                                <h3 class="text-xl font-bold pb-4 pt-0 mb-4 mt-0 p-0 border-b border-slate-900 dark:border-slate-500 flex items-center">
+                                    Table of Contents
+                                </h3>
+                                <ul class="font-semibold">
+                                                                <li>
+                                    <a class="no-underline" href="#methods"><span class="mr-1">1.</span> Methods</a>
+                                                                                                            <ul class="ml-4 mb-0">
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-getInstance"><span class="mr-1">1.1</span> getInstance</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-getVersion"><span class="mr-1">1.2</span> getVersion</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-container"><span class="mr-1">1.3</span> container</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-app"><span class="mr-1">1.4</span> app</a>
+                                        </li>
+                                                                            </ul>
+                                                                    </li>
+                                                                <li>
+                                    <a class="no-underline" href="#helpers"><span class="mr-1">2.</span> Helpers</a>
+                                                                                                            <ul class="ml-4 mb-0">
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-flextype"><span class="mr-1">2.1</span> flextype</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-app"><span class="mr-1">2.2</span> app</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-container"><span class="mr-1">2.3</span> container</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-console"><span class="mr-1">2.4</span> console</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-emitter"><span class="mr-1">2.5</span> emitter</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-cache"><span class="mr-1">2.6</span> cache</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-entries"><span class="mr-1">2.7</span> entries</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-parsers"><span class="mr-1">2.8</span> parsers</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-serializers"><span class="mr-1">2.9</span> serializers</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-logger"><span class="mr-1">2.10</span> logger</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-session"><span class="mr-1">2.11</span> session</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-registry"><span class="mr-1">2.12</span> registry</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-actions"><span class="mr-1">2.13</span> actions</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-csrf"><span class="mr-1">2.14</span> csrf</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-plugins"><span class="mr-1">2.15</span> plugins</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#helpers-slugify"><span class="mr-1">2.16</span> slugify</a>
+                                        </li>
+                                                                            </ul>
+                                                                    </li>
+                                                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <p>A common part of Flextype is a Flextype Core Class that extends <a href="//slimframework.com">Slim Framework</a> that we are using under the hood. Slim is an amazing PHP micro-framework that helps quickly write simple yet powerful web applications and APIs.</p>
 <p><strong>Slim Framework Resources</strong></p>
 <ul>
 <li>
 <strong>Website:</strong> <a href="//slimframework.com">slimframework.com</a>
 </li>
 <li>
-<strong>Documentation:</strong> <a href="//slimframework.com/docs/v3/">slimframework.com/docs/v3/</a>
+<strong>Documentation:</strong> <a href="//slimframework.com/docs/v4/">slimframework.com/docs/v4/</a>
 </li>
 <li>
 <strong>Repository:</strong> <a href="//github.com/slimphp/Slim">github.com/slimphp/Slim</a>
 </li>
 </ul>
-<p>Getting back to Flextype Core.</p>
-<p>With help of Flextype Core Class we are able to access all features and develop a new amazing features for Flextype powered project.</p>
+<p>With the help of Flextype Core Class, you can access all built-in features and develop new amazing features for Flextype powered projects.</p>
 <h3><a name="methods"></a> Methods</h3>
 <table>
     <thead>
@@ -333,7 +421,11 @@
         </tr>
         <tr>
             <td><a href="#methods-container">container</a></td>
-            <td>Get and Set Dependency Injection Container.</td>
+            <td>Get Flextype Application Container.</td>
+        </tr>
+        <tr>
+            <td><a href="#methods-app">app</a></td>
+            <td>Get Flextype Application.</td>
         </tr>
     </tbody>
 </table>
@@ -341,11 +433,15 @@
 <h5><a name="methods-getInstance"></a> <code>getInstance</code></h5>
 <p>Get the available Flextype Application instance.</p>
 <pre><code class="language-php">/**
- * Returns Flextype Instance
+ * Returns Flextype Instance.
  *
- * @param ContainerInterface|array $container Container.
+ * Gets the instance via lazy initialization (created on first usage)
+ *
+ * @return Flextype Returns the current Flextype Instance.
+ *
+ * @access public
  */
-public static function getInstance($container = []): Flextype
+public static function getInstance(?ContainerInterface $container = null): Flextype
 </code></pre>
 <p><strong>Examples</strong></p>
 <pre><code class="language-php">$instance = Flextype::getInstance();
@@ -353,7 +449,11 @@ public static function getInstance($container = []): Flextype
 <h5><a name="methods-getVersion"></a> <code>getVersion</code></h5>
 <p>Get current Flextype version.</p>
 <pre><code class="language-php">/**
- * Returns the current Flextype version
+ * Get the current Flextype version.
+ *
+ * @return string Returns the current Flextype version.
+ *
+ * @access public
  */
 public function getVersion(): string
 </code></pre>
@@ -361,61 +461,19 @@ public function getVersion(): string
 <pre><code class="language-php">$version = Flextype::getInstance()-&gt;getVersion();
 </code></pre>
 <h5><a name="methods-container"></a> <code>container</code></h5>
-<p>Get and Set Dependency Injection Container.</p>
+<p>Get Flextype Application Container.</p>
 <pre><code class="language-php">/**
- * Get/Set Dependency Injection Container.
+ * Get Flextype Application Container.
  *
- * @param string|null $name DI Container name.
+ * @return Container Returns Flextype Application Container.
+ *
+ * @access public
  */
-public function container(?string $name = null)
+public function container(): Container
 </code></pre>
 <p><strong>Examples</strong></p>
-<pre><code class="language-php">// Get container object.
-$container = Flextype::getInstance()-&gt;container();
-
-// Set new container.
-Flextype::getInstance()-&gt;container()['name'] = function () {
-    return new ServiceName();
-};
-
-// Get specific container object by name.
-$entries = Flextype::getInstance()-&gt;container('entries');
+<pre><code class="language-php">$container = Flextype::getInstance()-&gt;container();
 </code></pre>
-<p>We recommend to use our <code>flextype</code> helper function to access all Flexype Application methods, set and get containers.</p>
-<p><strong>Examples</strong></p>
-<pre><code class="language-php">// Get the available Flextype Application instance.
-$instance = flextype();
-
-// Get current Flextype version.
-$version = flextype()-&gt;getVersion();
-
-// Get container object.
-$container = flextype()-&gt;container();
-
-// Set new container.
-flextype()-&gt;container()['name'] = function () {
-    return new ServiceName();
-};
-
-// Get specific container object by name
-$entries = flextype()-&gt;container('entries');
-
-// ... or even better :)
-$entries = flextype('entries');
-</code></pre>
-<p>With <code>flextype</code> helper function you can access Flexype Application and all available Slim Framework methods.</p>
-<p><strong>Examples</strong></p>
-<pre><code class="language-php">// Add new GET route.
-flextype()
-  -&gt;get('/dashboard', 'DashboardController:index')
-  -&gt;setName('admin.dashboard.index');
-
-// Add new POST route.
-flextype()
-  -&gt;get('/save-form', 'CustomServiceController:saveForm')
-  -&gt;setName('service.form.index');
-</code></pre>
-<p>Check all available methods: <a href="//slimframework.com/docs/v3/">slimframework.com/docs/v3/</a></p>
 <h3>Services <a name="services"></a></h3>
 <p>List of available registered services in Flextype Dependency Injection Container.</p>
 <table>
@@ -428,11 +486,11 @@ flextype()
     <tbody>
         <tr>
             <td>session</td>
-            <td><a href="https://github.com/atomastic/session">documentation</a></td>
+            <td><a href="https://awilum.github.io/glowyphp/session/">documentation</a></td>
         </tr>
         <tr>
             <td>registry</td>
-            <td><a href="https://github.com/atomastic/registry">documentation</a></td>
+            <td><a href="https://awilum.github.io/glowyphp/registry/">documentation</a></td>
         </tr>
         <tr>
             <td>logger</td>
@@ -452,27 +510,23 @@ flextype()
         </tr>
         <tr>
             <td>parsers</td>
-            <td><a href="https://awilum.github.io/documentation/core/parsers">documentation</a></td>
+            <td><a href="https://awilum.github.io/flextype/documentation/core/parsers">documentation</a></td>
         </tr>
         <tr>
             <td>serializers</td>
-            <td><a href="https://awilum.github.io/documentation/core/serializers">documentation</a></td>
-        </tr>
-        <tr>
-            <td>images</td>
-            <td><a href="https://glide.thephpleague.com">documentation</a></td>
+            <td><a href="https://awilum.github.io/flextype/documentation/core/serializers">documentation</a></td>
         </tr>
         <tr>
             <td>entries</td>
-            <td><a href="https://awilum.github.io/documentation/core/entries">documentation</a></td>
-        </tr>
-        <tr>
-            <td>media</td>
-            <td><a href="https://awilum.github.io/documentation/core/media">documentation</a></td>
+            <td><a href="https://awilum.github.io/flextype/documentation/core/entries">documentation</a></td>
         </tr>
         <tr>
             <td>plugins</td>
-            <td><a href="https://awilum.github.io/documentation/core/plugins">documentation</a></td>
+            <td><a href="https://awilum.github.io/flextype/documentation/core/plugins">documentation</a></td>
+        </tr>
+        <tr>
+            <td>plugins</td>
+            <td><a href="https://awilum.github.io/flextype/documentation/core/console">console</a></td>
         </tr>
         <tr>
             <td>cors</td>
@@ -482,33 +536,7 @@ flextype()
 </table>
 
         </div>
-                <div class="w-full lg:w-2/12 block relative">
-            <div class="lg:sticky lg:top-0 lg:overflow-y-auto lg:max-h-screen">
-                <div class="p-0 mb-10 lg:mb-0 lg:pl-10">
-                    <h4 class="m-0 p-0 pb-1">On This Page</h4>
-                    <ul class="list-none m-0 p-0">
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#methods">Methods</a>
-                                                                <ul class="list-none m-0 ml-3 p-0">
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#methods-getInstance">getInstance</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#methods-getVersion">getVersion</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#methods-container">container</a>
-                                    </li>
-                                                                    </ul>
-                                                            </li>
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#services">Services</a>
-                                                            </li>
-                                            </ul>
-                </div>
-            </div>
-        </div>
-            </div>
+    </div>
 </div>
         </section>
         <footer class="py-20 text-sm text-center">

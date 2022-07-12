@@ -14,19 +14,21 @@
         
         <title>Filesystem | Sergey Romanenko</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
 
-                
                 
                                     <link href="https://awilum.github.io/project/themes/dev/assets/dist/css/dev.min.css" rel="stylesheet">
                     
             </head>
 <body class="antialiased text-slate-900 dark:text-slate-300 bg-white dark:bg-slate-900">
-    <header class="bg-white dark:bg-slate-800 border-b border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] plate-shadow">
-        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-bold text-center border-r border-slate-900 brand-logo no-underline text-pink-500">
+    <header class="bg-white dark:bg-slate-800 dark:border-slate-500 border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg">
+        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 dark:border-slate-500 brand-logo no-underline text-pink-500">
             AWILUM
         </a>
-        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-semibold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
             Blog
         </a>
         <div class="flex justify-center hidden lg:block">
@@ -58,7 +60,7 @@
                     :aria-expanded="open"
                     :aria-controls="$id('dropdown-button')"
                     type="button"
-                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 "
                 >
                     <span>Projects</span>
                 </button>
@@ -70,14 +72,14 @@
                     x-transition.origin.top.left
                     x-on:click.outside="close($refs.button)"
                     :id="$id('dropdown-button')"
-                    style="display: none; box-shadow: 3px 3px 0 #0f172a"
-                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 rounded overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+                    style="display: none;"
+                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 dark:border-slate-500 rounded-lg overflow-hidden z-50 dark:bg-slate-800"
                 >
                     <div>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +113,7 @@
             :aria-expanded="open"
             :aria-controls="$id('dropdown-button')"
             type="button"
-            class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+            class="outline-none hover:text-pink-500 dark:border-slate-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
         >
             <span>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -174,26 +176,23 @@
             x-transition.origin.top.left
             x-on:click.outside="close($refs.button)"
             :id="$id('dropdown-button')"
-            style="display: none; box-shadow: 3px 3px 0 #0f172a"
-            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+            style="display: none;"
+            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 dark:border-slate-500 plate-shadow"
         >
             <div>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/blog">
-                    Blog
-                </a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                 
             </div>
         </div>
     </div>
 </div>        <div class="flex" style="margin-left: auto;">
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
                 Sponsors
             </a>
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline" href="https://awilum.github.io/about">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline" href="https://awilum.github.io/about">
                 About
             </a>
         </div>
@@ -201,12 +200,12 @@
 
     <main role="main" class="container mx-auto max-w-[1200px]">
         <section>
-                <div class="flex justify-around bg-white dark:bg-slate-800 border rounded-md mt-10 border-slate-900 mx-auto lg:max-w-[300px]">
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 text-pink-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-  <a class="m-0 p-0 px-3 py-2 border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://github.com/glowyphp">
+                <div class="flex justify-around bg-white dark:bg-slate-800 border rounded-lg mt-10 border-slate-900 dark:border-slate-500 mx-auto lg:max-w-[300px]">
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 text-pink-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+  <a class="m-0 p-0 px-3 py-2 border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://github.com/glowyphp">
     GITHUB
   </a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/glowyphp">
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/glowyphp">
     TWITTER
   </a>
 </div>

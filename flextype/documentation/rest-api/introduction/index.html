@@ -14,19 +14,21 @@
         
         <title>Introducion | Sergey Romanenko</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
 
-                
                 
                                     <link href="https://awilum.github.io/project/themes/dev/assets/dist/css/dev.min.css" rel="stylesheet">
                     
             </head>
 <body class="antialiased text-slate-900 dark:text-slate-300 bg-white dark:bg-slate-900">
-    <header class="bg-white dark:bg-slate-800 border-b border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] plate-shadow">
-        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-bold text-center border-r border-slate-900 brand-logo no-underline text-pink-500">
+    <header class="bg-white dark:bg-slate-800 dark:border-slate-500 border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg">
+        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 dark:border-slate-500 brand-logo no-underline text-pink-500">
             AWILUM
         </a>
-        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-semibold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
             Blog
         </a>
         <div class="flex justify-center hidden lg:block">
@@ -58,7 +60,7 @@
                     :aria-expanded="open"
                     :aria-controls="$id('dropdown-button')"
                     type="button"
-                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 "
                 >
                     <span>Projects</span>
                 </button>
@@ -70,14 +72,14 @@
                     x-transition.origin.top.left
                     x-on:click.outside="close($refs.button)"
                     :id="$id('dropdown-button')"
-                    style="display: none; box-shadow: 3px 3px 0 #0f172a"
-                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 rounded overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+                    style="display: none;"
+                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 dark:border-slate-500 rounded-lg overflow-hidden z-50 dark:bg-slate-800"
                 >
                     <div>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +113,7 @@
             :aria-expanded="open"
             :aria-controls="$id('dropdown-button')"
             type="button"
-            class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+            class="outline-none hover:text-pink-500 dark:border-slate-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
         >
             <span>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -174,26 +176,23 @@
             x-transition.origin.top.left
             x-on:click.outside="close($refs.button)"
             :id="$id('dropdown-button')"
-            style="display: none; box-shadow: 3px 3px 0 #0f172a"
-            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+            style="display: none;"
+            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 dark:border-slate-500 plate-shadow"
         >
             <div>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/blog">
-                    Blog
-                </a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                 
             </div>
         </div>
     </div>
 </div>        <div class="flex" style="margin-left: auto;">
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
                 Sponsors
             </a>
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline" href="https://awilum.github.io/about">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline" href="https://awilum.github.io/about">
                 About
             </a>
         </div>
@@ -201,34 +200,33 @@
 
     <main role="main" class="container mx-auto max-w-[1200px]">
         <section>
-            <div class="flex justify-around bg-white dark:bg-slate-800 border rounded-md mt-10 border-slate-900 mx-auto lg:max-w-[680px]">
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 text-pink-500" href="https://awilum.github.io/flextype">Flextype</a>
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 " href="https://awilum.github.io/flextype/downloads">Downloads</a>
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/flextype/documentation">Documentation</a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype">
+            <div class="flex justify-around bg-white dark:bg-slate-800  dark:border-slate-500 border rounded-md mt-14 border-slate-900 mx-auto lg:max-w-[780px]">
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 text-pink-500" href="https://awilum.github.io/flextype">Flextype</a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 " href="https://awilum.github.io/flextype/downloads">Downloads</a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/flextype/documentation">Documentation</a>
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype">
     GITHUB
   </a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/getflextype">
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/getflextype">
     TWITTER
   </a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://discord.gg/CCKPKVG">
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://discord.gg/CCKPKVG">
     DISCORD
   </a>
 </div>
 
 <div class="container mx-auto pb-24 px-4 lg:px-0">
-
     <div class="uppercase text-center mt-24 mb-24">
         <div>
-            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="https://awilum.github.io/downloads/extend/">Introducion</a></h1>
+            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="https://awilum.github.io/flextype/documentation/rest-api/introduction">Introducion</a></h1>
         </div>
                 <div class="opacity-50">
-            <a class="no-underline" href="https://awilum.github.io/documentation">Documentation</a> <span>/</span>
-                            <a class="no-underline" href="https://awilum.github.io/documentation/rest-api/">Rest API</a>                     </div>
+            <a class="no-underline" href="https://awilum.github.io/flextype/documentation">Documentation</a> <span>/</span>
+                            <a class="no-underline" href="https://awilum.github.io/flextype/documentation/rest-api/">Rest API</a>                     </div>
             </div>
     <div class="flex flex-col-reverse lg:flex-row relative">
-        <div class="w-full lg:w-2/12">
-            <h4>Getting Started</h4>
+        <div class="w-full lg:w-3/12">
+            <h4 class="mt-0 pt-0">Getting Started</h4>
             <ul class="m-0 p-0 list-none">
                 <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/what-is-flextype" class="no-underline">What is Flextype?</a>
@@ -246,6 +244,9 @@
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/folder-structure" class="no-underline">Folder Structure</a>
                 </li>
                 <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/getting-started/api" class="no-underline">API Reference</a>
+                </li>
+                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/coc" class="no-underline">Code of Conduct</a>
                 </li>
                 <li class="">
@@ -257,16 +258,10 @@
             </ul>
             <h4 class="pt-8">Core Concepts</h4>
             <ul class="m-0 p-0 list-none">
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/flextype" class="no-underline">Flextype</a>
-                </li>
-                <li class="">
+                                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/entries" class="no-underline">Entries</a>
                 </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/plugins" class="no-underline">Plugins</a>
-                </li>
-                <li class="">
+                                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/parsers" class="no-underline">Parsers</a>
                 </li>
                 <li class="">
@@ -275,8 +270,17 @@
                 <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/registry" class="no-underline">Registry</a>
                 </li>
+            </ul>
+            <h4 class="pt-8">Console</h4>
+            <ul class="m-0 p-0 list-none">
                 <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/media" class="no-underline">Media</a>
+                    <a href="https://awilum.github.io/flextype/documentation/console/entries" class="no-underline">Entries</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/console/tokens" class="no-underline">Tokens</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/console/cache" class="no-underline">Cache</a>
                 </li>
             </ul>
             <h4 class="pt-8">Rest API</h4>
@@ -288,35 +292,63 @@
                     <a href="https://awilum.github.io/flextype/documentation/rest-api/entries" class="no-underline">Entries</a>
                 </li>
                 <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/rest-api/tokens" class="no-underline">Tokens</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/rest-api/cache" class="no-underline">Cache</a>
+                </li>
+                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/rest-api/registry" class="no-underline">Registry</a>
-                </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/rest-api/media" class="no-underline">Media</a>
-                </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/rest-api/images" class="no-underline">Images</a>
                 </li>
             </ul>
         </div>
-        <div class="w-full lg:w-8/12 px-2">
-            <h2><a name="rest-apis"></a> Rest API's</h2>
-<p>Flextype provides APIs organized around <b>Re</b>presentational <b>S</b>tate <b>T</b>ransfer (REST) for working with your content.</p>
+        <div class="w-full lg:w-9/12">
+                        <div class="w-full block relative">
+                <div class="">
+                    <div class="p-0 mb-10">
+                        <div class="lg:flex">
+                            <div class="w-full p-6 bg-white dark:bg-slate-900 lg:mr-2 border rounded-lg border-slate-900 dark:border-slate-500 plate-shadow">
+                                <h3 class="text-xl font-bold pb-4 pt-0 mb-4 mt-0 p-0 border-b border-slate-900 dark:border-slate-500 flex items-center">
+                                    Table of Contents
+                                </h3>
+                                <ul class="font-semibold">
+                                                                <li>
+                                    <a class="no-underline" href="#rest-apis"><span class="mr-1">1.</span> Rest API's</a>
+                                                                                                        </li>
+                                                                <li>
+                                    <a class="no-underline" href="#authentication"><span class="mr-1">2.</span> Authentication</a>
+                                                                                                        </li>
+                                                                <li>
+                                    <a class="no-underline" href="#http-details"><span class="mr-1">3.</span> HTTP details</a>
+                                                                                                        </li>
+                                                                <li>
+                                    <a class="no-underline" href="#errors"><span class="mr-1">4.</span> Errors</a>
+                                                                                                        </li>
+                                                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <h2><a name="rest-apis"></a> Rest API's</h2>
+<p>Flextype provides APIs organized around <b>Re</b>presentational <b>S</b>tate <b>T</b>ransfer (REST) to manage the data. The API has predictable resource-oriented URLs, relies on standard HTTP status codes, and uses JSON for input and output.</p>
 <h4>Entries</h4>
-<p>The Flextype Entries API organized around Representational State Transfer (REST) for delivering entries from Flextype to apps, websites and other. Entries is delivered as JSON data.</p>
-<p>For more details <a href="https://awilum.github.io/documentation/rest-api/entries">read the reference guide for the Entries API</a>.</p>
+<p>For more details <a href="https://awilum.github.io/flextype/documentation/rest-api/entries">read the reference guide for the Entries API</a>.</p>
+<h4>Tokens</h4>
+<p>For more details <a href="https://awilum.github.io/flextype/documentation/rest-api/tokens">read the reference guide for the Tokens API</a>.</p>
+<h4>Cache</h4>
+<p>For more details <a href="https://awilum.github.io/flextype/documentation/rest-api/cache">read the reference guide for the Cache API</a>.</p>
 <h4>Registry</h4>
-<p>The Flextype Registry API organized around Representational State Transfer (REST) for delivering registry from Flextype to apps, websites and other. Entries is delivered as JSON data.</p>
-<p>For more details <a href="https://awilum.github.io/documentation/rest-api/registry">read the reference guide for the Registry API</a>.</p>
-<h4>Media</h4>
-<p>The Flextype Media Files API and Media Folders API organized around Representational State Transfer (REST) for delivering Files and Folders from Flextype to apps, websites and other. Files is delivered as JSON data.</p>
-<p>For more details <a href="https://awilum.github.io/documentation/rest-api/media">read the reference guide for the Media API</a>.</p>
-<h4>Images</h4>
-<p>The Flextype Images allows the retrieval and manipulation of image files referenced from Flextype site uploads directory to apps, websites and other media. Images are delivered as files.</p>
-<p>For more details <a href="https://awilum.github.io/documentation/rest-api/images">read the reference guide for the Images</a>.</p>
+<p>For more details <a href="https://awilum.github.io/flextype/documentation/rest-api/registry">read the reference guide for the Registry API</a>.</p>
 <h3><a name="authentication"></a> Authentication</h3>
 <p>To retrieve or store content with Flextype, you first need to authenticate your app with an token. Flextype offers three APIs, and each requires separate authentication.</p>
 <p>We recommend using different access tokens for different environments in your development process. For example, use one for your production environment and another for staging or continuous integration. This allows you to revoke them individually in the future and manage your delivery channels independently.</p>
 <p>You should send the authentication token <code>token</code> to an API as a query parameter for <code>GET</code> requests and for all <code>POST</code>, <code>PUT</code>, <code>PATCH</code>, <code>DELETE</code> requests you should send the access authentication token <code>access_token</code> to an API inside request body.</p>
+<h4>Create a new token</h4>
+<p>Go to your console and run the following command:</p>
+<pre><code class="language-text">bin/flextype tokens:create
+</code></pre>
+<p>This will create a new token and a hashed access token.</p>
 <h3><a name="http-details"></a> HTTP details</h3>
 <h4>Cross-origin resource sharing</h4>
 <p><a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS (Cross-origin resource sharing)</a> allows JavaScript web apps to make HTTP requests to other domains. This is important for third party web apps using Flextype, as without CORS, a JavaScript app hosted on example.com couldn't access our APIs because they're hosted on another.com which is a different domain.</p>
@@ -330,47 +362,31 @@
     <thead>
         <tr>
             <th>HTTP status code</th>
-            <th>Error code</th>
-            <th>Description</th>
+            <th>Title</th>
+            <th>Message</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>401 Unauthorized</td>
-            <td>AccessTokenInvalid</td>
-            <td>Incorrect authentication credentials.</td>
+            <td>400</td>
+            <td>Bad Request</td>
+            <td>Validation for this particular item failed</td>
         </tr>
         <tr>
-            <td>404 Not Found</td>
-            <td>NotFound</td>
-            <td>The requested resource or endpoint could not be found.</td>
+            <td>401</td>
+            <td>Unauthorized</td>
+            <td>Token is wrong</td>
+        </tr>
+        <tr>
+            <td>404</td>
+            <td>Not Found</td>
+            <td>The requested resource or endpoint could not be found</td>
         </tr>
     </tbody>
 </table>
 
         </div>
-                <div class="w-full lg:w-2/12 block relative">
-            <div class="lg:sticky lg:top-0 lg:overflow-y-auto lg:max-h-screen">
-                <div class="p-0 mb-10 lg:mb-0 lg:pl-10">
-                    <h4 class="m-0 p-0 pb-1">On This Page</h4>
-                    <ul class="list-none m-0 p-0">
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#rest-apis">Rest API&#039;s</a>
-                                                            </li>
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#authentication">Authentication</a>
-                                                            </li>
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#http-details">HTTP details</a>
-                                                            </li>
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#errors">Errors</a>
-                                                            </li>
-                                            </ul>
-                </div>
-            </div>
-        </div>
-            </div>
+    </div>
 </div>
         </section>
         <footer class="py-20 text-sm text-center">

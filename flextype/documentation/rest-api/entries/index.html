@@ -14,19 +14,21 @@
         
         <title>Entries Rest API | Flextype</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
 
-                
                 
                                     <link href="https://awilum.github.io/project/themes/dev/assets/dist/css/dev.min.css" rel="stylesheet">
                     
             </head>
 <body class="antialiased text-slate-900 dark:text-slate-300 bg-white dark:bg-slate-900">
-    <header class="bg-white dark:bg-slate-800 border-b border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] plate-shadow">
-        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-bold text-center border-r border-slate-900 brand-logo no-underline text-pink-500">
+    <header class="bg-white dark:bg-slate-800 dark:border-slate-500 border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg">
+        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 dark:border-slate-500 brand-logo no-underline text-pink-500">
             AWILUM
         </a>
-        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-semibold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
             Blog
         </a>
         <div class="flex justify-center hidden lg:block">
@@ -58,7 +60,7 @@
                     :aria-expanded="open"
                     :aria-controls="$id('dropdown-button')"
                     type="button"
-                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 "
                 >
                     <span>Projects</span>
                 </button>
@@ -70,14 +72,14 @@
                     x-transition.origin.top.left
                     x-on:click.outside="close($refs.button)"
                     :id="$id('dropdown-button')"
-                    style="display: none; box-shadow: 3px 3px 0 #0f172a"
-                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 rounded overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+                    style="display: none;"
+                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 dark:border-slate-500 rounded-lg overflow-hidden z-50 dark:bg-slate-800"
                 >
                     <div>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +113,7 @@
             :aria-expanded="open"
             :aria-controls="$id('dropdown-button')"
             type="button"
-            class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+            class="outline-none hover:text-pink-500 dark:border-slate-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
         >
             <span>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -174,26 +176,23 @@
             x-transition.origin.top.left
             x-on:click.outside="close($refs.button)"
             :id="$id('dropdown-button')"
-            style="display: none; box-shadow: 3px 3px 0 #0f172a"
-            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+            style="display: none;"
+            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 dark:border-slate-500 plate-shadow"
         >
             <div>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/blog">
-                    Blog
-                </a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                 
             </div>
         </div>
     </div>
 </div>        <div class="flex" style="margin-left: auto;">
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
                 Sponsors
             </a>
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline" href="https://awilum.github.io/about">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline" href="https://awilum.github.io/about">
                 About
             </a>
         </div>
@@ -201,34 +200,33 @@
 
     <main role="main" class="container mx-auto max-w-[1200px]">
         <section>
-            <div class="flex justify-around bg-white dark:bg-slate-800 border rounded-md mt-10 border-slate-900 mx-auto lg:max-w-[680px]">
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 text-pink-500" href="https://awilum.github.io/flextype">Flextype</a>
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 " href="https://awilum.github.io/flextype/downloads">Downloads</a>
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/flextype/documentation">Documentation</a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype">
+            <div class="flex justify-around bg-white dark:bg-slate-800  dark:border-slate-500 border rounded-md mt-14 border-slate-900 mx-auto lg:max-w-[780px]">
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 text-pink-500" href="https://awilum.github.io/flextype">Flextype</a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 " href="https://awilum.github.io/flextype/downloads">Downloads</a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/flextype/documentation">Documentation</a>
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype">
     GITHUB
   </a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/getflextype">
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/getflextype">
     TWITTER
   </a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://discord.gg/CCKPKVG">
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://discord.gg/CCKPKVG">
     DISCORD
   </a>
 </div>
 
 <div class="container mx-auto pb-24 px-4 lg:px-0">
-
     <div class="uppercase text-center mt-24 mb-24">
         <div>
-            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="https://awilum.github.io/downloads/extend/">Entries</a></h1>
+            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="https://awilum.github.io/flextype/documentation/rest-api/entries">Entries</a></h1>
         </div>
                 <div class="opacity-50">
-            <a class="no-underline" href="https://awilum.github.io/documentation">Documentation</a> <span>/</span>
-                            <a class="no-underline" href="https://awilum.github.io/flextype/documentation/rest-api/">Rest API</a>                     </div>
+            <a class="no-underline" href="https://awilum.github.io/flextype/documentation">Documentation</a> <span>/</span>
+                            <a class="no-underline" href="https://awilum.github.io/flextype/flextype/documentation/rest-api/">Rest API</a>                     </div>
             </div>
     <div class="flex flex-col-reverse lg:flex-row relative">
-        <div class="w-full lg:w-2/12">
-            <h4>Getting Started</h4>
+        <div class="w-full lg:w-3/12">
+            <h4 class="mt-0 pt-0">Getting Started</h4>
             <ul class="m-0 p-0 list-none">
                 <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/what-is-flextype" class="no-underline">What is Flextype?</a>
@@ -246,6 +244,9 @@
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/folder-structure" class="no-underline">Folder Structure</a>
                 </li>
                 <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/getting-started/api" class="no-underline">API Reference</a>
+                </li>
+                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/coc" class="no-underline">Code of Conduct</a>
                 </li>
                 <li class="">
@@ -257,16 +258,10 @@
             </ul>
             <h4 class="pt-8">Core Concepts</h4>
             <ul class="m-0 p-0 list-none">
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/flextype" class="no-underline">Flextype</a>
-                </li>
-                <li class="">
+                                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/entries" class="no-underline">Entries</a>
                 </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/plugins" class="no-underline">Plugins</a>
-                </li>
-                <li class="">
+                                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/parsers" class="no-underline">Parsers</a>
                 </li>
                 <li class="">
@@ -275,8 +270,17 @@
                 <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/registry" class="no-underline">Registry</a>
                 </li>
+            </ul>
+            <h4 class="pt-8">Console</h4>
+            <ul class="m-0 p-0 list-none">
                 <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/media" class="no-underline">Media</a>
+                    <a href="https://awilum.github.io/flextype/documentation/console/entries" class="no-underline">Entries</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/console/tokens" class="no-underline">Tokens</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/console/cache" class="no-underline">Cache</a>
                 </li>
             </ul>
             <h4 class="pt-8">Rest API</h4>
@@ -288,64 +292,114 @@
                     <a href="https://awilum.github.io/flextype/documentation/rest-api/entries" class="no-underline">Entries</a>
                 </li>
                 <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/rest-api/tokens" class="no-underline">Tokens</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/rest-api/cache" class="no-underline">Cache</a>
+                </li>
+                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/rest-api/registry" class="no-underline">Registry</a>
-                </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/rest-api/media" class="no-underline">Media</a>
-                </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/rest-api/images" class="no-underline">Images</a>
                 </li>
             </ul>
         </div>
-        <div class="w-full lg:w-8/12 px-2">
-            <p>The Flextype Entries API organized around Representational State Transfer (REST) for delivering entries from Flextype to apps, websites and other. Entries is delivered as JSON data.</p>
+        <div class="w-full lg:w-9/12">
+                        <div class="w-full block relative">
+                <div class="">
+                    <div class="p-0 mb-10">
+                        <div class="lg:flex">
+                            <div class="w-full p-6 bg-white dark:bg-slate-900 lg:mr-2 border rounded-lg border-slate-900 dark:border-slate-500 plate-shadow">
+                                <h3 class="text-xl font-bold pb-4 pt-0 mb-4 mt-0 p-0 border-b border-slate-900 dark:border-slate-500 flex items-center">
+                                    Table of Contents
+                                </h3>
+                                <ul class="font-semibold">
+                                                                <li>
+                                    <a class="no-underline" href="#overview"><span class="mr-1">1.</span> Overview</a>
+                                                                                                        </li>
+                                                                <li>
+                                    <a class="no-underline" href="#endpoints"><span class="mr-1">2.</span> Endpoints</a>
+                                                                                                            <ul class="ml-4 mb-0">
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#endpoint-fetch"><span class="mr-1">2.1</span> <span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(59 130 246); color: white;">GET</span> /api/v1/entries</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#endpoint-create"><span class="mr-1">2.2</span> <span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(34 197 94); color: white;">POST</span> /api/v1/entries</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#endpoint-update"><span class="mr-1">2.3</span> <span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(20 184 166); color: white;">PATCH</span> /api/v1/entries</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#endpoint-move"><span class="mr-1">2.4</span> <span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(249 115 22); color: white;">PUT</span> /api/v1/entries</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#endpoint-copy"><span class="mr-1">2.5</span> <span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(249 115 22); color: white;">PUT</span> /api/v1/entries/copy</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#endpoint-delete"><span class="mr-1">2.6</span> <span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(244 63 94); color: white;">DELETE</span> /api/v1/entries</a>
+                                        </li>
+                                                                            </ul>
+                                                                    </li>
+                                                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <p>The Flextype Entries API organized around Representational State Transfer (REST) for delivering entries from Flextype to apps, websites and other. Entries is delivered as JSON data.</p>
 <h3><a name="endpoints"></a> Endpoints</h3>
 <table>
     <thead>
         <tr>
             <th>Method</th>
             <th>Endpoint</th>
+            <th>Route name</th>
             <th>Description</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>GET</td>
-            <td>/api/entries</td>
-            <td>Fetch entry or entries collection.</td>
+            <td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(59 130 246); color: white;">GET</span></td>
+            <td><a href="#endpoint-fetch">/api/v1/entries</a></td>
+            <td>entries.fetch</td>
+            <td>Fetch entry (entries collection).</td>
         </tr>
         <tr>
-            <td>POST</td>
-            <td>/api/entries</td>
+            <td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(34 197 94); color: white;">POST</span></td>
+            <td><a href="#endpoint-create">/api/v1/entries</a></td>
+            <td>entries.create</td>
             <td>Create entry.</td>
         </tr>
         <tr>
-            <td>PATCH</td>
-            <td>/api/entries</td>
+            <td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(20 184 166); color: white;">PATCH</span></td>
+            <td><a href="#endpoint-update">/api/v1/entries</td>
+            <td>entries.update</td>
             <td>Update entry.</td>
         </tr>
         <tr>
-            <td>PUT</td>
-            <td>/api/entries</td>
-            <td>Move entry.</td>
+            <td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(249 115 22); color: white;">PUT</span></td>
+            <td><a href="#endpoint-move">/api/v1/entries</a></td>
+            <td>entries.move</td>
+            <td>Move entry (entries collection).</td>
         </tr>
         <tr>
-            <td>PUT</td>
-            <td>/api/entries/copy</td>
-            <td>Copy entry or entries collection.</td>
+            <td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(249 115 22); color: white;">PUT</span></td>
+            <td><a href="#endpoint-copy">/api/v1/entries/copy</a></td>
+            <td>entries.copy</td>
+            <td>Copy entry (entries collection).</td>
         </tr>
         <tr>
-            <td>DELETE</td>
-            <td>/api/entries</td>
-            <td>Delete entry.</td>
+            <td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(244 63 94); color: white;">DELETE</span></td>
+            <td><a href="#endpoint-delete">/api/v1/entries</a></td>
+            <td>entries.delete</td>
+            <td>Delete entry (entries collection).</td>
         </tr>
     </tbody>
 </table>
-<h3><a name="fetch-entry"></a> Fetch entry</h3>
+<br>
+<h5><a name="endpoint-fetch"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(59 130 246); color: white;">GET</span> <code>/api/v1/entries</code></h5>
+<p>Fetch entry or entries collection.</p>
 <h5>Fetch single entry</h5>
 <div class="file-header">Request</div>
-<pre><code>GET /api/entries?id=YOUR_ENTRY_ID&amp;[options]&amp;token=YOUR_ENTRIES_TOKEN
+<pre><code>GET /api/v1/entries?id=YOUR_ENTRY_ID&amp;[options]&amp;token=YOUR_ENTRIES_TOKEN
 </code></pre>
 <h5>Query</h5>
 <table>
@@ -379,11 +433,11 @@
 <h5>Examples</h5>
 <p>Fetch Movies Entry</p>
 <div class="file-header">Request</div>
-<pre><code>GET /api/entries?id=movies&amp;token=6f047babd1894064fbf7662080a9a2f0
+<pre><code>GET /api/v1/entries?id=movies&amp;token=6f047babd1894064fbf7662080a9a2f0
 </code></pre>
 <h5>Fetch entries collection</h5>
 <div class="file-header">Request</div>
-<pre><code>GET /api/entries?id=YOUR_ENTRY_ID&amp;options[collection]=true&amp;token=YOUR_ENTRIES_TOKEN
+<pre><code>GET /api/v1/entries?id=YOUR_ENTRY_ID&amp;options[collection]=true&amp;token=YOUR_ENTRIES_TOKEN
 </code></pre>
 <h5>Query</h5>
 <table>
@@ -417,27 +471,24 @@
 <h5>Examples</h5>
 <p>Fetch Movies Collection</p>
 <div class="file-header">Request</div>
-<pre><code>GET /api/entries?id=movies&amp;options[collection]=true&amp;token=6f047babd1894064fbf7662080a9a2f0
+<pre><code>GET /api/v1/entries?id=movies&amp;options[collection]=true&amp;token=6f047babd1894064fbf7662080a9a2f0
 </code></pre>
 <p>Fetch Movies Collection where <strong>director</strong> is equal to <strong>Cathy Yan</strong></p>
 <div class="file-header">Request</div>
-<pre><code>GET /api/entries?id=movies&amp;options[collection]=true&amp;options[filter][where][0][key]=director&amp;options[filter][where][9][operator]=eq&amp;options[filter][where][0][value]=Cathy+Yan&amp;token=6f047babd1894064fbf7662080a9a2f0
+<pre><code>GET /api/v1/entries?id=movies&amp;options[collection]=true&amp;options[filter][where][0][key]=director&amp;options[filter][where][9][operator]=eq&amp;options[filter][where][0][value]=Cathy+Yan&amp;token=6f047babd1894064fbf7662080a9a2f0
 </code></pre>
 <p>Fetch Movies Collection where <strong>director</strong> is equal to <strong>Cathy Yan</strong> and where year is equal to <strong>2020</strong> and where genre is contains <strong>action</strong></p>
 <div class="file-header">Request</div>
-<pre><code>GET /api/entries?id=movies&amp;options[collection]=true&amp;options[filter][where][0][key]=director&amp;options[filter][where][0][operator]=eq&amp;options[filter][where][0][value]=Cathy+Yan&amp;options[filter][where][1][key]=year&amp;options[filter][where][1][operator]=eq&amp;options[filter][where][1][value]=2020&amp;options[filter][where][2][key]=genre&amp;options[filter][where][1][operator]=contains&amp;options[filter][where][1][value]=drama&amp;token=6f047babd1894064fbf7662080a9a2f0
+<pre><code>GET /api/v1/entries?id=movies&amp;options[collection]=true&amp;options[filter][where][0][key]=director&amp;options[filter][where][0][operator]=eq&amp;options[filter][where][0][value]=Cathy+Yan&amp;options[filter][where][1][key]=year&amp;options[filter][where][1][operator]=eq&amp;options[filter][where][1][value]=2020&amp;options[filter][where][2][key]=genre&amp;options[filter][where][1][operator]=contains&amp;options[filter][where][1][value]=drama&amp;token=6f047babd1894064fbf7662080a9a2f0
 </code></pre>
 <h5>Options</h5>
-<p>We can send options for the query to search items in a collection that matches the specific filter's conditions.</p>
+<p>You can send options for the query to search items in a collection that matches the specific filter's conditions.</p>
 <p><code>options</code> is an array of valid values for <a href="s://github.com/flextype/flextype/blob/dev/src/flextype/Support/Helpers/FilterHelper.php">filter()</a> and <a href="s://github.com/flextype/flextype/blob/dev/src/flextype/Support/Helpers/FindHelper.php">find()</a> helpers.</p>
-<h5>Extending</h5>
-<p>We can you use any custom macroabe function assigned to Entries API in the fetch query with help off <code>&amp;options[method]=</code></p>
-<h5>Examples</h5>
-<pre><code>GET /api/entries?id=movies&amp;options[method]=fetchFromOtherDB&amp;token=6f047babd1894064fbf7662080a9a2f0
-</code></pre>
-<h3><a name="create-entry"></a> Create entry</h3>
+<br>
+<h5><a name="endpoint-create"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(34 197 94); color: white;">POST</span> <code>/api/v1/entries</code></h5>
+<p>Create entry.</p>
 <div class="file-header">Request</div>
-<pre><code>POST /api/entries
+<pre><code>POST /api/v1/entries
 </code></pre>
 <h5>Body</h5>
 <table>
@@ -476,7 +527,7 @@
 <h5>Examples</h5>
 <p>Create new entry <strong>platform</strong></p>
 <div class="file-header">Request</div>
-<pre><code>POST /api/entries
+<pre><code>POST /api/v1/entries
 </code></pre>
 <div class="file-header">Body</div>
 <pre><code class="language-json">{
@@ -506,9 +557,11 @@
     }
 }
 </code></pre>
-<h3><a name="update-entry"></a> Update entry</h3>
+<br>
+<h5><a name="endpoint-update"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(20 184 166); color: white;">PATCH</span> <code>/api/v1/entries</code></h5>
+<p>Update entry.</p>
 <div class="file-header">Request</div>
-<pre><code>PATCH /api/entries
+<pre><code>PATCH /api/v1/entries
 </code></pre>
 <h5>Body</h5>
 <table>
@@ -547,7 +600,7 @@
 <h5>Examples</h5>
 <p>Update content for entry <strong>platform</strong></p>
 <div class="file-header">Request</div>
-<pre><code>PATCH /api/entries
+<pre><code>PATCH /api/v1/entries
 </code></pre>
 <div class="file-header">Body</div>
 <pre><code class="language-json">{
@@ -576,9 +629,11 @@
     }
 }
 </code></pre>
-<h3><a name="move-entry"></a> Move entry</h3>
+<br>
+<h5><a name="endpoint-move"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(249 115 22); color: white;">PUT</span> <code>/api/v1/entries</code></h5>
+<p>Move entry.</p>
 <div class="file-header">Request</div>
-<pre><code>PUT /api/entries
+<pre><code>PUT /api/v1/entries
 </code></pre>
 <h5>Body</h5>
 <table>
@@ -617,7 +672,7 @@
 <h5>Examples</h5>
 <p>Move entry <strong>platform</strong> to the <strong>the-platform</strong></p>
 <div class="file-header">Request</div>
-<pre><code>PUT /api/entries
+<pre><code>PUT /api/v1/entries
 </code></pre>
 <div class="file-header">Body</div>
 <pre><code class="language-json">{
@@ -646,7 +701,7 @@
 </code></pre>
 <p>Move entry <strong>movies/the-platform</strong> to the <strong>movies/2019/the-platform</strong></p>
 <div class="file-header">Request</div>
-<pre><code>PUT /api/entries
+<pre><code>PUT /api/v1/entries
 </code></pre>
 <div class="file-header">Body</div>
 <pre><code class="language-json">{
@@ -673,9 +728,11 @@
     }
 }
 </code></pre>
-<h3><a name="copy-entry"></a> Copy entry</h3>
+<br>
+<h5><a name="endpoint-copy"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(249 115 22); color: white;">PUT</span> <code>/api/v1/entries/copy</code></h5>
+<p>Copy entry (entries collection).</p>
 <div class="file-header">Request</div>
-<pre><code>PUT /api/entries/copy
+<pre><code>PUT /api/v1/entries/copy
 </code></pre>
 <h5>Body</h5>
 <table>
@@ -714,7 +771,7 @@
 <h5>Examples</h5>
 <p>Copy for entry <strong>movies/2019/the-platform</strong> to <strong>movies/horror/the-platform</strong></p>
 <div class="file-header">Request</div>
-<pre><code>PUT /api/entries/copy
+<pre><code>PUT /api/v1/entries/copy
 </code></pre>
 <div class="file-header">Body</div>
 <pre><code class="language-json">{
@@ -741,9 +798,11 @@
     }
 }
 </code></pre>
-<h3><a name="delete-entry"></a> Delete entry</h3>
+<br>
+<h5><a name="endpoint-delete"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(244 63 94); color: white;">DELETE</span> <code>/api/v1/entries</code></h5>
+<p>Delete entry.</p>
 <div class="file-header">Request</div>
-<pre><code>DELETE /api/entries
+<pre><code>DELETE /api/v1/entries
 </code></pre>
 <h5>Body</h5>
 <table>
@@ -777,7 +836,7 @@
 <h5>Examples</h5>
 <p>Delete entry <strong>movies/horror/the-platform</strong></p>
 <div class="file-header">Request</div>
-<pre><code>DELETE /api/entries
+<pre><code>DELETE /api/v1/entries
 </code></pre>
 <div class="file-header">Body</div>
 <pre><code class="language-json">{
@@ -788,37 +847,7 @@
 </code></pre>
 
         </div>
-                <div class="w-full lg:w-2/12 block relative">
-            <div class="lg:sticky lg:top-0 lg:overflow-y-auto lg:max-h-screen">
-                <div class="p-0 mb-10 lg:mb-0 lg:pl-10">
-                    <h4 class="m-0 p-0 pb-1">On This Page</h4>
-                    <ul class="list-none m-0 p-0">
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#endpoints">Endpoints</a>
-                                                            </li>
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#fetch-entry">Fetch entry</a>
-                                                            </li>
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#create-entry">Create entry</a>
-                                                            </li>
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#update-entry">Update entry</a>
-                                                            </li>
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#move-entry">Move entry</a>
-                                                            </li>
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#copy-entry">Copy entry</a>
-                                                            </li>
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#delete-entry">Delete entry</a>
-                                                            </li>
-                                            </ul>
-                </div>
-            </div>
-        </div>
-            </div>
+    </div>
 </div>
         </section>
         <footer class="py-20 text-sm text-center">

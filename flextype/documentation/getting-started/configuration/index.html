@@ -14,19 +14,21 @@
         
         <title>Configuration | Flextype</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
 
-                
                 
                                     <link href="https://awilum.github.io/project/themes/dev/assets/dist/css/dev.min.css" rel="stylesheet">
                     
             </head>
 <body class="antialiased text-slate-900 dark:text-slate-300 bg-white dark:bg-slate-900">
-    <header class="bg-white dark:bg-slate-800 border-b border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] plate-shadow">
-        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-bold text-center border-r border-slate-900 brand-logo no-underline text-pink-500">
+    <header class="bg-white dark:bg-slate-800 dark:border-slate-500 border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg">
+        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 dark:border-slate-500 brand-logo no-underline text-pink-500">
             AWILUM
         </a>
-        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-semibold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
             Blog
         </a>
         <div class="flex justify-center hidden lg:block">
@@ -58,7 +60,7 @@
                     :aria-expanded="open"
                     :aria-controls="$id('dropdown-button')"
                     type="button"
-                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 "
                 >
                     <span>Projects</span>
                 </button>
@@ -70,14 +72,14 @@
                     x-transition.origin.top.left
                     x-on:click.outside="close($refs.button)"
                     :id="$id('dropdown-button')"
-                    style="display: none; box-shadow: 3px 3px 0 #0f172a"
-                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 rounded overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+                    style="display: none;"
+                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 dark:border-slate-500 rounded-lg overflow-hidden z-50 dark:bg-slate-800"
                 >
                     <div>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +113,7 @@
             :aria-expanded="open"
             :aria-controls="$id('dropdown-button')"
             type="button"
-            class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+            class="outline-none hover:text-pink-500 dark:border-slate-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
         >
             <span>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -174,26 +176,23 @@
             x-transition.origin.top.left
             x-on:click.outside="close($refs.button)"
             :id="$id('dropdown-button')"
-            style="display: none; box-shadow: 3px 3px 0 #0f172a"
-            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+            style="display: none;"
+            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 dark:border-slate-500 plate-shadow"
         >
             <div>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/blog">
-                    Blog
-                </a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                 
             </div>
         </div>
     </div>
 </div>        <div class="flex" style="margin-left: auto;">
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
                 Sponsors
             </a>
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline" href="https://awilum.github.io/about">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline" href="https://awilum.github.io/about">
                 About
             </a>
         </div>
@@ -201,34 +200,33 @@
 
     <main role="main" class="container mx-auto max-w-[1200px]">
         <section>
-            <div class="flex justify-around bg-white dark:bg-slate-800 border rounded-md mt-10 border-slate-900 mx-auto lg:max-w-[680px]">
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 text-pink-500" href="https://awilum.github.io/flextype">Flextype</a>
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 " href="https://awilum.github.io/flextype/downloads">Downloads</a>
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/flextype/documentation">Documentation</a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype">
+            <div class="flex justify-around bg-white dark:bg-slate-800  dark:border-slate-500 border rounded-md mt-14 border-slate-900 mx-auto lg:max-w-[780px]">
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 text-pink-500" href="https://awilum.github.io/flextype">Flextype</a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 " href="https://awilum.github.io/flextype/downloads">Downloads</a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/flextype/documentation">Documentation</a>
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype">
     GITHUB
   </a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/getflextype">
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/getflextype">
     TWITTER
   </a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://discord.gg/CCKPKVG">
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://discord.gg/CCKPKVG">
     DISCORD
   </a>
 </div>
 
 <div class="container mx-auto pb-24 px-4 lg:px-0">
-
     <div class="uppercase text-center mt-24 mb-24">
         <div>
-            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="https://awilum.github.io/downloads/extend/">Configuration</a></h1>
+            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="https://awilum.github.io/flextype/documentation/getting-started/configuration">Configuration</a></h1>
         </div>
                 <div class="opacity-50">
-            <a class="no-underline" href="https://awilum.github.io/documentation">Documentation</a> <span>/</span>
-                            <a class="no-underline" href="https://awilum.github.io/documentation/getting-started/">Getting Started</a>                     </div>
+            <a class="no-underline" href="https://awilum.github.io/flextype/documentation">Documentation</a> <span>/</span>
+                            <a class="no-underline" href="https://awilum.github.io/flextype/documentation/getting-started/">Getting Started</a>                     </div>
             </div>
     <div class="flex flex-col-reverse lg:flex-row relative">
-        <div class="w-full lg:w-2/12">
-            <h4>Getting Started</h4>
+        <div class="w-full lg:w-3/12">
+            <h4 class="mt-0 pt-0">Getting Started</h4>
             <ul class="m-0 p-0 list-none">
                 <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/what-is-flextype" class="no-underline">What is Flextype?</a>
@@ -246,6 +244,9 @@
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/folder-structure" class="no-underline">Folder Structure</a>
                 </li>
                 <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/getting-started/api" class="no-underline">API Reference</a>
+                </li>
+                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/coc" class="no-underline">Code of Conduct</a>
                 </li>
                 <li class="">
@@ -257,16 +258,10 @@
             </ul>
             <h4 class="pt-8">Core Concepts</h4>
             <ul class="m-0 p-0 list-none">
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/flextype" class="no-underline">Flextype</a>
-                </li>
-                <li class="">
+                                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/entries" class="no-underline">Entries</a>
                 </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/plugins" class="no-underline">Plugins</a>
-                </li>
-                <li class="">
+                                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/parsers" class="no-underline">Parsers</a>
                 </li>
                 <li class="">
@@ -275,8 +270,17 @@
                 <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/registry" class="no-underline">Registry</a>
                 </li>
+            </ul>
+            <h4 class="pt-8">Console</h4>
+            <ul class="m-0 p-0 list-none">
                 <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/media" class="no-underline">Media</a>
+                    <a href="https://awilum.github.io/flextype/documentation/console/entries" class="no-underline">Entries</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/console/tokens" class="no-underline">Tokens</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/console/cache" class="no-underline">Cache</a>
                 </li>
             </ul>
             <h4 class="pt-8">Rest API</h4>
@@ -288,18 +292,18 @@
                     <a href="https://awilum.github.io/flextype/documentation/rest-api/entries" class="no-underline">Entries</a>
                 </li>
                 <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/rest-api/tokens" class="no-underline">Tokens</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/rest-api/cache" class="no-underline">Cache</a>
+                </li>
+                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/rest-api/registry" class="no-underline">Registry</a>
-                </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/rest-api/media" class="no-underline">Media</a>
-                </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/rest-api/images" class="no-underline">Images</a>
                 </li>
             </ul>
         </div>
-        <div class="w-full lg:w-10/12 px-2">
-            <p>Flextype allows you to configure your project in any way you can dream up, and it’s thanks to the powerful and flexible configuration options that make this possible.</p>
+        <div class="w-full lg:w-9/12">
+                        <p>Flextype allows you to configure your project in any way you can dream up, and it’s thanks to the powerful and flexible configuration options that make this possible.</p>
 <p>All Flextype configuration files are written in YAML syntax with a <code>.yaml</code> file extension. YAML is very intuitive which makes it very easy to both read and write.</p>
 <p>You can update and create project configuration by editing file <code>project/config/settings.yaml</code></p>
 <div class="file-header"><span class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
@@ -308,7 +312,7 @@
 </svg></span> project/config/flextype/settings.yaml</div>
 <pre><code class="language-yaml"># Set the timezone to be used on the project.
 # For a list of valid timezone settings, see:
-# https://php.net/manual/timezones.php
+# http://php.net/manual/en/timezones.php
 timezone: UTC
 
 # Charset
@@ -316,33 +320,42 @@ timezone: UTC
 # Set internal character encoding.
 #
 # Currently the following names are supported:
-# https://php.net/manual/function.mb-regex-encoding.php#121645
+# http://php.net/manual/en/function.mb-regex-encoding.php#121645
 charset: UTF-8
 
 # The locale that'll be used by the Flextype.
 #
-# Available locales to use: flextype/config/locales.yaml
+# Available locales to use: src/flextype/locales.yaml
 locale: en_US
 
-# Application URL
+# Application Base url
 #
-# Define custom application url
-url: ''
+# Define application base url (without trailing slash)
+base_url: ''
+
+# Application Base Path
+#
+# Define application base path (without trailing and without starting slash) if application located in subdirectory
+base_path: ''
 
 # Valid date format
 #
-# - date_format: Valid date format
-#
-# - date_display_format: Valid date format to display
-#
 # Date format variants:
 #
-# d-m-Y H:i&quot; - 02-02-2020 09:41
-# Y-m-d H:i&quot; - 2020-02-02 09:41
-# m/d/Y h:i a - 02/02/2020 09:41 pm
-# H:i d-m-Y - 09:41 02-02-2020
-# h:i a m/d/Y - 09:41 pm 02/02/2020
+#   d-m-Y H:i&quot; - 02-02-2020 09:41
+#   Y-m-d H:i&quot; - 2020-02-02 09:41
+#   m/d/Y h:i a - 02/02/2020 09:41 pm
+#   H:i d-m-Y - 09:41 02-02-2020
+#   h:i a m/d/Y - 09:41 pm 02/02/2020
 date_format: 'd-m-Y H:i'
+
+# Valid date format to display
+#
+#   d-m-Y H:i&quot; - 02-02-2020 09:41
+#   Y-m-d H:i&quot; - 2020-02-02 09:41
+#   m/d/Y h:i a - 02/02/2020 09:41 pm
+#   H:i d-m-Y - 09:41 02-02-2020
+#   h:i a m/d/Y - 09:41 pm 02/02/2020
 date_display_format: 'd-m-Y H:i'
 
 # Display errors
@@ -356,55 +369,203 @@ date_display_format: 'd-m-Y H:i'
 # - Detailed error messages for login failures could leak information to attackers
 #
 # In a production environment, always log errors to your PHP error logs.
-#
-# - display: Display errors or not.
 errors:
-  display: false
+
+  # Set true to display errors.
+  display: true
+
+  # Editor (emacs, idea, macvim, phpstorm, sublime, textmate, xdebug, vscode, atom, espresso)
+  editor: atom
+
+  # Error page title
+  page_title: Error!
+
+  # Handler (pretty, plain, json, xml)
+  handler: pretty
 
 # Entries
-#
-# - extension: Set entries file extension
 entries:
-  extension: md
-  fields:
-    media:
-      files:
-        fetch:
-          enabled: true
-          result: toObject
-      folders:
-        fetch:
-          enabled: true
-          result: toObject
+  directory: 'entries'
+  cache:
+    string: &quot;&quot;
+  vars:
+    debug: false
+  expressions:
+    actions:
+      enabled: true
+      class: &quot;Flextype\\Entries\\Expressions\\ActionsExpression&quot;
     registry:
+      enabled: true
+      class: &quot;Flextype\\Entries\\Expressions\\RegistryExpression&quot;
+    entries:
+      enabled: true
+      class: &quot;Flextype\\Entries\\Expressions\\EntriesExpression&quot;
+    filesystem:
+      enabled: true
+      class: &quot;Flextype\\Entries\\Expressions\\FilesystemExpression&quot;
+    i18n:
+      enabled: true
+      class: &quot;Flextype\\Entries\\Expressions\\I18nExpression&quot;
+    serializers:
+      enabled: true
+      class: &quot;Flextype\\Entries\\Expressions\\SerializersExpression&quot;
+    parsers:
+      enabled: true
+      class: &quot;Flextype\\Entries\\Expressions\\ParsersExpression&quot;
+    slugify:
+      enabled: true
+      class: &quot;Flextype\\Entries\\Expressions\\SlugifyExpression&quot;
+    strings:
+      enabled: true
+      class: &quot;Flextype\\Entries\\Expressions\\StringsExpression&quot;
+    collection:
+      enabled: true
+      class: &quot;Flextype\\Entries\\Expressions\\CollectionExpression&quot;
+    csrf:
+      enabled: true
+      class: &quot;Flextype\\Entries\\Expressions\\CsrfExpression&quot;
+    var:
+      enabled: true
+      class: &quot;Flextype\\Entries\\Expressions\\VarExpression&quot;
+    field:
+      enabled: true
+      class: &quot;Flextype\\Entries\\Expressions\\FieldExpression&quot;
+    const:
+      enabled: true
+      class: &quot;Flextype\\Entries\\Expressions\\ConstExpression&quot;
+  directives:
+    expressions:
+      enabled: true
+      enabled_globally: true
+      path: &quot;src/flextype/core/Entries/Directives/ExpressionsDirective.php&quot;
+      opening_tag: &quot;[[&quot;
+      closing_tag: &quot;]]&quot;
+    shortcodes:
+      enabled: true
+      enabled_globally: true
+      path: &quot;src/flextype/core/Entries/Directives/ShortcodesDirective.php&quot;
+    markdown:
+      enabled: true
+      enabled_globally: false
+      path: &quot;src/flextype/core/Entries/Directives/MarkdownDirective.php&quot;
+    textile:
+      enabled: true
+      enabled_globally: false
+      path: &quot;src/flextype/core/Entries/Directives/TextileDirective.php&quot;
+    php:
+      enabled: true
+      enabled_globally: false
+      path: &quot;src/flextype/core/Entries/Directives/PhpDirective.php&quot;
+    types:
+      enabled: true
+      path: &quot;src/flextype/core/Entries/Directives/TypesDirective.php&quot;
+  macros:
+    debug: false
+    vars:
+      enabled: true
+      path: &quot;src/flextype/core/Entries/Macros/VarsMacros.php&quot;
+    php:
+      enabled: true
+      path: &quot;src/flextype/core/Entries/Macros/PhpMacros.php&quot;
+    registry:
+      enabled: true
+      path: &quot;src/flextype/core/Entries/Macros/RegistryMacros.php&quot;
       get:
         enabled: true
     entries:
+      enabled: true
+      path: &quot;src/flextype/core/Entries/Macros/EntriesMacros.php&quot;
       fetch:
         enabled: true
-        result: toObject
-    slug:
-      enabled: true
-    published_at:
-      enabled: true
-    published_by:
-      enabled: true
-    modified_at:
-      enabled: true
-    created_at:
-      enabled: true
-    created_by:
-      enabled: true
-    routable:
-      enabled: true
-    parsers:
-      enabled: true
-    visibility:
-      enabled: true
-    uuid:
-      enabled: true
-    id:
-      enabled: true
+        type: array
+  collections:
+    default:
+      filename: entry
+      extension: md
+      serializer: frontmatter
+      fields:
+        slug:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/SlugField.php&quot;
+        published_at:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/PublishedAtField.php&quot;
+        published_by:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/PublishedByField.php&quot;
+        modified_at:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/ModifiedAtField.php&quot;
+        created_at:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/CreatedAtField.php&quot;
+        created_by:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/CreatedByField.php&quot;
+        routable:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/RoutableField.php&quot;
+        visibility:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/VisibilityField.php&quot;
+        uuid:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/UuidField.php&quot;
+        id:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/IdField.php&quot;
+    tokens:
+      pattern: tokens
+      filename: token
+      extension: yaml
+      serializer: yaml
+      fields: 
+        modified_at:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/ModifiedAtField.php&quot;
+        created_at:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/CreatedAtField.php&quot;
+        created_by:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/CreatedByField.php&quot;
+        uuid:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/UuidField.php&quot;
+        id:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/IdField.php&quot;
+    tokens_item:
+      pattern: tokens/([a-zA-Z0-9_-]+)
+      filename: token
+      extension: yaml
+      serializer: yaml
+      fields: 
+        modified_at:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/ModifiedAtField.php&quot;
+        created_at:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/CreatedAtField.php&quot;
+        created_by:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/CreatedByField.php&quot;
+        uuid:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Default/UuidField.php&quot;
+        id:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Tokens/Items/IdField.php&quot;
+        calls:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Tokens/Items/CallsField.php&quot;
+        limit_calls:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Tokens/Items/LimitCallsField.php&quot;
+        state:
+          enabled: true
+          path: &quot;src/flextype/core/Entries/Fields/Tokens/Items/StateField.php&quot;
+
 
 # Cache
 #
@@ -447,9 +608,8 @@ entries:
 # - drivers.files.prevent_cache_slams: This option will allow you to prevent cache slams when making use of heavy cache items.
 #
 # - drivers.files.cache_slams_timeout: This option defines the cache slams timeout in seconds.
-
 cache:
-  enabled: true
+  enabled: false
   driver: auto
   drivers:
     apcu: {}
@@ -487,6 +647,12 @@ cache:
     devnull: {}
     devfalse: {}
     devtrue: {}
+    phparray:
+      path: '/data'
+      security_key: 'auto'
+      htaccess: true
+      secure_file_manipulation: false
+      default_ttl: 900
     files:
       path: '/data'
       security_key: 'auto'
@@ -564,194 +730,437 @@ cache:
     zenddisk: {}
     zendshm: {}
 
-# Whoops
-#
-# Error handler framework for PHP.
-#
-# - editor: emacs, idea, macvim, phpstorm, sublime, textmate, xdebug, vscode, atom, espresso
-#
-# - page_title: page title
-whoops:
-  editor: atom
-  page_title: Error!
-
-# Slim
-#
-# - display_error_details: When true, additional information about exceptions are
-#                          displayed by the default error handler.
-#
-# - add_content_length_header: When true, Slim will add a Content-Length header to
-#                              the response. If you are using a runtime analytics tool,
-#                              such as New Relic, then this should be disabled.
-#
-# - router_cache_file: Filename for caching the FastRoute routes. Must be set to
-#                      a valid filename within a writeable directory. If the file
-#                      does not exist, then it is created with the correct cache
-#                      information on first run. Set to false to disable the FastRoute
-#                      cache system.
-#
-# - determine_route_before_app_middleware: When true, the route is calculated before
-#                                          any middleware is executed. This means that you
-#                                          can inspect route parameters in middleware if you need to.
-#
-# - output_buffering: If false, then no output buffering is enabled.
-#                     If 'append' or 'prepend', then any echo or print statements
-#                     are captured and are either appended or prepended to the Response
-#                     returned from the route callable.
-#
-# - response_chunk_size: Size of each chunk read from the Response body when sending to the browser.
-#
-# - http_version: The protocol version used by the Response object.
-display_error_details: false
+# When true, Flextype will add a Content-Length header to
+# the response. If you are using a runtime analytics tool,
+# such as New Relic, then this should be disabled.
 add_content_length_header: true
-router_cache_file: false
-determine_route_before_app_middleware: false
+
+# If false, then no output buffering is enabled.
+# If 'append' or 'prepend', then any echo or print statements
+# are captured and are either appended or prepended to the Response
+# returned from the route callable.
 output_buffering: append
-response_chunk_size: 4096
-http_version: '1.1'
+
+# Router
+router:
+
+  # Caching the FastRoute routes for better perfomance. 
+  # Set to true to enable the FastRoute cache system.
+  cache: 
+    enabled: true
+  
+# Set to true to enable the Flextype CLI Application
+cli: 
+  enabled: true
+
+# Set to true to enable the Flextype Application
+app: 
+  enabled: true
+
+# View
+view:
+  extension: 'php'
 
 # Slugify
-#
-# - separator: By default Slugify will use dashes as separators.
-#              If you want to use a different default separator,
-#              you can set the separator option.
-#
-# - lowercase: By default Slugify will convert the slug to lowercase.
-#              If you want to preserve the case of the string you can set the
-#              lowercase option to false.
-#
-# - trim:      By default Slugify will remove leading and trailing separators before
-#              returning the slug. If you do not want the slug to be trimmed you can
-#              set the trim option to false.
-#
-# - regexp:    You can also change the regular expression that is used to replace
-#              characters with the separator.
-#
-# - lowercase_after_regexp: Lowercasing is done before using the regular expression.
-#                           If you want to keep the lowercasing behavior but your
-#                           regular expression needs to match uppercase letters,
-#                           you can set the lowercase_after_regexp option to true.
-#
-# - strip_tags: Adds in an option to go through strip_tags() in case the string contains HTML etc.
 slugify:
+
+  # Set true to enable slugify.
+  enabled: true
+
+  # By default Slugify will use dashes as separators.
+  # If you want to use a different default separator,
+  # you can set the separator option.
   separator: &quot;-&quot;
+
+  # By default Slugify will convert the slug to lowercase.
+  # If you want to preserve the case of the string you can set the
+  # lowercase option to false.
   lowercase: true
+
+  # By default Slugify will remove leading and trailing separators before
+  # returning the slug. If you do not want the slug to be trimmed you can
+  # set the trim option to false.
   trim: true
+
+  # You can also change the regular expression that is used to replace
+  # characters with the separator.
   regexp: &quot;/[^A-Za-z0-9]+/&quot;
+
+  # Lowercasing is done before using the regular expression.
+  # If you want to keep the lowercasing behavior but your
+  # regular expression needs to match uppercase letters,
+  # you can set the lowercase_after_regexp option to true.
   lowercase_after_regexp: false
+
+  # Adds in an option to go through strip_tags() in case the string contains HTML etc.
   strip_tags: false
 
-# Image
+# Serializers
 #
-# - driver: gd or imagick
-image:
-  driver: gd
+# json.decode.cache: Cache result data or no. Default is true.
+# json.decode.assoc: Decode assoc. When TRUE, returned objects will be converted into associative arrays.
+# json.decode.depth: Decode Depth. Set the maximum depth. Must be greater than zero.
+# json.decode.flags: Bitmask consisting of decode options.
+# json.encode.options: Bitmask consisting of encode options
+# json.encode.depth: Encode Depth. Set the maximum depth. Must be greater than zero.
+#
+# yaml.decode.cache: Cache result data or no. Default is true.
+# yaml.decode.native: Use native php pecl parser or symfony parser.
+# yaml.decode.flags: A bit field of DUMP_* constants to customize the dumped YAML string.
+# yaml.encode.inline: The level where you switch to inline YAML.
+# yaml.encode.indent: The amount of spaces to use for indentation of nested nodes.
+# yaml.encode.flags: A bit field of DUMP_* constants to customize the dumped YAML string.
+#
+# frontmatter.decode.cache: Cache result data or no. Default is true.
+# frontmatter.decode.header_serializer: Header serializer.
+# frontmatter.encode.header_serializer: Header serializer.
+#
+# neon.decode.cache: Cache result data or no. Default is true.
+# neon.encode.flags: The flag can be 1, which will create multiline output.
+#
+# phparray.decode.cache: Cache result data or no. Default is true.
+serializers:
+  json: 
+    decode:
+      cache: 
+        enabled: true
+        string: &quot;&quot;
+      assoc: true
+      depth: 512
+      flags: 0
+    encode: 
+      options: 0
+      depth: 512
+  json5: 
+    decode:
+      cache: 
+        enabled: true
+        string: &quot;&quot;
+      assoc: true
+      depth: 512
+      flags: 0
+    encode: 
+      options: 0
+      depth: 512
+  yaml:
+    decode:
+      cache: 
+        enabled: true
+        string: &quot;&quot;
+      native: true
+      flags: 0
+    encode:    
+      inline: 10
+      indent: 2
+      flags: 0
+  frontmatter:
+    decode:
+      cache: 
+        enabled: true
+        string: &quot;&quot;
+      cache_id_string: &quot;&quot;
+      header:
+        serializer: yaml
+        allowed: ['yaml', 'json', 'json5', 'neon']
+    encode:    
+      header:
+        serializer: yaml
+        allowed: ['yaml', 'json', 'json5', 'neon']
+  neon:
+    decode:
+      cache: 
+        enabled: true
+        string: &quot;&quot;
+    encode:
+      blockMode: false
+      indentation: &quot;\t&quot;
+  phparray:
+    decode:
+      cache: 
+        enabled: true
+        string: &quot;&quot;
+    encode:
+      wrap: true
 
-# Markdown
+# Parsers
 #
-# - markdown.auto_line_breaks: Enable automatic line breaks
-# - markdown.auto_url_links:   Enable automatic HTML links
-# - markdown.escape_markup:    Escape markup tags into entities
+# - markdown.cache:                                 Cache result data or no. Default is true.
 #
-# Shortcode
+# - markdown.commonmark.renderer.block_separator:   String to use for separating renderer block elements.
 #
-# - shortcodes: Flextype Shortcodes to load.
+# - markdown.commonmark.renderer.inner_separator:   String to use for separating inner block contents.
+#
+# - markdown.commonmark.renderer.soft_break:        String to use for rendering soft breaks.
+#
+# - markdown.commonmark.commonmark.enable_em:       Disable &lt;em&gt; parsing by setting to false; enable with true (default: true)
+#
+# - markdown.commonmark.commonmark.enable_strong:   Disable &lt;strong&gt; parsing by setting to false; enable with true (default: true)
+#
+# - markdown.commonmark.commonmark.use_asterisk:    Disable parsing of * for emphasis by setting to false; enable with true (default: true)
+#
+# - markdown.commonmark.commonmark.use_underscore:  Disable parsing of _ for emphasis by setting to false; enable with true (default: true)
+#
+# - markdown.commonmark.commonmark.unordered_list_markers: Array of characters that can be used to indicate a bulleted list.
+#
+# - markdown.commonmark.html_input:                `strip` all HTML (equivalent to 'safe' =&gt; true). `allow` all HTML input as-is (default value; equivalent to `‘safe’ =&gt; false) `escape` Escape all HTML.
+#
+# - markdown.commonmark.allow_unsafe_links:         Remove risky link and image URLs by setting this to false (default: true).
+#
+# - markdown.commonmark.max_nesting_level:          The maximum nesting level for blocks (default: PHP_INT_MAX). Setting this to a positive integer can help protect against long parse times and/or segfaults if blocks are too deeply-nested.
+#
+# - markdown.commonmark.slug_normalizer.max_length: Limits the size of generated slugs (defaults to 255 characters)
 parsers:
   markdown:
-    auto_line_breaks: false
-    auto_url_links: false
-    escape_markup: false
-  shortcode:
+    cache: 
+      enabled: true
+      string: &quot;&quot;
+    commonmark:
+      renderer:
+        block_separator: &quot;\n&quot;
+        inner_separator: &quot;\n&quot;
+        soft_break: &quot;\n&quot;
+      commonmark:
+        enable_em: true
+        enable_strong: true
+        use_asterisk: true
+        use_underscore: true
+        unordered_list_markers: ['-', '*', '+']
+      html_input: 'allow'
+      allow_unsafe_links: false
+      max_nesting_level: 9223372036854775807
+      slug_normalizer:
+        max_length: 255
+  textile:
+    cache: 
+      enabled: true
+      string: &quot;&quot;
+    restricted: false
+    document_type: 'xhtml'
+    document_root_directory: ''
+    lite: false
+    images: true
+    link_relation_ship: ''
+    raw_blocks: false
+    block_tags: true
+    line_wrap: true
+    image_prefix: ''
+    link_prefix: ''
+    symbol: []
+    dimensionless_images: true
+  shortcodes:
+    cache: 
+      enabled: true
+      string: &quot;&quot;
+    cache_id_string: &quot;&quot;
+    opening_tag: &quot;(&quot;
+    closing_tag: &quot;)&quot;
+    closing_tag_marker: &quot;/&quot;
+    parameter_value_separator: &quot;:&quot;
+    parameter_value_delimiter: &quot;'&quot;
     shortcodes:
       entries:
         enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/EntriesShortcode.php&quot;
+        fetch:
+          enabled: true
+      php:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/PhpShortcode.php&quot;
       raw:
         enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/RawShortcode.php&quot;
+      textile:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/TextileShortcode.php&quot;
+      markdown:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/MarkdownShortcode.php&quot;
       registry:
         enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/RegistryShortcode.php&quot;
+        get:
+          enabled: true
       url:
         enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/UrlShortcode.php&quot;
+      strings:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/StringsShortcode.php&quot;
+      filesystem:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/FilesystemShortcode.php&quot;
+        get:
+          enabled: true
+      i18n:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/I18nShortcode.php&quot;
+      if:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/IfShortcode.php&quot;
+      when:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/WhenShortcode.php&quot;
+      unless:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/UnlessShortcode.php&quot;
+      uuid:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/UuidShortcode.php&quot;
+      const:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/ConstShortcode.php&quot;
+      var:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/VarShortcode.php&quot;
+      field:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/FieldShortcode.php&quot;  
+      calc:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/CalcShortcode.php&quot;  
+      eval:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/EvalShortcode.php&quot; 
+      type:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/TypeShortcode.php&quot; 
 
 # CORS
 #
 # CORS (Cross-origin resource sharing) allows JavaScript web apps to make HTTP requests to other domains.
 # This is important for third party web apps using Flextype, as without CORS, a JavaScript app hosted on example.com
 # couldn't access our APIs because they're hosted on another.com which is a different domain.
-#
-# - enabled: Set to true to enable cors
-#
-# - origin:   The Access-Control-Allow-Origin response header indicates whether
-#             the response can be shared with requesting code from the given origin.
-#             read more: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin
-#
-# - headers:  The Access-Control-Allow-Headers response header is used in response
-#             to a preflight request which includes the Access-Control-Request-Headers
-#             to indicate which HTTP headers can be used during the actual request.
-#             read more: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Headers
-#
-# - methods: The Access-Control-Allow-Methods response header specifies the method
-#            or methods allowed when accessing the resource in response to a preflight request.
-#            read more: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods
-#
-# - expose:  The Access-Control-Expose-Headers response header indicates which headers
-#            can be exposed as part of the response by listing their names.
-#            read more: https://developer.mozilla.org/ru/docs/Web/HTTP/Headers/Access-Control-Expose-Headers
-#
-# - credentials: The Access-Control-Allow-Credentials response header tells browsers whether
-#                to expose the response to frontend JavaScript code when the request's credentials
-#                mode (Request.credentials) is include.
-#                read more: https://developer.mozilla.org/ru/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials
 cors:
+
+  # Set to true to enable cors
   enabled: true
+
+  # The Access-Control-Allow-Origin response header indicates whether
+  # the response can be shared with requesting code from the given origin.
+  #
+  # read more: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin
   origin: &quot;*&quot;
+
+  # The Access-Control-Allow-Headers response header is used in response
+  # to a preflight request which includes the Access-Control-Request-Headers
+  # to indicate which HTTP headers can be used during the actual request.
+  #
+  # read more: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Headers
   headers: [&quot;X-Requested-With&quot;, &quot;Content-Type&quot;, &quot;Accept&quot;, &quot;Origin&quot;, &quot;Authorization&quot;]
+  
+  # The Access-Control-Allow-Methods response header specifies the method
+  # or methods allowed when accessing the resource in response to a preflight request.
+  #
+  # read more: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods
   methods: [GET, POST, PUT, DELETE, PATCH, OPTIONS]
+  
+  # The Access-Control-Expose-Headers response header indicates which headers
+  # can be exposed as part of the response by listing their names.
+  #
+  # read more: https://developer.mozilla.org/ru/docs/Web/HTTP/Headers/Access-Control-Expose-Headers
   expose: []
+
+  # The Access-Control-Allow-Credentials response header tells browsers whether
+  # to expose the response to frontend JavaScript code when the request's credentials
+  # mode (Request.credentials) is include.
+  #
+  # read more: https://developer.mozilla.org/ru/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials
   credentials: false
 
-# Media
-#
-# - max_file_size: Set the maximum upload size. Note, this can never exceed the settings for
-#                  `post_max_size` and `upload_max_filesize` in `php.ini`.
-media:
-  accept_file_types: 'gif, jpg, jpeg, png, ico, zip, tgz, txt, md, doc, docx, pdf, epub, xls, xlsx, ppt, pptx, mp3, ogg, wav, m4a, mp4, m4v, ogv, wmv, avi, webm, svg'
-  max_file_size: 8000000
-  safe_names: true
-  image_width: 1600
-  image_height: 0
-  image_quality: 70
-  max_image_width: null
-  max_image_height: null
+# Upload
+upload:
 
+  # Uploads directory
+  directory: 'uploads'
+
+  # Overwrite existing files.
+  overwrite: true
+
+  # Auto-confirm uploads.
+  autoconfirm: false
+
+  # Prefixing uploads.
+  prefix: ''
+
+  # Validation options
+  validation:
+
+    # Allowed file extensions.
+    allowed_file_extensions: ['gif', 'jpg', 'jpeg', 'png', 'ico', 'webm', 'svg']
+
+    # Maximum file size.
+    max_file_size: '24M'
+
+    # Image validation options
+    image:
+    
+      # Image maxiumum and minimum width
+      width:
+        max: 4920
+        min: 100
+
+      # Image maxiumum and minimum height
+      height: 
+        max: 3264
+        min: 100
+    
+      # Image ratio
+      #ratio:
+      #  The option can be a number (eg: 1.3) or a ratio-like string (eg: 4:3, 16:9).
+      #  size: 1.3
+
+      #  The option error_margin specifies how much the image is allowed to 
+      #  deviate from the target ratio. Default value is 0.
+      #  error_margin: 0
+
+  # Process uploaded files
+  process:
+
+    # Images process settings
+    image:
+
+      # Image quality
+      quality: 70
+    
 # Session
 #
 # Set session options before you start the session
 # Standard PHP session configuration options
-# https://secure.php.net/manual/session.configuration.php
+# https://secure.php.net/manual/en/session.configuration.php
 session:
+
+  # Session name
   name: Flextype
 
 # Flextype Rest APIs
 api:
+
+  # Entries API
   entries:
+
+    # Set to true to enable Entries API
     enabled: true
-    default_token:
+
+  # Registry API
   registry:
+
+    # Set to true to enable Registry API
     enabled: true
-    default_token:
-  media:
-    files:
-      enabled: true
-      default_token:
-    folders:
-      enabled: true
-      default_token:
-  images:
+
+  # Tokens API
+  tokens:
+
+    # Set to true to enable Tokens API
     enabled: true
-    default_token:
+
+  # Cache API
+  cache:
+
+    # Set to true to enable Cache API
+    enabled: true
 </code></pre>
 <h3>PHP constants</h3>
-<p>Your <code>index.php</code> file can define certain PHP constants, which Flextype bootstrap script will check for while loading and configuring Flextype.</p>
+<p>You may redefine all these constants in your root <code>index.php</code> file.</p>
 <table>
     <thead>
         <tr>
@@ -761,26 +1170,26 @@ api:
     </thead>
     <tbody>
         <tr>
-            <td>FLEXTYPE_MINIMUM_PHP</td>
-            <td>Define the application minimum supported PHP version.</td>
-        </tr>
-        <tr>
             <td>ROOT_DIR</td>
             <td>Define the path to the root directory (without trailing slash).</td>
         </tr>
         <tr>
-            <td>PATH['project']</td>
+            <td>PROJECT_NAME</td>
+            <td>Define the project name.</td>
+        </tr>
+        <tr>
+            <td>PATH_PROJECT</td>
             <td>Define the PATH to the project (without trailing slash).</td>
         </tr>
         <tr>
-            <td>PATH['tmp']</td>
+            <td>PATH_TMP</td>
             <td>Define the PATH to the tmp (without trailing slash).</td>
         </tr>
     </tbody>
 </table>
 
         </div>
-            </div>
+    </div>
 </div>
         </section>
         <footer class="py-20 text-sm text-center">

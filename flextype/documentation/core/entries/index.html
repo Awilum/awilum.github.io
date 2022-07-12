@@ -3,7 +3,7 @@
 <head>
             <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Entries are the fundamental building-blocks of your site. Each entry in Flextype should contains Entry Front Matter block in YAML format at the top of the file and Entry Content marked up using HTML + Markdown + Shortcodes at the bottom of the file.">
+        <meta name="description" content="Entries are the fundamental building-blocks of your project.">
         <meta name="keywords" content="flextype, php, cms, thermage, glowyphp, html">
         <meta name="robots" content="index, follow">
         <meta name="generator" content="Powered by Flextype"/>
@@ -14,19 +14,21 @@
         
         <title>Entries | Flextype</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
 
-                
                 
                                     <link href="https://awilum.github.io/project/themes/dev/assets/dist/css/dev.min.css" rel="stylesheet">
                     
             </head>
 <body class="antialiased text-slate-900 dark:text-slate-300 bg-white dark:bg-slate-900">
-    <header class="bg-white dark:bg-slate-800 border-b border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] plate-shadow">
-        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-bold text-center border-r border-slate-900 brand-logo no-underline text-pink-500">
+    <header class="bg-white dark:bg-slate-800 dark:border-slate-500 border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg">
+        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 dark:border-slate-500 brand-logo no-underline text-pink-500">
             AWILUM
         </a>
-        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-semibold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
             Blog
         </a>
         <div class="flex justify-center hidden lg:block">
@@ -58,7 +60,7 @@
                     :aria-expanded="open"
                     :aria-controls="$id('dropdown-button')"
                     type="button"
-                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 "
                 >
                     <span>Projects</span>
                 </button>
@@ -70,14 +72,14 @@
                     x-transition.origin.top.left
                     x-on:click.outside="close($refs.button)"
                     :id="$id('dropdown-button')"
-                    style="display: none; box-shadow: 3px 3px 0 #0f172a"
-                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 rounded overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+                    style="display: none;"
+                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 dark:border-slate-500 rounded-lg overflow-hidden z-50 dark:bg-slate-800"
                 >
                     <div>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +113,7 @@
             :aria-expanded="open"
             :aria-controls="$id('dropdown-button')"
             type="button"
-            class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+            class="outline-none hover:text-pink-500 dark:border-slate-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
         >
             <span>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -174,26 +176,23 @@
             x-transition.origin.top.left
             x-on:click.outside="close($refs.button)"
             :id="$id('dropdown-button')"
-            style="display: none; box-shadow: 3px 3px 0 #0f172a"
-            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+            style="display: none;"
+            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 dark:border-slate-500 plate-shadow"
         >
             <div>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/blog">
-                    Blog
-                </a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                 
             </div>
         </div>
     </div>
 </div>        <div class="flex" style="margin-left: auto;">
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
                 Sponsors
             </a>
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline" href="https://awilum.github.io/about">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline" href="https://awilum.github.io/about">
                 About
             </a>
         </div>
@@ -201,34 +200,33 @@
 
     <main role="main" class="container mx-auto max-w-[1200px]">
         <section>
-            <div class="flex justify-around bg-white dark:bg-slate-800 border rounded-md mt-10 border-slate-900 mx-auto lg:max-w-[680px]">
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 text-pink-500" href="https://awilum.github.io/flextype">Flextype</a>
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 " href="https://awilum.github.io/flextype/downloads">Downloads</a>
-  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/flextype/documentation">Documentation</a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype">
+            <div class="flex justify-around bg-white dark:bg-slate-800  dark:border-slate-500 border rounded-md mt-14 border-slate-900 mx-auto lg:max-w-[780px]">
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 text-pink-500" href="https://awilum.github.io/flextype">Flextype</a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 " href="https://awilum.github.io/flextype/downloads">Downloads</a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/flextype/documentation">Documentation</a>
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype">
     GITHUB
   </a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/getflextype">
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/getflextype">
     TWITTER
   </a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://discord.gg/CCKPKVG">
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://discord.gg/CCKPKVG">
     DISCORD
   </a>
 </div>
 
 <div class="container mx-auto pb-24 px-4 lg:px-0">
-
     <div class="uppercase text-center mt-24 mb-24">
         <div>
-            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="https://awilum.github.io/downloads/extend/">Entries</a></h1>
+            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="https://awilum.github.io/flextype/documentation/core/entries">Entries</a></h1>
         </div>
                 <div class="opacity-50">
-            <a class="no-underline" href="https://awilum.github.io/documentation">Documentation</a> <span>/</span>
-                            <a class="no-underline" href="https://awilum.github.io/documentation/core/">Core Concepts</a>                     </div>
+            <a class="no-underline" href="https://awilum.github.io/flextype/documentation">Documentation</a> <span>/</span>
+                            <a class="no-underline" href="https://awilum.github.io/flextype/documentation/core/">Core Concepts</a>                     </div>
             </div>
     <div class="flex flex-col-reverse lg:flex-row relative">
-        <div class="w-full lg:w-2/12">
-            <h4>Getting Started</h4>
+        <div class="w-full lg:w-3/12">
+            <h4 class="mt-0 pt-0">Getting Started</h4>
             <ul class="m-0 p-0 list-none">
                 <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/what-is-flextype" class="no-underline">What is Flextype?</a>
@@ -246,6 +244,9 @@
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/folder-structure" class="no-underline">Folder Structure</a>
                 </li>
                 <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/getting-started/api" class="no-underline">API Reference</a>
+                </li>
+                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/getting-started/coc" class="no-underline">Code of Conduct</a>
                 </li>
                 <li class="">
@@ -257,16 +258,10 @@
             </ul>
             <h4 class="pt-8">Core Concepts</h4>
             <ul class="m-0 p-0 list-none">
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/flextype" class="no-underline">Flextype</a>
-                </li>
-                <li class="">
+                                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/entries" class="no-underline">Entries</a>
                 </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/plugins" class="no-underline">Plugins</a>
-                </li>
-                <li class="">
+                                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/parsers" class="no-underline">Parsers</a>
                 </li>
                 <li class="">
@@ -275,8 +270,17 @@
                 <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/core/registry" class="no-underline">Registry</a>
                 </li>
+            </ul>
+            <h4 class="pt-8">Console</h4>
+            <ul class="m-0 p-0 list-none">
                 <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/core/media" class="no-underline">Media</a>
+                    <a href="https://awilum.github.io/flextype/documentation/console/entries" class="no-underline">Entries</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/console/tokens" class="no-underline">Tokens</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/console/cache" class="no-underline">Cache</a>
                 </li>
             </ul>
             <h4 class="pt-8">Rest API</h4>
@@ -288,24 +292,163 @@
                     <a href="https://awilum.github.io/flextype/documentation/rest-api/entries" class="no-underline">Entries</a>
                 </li>
                 <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/rest-api/tokens" class="no-underline">Tokens</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/rest-api/cache" class="no-underline">Cache</a>
+                </li>
+                <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/rest-api/registry" class="no-underline">Registry</a>
-                </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/rest-api/media" class="no-underline">Media</a>
-                </li>
-                <li class="">
-                    <a href="https://awilum.github.io/flextype/documentation/rest-api/images" class="no-underline">Images</a>
                 </li>
             </ul>
         </div>
-        <div class="w-full lg:w-8/12 px-2">
-            <p>Entries are the fundamental building-blocks of your project. We are using jekyll like entries format. It means that each entry in the Flextype should contains <strong>Entry Front Matter</strong> block in valid YAML format at the top of the file and <strong>Entry Content</strong> marked up using HTML + Markdown + Shortcodes and etc... at the bottom of the file.</p>
-<p>Here is a simple entry example:</p>
+        <div class="w-full lg:w-9/12">
+                        <div class="w-full block relative">
+                <div class="">
+                    <div class="p-0 mb-10">
+                        <div class="lg:flex">
+                            <div class="w-full p-6 bg-white dark:bg-slate-900 lg:mr-2 border rounded-lg border-slate-900 dark:border-slate-500 plate-shadow">
+                                <h3 class="text-xl font-bold pb-4 pt-0 mb-4 mt-0 p-0 border-b border-slate-900 dark:border-slate-500 flex items-center">
+                                    Table of Contents
+                                </h3>
+                                <ul class="font-semibold">
+                                                                <li>
+                                    <a class="no-underline" href="#overview"><span class="mr-1">1.</span> Overview</a>
+                                                                                                        </li>
+                                                                <li>
+                                    <a class="no-underline" href="#formats"><span class="mr-1">2.</span> Formats</a>
+                                                                                                        </li>
+                                                                <li>
+                                    <a class="no-underline" href="#configuration"><span class="mr-1">3.</span> Configuration</a>
+                                                                                                        </li>
+                                                                <li>
+                                    <a class="no-underline" href="#structure"><span class="mr-1">4.</span> Structure</a>
+                                                                                                        </li>
+                                                                <li>
+                                    <a class="no-underline" href="#fields"><span class="mr-1">5.</span> Fields</a>
+                                                                                                            <ul class="ml-4 mb-0">
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#field-visibility"><span class="mr-1">5.1</span> visibility</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#field-routable"><span class="mr-1">5.2</span> routable</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#field-published-at"><span class="mr-1">5.3</span> published_at</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#field-published-by"><span class="mr-1">5.4</span> published_by</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#field-created-at"><span class="mr-1">5.5</span> created_at</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#field-created-by"><span class="mr-1">5.6</span> created_by</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#field-modified-at"><span class="mr-1">5.7</span> modified_at</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#field-cache"><span class="mr-1">5.8</span> cache</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#field-slug"><span class="mr-1">5.9</span> slug</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#field-id"><span class="mr-1">5.10</span> id</a>
+                                        </li>
+                                                                            </ul>
+                                                                    </li>
+                                                                <li>
+                                    <a class="no-underline" href="#vars"><span class="mr-1">6.</span> Vars</a>
+                                                                                                        </li>
+                                                                <li>
+                                    <a class="no-underline" href="#directives"><span class="mr-1">7.</span> Directives</a>
+                                                                                                            <ul class="ml-4 mb-0">
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#directive-shortcodes"><span class="mr-1">7.1</span> shortcodes</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#directive-markdown"><span class="mr-1">7.2</span> markdown</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#directive-markdown"><span class="mr-1">7.3</span> textile</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#directive-type"><span class="mr-1">7.4</span> type</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#directive-php"><span class="mr-1">7.5</span> php</a>
+                                        </li>
+                                                                            </ul>
+                                                                    </li>
+                                                                <li>
+                                    <a class="no-underline" href="#macros"><span class="mr-1">8.</span> Macros</a>
+                                                                                                            <ul class="ml-4 mb-0">
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#macros-entries"><span class="mr-1">8.1</span> entries</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#macros-registry"><span class="mr-1">8.2</span> registry</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#macros-php"><span class="mr-1">8.3</span> php</a>
+                                        </li>
+                                                                            </ul>
+                                                                    </li>
+                                                                <li>
+                                    <a class="no-underline" href="#expressions"><span class="mr-1">9.</span> Expressions</a>
+                                                                                                        </li>
+                                                                <li>
+                                    <a class="no-underline" href="#methods"><span class="mr-1">10.</span> Methods</a>
+                                                                                                            <ul class="ml-4 mb-0">
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-fetch"><span class="mr-1">10.1</span> fetch</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-create"><span class="mr-1">10.2</span> create</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-update"><span class="mr-1">10.3</span> update</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-move"><span class="mr-1">10.4</span> move</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-copy"><span class="mr-1">10.5</span> copy</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-delete"><span class="mr-1">10.6</span> delete</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-has"><span class="mr-1">10.7</span> has</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-getFileLocation"><span class="mr-1">10.8</span> getFileLocation</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-getDirectoryLocation"><span class="mr-1">10.9</span> getDirectoryLocation</a>
+                                        </li>
+                                                                            </ul>
+                                                                    </li>
+                                                                <li>
+                                    <a class="no-underline" href="#extending"><span class="mr-1">11.</span> Extending</a>
+                                                                                                        </li>
+                                                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <p>Entries are the fundamental building blocks of your Flextype powered project. Entries are local <strong>flat files</strong> or <strong>external resources</strong> that can be represented as a PHP array inside the controllers, templates, etc...</p>
+<h3>Entries formats</h3>
+<p>Flextype support several <strong>flat files</strong> formats for entries out of the box.</p>
+<h4>Frontmatter (.md)</h4>
 <div class="file-header"><span class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
   <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
   <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
 </svg></span> project/entries/movies/sg-1/season-5/episode-21/entry.md</div>
-<pre><code>---
+<pre><code class="language-yaml">---
 title: Meridian
 description: As Jackson suffers from a fatal dose of radiation, he struggles with the value of his life while his friends deal with the emotional and diplomatic repercussions.
 director: William Waring
@@ -314,16 +457,82 @@ stars: Richard Dean Anderson, Michael Shanks, Amanda Tapping
 ---
 SG-1 returns from an off-world mission to P9Y-3C3 with Daniel Jackson suffering from what is likely a fatal dose of radiation. On the planet, they dealt with the country of Kelowna and their representative Jonas Quinn. That country was at the same stage of development as the United States in the 1940s and well on their way to creating an atomic weapon using Goa'uld technology found in an ancient temple. Daniel argued against the Kelownans developing such a weapon and is accused of attempting to sabotage the project. As members of the team sit by his deathbed, Daniel receives an unexpected offer from someone they once met off-world.
 </code></pre>
-<p>Between triple-dashed lines, you can set <a href="#default-variables">predefined variables</a> or even create custom ones of your own.</p>
-<h3><a name="entries-and-urls-structure"></a> Entries and Urls structure in Flextype</h3>
-<p>All content entries are located in the <code>project/entries/</code> folder.</p>
-<p>Each entry file <code>entry.md</code> should be placed in its own folder.</p>
-<p>Folder names should also be valid <strong>slugs</strong>. Slugs are entirely lowercase, with accented characters replaced by letters from the Latin alphabet and whitespace characters replaced by a dash or an underscore, to avoid being encoded.</p>
+<p>For <strong>Frontmatter</strong> header you may define custom frontmatter header serializer as <code>yaml</code>, <code>json</code>, <code>json5</code> or <code>neon</code> by adding serializer name after first <code>---</code>. For example:</p>
+<pre><code class="language-yaml">---json
+{
+  &quot;title&quot;: &quot;Meridian&quot;,
+  &quot;description&quot;: &quot;As Jackson suffers from a fatal dose of radiation, he struggles with the value of his life while his friends deal with the emotional and diplomatic repercussions.&quot;,
+  &quot;director&quot;: &quot;William Waring&quot;,
+  &quot;writers&quot;: &quot;Brad Wright, Jonathan Glassner&quot;,
+  &quot;stars&quot;: &quot;Richard Dean Anderson, Michael Shanks, Amanda Tapping&quot;
+}
+---
+SG-1 returns from an off-world mission to P9Y-3C3 with Daniel Jackson suffering from what is likely a fatal dose of radiation. On the planet, they dealt with the country of Kelowna and their representative Jonas Quinn. That country was at the same stage of development as the United States in the 1940s and well on their way to creating an atomic weapon using Goa'uld technology found in an ancient temple. Daniel argued against the Kelownans developing such a weapon and is accused of attempting to sabotage the project. As members of the team sit by his deathbed, Daniel receives an unexpected offer from someone they once met off-world.
+</code></pre>
+<h4>YAML (.yaml)</h4>
+<div class="file-header"><span class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+  <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+</svg></span> project/entries/movies/sg-1/season-5/episode-21/entry.yaml</div>
+<pre><code class="language-yaml">title: Meridian
+description: As Jackson suffers from a fatal dose of radiation, he struggles with the value of his life while his friends deal with the emotional and diplomatic repercussions.
+director: William Waring
+writers: Brad Wright, Jonathan Glassner
+stars: Richard Dean Anderson, Michael Shanks, Amanda Tapping
+content: |
+    SG-1 returns from an off-world mission to P9Y-3C3 with Daniel Jackson suffering from what is likely a fatal dose of radiation. On the planet, they dealt with the country of Kelowna and their representative Jonas Quinn. That country was at the same stage of development as the United States in the 1940s and well on their way to creating an atomic weapon using Goa'uld technology found in an ancient temple. Daniel argued against the Kelownans developing such a weapon and is accused of attempting to sabotage the project. As members of the team sit by his deathbed, Daniel receives an unexpected offer from someone they once met off-world.
+</code></pre>
+<h4>NEON (.neon)</h4>
+<div class="file-header"><span class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+  <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+</svg></span> project/entries/movies/sg-1/season-5/episode-21/entry.neon</div>
+<pre><code class="language-text">title: &quot;Meridian&quot;
+description: &quot;As Jackson suffers from a fatal dose of radiation, he struggles with the value of his life while his friends deal with the emotional and diplomatic repercussions.&quot;
+director: William Waring
+writers: &quot;Brad Wright, Jonathan Glassner&quot;
+stars: &quot;Richard Dean Anderson, Michael Shanks, Amanda Tapping&quot;
+content: '''
+    SG-1 returns from an off-world mission to P9Y-3C3 with Daniel Jackson suffering from what is likely a fatal dose of radiation. On the planet, they dealt with the country of Kelowna and their representative Jonas Quinn. That country was at the same stage of development as the United States in the 1940s and well on their way to creating an atomic weapon using Goa'uld technology found in an ancient temple. Daniel argued against the Kelownans developing such a weapon and is accused of attempting to sabotage the project. As members of the team sit by his deathbed, Daniel receives an unexpected offer from someone they once met off-world.
+'''
+</code></pre>
+<h4>JSON (.json)</h4>
+<div class="file-header"><span class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+  <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+</svg></span> project/entries/movies/sg-1/season-5/episode-21/entry.json</div>
+<pre><code class="language-text">{
+  &quot;title&quot;: &quot;Meridian&quot;,
+  &quot;description&quot;: &quot;As Jackson suffers from a fatal dose of radiation, he struggles with the value of his life while his friends deal with the emotional and diplomatic repercussions.&quot;,
+  &quot;director&quot;: &quot;William Waring&quot;,
+  &quot;writers&quot;: &quot;Brad Wright, Jonathan Glassner&quot;,
+  &quot;stars&quot;: &quot;Richard Dean Anderson, Michael Shanks, Amanda Tapping&quot;,
+  &quot;content&quot;: &quot;SG-1 returns from an off-world mission to P9Y-3C3 with Daniel Jackson suffering from what is likely a fatal dose of radiation. On the planet, they dealt with the country of Kelowna and their representative Jonas Quinn. That country was at the same stage of development as the United States in the 1940s and well on their way to creating an atomic weapon using Goa'uld technology found in an ancient temple. Daniel argued against the Kelownans developing such a weapon and is accused of attempting to sabotage the project. As members of the team sit by his deathbed, Daniel receives an unexpected offer from someone they once met off-world.&quot;
+}
+</code></pre>
+<h4>JSON5 (.json5)</h4>
+<div class="file-header"><span class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+  <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+</svg></span> project/entries/movies/sg-1/season-5/episode-21/entry.json5</div>
+<pre><code class="language-text">{
+  title: &quot;Meridian&quot;,
+  description: &quot;As Jackson suffers from a fatal dose of radiation, he struggles with the value of his life while his friends deal with the emotional and diplomatic repercussions.&quot;,
+  director: &quot;William Waring&quot;,
+  writers: &quot;Brad Wright, Jonathan Glassner&quot;,
+  stars: &quot;Richard Dean Anderson, Michael Shanks, Amanda Tapping&quot;,
+  content: &quot;SG-1 returns from an off-world mission to P9Y-3C3 with Daniel Jackson suffering from what is likely a fatal dose of radiation. On the planet, they dealt with the country of Kelowna and their representative Jonas Quinn. That country was at the same stage of development as the United States in the 1940s and well on their way to creating an atomic weapon using Goa'uld technology found in an ancient temple. Daniel argued against the Kelownans developing such a weapon and is accused of attempting to sabotage the project. As members of the team sit by his deathbed, Daniel receives an unexpected offer from someone they once met off-world.&quot;
+}
+</code></pre>
+<h3><a name="entries-and-urls-structure"></a> Entries and Urls structure</h3>
+<p>All project entries are located in the <code>project/entries</code> folder.</p>
+<p>Each entry file should be placed in its folder.</p>
+<p>Folder names should also be valid <strong>slugs</strong>. Slugs are entirely lowercase, with accented characters replaced by letters from the Latin alphabet and whitespace characters replaced by a dash or an underscore to avoid being encoded.</p>
 <h5>Examples</h5>
 <pre><code># Physical Location
 project/entries/movies/sg-1/entry.md
 
-# ID (URL)
+# ID
 movies/sg-1
 
 # Slug
@@ -332,7 +541,7 @@ sg-1
 <pre><code># Physical Location
 project/entries/movies/sg-1/season-5/entry.md
 
-# ID (URL)
+# ID
 movies/sg-1/season-5
 
 # Slug
@@ -341,15 +550,16 @@ season-5
 <pre><code># Physical Location
 project/entries/movies/sg-1/season-5/episode-21/entry.md
 
-# ID (URL)
+# ID
 movies/sg-1/season-5/episode-21
 
 # Slug
 episode-21
 </code></pre>
-<h3><a name="default-variables"></a> Default Variables</h3>
-<p>There are a number of default entry variables available for each entry and defined in the Front Matter section.</p>
-<h5><a name="default-variables-visibility"></a> Visibility</h5>
+<h3><a name="fields"></a> Fields</h3>
+<p>Several default entry fields are available for each entry.</p>
+<h5><a name="field-visibility"></a> <code>visibility</code></h5>
+<p>Entries visibility is about controlling who can see your entries. Flextype allows you to control the visibility of your entries on an individual basis. By default, all entries are visible.</p>
 <table>
     <thead>
         <tr>
@@ -361,20 +571,21 @@ episode-21
     <tbody>
         <tr>
             <td>visibility</td>
-            <td>visible</td>
-            <td>visible or draft or hidden</td>
+            <td><code class="hljs">visible</code></td>
+            <td><code class="hljs">visible</code>, <code class="hljs">draft</code> or <code class="hljs">hidden</code></td>
         </tr>
     </tbody>
 </table>
-<p>Content visibility is about controlling who can see your entries. Flextype allows you to control the visibility of your entries on an individual basis. By default, all entries are visible.</p>
-<p><strong>Examples</strong></p>
+<p><strong>Example</strong></p>
 <pre><code>---
 title: My Entry Title
 visibility: draft
 ---
 My entry content here.
 </code></pre>
-<h5><a name="default-variables-routable"></a> Routable</h5>
+<br>
+<h5><a name="field-routable"></a> <code>routable</code></h5>
+<p>By default, all entries are routable. This means that they can be reached by pointing your browser to the URL of the entry. However, you may need to create a specific entry to hold specific data, but it is meant to be called directly by a plugin, another entry.</p>
 <table>
     <thead>
         <tr>
@@ -386,20 +597,21 @@ My entry content here.
     <tbody>
         <tr>
             <td>routable</td>
-            <td>true</td>
-            <td>true or false</td>
+            <td><code class="hljs">true</code></td>
+            <td><code class="hljs">true</code> or <code class="hljs">false</code></td>
         </tr>
     </tbody>
 </table>
-<p>By default, all entries are routable. This means that they can be reached by pointing your browser to the URL of the entry. However, you may need to create a specific entry to hold specific content, but it is meant to be called directly by a plugin, other content, or even a theme directly.</p>
-<p><strong>Examples</strong></p>
+<p><strong>Example</strong></p>
 <pre><code>---
 title: Commment42
 routable: false
 ---
 Content for Commment42
 </code></pre>
-<h5><a name="default-variables-published-at"></a> Published at</h5>
+<br>
+<h5><a name="field-published-at"></a> <code>published_at</code></h5>
+<p>Allows you to specifically set a <code>published_at</code> date associated with this entry.</p>
 <table>
     <thead>
         <tr>
@@ -416,7 +628,6 @@ Content for Commment42
         </tr>
     </tbody>
 </table>
-<p>This variable allows you to specifically set a published_at date associated with this entry.</p>
 <p><strong>Examples</strong></p>
 <pre><code>---
 title: My Entry Title
@@ -424,7 +635,9 @@ published_at: '15-05-2020 06:57'
 ---
 My entry content here.
 </code></pre>
-<h5><a name="default-variables-published-by"></a> Published by</h5>
+<br>
+<h5><a name="field-published-by"></a> <code>published_by</code></h5>
+<p>Allows you to specifically set a <code>published_by</code> User UUID associated with this entry.</p>
 <table>
     <thead>
         <tr>
@@ -441,7 +654,6 @@ My entry content here.
         </tr>
     </tbody>
 </table>
-<p>This variable allows you to specifically set a published_by User UUID associated with this entry.</p>
 <p><strong>Examples</strong></p>
 <pre><code>---
 title: My Entry Title
@@ -449,7 +661,9 @@ published_by: ea7432a3-b2d5-4b04-b31d-1c5acc7a55e2
 ---
 My entry content here.
 </code></pre>
-<h5><a name="default-variables-created-at"></a> Created at</h5>
+<br>
+<h5><a name="field-created-at"></a> <code>created_at</code></h5>
+<p>Allows you to specifically set a created_at date associated with this entry.</p>
 <table>
     <thead>
         <tr>
@@ -466,8 +680,9 @@ My entry content here.
         </tr>
     </tbody>
 </table>
-<p>This variable allows you to specifically set a created_at date associated with this entry.</p>
-<h5><a name="default-variables-modified-at"></a> Modified at</h5>
+<br>
+<h5><a name="field-modified-at"></a> <code>modified_at</code></h5>
+<p>Allows you to specifically set a <code>modified_at</code> date associated with this entry.</p>
 <table>
     <thead>
         <tr>
@@ -484,7 +699,6 @@ My entry content here.
         </tr>
     </tbody>
 </table>
-<p>This variable allows you to specifically set a modified_at date associated with this entry.</p>
 <p><strong>Examples</strong></p>
 <pre><code>---
 title: My Entry Title
@@ -492,32 +706,10 @@ modified_at: '15-05-2020 06:57'
 ---
 My entry content here.
 </code></pre>
-<h5><a name="default-variables-parsers"></a> Parsers</h5>
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Default</th>
-            <th>Available values for option</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>parsers</td>
-            <td></td>
-            <td>A list of parsers with options</td>
-        </tr>
-    </tbody>
-</table>
-<pre><code class="language-yaml">parsers:
-  markdown:
-    enabled: true
-    fields: ['content', 'title']
-  shortcodes:
-    enabled: true
-    fields: ['content', 'title', 'description']
-</code></pre>
-<h5><a name="default-variables-cache"></a> Cache</h5>
+<br>
+<h5><a name="field-cache"></a> <code>cache</code></h5>
+<p>By default, all entries are stored in the cache if flextype cache setting is <code>true</code>.
+But this can be changed by setting individual <code>cache</code> for each entry.</p>
 <table>
     <thead>
         <tr>
@@ -530,13 +722,13 @@ My entry content here.
         <tr>
             <td>cache</td>
             <td></td>
-            <td>true or false</td>
+            <td><code class="hljs">true</code> or <code class="hljs">false</code></td>
         </tr>
     </tbody>
 </table>
-<p>By default, all entries are stored in the cache if flextype cache is true.
-But this rule can be changed by setting individual cache for each entry.</p>
-<h5><a name="default-variables-slug"></a> Slug</h5>
+<br>
+<h5><a name="field-slug"></a> <code>slug</code></h5>
+<p>The field should be in lowercase, with accented characters replaced by letters from the Latin alphabet and whitespace characters replaced by a dash or an underscore, to avoid being encoded.</p>
 <table>
     <thead>
         <tr>
@@ -549,11 +741,12 @@ But this rule can be changed by setting individual cache for each entry.</p>
         <tr>
             <td>slug</td>
             <td></td>
-            <td>Slug is entirely lowercase, with accented characters replaced by letters from the Latin alphabet and whitespace characters replaced by a dash or an underscore, to avoid being encoded.</td>
+            <td>Entry Slug</td>
         </tr>
     </tbody>
 </table>
-<h5><a name="default-variables-id"></a> Id</h5>
+<br>
+<h5><a name="field-id"></a> <code>id</code></h5>
 <table>
     <thead>
         <tr>
@@ -570,136 +763,318 @@ But this rule can be changed by setting individual cache for each entry.</p>
         </tr>
     </tbody>
 </table>
-<h5><a name="default-variables-entries"></a> Entries</h5>
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Default</th>
-            <th>Available values for option</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>entries</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-<pre><code class="language-yaml">entries:
-  fetch:
-    posts:
-      id: blog
-      options:
-        collection: true
-        find: []
-        filter: []
-    post:
-      id: blog/post-1
-      options:
-        filter: []
-    testimonials:
-      id: testimonials
-      options:
-        method: fetchTestimonials
-</code></pre>
-<h5><a name="default-variables-media"></a> Media</h5>
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Default</th>
-            <th>Available values for option</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>media</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-<pre><code class="language-yaml">media:
-  files:
-    fetch:
-      albums:
-        id: albums
-        options:
-          collection: true
-          filter: []
-      foo:
-        id: albums/album-1/foo.jpg
-        options:
-          filter: []
-      other:
-        id: other
-        options:
-          method: fetchFromOtherDB
-  folders:
-    fetch:
-      albums:
-        id: albums
-        options:
-          collection: true
-          filter: []
-      foo:
-        id: albums/album-1/foo.jpg
-        options:
-          filter: []
-      other:
-        id: other
-        options:
-          method: fetchFromOtherDB
-</code></pre>
-<h5><a name="default-variables-registry"></a> Registry</h5>
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Default</th>
-            <th>Available values for option</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>registry</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-<pre><code class="language-yaml">registry:
-  get:
-    flextype:
-      key: flextype.manifest.name
-    author.name:
-      key: flextype.manifest.author.name
-    license:
-      key: flextype.manifest.license
-</code></pre>
-<h3><a name="custom-variables"></a> Custom Variables</h3>
-<p>You can create your own custom entry variables using any valid YAML syntax. These would be entry-specific variable and be available for Rest API and any extension such as plugin, theme and etc...</p>
+<br>
+<p>You can create custom entry fields using any valid YAML syntax. These would be entry-specific fields and be available for Rest API and any extension such as plugin, theme, etc...</p>
 <div class="file-header"><i class="far fa-file-alt"></i> project/entries/home/entry.md</div>
 <pre><code>---
 title: My Entry Title
 description: My entry description
 author:
-  twitter: &quot;@getflextype&quot;
+  twitter: &quot;@_flextype&quot;
 ---
 My entry content here.
 </code></pre>
 <p><strong>Examples</strong></p>
-<p>Get variable <code>author.twitter</code> with PHP.</p>
-<pre><code class="language-php">echo flextype('entries')-&gt;fetch('home')['author.twitter'];
+<p>Get field <code>author.twitter</code> in PHP.</p>
+<pre><code class="language-php">echo entries()-&gt;fetch('home')['author.twitter']; // @_flextype
 </code></pre>
-<p>Get variable <code>author.twitter</code> with Rest API.</p>
-<pre><code class="language-http">GET /api/entries?id=home&amp;token=YOUR_ENTRIES_TOKEN
+<h3><a name="vars"></a> Vars</h3>
+<p>You may define variables in your entries.</p>
+<pre><code class="language-yaml">---
+vars:
+  title: Meridian
+  ratings:
+    stars: 5
+title: &quot;(var:title)&quot;
+description: As Jackson suffers from a fatal dose of radiation, he struggles with the value of his life while his friends deal with the emotional and diplomatic repercussions.
+director: William Waring
+writers: Brad Wright, Jonathan Glassner
+stars: Richard Dean Anderson, Michael Shanks, Amanda Tapping
+---
+
+Title: (var:title)
+
+Rating: (var:ratings.stars) stars.
+
+Content:
+SG-1 returns from an off-world mission to P9Y-3C3 with Daniel Jackson suffering from what is likely a fatal dose of radiation. On the planet, they dealt with the country of Kelowna and their representative Jonas Quinn. That country was at the same stage of development as the United States in the 1940s and well on their way to creating an atomic weapon using Goa'uld technology found in an ancient temple. Daniel argued against the Kelownans developing such a weapon and is accused of attempting to sabotage the project. As members of the team sit by his deathbed, Daniel receives an unexpected offer from someone they once met off-world.
 </code></pre>
-<p>Get variable <code>author.twitter</code> with <a href="https://github.com/flextype-plugins/twig">TWIG Plugin</a>.</p>
-<pre><code class="language-twig">{{ entries.fetch('home').author.twitter }}
+<h3><a name="directives"></a> Directives</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Directive</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#directive-shotcodes">shortcodes</a></td>
+            <td>Parse shortcodes text inside current field.</td>
+        </tr>
+        <tr>
+            <td><a href="#directive-markdown">markdown</a></td>
+            <td>Parse markdown text inside current field.</td>
+        </tr>
+        <tr>
+            <td><a href="#directive-textile">textile</a></td>
+            <td>Parse textile text inside current field.</td>
+        </tr>
+        <tr>
+            <td><a href="#directive-php">php</a></td>
+            <td>Execute php code inside current field.</td>
+        </tr>
+        <tr>
+            <td><a href="#directive-type">type</a></td>
+            <td>Set current field type.</td>
+        </tr>
+        <tr>
+            <td><a href="#directive-expressions">[[ ]]</a></td>
+            <td>Eval expression.</td>
+        </tr>
+    </tbody>
+</table>
+<h3>Directives Details</h3>
+<h5><a name="directive-update"></a> <code>shortcodes</code></h5>
+<p><strong>Examples</strong></p>
+<pre><code class="language-yaml">---
+discount: &quot;@shortcodes (strings random)&quot; 
+---
 </code></pre>
+<h5><a name="directive-markdown"></a> <code>markdown</code></h5>
+<p><strong>Examples</strong></p>
+<pre><code class="language-yaml">---
+text: &quot;@markdown **bold text here**&quot; 
+---
+</code></pre>
+<h5><a name="directive-textile"></a> <code>textile</code></h5>
+<p><strong>Examples</strong></p>
+<pre><code class="language-yaml">---
+text: &quot;@textile **bold text here**&quot; 
+---
+</code></pre>
+<h5><a name="directive-php"></a> <code>php</code></h5>
+<p><strong>Examples</strong></p>
+<pre><code class="language-yaml">---
+text: &quot;@php echo 'Hello World';&quot; 
+---
+</code></pre>
+<h5><a name="directive-type"></a> <code>type</code></h5>
+<p>Available types: <code>int</code>, <code>integer</code>, <code>float</code>, <code>bool</code>, <code>boolean</code>, <code>array</code>, <code>json</code>, <code>collection</code>, <code>null</code> and <code>string</code>.</p>
+<p><strong>Examples</strong></p>
+<pre><code class="language-yaml">---
+vars: 
+    title: &quot;GT Fury&quot;
+    currency: &quot;USD&quot;
+    vat: '@type[int] (strings random: &quot;2,1234567890)&quot;'
+title: &quot;(var:title)&quot;
+price: &quot;(calc:'100+(var:vat)')&quot;
+price_with_currency: &quot;(field:price) (var:currency)&quot;
+---
+GT Fury content here...
+</code></pre>
+<h5><a name="directive-expression"></a> <code>[[ ]]</code></h5>
+<p>Eval expression.</p>
+<pre><code class="language-yaml">price: &quot;[[ 100 + var('vat') ]]&quot;
+message: &quot;[[ field('price') &gt; 100 ? 'Price is greater than 100' : 'Price is less than 100' ]]&quot;
+</code></pre>
+<h3><a name="macros"></a> Macros</h3>
+<h5><a name="macros-entries"></a> <code>entries</code></h5>
+<p><strong>Examples</strong></p>
+<pre><code class="language-yaml">macros:
+  entries:
+    fetch:
+      posts:
+        id: blog
+        options:
+          collection: true
+          find: []
+          filter: []
+      post:
+        id: blog/post-1
+        options:
+          filter: []
+      testimonials:
+        id: testimonials
+</code></pre>
+<h5><a name="macros-registry"></a> <code>registry</code></h5>
+<p><strong>Examples</strong></p>
+<pre><code class="language-yaml">macros:
+  registry:
+    get:
+      flextype:
+        id: flextype.manifest.name
+      author.name:
+        id: flextype.manifest.author.name
+      license:
+        id: flextype.manifest.license
+</code></pre>
+<h5><a name="macros-php"></a> <code>php</code></h5>
+<p><strong>Examples</strong></p>
+<pre><code class="language-yaml">title: Blog
+macros:
+  php: |
+    $entry = entries()-&gt;registry()-&gt;get('methods.fetch');
+    $entry['result']['posts'] = entries()-&gt;fetch('blog', ['collection' =&gt; true, 'filter' =&gt; ['sort_by' =&gt; ['key' =&gt; 'date', 'direction' =&gt; 'ASC']]])-&gt;toArray();
+    entries()-&gt;registry()-&gt;set('methods.fetch', $entry); 
+</code></pre>
+<h3><a name="expressions"></a> Expressions</h3>
+<p>Flextype uses Symfony Expression Language Component, which provides an engine that can compile and evaluate expressions.</p>
+<p>The purpose of using this component is to allow developers to use expressions inside entries, configurations, etc.. more complex logic than just flat data.</p>
+<p>The idea is to let the developers of Flextype powered projects do some business logic inside entries fields without using PHP or introducing security problems.</p>
+<p>Expressions can be seen as a very restricted PHP sandbox and are immune to external injections as you must explicitly declare which variables are available in an expression.</p>
+<p><strong>Examples</strong></p>
+<pre><code class="language-yaml">---
+vars: 
+    title: &quot;GT Fury&quot;
+    currency: &quot;USD&quot;
+    vat: &quot;@type[int] [[ strings().random(2, 1234567890) ]]&quot;
+title: &quot;[[ var('title') ]]&quot;
+price: &quot;[[ 100 + var('vat') ]]&quot;
+message: &quot;[[ field('price') &gt; 100 ? 'Price is greater than 100' : 'Price is less than 100' ]]&quot;
+random: &quot;[[ strings().random() ]]&quot;
+---
+### Price
+[[ field('price') ]]
+
+### Message
+[[ field('message') ]]
+
+### Random
+[[ field('random') ]]
+</code></pre>
+<p>Learn more about <a href="https://symfony.com/doc/5.4/components/expression_language.html">Symfony Expression Language Component</a></p>
+<h3><a name="functions"></a> Functions</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Function</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#expression-function-actions">actions</a></td>
+            <td>Get actions service.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-actions">entries</a></td>
+            <td>Get entries service.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-collection">collection</a></td>
+            <td>Create a new arrayable collection object from the given elements.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-collectionFromJson">collectionFromJson</a></td>
+            <td>Create a new arrayable collection object from the given JSON string.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-collectionFromString">collectionFromString</a></td>
+            <td>Create a new arrayable collection object from the given string.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-collectionWithRange">collectionWithRange</a></td>
+            <td>Create a new arrayable object with a range of elements.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-collectionFromQueryString">collectionFromQueryString</a></td>
+            <td>Create a new arrayable object from the given query string.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-filterCollection">filterCollection</a></td>
+            <td>Filter collection.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-const">const</a></td>
+            <td>Get php constant.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-var">var</a></td>
+            <td>Get entry var.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-field">field</a></td>
+            <td>Get entry field.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-csrf">csrf</a></td>
+            <td>Get csrf hidden input.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-filesystem">filesystem</a></td>
+            <td>Get filesystem instance.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-tr">tr</a></td>
+            <td>Returns translation of a string. If no translation exists, the original string will be returned. No parameters are replaced.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-__">__</a></td>
+            <td>Returns translation of a string. If no translation exists, the original string will be returned. No parameters are replaced.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-parsers">parsers</a></td>
+            <td>Get parsers service.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-serializers">serializers</a></td>
+            <td>Get serializers service.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-slugify">slugify</a></td>
+            <td>Get slugify service.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-strings">strings</a></td>
+            <td>Get strings instance.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-registry">registry</a></td>
+            <td>Get registry service.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-urlFor">urlFor</a></td>
+            <td>Get the url for a named route.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-fullUrlFor">fullUrlFor</a></td>
+            <td>Get the full url for a named route.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-isCurrentUrl">isCurrentUrl</a></td>
+            <td>To determine is current url equal to route name.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-getCurrentUrl">getCurrentUrl</a></td>
+            <td>To get current path on given Uri.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-getBasePath">getBasePath</a></td>
+            <td>To get the base path.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-getBaseUrl">getBaseUrl</a></td>
+            <td>To get the base url.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-getAbsoluteUrl">getAbsoluteUrl</a></td>
+            <td>To get the absolute url.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-getProjectUrl">getProjectUrl</a></td>
+            <td>To get the project url.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-getUriString">getUriString</a></td>
+            <td>To get the uri string.</td>
+        </tr>
+        <tr>
+            <td><a href="#expression-function-redirect">redirect</a></td>
+            <td>To create redirect.</td>
+        </tr>
+    </tbody>
+</table>
 <h3><a name="methods"></a> Methods</h3>
 <table>
     <thead>
@@ -755,19 +1130,19 @@ My entry content here.
  * @param string $id      Unique identifier of the entry.
  * @param array  $options Options array.
  *
- * @access public
+ * @return mixed Returns mixed results from APIs or default is an instance of The Collection class with founded items.
  *
- * @return self Returns instance of The Arrays class.
+ * @access public
  */
-public function fetch(string $id, array $options = []): Arrays
+public function fetch(string $id, array $options = [])
 </code></pre>
 <h5>Fetch single entry</h5>
 <p><strong>Examples</strong></p>
 <p>Fetch single entry <code>movies/sg-1/season-5/episode-21</code></p>
-<pre><code class="language-php">$data = flextype('entries')-&gt;fetch('movies/sg-1/season-5/episode-21');
+<pre><code class="language-php">$data = entries()-&gt;fetch('movies/sg-1/season-5/episode-21');
 </code></pre>
 <p>Fetch singe entry in <code>movies/sg-1/season-5/episode-21</code> and send <code>$options</code>.</p>
-<pre><code class="language-php">$data = flextype('entries')-&gt;fetch('movies/sg-1/season-5', $options);
+<pre><code class="language-php">$data = entries()-&gt;fetch('movies/sg-1/season-5', $options);
 </code></pre>
 <p><code>$options</code> is an array of valid values for <code><a href="https://github.com/flextype/flextype/blob/dev/src/flextype/Support/Helpers/FilterHelper.php">filter</a></code> helper.</p>
 <pre><code class="language-php">$options = [
@@ -805,6 +1180,12 @@ public function fetch(string $id, array $options = []): Arrays
             'direction' =&gt; 'ASC'
         ],
 
+        // Extract only items.
+        'only' =&gt; [],
+
+        // Extract except
+        'except' =&gt; [],
+
         // Extract a slice of the current array with specific offset.
         'offset' =&gt; 0,
 
@@ -816,10 +1197,10 @@ public function fetch(string $id, array $options = []): Arrays
 <h5>Fetch entries collection</h5>
 <p><strong>Examples</strong></p>
 <p>Fetch collections of entries episodes in <code>movies/sg-1/season-5</code></p>
-<pre><code class="language-php">$data = flextype('entries')-&gt;fetch('movies/sg-1/season-5', $options);
+<pre><code class="language-php">$data = entries()-&gt;fetch('movies/sg-1/season-5', $options);
 </code></pre>
 <p>Fetch collections of entries in <code>movies/sg-1</code> and send <code>$options</code>.</p>
-<pre><code class="language-php">$data = flextype('entries')-&gt;fetch('movies/sg-1/season-5', $options);
+<pre><code class="language-php">$data = entries()-&gt;fetch('movies/sg-1/season-5', $options);
 </code></pre>
 <p><code>$options</code> is an array of valid values for <code><a href="https://github.com/flextype/flextype/blob/dev/src/flextype/Support/Helpers/FindHelper.php">find</a></code> and <code><a href="https://github.com/flextype/flextype/blob/dev/src/flextype/Support/Helpers/FilterHelper.php">filter</a></code> helpers.</p>
 <pre><code class="language-php">$options = [
@@ -936,7 +1317,7 @@ public function create(string $id, array $data = []): bool
         ];
 
 
-flextype('entries')-&gt;create('movies/sg-1/season-5/episode-22', $data);
+entries()-&gt;create('movies/sg-1/season-5/episode-22', $data);
 </code></pre>
 <h5><a name="methods-update"></a> <code>update</code></h5>
 <p>Update entry.</p>
@@ -957,7 +1338,7 @@ public function update(string $id, array $data): bool
 <pre><code class="language-php">$data = ['soundtracks' =&gt; 'Joel Goldsmith'];
 
 
-flextype('entries')-&gt;update('movies/sg-1/season-5/episode-22', $data);
+entries()-&gt;update('movies/sg-1/season-5/episode-22', $data);
 </code></pre>
 <h5><a name="methods-move"></a> <code>move</code></h5>
 <p>Move entry.</p>
@@ -975,7 +1356,7 @@ public function move(string $id, string $newID): bool
 </code></pre>
 <p><strong>Examples</strong></p>
 <p>Move entry <code>episode-22</code> to <code>episode-23</code> in <code>movies/sg-1/season-5</code></p>
-<pre><code class="language-php">flextype('entries')-&gt;move('movies/sg-1/season-5/episode-22',
+<pre><code class="language-php">entries()-&gt;move('movies/sg-1/season-5/episode-22',
                           'movies/sg-1/season-5/episode-23');
 </code></pre>
 <h5><a name="methods-copy"></a> <code>copy</code></h5>
@@ -994,7 +1375,7 @@ public function copy(string $id, string $newID): ?bool
 </code></pre>
 <p><strong>Examples</strong></p>
 <p>Copy entry <code>episode-23</code> to <code>episode-22</code> in <code>movies/sg-1/season-5</code></p>
-<pre><code class="language-php">flextype('entries')-&gt;rename('movies/sg-1/season-5/episode-23',
+<pre><code class="language-php">entries()-&gt;rename('movies/sg-1/season-5/episode-23',
                                        'movies/sg-1/season-5/episode-22');
 </code></pre>
 <h5><a name="methods-delete"></a> <code>delete</code></h5>
@@ -1012,7 +1393,7 @@ public function delete(string $id): bool
 </code></pre>
 <p><strong>Examples</strong></p>
 <p>Delete entry <code>episode-23</code> in <code>movies/sg-1/season-5</code></p>
-<pre><code class="language-php">flextype('entries')-&gt;delete('movies/sg-1/season-5/episode-23');
+<pre><code class="language-php">entries()-&gt;delete('movies/sg-1/season-5/episode-23');
 </code></pre>
 <h5><a name="methods-has"></a> <code>has</code></h5>
 <p>Check whether entry exists.</p>
@@ -1029,7 +1410,7 @@ public function has(string $id): bool
 </code></pre>
 <p><strong>Examples</strong></p>
 <p>Check whether entry <code>episode-23</code> exists in <code>movies/sg-1/season-5</code></p>
-<pre><code class="language-php">if (flextype('entries')-&gt;has('movies/sg-1/season-5/episode-23')) {
+<pre><code class="language-php">if (entries()-&gt;has('movies/sg-1/season-5/episode-23')) {
     // do something...
 }
 </code></pre>
@@ -1048,7 +1429,7 @@ public function getFileLocation(string $id): string
 </code></pre>
 <p><strong>Examples</strong></p>
 <p>Check whether entry <code>episode-23</code> exists in <code>movies/sg-1/season-5</code></p>
-<pre><code class="language-php">$data = flextype('entries')-&gt;getFileLocation('movies/sg-1/season-5/episode-23');
+<pre><code class="language-php">$data = entries()-&gt;getFileLocation('movies/sg-1/season-5/episode-23');
 </code></pre>
 <h5><a name="methods-getDirectoryLocation"></a> <code>getDirectoryLocation</code></h5>
 <p>Get entry directory location</p>
@@ -1065,22 +1446,22 @@ public function getDirectoryLocation(string $id): string
 </code></pre>
 <p><strong>Examples</strong></p>
 <p>Get entry <code>episode-23</code> exists in <code>movies/sg-1/season-5</code></p>
-<pre><code class="language-php">$data = flextype('entries')-&gt;getDirectoryLocation('movies/sg-1/season-5/episode-23');
+<pre><code class="language-php">$data = entries()-&gt;getDirectoryLocation('movies/sg-1/season-5/episode-23');
 </code></pre>
 <h3><a name="extending"></a> Extending</h3>
 <p>Entries are &quot;macroable&quot;, which allows you to add additional methods to the Entries API at run time.</p>
 <p>For example, the following code adds a <code>fetchRecentPosts()</code> method to the Entries API.</p>
 <p><strong>Examples</strong></p>
 <pre><code class="language-php">// Create new macros for fetch recent posts.
-flextype('entries')::macro('fetchRecentPosts', function($limit = 10) {
-    return flextype('entries')
+entries()::macro('fetchRecentPosts', function($limit = 10) {
+    return entries()
                 -&gt;fetchCollection('blog')
                 -&gt;sortBy('publised_at')
                 -&gt;limit($limit);
 });
 
 // Display recent posts.
-foreach (flextype('entries')-&gt;fetchRecentPosts(5) as $post) {
+foreach (entries()-&gt;fetchRecentPosts(5) as $post) {
     echo $post['title'] . &quot;\n&quot;;
 }
 </code></pre>
@@ -1094,7 +1475,7 @@ For this approach, you should use a mixin static method on the macroable Entries
 class BlogMixin {
     public function fetchRecentPosts() {
         return function($limit = 10) {
-            return flextype('entries')
+            return entries()
                         -&gt;fetchCollection('blog')
                         -&gt;sortBy('publised_at')
                         -&gt;limit($limit);
@@ -1103,113 +1484,16 @@ class BlogMixin {
 }
 
 // Create new mixin BlogMixin with it is macros.
-flextype('entries')::mixin(new BlogMixin());
+entries()::mixin(new BlogMixin());
 
 // Display recent posts.
-foreach (flextype('entries')-&gt;fetchRecentPosts(5) as $post) {
+foreach (entries()-&gt;fetchRecentPosts(5) as $post) {
     echo $post['title'] . &quot;\n&quot;;
 }
 </code></pre>
 
         </div>
-                <div class="w-full lg:w-2/12 block relative">
-            <div class="lg:sticky lg:top-0 lg:overflow-y-auto lg:max-h-screen">
-                <div class="p-0 mb-10 lg:mb-0 lg:pl-10">
-                    <h4 class="m-0 p-0 pb-1">On This Page</h4>
-                    <ul class="list-none m-0 p-0">
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#entries-and-urls-structure">Entries and Urls structure</a>
-                                                            </li>
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#default-variables">Default Variables</a>
-                                                                <ul class="list-none m-0 ml-3 p-0">
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#default-variables-visibility">visibility</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#default-variables-routable">routable</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#default-variables-published-at">published_at</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#default-variables-published-by">published_by</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#default-variables-created-at">created_at</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#default-variables-created-by">created_by</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#default-variables-modified-at">modified_at</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#default-variables-parsers">parsers</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#default-variables-cache">cache</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#default-variables-slug">slug</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#default-variables-id">id</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#default-variables-entries">entries</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#default-variables-media">media</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#default-variables-registry">registry</a>
-                                    </li>
-                                                                    </ul>
-                                                            </li>
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#custom-variables">Custom Variables</a>
-                                                            </li>
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#methods">Methods</a>
-                                                                <ul class="list-none m-0 ml-3 p-0">
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#methods-fetch">fetch</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#methods-create">create</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#methods-update">update</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#methods-move">move</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#methods-copy">copy</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#methods-delete">delete</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#methods-has">has</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#methods-getFileLocation">getFileLocation</a>
-                                    </li>
-                                                                        <li class="mb-1">
-                                        &#8227; <a class="text-decoration-none text-sm" href="#methods-getDirectoryLocation">getDirectoryLocation</a>
-                                    </li>
-                                                                    </ul>
-                                                            </li>
-                                                    <li class="mb-1">
-                                <a class="text-decoration-none text-sm" href="#extending">Extending</a>
-                                                            </li>
-                                            </ul>
-                </div>
-            </div>
-        </div>
-            </div>
+    </div>
 </div>
         </section>
         <footer class="py-20 text-sm text-center">

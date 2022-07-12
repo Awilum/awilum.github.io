@@ -14,19 +14,21 @@
         
         <title>Developer | Sergey Romanenko</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
 
-                
                 
                                     <link href="https://awilum.github.io/project/themes/dev/assets/dist/css/dev.min.css" rel="stylesheet">
                     
             </head>
 <body class="antialiased text-slate-900 dark:text-slate-300 bg-white dark:bg-slate-900">
-    <header class="bg-white dark:bg-slate-800 border-b border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] plate-shadow">
-        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-bold text-center border-r border-slate-900 brand-logo no-underline text-pink-500">
+    <header class="bg-white dark:bg-slate-800 dark:border-slate-500 border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg">
+        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 dark:border-slate-500 brand-logo no-underline text-pink-500">
             AWILUM
         </a>
-        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-semibold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
             Blog
         </a>
         <div class="flex justify-center hidden lg:block">
@@ -58,7 +60,7 @@
                     :aria-expanded="open"
                     :aria-controls="$id('dropdown-button')"
                     type="button"
-                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 "
                 >
                     <span>Projects</span>
                 </button>
@@ -70,14 +72,14 @@
                     x-transition.origin.top.left
                     x-on:click.outside="close($refs.button)"
                     :id="$id('dropdown-button')"
-                    style="display: none; box-shadow: 3px 3px 0 #0f172a"
-                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 rounded overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+                    style="display: none;"
+                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 dark:border-slate-500 rounded-lg overflow-hidden z-50 dark:bg-slate-800"
                 >
                     <div>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +113,7 @@
             :aria-expanded="open"
             :aria-controls="$id('dropdown-button')"
             type="button"
-            class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+            class="outline-none hover:text-pink-500 dark:border-slate-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
         >
             <span>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -174,26 +176,23 @@
             x-transition.origin.top.left
             x-on:click.outside="close($refs.button)"
             :id="$id('dropdown-button')"
-            style="display: none; box-shadow: 3px 3px 0 #0f172a"
-            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+            style="display: none;"
+            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 dark:border-slate-500 plate-shadow"
         >
             <div>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/blog">
-                    Blog
-                </a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                 
             </div>
         </div>
     </div>
 </div>        <div class="flex" style="margin-left: auto;">
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
                 Sponsors
             </a>
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline" href="https://awilum.github.io/about">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline" href="https://awilum.github.io/about">
                 About
             </a>
         </div>
@@ -204,8 +203,8 @@
             
                                 
             
-    <div class="p-6 bg-white dark:bg-slate-800 mb-4 border border-slate-900 mt-4 plate-shadow">
-        <h3 class="text-xl font-bold pb-4 pt-0 mb-4 mt-0 p-0 border-b border-slate-900 flex items-center">
+    <div class="p-6 bg-white dark:bg-slate-800 mb-4 border rounded-lg border-slate-900 dark:border-slate-500 mt-8 plate-shadow">
+        <h3 class="text-xl font-bold pb-4 pt-0 mb-4 mt-0 p-0 border-b border-slate-900 dark:border-slate-500 flex items-center">
             Hi there, I'm Sergey Romanenko
             <a href="https://awilum.github.io/about" class="ml-2">
                 [ABOUT]
@@ -213,56 +212,56 @@
         </h3>
         <div class="flex">
             <div class="lg:w-1/12 hidden lg:block">
-                <img src="https://avatars.githubusercontent.com/u/477114?v=4" alt="" class="rounded-full border-2 border-slate-900 w-20">
+                <img src="https://avatars.githubusercontent.com/u/477114?v=4" alt="" class="rounded-full border border-slate-900 w-20">
             </div>
             <div class="w-full lg:w-11/12 lg:pl-8">
                 I'm a developer with a strong will for learning and researching new technologies and architectural solutions. I like creating and using specialized tools for making development processes as efficient as possible. I have the experience to work with big projects and big development teams.
             </div>
         </div>
     </div>
-    <div class="p-6 bg-white dark:bg-slate-800 mb-4 border border-slate-900 mt-4 plate-shadow">
-        <h3 class="text-xl font-bold pb-4 pt-0 mb-4 mt-0 p-0 border-b border-slate-900 flex items-center">
+    <div class="p-6 bg-white dark:bg-slate-800 mb-4 border rounded-lg border-slate-900 mt-8 dark:border-slate-500 plate-shadow">
+        <h3 class="text-xl font-bold pb-4 pt-0 mb-4 mt-0 p-0 border-b border-slate-900 dark:border-slate-500 flex items-center">
             PROJECTS
         </h3>
         <div class="lg:flex">
-            <div class="w-full lg:w-3/12 bg-white border border-slate-900 dark:bg-slate-700 mt-4 p-4">
+            <div class="w-full lg:w-3/12 bg-white border border-slate-900 dark:border-slate-500 dark:bg-slate-700 mt-4 p-4">
                 <h3 class="text-lg font-bold  pt-0 mb-0 mt-0 p-0">
                     <a href="https://awilum.github.io/thermage">Thermage</a>
                 </h3>
-                <div class="text-xs border-b pb-2 italic mb-4 border-slate-900 flex items-center">
+                <div class="text-xs border-b pb-2 italic mb-4 border-slate-900 dark:border-slate-500 flex items-center">
                     php
                 </div>
                 <div>
                     Fluent and incredibly powerful object-oriented interface for customizing CLI output text color, background, formatting, theming and more.
                 </div>
             </div>
-            <div class="w-full lg:w-3/12 lg:ml-4 bg-white border border-slate-900 dark:bg-slate-700 mt-4 p-4">
+            <div class="w-full lg:w-3/12 lg:ml-4 bg-white border border-slate-900 dark:border-slate-500 dark:bg-slate-700 mt-4 p-4">
                 <h3 class="text-lg font-bold  pt-0 mb-0 mt-0 p-0">
                     <a href="https://awilum.github.io/flextype">Flextype</a>
                 </h3>
-                <div class="text-xs border-b pb-2 italic mb-4 border-slate-900 flex items-center">
+                <div class="text-xs border-b pb-2 italic mb-4 border-slate-900 dark:border-slate-500 flex items-center">
                     php
                 </div>
                 <div>
                     Open-source self-hosted Hybrid Content Management System with the freedom of a Headless CMS with the full functionality of a Traditional CMS.                
                 </div>
             </div>
-            <div class="w-full lg:w-3/12 lg:ml-4 bg-white border border-slate-900 dark:bg-slate-700 mt-4 p-4">
+            <div class="w-full lg:w-3/12 lg:ml-4 bg-white border border-slate-900 dark:border-slate-500 dark:bg-slate-700 mt-4 p-4">
                 <h3 class="text-lg font-bold  pt-0 mb-0 mt-0 p-0">
                     <a href="https://awilum.github.io/glowyphp">Glowy PHP</a>
                 </h3>
-                <div class="text-xs border-b pb-2 italic mb-4 border-slate-900 flex items-center">
+                <div class="text-xs border-b pb-2 italic mb-4 dark:border-slate-500 border-slate-900 flex items-center">
                     php
                 </div>
                 <div>
                     Set of decoupled and reusable PHP building blocks for kickass Web Applications.
                 </div>
             </div>
-            <div class="w-full lg:w-3/12 lg:ml-4 bg-white border border-slate-900 dark:bg-slate-700 mt-4 p-4">
-                <h3 class="text-lg font-bold  pt-0 mb-0 mt-0 p-0">
+            <div class="w-full lg:w-3/12 lg:ml-4 bg-white border border-slate-900 dark:border-slate-500 dark:bg-slate-700 mt-4 p-4">
+                <h3 class="text-lg font-bold pt-0 mb-0 mt-0 p-0">
                     <a href="https://github.com/faker-javascript">Faker JavaScript</a>
                 </h3>
-                <div class="text-xs border-b pb-2 italic mb-4 border-slate-900 flex items-center">
+                <div class="text-xs border-b pb-2 italic mb-4 dark:border-slate-500 border-slate-900 flex items-center">
                     javascript, typescript
                 </div>
                 <div>
@@ -271,81 +270,29 @@
             </div>
         </div>
     </div>
-    <div class="lg:flex">
-        <div class="w-full lg:w-6/12 p-6 bg-white dark:bg-slate-800 lg:mr-2 border border-slate-900 plate-shadow">
-            <h3 class="text-xl font-bold pb-4 pt-0 mb-4 mt-0 p-0 border-b border-slate-900 flex items-center">
-                RECENT POSTS
-                <a rel="nofollow" href="https://awilum.github.io/blog" class="ml-2">
-                    [BLOG]
-                </a>
-            </h3>
-            <ul class="p-0 m-0">
-    <li class="mb-1 ml-0 list-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" />
-        <line x1="8" y1="8" x2="12" y2="8" />
-        <line x1="8" y1="12" x2="12" y2="12" />
-        <line x1="8" y1="16" x2="12" y2="16" />
-        </svg>
-        <a href="https://awilum.github.io/blog/using-cowsay-element-in-thermage">Using cowsay element in Thermage</a>
-    </li>
-    <li class="mb-1 ml-0 list-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" />
-        <line x1="8" y1="8" x2="12" y2="8" />
-        <line x1="8" y1="12" x2="12" y2="12" />
-        <line x1="8" y1="16" x2="12" y2="16" />
-        </svg>
-        <a href="https://awilum.github.io/blog/using-media-queries-in-thermage">Using media queries in Thermage</a>
-    </li>
-    <li class="mb-1 ml-0 list-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" />
-        <line x1="8" y1="8" x2="12" y2="8" />
-        <line x1="8" y1="12" x2="12" y2="12" />
-        <line x1="8" y1="16" x2="12" y2="16" />
-        </svg>
-        <a href="https://awilum.github.io/blog/totally-rad-and-open-source-terminal-styling-for-php">Totally RAD and open-source terminal styling for PHP!</a>
-    </li>
-    <li class="mb-1 ml-0 list-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" />
-        <line x1="8" y1="8" x2="12" y2="8" />
-        <line x1="8" y1="12" x2="12" y2="12" />
-        <line x1="8" y1="16" x2="12" y2="16" />
-        </svg>
-        <a href="https://awilum.github.io/blog/flextype-0-9-16">Flextype 0.9.16 release</a>
-    </li>
-    <li class="mb-1 ml-0 list-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" />
-        <line x1="8" y1="8" x2="12" y2="8" />
-        <line x1="8" y1="12" x2="12" y2="12" />
-        <line x1="8" y1="16" x2="12" y2="16" />
-        </svg>
-        <a href="https://awilum.github.io/blog/flextype-0-9-15">Flextype 0.9.15 release</a>
-    </li>
-</ul>
-    
-        </div>
-        <div class="w-full lg:w-6/12 p-6 bg-white dark:bg-slate-800 mt-4 lg:mt-0 lg:ml-2 border border-slate-900 plate-shadow">
-            <h3 class="text-xl font-bold pb-4 pt-0 mb-4 mt-0 p-0 border-b border-slate-900 flex items-center">
+    <div class="flex mt-8">
+        <div class="w-full p-6 bg-white dark:bg-slate-800 dark:border-slate-500 border rounded-lg border-slate-900 plate-shadow">
+            <h3 class="text-xl font-bold pb-4 pt-0 mb-4 mt-0 p-0 border-b border-slate-900 dark:border-slate-500 flex items-center">
                 OPENSOURCE CONTRIBUTIONS
                 <a rel="nofollow" href="https://github.com/Awilum" class="ml-2">
                     [GITHUB]
                 </a>
             </h3>
-            <p class="mb-0"><strong>Lines of code added:</strong> <span class="github-lines-added"></span></p>
-            <p class="mb-0"><strong>Lines of code deleted:</strong> <span class="github-lines-deleted"></span></p>
-            <p class="mb-0"><strong>Repositories created:</strong> 188</p> 
-            <!-- user:Awilum user:flextype user:flextype-components user:glowyphp user:glowyjs user:flextype-plugins user:flextype-themes user:thermage user:faker-javascript user:dart-packages user:wp-extends archived:false -->
-            <p class="mb-0"><strong>Repositories contributed:</strong> <span class="github-repositories-contributed-to"></span></p>
-            <p class="mb-0"><strong>Commits:</strong> <span class="github-commits"></span></p>
+            <div class="lg:flex">
+                <div class="flex w-full lg:w-6/12 bg-white border border-slate-900 dark:bg-slate-700 dark:border-slate-500 p-4 mb-4 lg:mb-0 lg:mr-2">
+                    <div class="flex self-center">
+                        <img src="http://ghchart.rshah.org/333333/Awilum" alt="Awilum's Github chart" />
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 bg-white border border-slate-900 dark:bg-slate-700 dark:border-slate-500 p-4 lg:ml-2">
+                    <p class="mb-0"><strong>Lines of code added:</strong> <span class="github-lines-added"></span></p>
+                    <p class="mb-0"><strong>Lines of code deleted:</strong> <span class="github-lines-deleted"></span></p>
+                    <p class="mb-0"><strong>Repositories created:</strong> 188</p> 
+                    <!-- user:Awilum user:flextype user:flextype-components user:glowyphp user:glowyjs user:flextype-plugins user:flextype-themes user:thermage user:faker-javascript user:dart-packages user:wp-extends archived:false -->
+                    <p class="mb-0"><strong>Repositories contributed:</strong> <span class="github-repositories-contributed-to"></span></p>
+                    <p class="mb-0"><strong>Commits:</strong> <span class="github-commits"></span></p>
+                </div>
+            </div>
         </div>
     </div>
         </section>

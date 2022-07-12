@@ -14,19 +14,21 @@
         
         <title>Get Twig Plugin for Open Source Hybrid Content Management System | Flextype</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
 
-                
                 
                                     <link href="https://awilum.github.io/project/themes/dev/assets/dist/css/dev.min.css" rel="stylesheet">
                     
             </head>
 <body class="antialiased text-slate-900 dark:text-slate-300 bg-white dark:bg-slate-900">
-    <header class="bg-white dark:bg-slate-800 border-b border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] plate-shadow">
-        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-bold text-center border-r border-slate-900 brand-logo no-underline text-pink-500">
+    <header class="bg-white dark:bg-slate-800 dark:border-slate-500 border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg">
+        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 dark:border-slate-500 brand-logo no-underline text-pink-500">
             AWILUM
         </a>
-        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-semibold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
             Blog
         </a>
         <div class="flex justify-center hidden lg:block">
@@ -58,7 +60,7 @@
                     :aria-expanded="open"
                     :aria-controls="$id('dropdown-button')"
                     type="button"
-                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 "
                 >
                     <span>Projects</span>
                 </button>
@@ -70,14 +72,14 @@
                     x-transition.origin.top.left
                     x-on:click.outside="close($refs.button)"
                     :id="$id('dropdown-button')"
-                    style="display: none; box-shadow: 3px 3px 0 #0f172a"
-                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 rounded overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+                    style="display: none;"
+                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 dark:border-slate-500 rounded-lg overflow-hidden z-50 dark:bg-slate-800"
                 >
                     <div>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +113,7 @@
             :aria-expanded="open"
             :aria-controls="$id('dropdown-button')"
             type="button"
-            class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+            class="outline-none hover:text-pink-500 dark:border-slate-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
         >
             <span>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -174,26 +176,23 @@
             x-transition.origin.top.left
             x-on:click.outside="close($refs.button)"
             :id="$id('dropdown-button')"
-            style="display: none; box-shadow: 3px 3px 0 #0f172a"
-            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+            style="display: none;"
+            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 dark:border-slate-500 plate-shadow"
         >
             <div>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/blog">
-                    Blog
-                </a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                 
             </div>
         </div>
     </div>
 </div>        <div class="flex" style="margin-left: auto;">
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
                 Sponsors
             </a>
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline" href="https://awilum.github.io/about">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline" href="https://awilum.github.io/about">
                 About
             </a>
         </div>
@@ -216,7 +215,7 @@
             <span class="opacity-50"><a class="no-underline" href="https://awilum.github.io/flextype/downloads/extend/plugins">PLUGINS</a></span>
         </div>
     </div>
-    <div>
+    <div class="plate border border-slate-900 dark:border-slate-500 rounded-lg p-4 plate-shadow">
                 
         
         <div class="flex content-center flex-wrap">
@@ -225,18 +224,18 @@
                     <div class="flex align-middle items-center">
                         <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"/></svg></span>
                         <div class="text-left">
-                            <h4 class="text-2xl pb-0 mb-0 block">Twig</h4>
+                            <h4 class="text-2xl pb-0 mb-0 block"></h4>
                             <p class="m-0">
                                 Twig plugin to present Twig template engine for Flextype.
                             </p>
                             <p class="m-0 text-sm">
-                                 <a class="no-underline" href="#"><b>Sergey Romanenko</b></a>
+                                <span class="opacity-50">by</span> <a href=""><b>Sergey Romanenko</b></a>
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <hr class="mb-6 border-b border-slate-800">
+                <hr class="mb-6 border-b border-slate-800 dark:border-slate-500">
 
                 <ul>
 <li>
@@ -258,15 +257,79 @@
 <a href="#license">License</a>
 </li>
 </ul>
-<h4>Installation</h4>
+<h3>Installation</h3>
 <ol>
-<li>Download &amp; Install all required dependencies.</li>
-<li>Create new folder <code>/project/plugins/twig</code>
-</li>
-<li>Download Twig Plugin and unzip plugin content to the folder <code>/project/plugins/twig</code>
-</li>
+<li>Download &amp; Install all required <a href="https://github.com/flextype-plugins/twig#dependencies">dependencies</a>.</li>
+<li>Create new folder <code>project/plugins/twig</code>.</li>
+<li>Download <a href="https://github.com/flextype-plugins/twig/releases">Sitemap Plugin</a> and unzip plugin content to the folder <code>project</code>.</li>
 </ol>
-<h4>Introduction</h4>
+<h3>Settings</h3>
+<pre><code class="language-yaml"># enabled: true or false to disable the plugin
+enabled: true
+
+# Twig
+#
+# - auto_reload: When developing with Twig, it's useful to recompile the template
+#                whenever the source code changes. If you don't provide a value
+#                for the auto_reload option, it will be determined automatically
+#                based on the debug value.
+#
+# - debug:       When set to true, the generated templates have a __toString()
+#                method that you can use to display the generated nodes
+#
+# - charset:     The charset used by the templates.
+#
+# - cache:       Set false to disable caching.
+#
+# - extensions   Flextype Twig Extension to load.
+auto_reload: true
+cache: true
+debug: false
+charset: &quot;UTF-8&quot;
+entries:
+  expressions:
+    twig:
+      enabled: true
+      class: &quot;Flextype\\Plugin\\Twig\\Expressions\\TwigExpression&quot;
+  directives:
+    twig:
+      enabled: true
+      enabled_globally: false
+      path: &quot;project/plugins/twig/src/twig/core/Entries/Directives/TwigDirective.php&quot;
+parsers:
+  shortcodes:
+    shortcodes:
+      twig:
+        enabled: true
+        path: &quot;project/plugins/twig/src/twig/core/Parsers/Shortcodes/TwigShortcode.php&quot;
+extensions: 
+  - Math
+  - I18n
+  - Filesystem
+  - Csrf
+  - Constants
+  - Strings
+  - Collection
+  - Filters
+  - Functions
+  - Tests
+  - Emitter
+  - Actions
+  - Registry
+  - Entries
+  - Serializers
+  - Parsers
+  - Flash
+  - Slugify
+  - Cache
+  - Image
+  - Url
+
+# Twig plugin priority
+priority: 0
+</code></pre>
+<p>You may override the default settings in the plugin project configuration file <code>project/config/plugins/twig/settings.yaml</code></p>
+<h3>Introduction</h3>
 <p>Twig is a modern template engine for PHP.</p>
 <ul>
 <li>
@@ -282,26 +345,26 @@
 <p><code>{#</code> – <a href="#comments">Comments</a><br />
 <code>{%</code> – <a href="#tags">Tags</a><br />
 <code>{{</code> – <a href="#print-statements">Print statements</a></p>
-<h4><a name="comments"></a> Comments</h4>
+<h3><a name="comments"></a> Comments</h3>
 <p>Twig comments are wrapped in {# and #} delimiters. You can use them to leave little notes for yourself in the code.</p>
 <p>They are similar to HTML comments in that they won’t show up as rendered text in the browser. The difference is that they will never make it into the HTML source in the first place.</p>
 <pre><code>&lt;!-- This will be visible in the HTML source --&gt;
 {# This won’t! #}
 </code></pre>
-<h4><a name="tags"></a> Tags</h4>
+<h3><a name="tags"></a> Tags</h3>
 <p>Twig tags are wrapped in {% and %} delimiters, and are used to define the logic of your template, such as conditionals, loops, variable definitions, template includes, and other things.</p>
 <p>The syntax within the {% and %} delimiters varies from tag to tag, but they will always start with the same thing: the name of the tag.</p>
-<h4><a name="print-statements"></a> Print Statements</h4>
+<h3><a name="print-statements"></a> Print Statements</h3>
 <p>To output additional HTML code dynamically, use a print statement. They are wrapped in {{ and }} delimiters, and you can put just about anything inside them, as long as it can be treated as a string.</p>
-<pre><code>&lt;p&gt;Hi, {{ entry.title }}&lt;/p&gt;
+<pre><code>&lt;p&gt;Hi, {{ title }}&lt;/p&gt;
 </code></pre>
 <p>Don’t place a print statement (or any other Twig code) within another print statement. <a href="#combining-strings">See Combining Strings to learn how to combine strings with other expressions</a>.</p>
-<h4><a name="auto-escaping"></a> Auto-escaping</h4>
+<h3><a name="auto-escaping"></a> Auto-escaping</h3>
 <p>Most of the time, print statements will automatically HTML-encode the content before actually outputting it (called auto-escaping), which helps defend against cross-site scripting (XSS) vulnerabilities.</p>
 <p>For example, let’s say you have a search results page, where the search query is defined by a q query string parameter, and in the event that there are no results, you want to output a message to the user that includes the query:</p>
 <pre><code>{% set query = request.getQueryParam().q %}
 
-{% set entries = flextype.entries.fetch('blog', {'collection': true})
+{% set entries = entries().fetch('blog', {'collection': true})
                                  .where('title', 'contains', query)
                                  .all() %}
 
@@ -309,7 +372,7 @@
   &lt;h3&gt;Search Results&lt;/h3&gt;
   &lt;ul&gt;
     {% for entry in entries %}
-      &lt;li&gt;{{ entry.id }}&lt;/li&gt;
+      &lt;li&gt;{{ id }}&lt;/li&gt;
     {% endfor %}
   &lt;/ul&gt;
 {% else %}
@@ -325,9 +388,9 @@
 <p>There are times where you may need to work with both trusted and untrusted content together. For example, let’s say you want to output user-supplied content as Markdown, but you want to ensure they haven’t put anything nefarious in there first.</p>
 <p>To do that, you could explicitly encode all HTML within the user-supplied content using the escape (opens new window) filter, before passing it to the markdown filter:</p>
 <pre><code>{# Escape any HTML in the Content field, then format as Markdown #}
-{{ entry.content|escape|markdown }}
+{{ content|escape|markdown }}
 </code></pre>
-<h4><a name="resources"></a> Resources</h4>
+<h3><a name="resources"></a> Resources</h3>
 <ul>
 <li>
 <a href="https://twig.sensiolabs.org/documentation">Official Twig Documentation</a>
@@ -345,7 +408,7 @@
 <a href="https://www.slideshare.net/markstory/introduction-to-twig">Introduction to Twig</a>
 </li>
 </ul>
-<h4><a name="global-variables"></a> Global Variables</h4>
+<h3><a name="global-variables"></a> Global Variables</h3>
 <p>The following Flextype Twig Global variables are available in Flextype Twig Templates:</p>
 <table>
 <thead>
@@ -367,137 +430,169 @@
 <td>_charset</td>
 <td>The current charset.</td>
 </tr>
-<tr>
-<td>PATH_PROJECT</td>
-<td>Project path (without trailing slash).</td>
-</tr>
-<tr>
-<td>PHP_VERSION</td>
-<td>PHP Version.</td>
-</tr>
-<tr>
-<td>flextype</td>
-<td>Returns Flextype object.</td>
-</tr>
 </tbody>
 </table>
-<h4>PATH_PROJECT</h4>
-<p>Project path (without trailing slash).</p>
-<pre><code>{{ PATH_PROJECT }}
-</code></pre>
-<h4>PHP_VERSION</h4>
-<p>PHP Version.</p>
-<pre><code>{{ PHP_VERSION }}
-</code></pre>
-<h4>flextype</h4>
-<p>Returns Flextype object, which provides access points to various helper functions and objects for templates.</p>
-<table>
-<thead>
-<tr>
-<th>Objects</th>
-<th>Available Methods</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>flextype.entries</code></td>
-<td><a href="https://docs.flextype.org/core/entries#methods-fetch">fetch()</a></td>
-</tr>
-<tr>
-<td><code>flextype.media.files</code></td>
-<td><a href="https://docs.flextype.org/core/media#methods-files-fetch">fetch()</a> <a href="https://docs.flextype.org/core/media#methods-files-has">has()</a></td>
-</tr>
-<tr>
-<td><code>flextype.media.files.meta</code></td>
-<td><a href="https://docs.flextype.org/core/media#methods-files-meta-getFileMetaLocation">getFileMetaLocation()</a></td>
-</tr>
-<tr>
-<td><code>flextype.media.folders</code></td>
-<td><a href="https://docs.flextype.org/core/media#methods-folders-fetch">fetch()</a> <a href="https://docs.flextype.org/core/media#methods-folders-getDirLocation">getDirectoryLocation()</a></td>
-</tr>
-<tr>
-<td><code>flextype.media.folders.meta</code></td>
-<td><a href="https://docs.flextype.org/core/media#methods-folders-meta-getDirMetaLocation">getDirMetaLocation()</a></td>
-</tr>
-<tr>
-<td><code>flextype.registry</code></td>
-<td><a href="https://docs.flextype.org/core/registry">all methods available</a></td>
-</tr>
-<tr>
-<td><code>flextype.parsers</code></td>
-<td><a href="https://docs.flextype.org/core/parsers">all methods available</a></td>
-</tr>
-<tr>
-<td><code>flextype.serializers</code></td>
-<td><a href="https://docs.flextype.org/core/serializers">all methods available</a></td>
-</tr>
-<tr>
-<td><code>flextype.cache</code></td>
-<td><a href="https://www.phpfastcache.com">all methods available</a></td>
-</tr>
-<tr>
-<td><code>flextype.emitter</code></td>
-<td><a href="https://event.thephpleague.com/2.0/">all methods available</a></td>
-</tr>
-</tbody>
-</table>
-<h4><a name="functions"></a> Functions</h4>
+<h3><a name="functions"></a> Functions</h3>
 <p>The following Flextype Twig Functions are available in Flextype Twig Templates:</p>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
+<th>Name</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>arrays</td>
-<td>Returns a new arrays object from the given elements.</td>
+<td>collection</td>
+<td>Create a new arrayable collection object from the given elements.</td>
 </tr>
 <tr>
-<td>strings</td>
-<td>Returns a new strings object from the given string.</td>
+<td>collectionFromJson</td>
+<td>Create a new arrayable collection object from the given JSON string.</td>
+</tr>
+<tr>
+<td>collectionFromString</td>
+<td>Create a new arrayable collection object from the given string.</td>
+</tr>
+<tr>
+<td>collectionWithRange</td>
+<td>Create a new arrayable object with a range of elements.</td>
+</tr>
+<tr>
+<td>collectionFromQueryString</td>
+<td>Create a new arrayable object from the given query string.</td>
+</tr>
+<tr>
+<td>filterCollection</td>
+<td>Create a filtered collection.</td>
+</tr>
+<tr>
+<td>actions</td>
+<td>Get actions service.</td>
+</tr>
+<tr>
+<td>entries</td>
+<td>Get entries service.</td>
+</tr>
+<tr>
+<td>const</td>
+<td>Get php constant.</td>
+</tr>
+<tr>
+<td>var</td>
+<td>Get entry var.</td>
+</tr>
+<tr>
+<td>field</td>
+<td>Get entry field.</td>
+</tr>
+<tr>
+<td>csrf</td>
+<td>Get csrf hidden input.</td>
 </tr>
 <tr>
 <td>filesystem</td>
-<td>Returns a new filesystem object from the given string.</td>
+<td>Get filesystem instance.</td>
 </tr>
 <tr>
-<td>url</td>
-<td>Returns application URL.</td>
+<td>tr</td>
+<td>Returns translation of a string. If no translation exists, the original string will be returned. No parameters are replaced.</td>
+</tr>
+<tr>
+<td>__</td>
+<td>Returns translation of a string. If no translation exists, the original string will be returned. No parameters are replaced.</td>
+</tr>
+<tr>
+<td>parsers</td>
+<td>Get parsers service.</td>
+</tr>
+<tr>
+<td>serializers</td>
+<td>Get serializers service.</td>
+</tr>
+<tr>
+<td>slugify</td>
+<td>Get slugify service.</td>
+</tr>
+<tr>
+<td>strings</td>
+<td>Get strings instance.</td>
+</tr>
+<tr>
+<td>registry</td>
+<td>Get registry service.</td>
+</tr>
+<tr>
+<td>urlFor</td>
+<td>Get the url for a named route.</td>
+</tr>
+<tr>
+<td>fullUrlFor</td>
+<td>Get the full url for a named route.</td>
+</tr>
+<tr>
+<td>isCurrentUrl</td>
+<td>To determine is current url equal to route name.</td>
+</tr>
+<tr>
+<td>getCurrentUrl</td>
+<td>To get current path on given Uri.</td>
+</tr>
+<tr>
+<td>getBasePath</td>
+<td>To get the base path.</td>
+</tr>
+<tr>
+<td>getBaseUrl</td>
+<td>To get the base url.</td>
+</tr>
+<tr>
+<td>getAbsoluteUrl</td>
+<td>To get the absolute url.</td>
+</tr>
+<tr>
+<td>getProjectUrl</td>
+<td>To get the project url.</td>
+</tr>
+<tr>
+<td>getUriString</td>
+<td>To get the uri string.</td>
+</tr>
+<tr>
+<td>redirect</td>
+<td>To create redirect.</td>
 </tr>
 </tbody>
 </table>
-<h4><a name="filters"></a> Filters</h4>
+<h3><a name="filters"></a> Filters</h3>
 <p>The following Flextype Twig Filters are available in Flextype Twig Templates:</p>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
+<th>Name</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>__</td>
-<td>Translate string</td>
-</tr>
-<tr>
-<td>shortcode</td>
-<td>Shortcode parser</td>
+<td>tr</td>
+<td>Translate string.</td>
 </tr>
 <tr>
 <td>markdown</td>
-<td>Markdown parser</td>
+<td>Parse markdown string.</td>
+</tr>
+<tr>
+<td>shortodes</td>
+<td>Translate string</td>
 </tr>
 </tbody>
 </table>
 
             </div>
             <div class="w-full lg:w-3/12 p-2">
-                <div class="text-left p-6 mb-6 border-slate-800 dark:bg-slate-800 border plate-shadow">
-                    <div class="flex content-center flex-wrap">
+                <div class="text-left mb-6 border-slate-800 dark:border-slate-500 dark:bg-slate-800 border">
+                    <div class="flex content-center flex-wrap p-6 pb-0">
                         <div class="w-full">
                             <p class="m-0 opacity-50">Version</p>
                             <p>2.1.0</p>
@@ -517,67 +612,46 @@
                                 <a href="https://github.com/flextype-plugins/twig">Homepage</a><br>                                <a href="https://github.com/flextype-plugins/twig">Documentation</a><br>                                <a href="https://github.com/flextype-plugins/twig">Changelog</a><br>                                <a href="https://github.com/flextype-plugins/twig/issues">Issues</a>                            </p>
                         </div>
                     </div>
-                    <div class="flex content-center flex-wrap">
+                    <div class="flex content-center flex-wrap p-6 pt-0">
                         <div class="w-full">
                             <p class="m-0 opacity-50">Categories</p>
                             <p>
-                                                                                                    <a class="no-underline" href="https://awilum.github.io/flextype/downloads/extend/plugins?category=templating">templating</a>                                                            </p>
+                                                                                                    <a class="underline" href="https://awilum.github.io/flextype/downloads/extend/plugins?category=templating">templating</a>                                                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="text-center">
-                    <a class="button"
-                    href="https://github.com/flextype-plugins/twig/releases/download/v2.1.0/twig-2.1.0.zip">DOWNLOAD</a>
+                    <div class="border-t border-slate-900 ">
+                        <a class="bg-amber-300 dark:bg-amber-800 dark:hover:bg-amber-900 dark:hover:text-white hover:text-slate-900 hover:bg-amber-400 no-underline block text-center py-2"
+                        href="https://github.com/flextype-plugins/twig/releases/download/v2.1.0/twig-2.1.0.zip">DOWNLOAD</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <hr class="mb-6 border-b border-plate-800">
-
-        <div class="p-2 mb-6">
-            <h4>Other plugins by Sergey Romanenko</h4>
+        </div>
+    
+    <div>
+        <div class="p-2 mt-8">
+            <h4 class="text-2xl">Other plugins by Sergey Romanenko</h4>
                             
                                     <div class="flex content-center flex-wrap mt-5">
-                                                                                <a href="https://awilum.github.io/flextype/downloads/extend/plugins/form" class="w-full p-2 lg:w-6/12 no-underline ">
-                                <div class="flex p-6 align-middle">
-                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>
-                                    <div class="text-left">
-                                        <h4 class="text-xl p-0 m-0 block">Form</h4>
-                                        <p class="m-0">
-                                            Form Plugin to render user forms for Flextype.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                                                                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/contact" class="w-full p-2 lg:w-6/12 no-underline ">
-                                <div class="flex p-6 align-middle">
-                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg></span>
-                                    <div class="text-left">
-                                        <h4 class="text-xl p-0 m-0 block">Contact</h4>
-                                        <p class="m-0">
-                                            Contact Plugin for Flextype.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                                                                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/themes-admin" class="w-full p-2 lg:w-6/12 no-underline ">
-                                <div class="flex p-6 align-middle">
-                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M167.02 309.34c-40.12 2.58-76.53 17.86-97.19 72.3-2.35 6.21-8 9.98-14.59 9.98-11.11 0-45.46-27.67-55.25-34.35C0 439.62 37.93 512 128 512c75.86 0 128-43.77 128-120.19 0-3.11-.65-6.08-.97-9.13l-88.01-73.34zM457.89 0c-15.16 0-29.37 6.71-40.21 16.45C213.27 199.05 192 203.34 192 257.09c0 13.7 3.25 26.76 8.73 38.7l63.82 53.18c7.21 1.8 14.64 3.03 22.39 3.03 62.11 0 98.11-45.47 211.16-256.46 7.38-14.35 13.9-29.85 13.9-45.99C512 20.64 486 0 457.89 0z"/></svg></span>
-                                    <div class="text-left">
-                                        <h4 class="text-xl p-0 m-0 block">Themes Admin</h4>
-                                        <p class="m-0">
-                                            Themes Admin plugin to manage site themes for the website frontend.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                                                                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/sitemap" class="w-full p-2 lg:w-6/12 no-underline ">
+                                                                                <a href="https://awilum.github.io/flextype/downloads/extend/plugins/sitemap" class="w-full p-2 lg:w-6/12 no-underline ">
                                 <div class="flex p-6 align-middle">
                                     <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M288 0c-69.59 0-126 56.41-126 126 0 56.26 82.35 158.8 113.9 196.02 6.39 7.54 17.82 7.54 24.2 0C331.65 284.8 414 182.26 414 126 414 56.41 357.59 0 288 0zm0 168c-23.2 0-42-18.8-42-42s18.8-42 42-42 42 18.8 42 42-18.8 42-42 42zM20.12 215.95A32.006 32.006 0 0 0 0 245.66v250.32c0 11.32 11.43 19.06 21.94 14.86L160 448V214.92c-8.84-15.98-16.07-31.54-21.25-46.42L20.12 215.95zM288 359.67c-14.07 0-27.38-6.18-36.51-16.96-19.66-23.2-40.57-49.62-59.49-76.72v182l192 64V266c-18.92 27.09-39.82 53.52-59.49 76.72-9.13 10.77-22.44 16.95-36.51 16.95zm266.06-198.51L416 224v288l139.88-55.95A31.996 31.996 0 0 0 576 426.34V176.02c0-11.32-11.43-19.06-21.94-14.86z"/></svg></span>
                                     <div class="text-left">
                                         <h4 class="text-xl p-0 m-0 block">Sitemap</h4>
                                         <p class="m-0">
                                             Provide automatically generated XML sitemap.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                                                                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/feed" class="w-full p-2 lg:w-6/12 no-underline ">
+                                <div class="flex p-6 align-middle">
+                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg></span>
+                                    <div class="text-left">
+                                        <h4 class="text-xl p-0 m-0 block">Feed</h4>
+                                        <p class="m-0">
+                                            Feed plugin for Flextype supports Atom 1.0, RSS and JSON feed types and allows you to generate feeds for entries.
                                         </p>
                                     </div>
                                 </div>

@@ -1,0 +1,1426 @@
+<!doctype html>
+<html lang="en_US">
+<head>
+            <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by John Gruber in 2004, Markdown is now one of the world’s most popular markup languages.">
+        <meta name="keywords" content="flextype, php, cms, thermage, glowyphp, html">
+        <meta name="robots" content="index, follow">
+        <meta name="generator" content="Powered by Flextype"/>
+        <meta name="yandex-verification" content="43db5e67acec9539" />
+        <meta name="google-site-verification" content="XyouR0hgvSfKtO4fRBGJ5NCcbivoHxHdTIfeqFElADo" />
+        <meta name="google-site-verification" content="QCOiDmY3CImL3EPYu4WstZRkkOZKPr6LGOstWU1ZGXI" />
+        
+        
+        <title>Markdown | Flextype</title>
+
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+                
+                                    <link href="https://awilum.github.io/project/themes/dev/assets/dist/css/dev.min.css" rel="stylesheet">
+                    
+            </head>
+<body class="antialiased text-slate-900 dark:text-slate-300 bg-white dark:bg-slate-900">
+    <header class="bg-white dark:bg-slate-800 dark:border-slate-500 border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg">
+        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 dark:border-slate-500 brand-logo no-underline text-pink-500">
+            AWILUM
+        </a>
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-semibold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
+            Blog
+        </a>
+        <div class="flex justify-center hidden lg:block">
+            <div
+                x-data="{
+                    open: false,
+                    toggle() {
+                        if (this.open) {
+                            return this.close()
+                        }
+
+                        this.open = true
+                    },
+                    close(focusAfter) {
+                        this.open = false
+
+                        focusAfter && focusAfter.focus()
+                    }
+                }"
+                x-on:keydown.escape.prevent.stop="close($refs.button)"
+                x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
+                x-id="['dropdown-button']"
+                class="relative"
+            >
+                <!-- Button -->
+                <button
+                    x-ref="button"
+                    x-on:click="toggle()"
+                    :aria-expanded="open"
+                    :aria-controls="$id('dropdown-button')"
+                    type="button"
+                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 "
+                >
+                    <span>Projects</span>
+                </button>
+
+                <!-- Panel -->
+                <div
+                    x-ref="panel"
+                    x-show="open"
+                    x-transition.origin.top.left
+                    x-on:click.outside="close($refs.button)"
+                    :id="$id('dropdown-button')"
+                    style="display: none;"
+                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 dark:border-slate-500 rounded-lg overflow-hidden z-50 dark:bg-slate-800"
+                >
+                    <div>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center lg:hidden">
+    <div
+        x-data="{
+            open: false,
+            toggle() {
+                if (this.open) {
+                    return this.close()
+                }
+
+                this.open = true
+            },
+            close(focusAfter) {
+                this.open = false
+
+                focusAfter && focusAfter.focus()
+            }
+        }"
+        x-on:keydown.escape.prevent.stop="close($refs.button)"
+        x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
+        x-id="['dropdown-button']"
+        class="relative"
+    >
+        <!-- Button -->
+        <button
+            x-ref="button"
+            x-on:click="toggle()"
+            :aria-expanded="open"
+            :aria-controls="$id('dropdown-button')"
+            type="button"
+            class="outline-none hover:text-pink-500 dark:border-slate-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+        >
+            <span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                class="hover:stroke-pink-500 hover:fill-pink-500 dark:stroke-slate-300 dark:fill-slate-300" width="16" height="18" viewBox="0 0 447 447" style="enable-background:new 0 0 447 447;" xml:space="preserve">
+                <g>
+                    <path d="M447,303.5c0-17.369-14.131-31.5-31.5-31.5H407v-20.931c4.28-2.411,8.845-4.069,16.5-4.069c4.142,0,7.5-3.358,7.5-7.5
+                        s-3.358-7.5-7.5-7.5c-6.821,0-12.107,1.056-16.5,2.611v-12.846c9.29-3.138,16-11.93,16-22.266v-8.998
+                        c0-16.559-4.338-32.53-12.544-46.185c-16.138-26.852-39.856-43.444-56.912-52.635C319.455,73.314,275.702,64,223.5,64
+                        c-52.201,0-95.954,9.314-130.043,27.683c-30.901,16.651-48.005,37.813-56.912,52.635C28.338,157.973,24,173.943,24,190.502v8.998
+                        c0,10.336,6.71,19.128,16,22.266v12.852C35.609,233.059,30.323,232,23.5,232c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5
+                        c7.658,0,12.219,1.665,16.5,4.083V272h-8.5C14.131,272,0,286.131,0,303.5c0,14.784,10.241,27.216,24,30.59v9.41
+                        c0,21.78,17.72,39.5,39.5,39.5h320c21.78,0,39.5-17.72,39.5-39.5v-9.41C436.76,330.716,447,318.285,447,303.5z M392,223v19.72
+                        c-4.941,3.049-9.665,5.28-18.544,5.28c-10.318,0-15.024-3.009-20.982-6.819c-6.73-4.303-14.359-9.181-29.063-9.181
+                        c-14.697,0-22.321,4.878-29.048,9.183c-5.953,3.809-10.654,6.817-20.962,6.817c-10.296,0-14.993-3.008-20.938-6.816
+                        c-6.722-4.305-14.341-9.184-29.028-9.184c-14.693,0-22.315,4.879-29.04,9.183c-5.95,3.809-10.65,6.817-20.954,6.817
+                        c-10.3,0-14.998-3.008-20.946-6.816C145.771,236.879,138.15,232,123.46,232c-14.69,0-22.311,4.879-29.034,9.184
+                        C88.478,244.992,83.78,248,73.48,248c-8.844,0-13.558-2.22-18.48-5.259V223H392z M39,190.502c0-13.837,3.597-27.136,10.401-38.458
+                        c7.94-13.212,23.264-32.119,51.171-47.156C132.451,87.71,173.81,79,223.5,79s91.05,8.71,122.928,25.888
+                        c27.907,15.038,43.23,33.944,51.171,47.156C404.404,163.366,408,176.665,408,190.502v8.998c0,4.687-3.813,8.5-8.5,8.5h-352
+                        c-4.687,0-8.5-3.813-8.5-8.5V190.502z M55,259.624C59.764,261.59,65.6,263,73.48,263c14.69,0,22.311-4.879,29.034-9.184
+                        c5.948-3.809,10.646-6.816,20.946-6.816c10.3,0,14.999,3.008,20.947,6.816c6.724,4.305,14.344,9.184,29.034,9.184
+                        c14.693,0,22.315-4.879,29.041-9.183c5.95-3.809,10.649-6.817,20.953-6.817c10.296,0,14.993,3.008,20.938,6.816
+                        c6.722,4.305,14.341,9.184,29.028,9.184c14.696,0,22.321-4.878,29.047-9.183c5.953-3.809,10.654-6.817,20.963-6.817
+                        c10.318,0,15.024,3.009,20.981,6.818c6.73,4.304,14.359,9.182,29.063,9.182c7.913,0,13.767-1.418,18.544-3.394V272H55V259.624z
+                        M383.5,368h-320C49.991,368,39,357.01,39,343.5V335h369v8.5C408,357.01,397.01,368,383.5,368z M415.5,320H290.319
+                        c2.965-4.802,4.681-10.454,4.681-16.5c0-4.142-3.358-7.5-7.5-7.5s-7.5,3.358-7.5,7.5c0,9.098-7.402,16.5-16.5,16.5h-232
+                        c-9.098,0-16.5-7.402-16.5-16.5S22.402,287,31.5,287h136c9.098,0,16.5,7.402,16.5,16.5c0,4.142,3.358,7.5,7.5,7.5
+                        s7.5-3.358,7.5-7.5c0-6.046-1.716-11.698-4.681-16.5H415.5c9.098,0,16.5,7.402,16.5,16.5C432,312.598,424.599,320,415.5,320z"/>
+                    <path d="M191.5,167c1.919,0,3.839-0.732,5.303-2.197l8-8c2.929-2.929,2.929-7.678,0-10.606c-2.929-2.929-7.678-2.929-10.606,0l-8,8
+                        c-2.929,2.929-2.929,7.678,0,10.606C187.661,166.268,189.581,167,191.5,167z"/>
+                    <path d="M266.197,156.803c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606l-8-8
+                        c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L266.197,156.803z"/>
+                    <path d="M103.5,175c1.919,0,3.839-0.732,5.303-2.197l8-8c2.929-2.929,2.929-7.678,0-10.606c-2.929-2.929-7.678-2.929-10.606,0l-8,8
+                        c-2.929,2.929-2.929,7.678,0,10.606C99.661,174.268,101.581,175,103.5,175z"/>
+                    <path d="M151.5,135c4.142,0,7.5-3.358,7.5-7.5v-8c0-4.142-3.358-7.5-7.5-7.5s-7.5,3.358-7.5,7.5v8
+                        C144,131.642,147.358,135,151.5,135z"/>
+                    <path d="M239.5,191h8c4.142,0,7.5-3.358,7.5-7.5s-3.358-7.5-7.5-7.5h-8c-4.142,0-7.5,3.358-7.5,7.5S235.358,191,239.5,191z"/>
+                    <path d="M311.5,183c1.919,0,3.839-0.732,5.303-2.197l8-8c2.929-2.929,2.929-7.678,0-10.606c-2.929-2.929-7.678-2.929-10.606,0l-8,8
+                        c-2.929,2.929-2.929,7.678,0,10.606C307.662,182.268,309.581,183,311.5,183z"/>
+                    <path d="M218.197,116.803c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606l-8-8
+                        c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L218.197,116.803z"/>
+                    <path d="M154.197,188.803c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606l-8-8
+                        c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L154.197,188.803z"/>
+                    <path d="M278.17,115.492c5.311,0.958,10.51,2.083,15.453,3.344c0.622,0.158,1.245,0.234,1.859,0.234
+                        c3.347,0,6.397-2.257,7.262-5.648c1.023-4.014-1.4-8.097-5.414-9.121c-5.287-1.348-10.837-2.549-16.496-3.571
+                        c-4.075-0.732-7.978,1.973-8.713,6.049C271.386,110.855,274.094,114.756,278.17,115.492z"/>
+                    <path d="M324.299,129.647c25.918,12.175,39.251,27.863,45.872,38.88c2.849,4.74,4.679,10.104,5.441,15.942
+                        c0.493,3.778,3.717,6.531,7.428,6.531c0.323,0,0.65-0.021,0.979-0.064c4.107-0.536,7.002-4.3,6.467-8.407
+                        c-1.03-7.897-3.54-15.208-7.458-21.729c-7.693-12.801-23.021-30.953-52.351-44.731c-3.75-1.759-8.215-0.149-9.977,3.6
+                        C318.939,123.419,320.55,127.886,324.299,129.647z"/>
+                </g>
+                </svg>
+            </span>
+        </button>
+
+        <!-- Panel -->
+        <div
+            x-ref="panel"
+            x-show="open"
+            x-transition.origin.top.left
+            x-on:click.outside="close($refs.button)"
+            :id="$id('dropdown-button')"
+            style="display: none;"
+            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 dark:border-slate-500 plate-shadow"
+        >
+            <div>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                
+            </div>
+        </div>
+    </div>
+</div>        <div class="flex" style="margin-left: auto;">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
+                Sponsors
+            </a>
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline" href="https://awilum.github.io/about">
+                About
+            </a>
+        </div>
+    </header>
+
+    <main role="main" class="container mx-auto max-w-[1200px]">
+        <section>
+            <div class="flex justify-around bg-white dark:bg-slate-800 border rounded-md mt-10 border-slate-900 mx-auto lg:max-w-[780px]">
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 text-pink-500" href="https://awilum.github.io/flextype/09">Flextype</a>
+  <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline" href="https://awilum.github.io/flextype">
+    1.x
+  </a>
+  <a class="m-0 p-0 px-3 py-2 text-pink-500 border-r border-slate-900 font-bold text-xs uppercase no-underline" href="https://awilum.github.io/flextype/09">
+    0.9.x
+  </a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 " href="https://awilum.github.io/flextype/09/downloads">Downloads</a>
+  <a class="w-full text-center m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/flextype/09/documentation">Documentation</a>
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype">
+    GITHUB
+  </a>
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/getflextype">
+    TWITTER
+  </a>
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block" href="https://discord.gg/CCKPKVG">
+    DISCORD
+  </a>
+</div>
+
+<div class="container mx-auto pb-24 px-4 lg:px-0">
+
+    <div class="uppercase text-center mt-24 mb-24">
+        <div>
+            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="https://awilum.github.io/flextype/09/documentation/core/parsers/markdown">MARKDOWN</a></h1>
+        </div>
+                <div class="opacity-50">
+            <a class="no-underline" href="https://awilum.github.io/flextype/09/documentation">Documentation</a> <span>/</span>
+                            <a class="no-underline" href="https://awilum.github.io/flextype/09/documentation/core/">Core Concepts</a> <span>/</span>                            <a class="no-underline" href="https://awilum.github.io/flextype/09/documentation/core/parsers/">Parsers</a>                     </div>
+            </div>
+    <div class="flex flex-col-reverse lg:flex-row relative">
+        <div class="w-full lg:w-2/12">
+            <h4>Getting Started</h4>
+            <ul class="m-0 p-0 list-none">
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/getting-started/what-is-flextype" class="no-underline">What is Flextype?</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/getting-started/requirements" class="no-underline">Requirements</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/getting-started/installation" class="no-underline">Installation</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/getting-started/configuration" class="no-underline">Configuration</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/getting-started/folder-structure" class="no-underline">Folder Structure</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/getting-started/coc" class="no-underline">Code of Conduct</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/getting-started/getting-help" class="no-underline">Getting Help</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/getting-started/license" class="no-underline">License</a>
+                </li>
+            </ul>
+            <h4 class="pt-8">Core Concepts</h4>
+            <ul class="m-0 p-0 list-none">
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/core/flextype" class="no-underline">Flextype</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/core/entries" class="no-underline">Entries</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/core/plugins" class="no-underline">Plugins</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/core/parsers" class="no-underline">Parsers</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/core/serializers" class="no-underline">Serializers</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/core/registry" class="no-underline">Registry</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/core/media" class="no-underline">Media</a>
+                </li>
+            </ul>
+            <h4 class="pt-8">Rest API</h4>
+            <ul class="m-0 p-0 list-none">
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/rest-api/introduction" class="no-underline">Introduction</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/rest-api/entries" class="no-underline">Entries</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/rest-api/registry" class="no-underline">Registry</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/rest-api/media" class="no-underline">Media</a>
+                </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/09/documentation/rest-api/images" class="no-underline">Images</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w-full lg:w-10/12 px-2">
+            <p>Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by John Gruber in 2004, Markdown is now one of the world’s most popular markup languages.</p>
+<p>Using Markdown is different than using a WYSIWYG editor. In an application like Microsoft Word, you click buttons to format words and phrases, and the changes are visible immediately. Markdown isn’t like that. When you create a Markdown-formatted file, you add Markdown syntax to the text to indicate which words and phrases should look different.</p>
+<p>For instance, to denote a heading, you add a number sign before it (e.g., # Heading One). Or to make a phrase bold, you add two asterisks before and after it (e.g., <strong>this text is bold</strong>). It may take a while to get used to seeing Markdown syntax in your text, especially if you’re accustomed to WYSIWYG applications.</p>
+<p>You can add Markdown formatting elements to a plaintext file using a text editor application. Or you can use one of the many Markdown applications for macOS, Windows, Linux, iOS, and Android operating systems. There are also several web-based applications specifically designed for writing in Markdown.</p>
+<p>Depending on the application you use, you may not be able to preview the formatted document in real time. But that’s okay. According to Gruber, Markdown syntax is designed to be readable and unobtrusive, so the text in Markdown files can be read even if it isn’t rendered.</p>
+<p>The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions.</p>
+<p>For more details about MARKDOWN syntax <a href="https://www.markdownguide.org/basic-syntax">read the guide for the MARKDOWN</a>.</p>
+<h3><a name="basic-syntax"></a> Basic Syntax</h3>
+<h4>Headings</h4>
+<p>To create a heading, add number signs (<code>#</code>) in front of a word or phrase. The number of number signs you use should correspond to the heading level. For example, to create a heading level three (<code>&lt;h3&gt;</code>), use three number signs (e.g., <code>### My Header</code>).</p>
+<table>
+  <thead>
+    <tr>
+      <th>Markdown</th>
+      <th>HTML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td># Heading level 1</td>
+      <td>&lt;h1&gt;Heading level 1&lt;/h1&gt;</td>
+    </tr>
+    <tr>
+      <td>## Heading level 2</td>
+      <td>&lt;h2&gt;Heading level 2&lt;/h2&gt;</td>
+    </tr>
+    <tr>
+      <td>### Heading level 3</td>
+      <td>&lt;h3&gt;Heading level 3&lt;/h3&gt;</td>
+    </tr>
+    <tr>
+      <td>#### Heading level 4</td>
+      <td>&lt;h4&gt;Heading level  4&lt;/h4&gt;</td>
+    </tr>
+    <tr>
+      <td>##### Heading level 5</td>
+      <td>&lt;h5&gt;Heading level 5&lt;/h5&gt;</td>
+    </tr>
+    <tr>
+      <td>###### Heading level 6</td>
+      <td>&lt;h6&gt;Heading level 6&lt;/h6&gt;</td>
+    </tr>
+  </tbody>
+</table>
+<h5>Alternate Syntax</h5>
+<p>Alternatively, on the line below the text, add any number of <code>==</code> characters for heading level 1 or <code>--</code> characters for heading level 2.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Markdown</th>
+      <th>HTML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Heading level 1<br/>===============</td>
+      <td>&lt;h1&gt;Heading level 1&lt;/h1&gt;</td>
+    </tr>
+    <tr>
+      <td>Heading level 2<br/>---------------</td>
+      <td>&lt;h2&gt;Heading level 2&lt;/h2&gt;</td>
+    </tr>
+  </tbody>
+</table>
+<h5>Heading Best Practices</h5>
+<p>Markdown applications don't agree on how to handle a missing space between the number signs (<code>#</code>) and the heading name. For compatibility, always put a space between the number signs and the heading name.</p>
+<table>
+  <thead>
+    <tr>
+      <th><i class="fas fa-check"></i> Do this</th>
+      <th><i class="fas fa-times"></i> Don't do this</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          # Here's a Heading
+      </td>
+      <td>
+          #Here's a Heading
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4>Paragraphs</h4>
+<p>To create paragraphs, use a blank line to separate one or more lines of text.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Markdown</th>
+      <th>HTML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          I really like using Markdown.<br /><br />
+          I think I'll use it to format all of my documents from now on.
+      </td>
+      <td>
+        &lt;p&gt;I really like using Markdown.&lt;/p&gt;<br /><br />
+        &lt;p&gt;I think I'll use it to format all of my documents from now on.&lt;/p&gt;
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h5>Paragraph Best Practices</h5>
+<p>Unless the <a href="/basic-syntax/#paragraphs">paragraph is in a list</a>, don't indent paragraphs with spaces or tabs.</p>
+<table>
+<thead>
+<tr>
+<th><i class="fas fa-check"></i> Do this</th>
+<th><i class="fas fa-times"></i> Don't do this</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Don't put tabs or spaces in front of your paragraphs.<br><br>
+Keep lines left-aligned like this.<br><br>
+</td>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;This can result in unexpected
+formatting problems.<br><br>
+&nbsp;&nbsp;Don't add tabs or spaces in front of paragraphs.
+</td>
+</tr>
+</tbody>
+</table>
+<h4>Line Breaks</h4>
+<p>To create a line break (<code>&lt;br&gt;</code>), end a line with two or more spaces, and then type return.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Markdown</th>
+      <th>HTML</th>
+      <th>Rendered Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          This is the first line. &nbsp;<br />
+          And this is the second line.
+      </td>
+      <td>
+        &lt;p&gt;This is the first line.&lt;br&gt;<br />
+        And this is the second line.&lt;/p&gt;
+      </td>
+      <td>
+        <p>This is the first line.<br />   
+        And this is the second line.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h5>Line Break Best Practices</h5>
+<p>You can use two or more spaces (commonly referred to as &quot;trailing whitespace&quot;) for line breaks in nearly every Markdown application, but it's controversial. It's hard to see trailing whitespace in an editor, and many people accidentally or intentionally put two spaces after every sentence. For this reason, you may want to use something other than trailing whitespace for line breaks. Fortunately, there is another option supported by nearly every Markdown application: the <code>&lt;br&gt;</code> HTML tag.</p>
+<p>For compatibility, use trailing white space or the <code>&lt;br&gt;</code> HTML tag at the end of the line.</p>
+<p>There are two other options I don't recommend using. CommonMark and a few other lightweight markup languages let you type a backslash (<code>\</code>) at the end of the line, but not all Markdown applications support this, so it isn't a great option from a compatibility perspective. And at least a couple lightweight markup languages don't require anything at the end of the line — just type return and they'll create a line break.</p>
+<table>
+  <thead>
+    <tr>
+      <th><i class="fas fa-check"></i> Do this</th>
+      <th><i class="fas fa-times"></i> Don't do this</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          First line with two spaces after. &nbsp;<br>
+          And the next line.<br><br>
+          First line with the HTML tag after.&lt;br&gt;<br>
+          And the next line.<br><br>
+      </td>
+      <td>
+        First line with a backslash after.\<br>
+        And the next line.<br><br>
+        First line with nothing after.<br>
+        And the next line.<br><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3>Emphasis</h3>
+<h4>Bold</h4>
+<p>To bold text, add two asterisks or underscores before and after a word or phrase. To bold the middle of a word for emphasis, add two asterisks without spaces around the letters.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Markdown</th>
+      <th>HTML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>I just love **bold text**.</td>
+      <td>I just love &lt;strong&gt;bold text&lt;/strong&gt;.</td>
+    </tr>
+    <tr>
+      <td>I just love __bold text__.</td>
+      <td>I just love &lt;strong&gt;bold text&lt;/strong&gt;.</td>
+    </tr>
+    <tr>
+      <td>Love**is**bold</td> <td>Love&lt;strong&gt;is&lt;/strong&gt;bold</td>
+    </tr>
+  </tbody>
+</table>
+<h5>Bold Best Practices</h5>
+<p>Markdown applications don't agree on how to handle underscores in the middle of a word. For compatibility, use asterisks to bold the middle of a word for emphasis.</p>
+<table>
+  <thead>
+    <tr>
+      <th><i class="fas fa-check"></i> Do this</th>
+      <th><i class="fas fa-times"></i> Don't do this</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          Love**is**bold
+      </td>
+      <td>
+          Love__is__bold
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4>Italic</h4>
+<p>To italicize text, add one asterisk or underscore before and after a word or phrase. To italicize the middle of a word for emphasis, add one asterisk without spaces around the letters.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Markdown</th>
+      <th>HTML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Italicized text is the *cat's meow*.</td>
+      <td>Italicized text is the &lt;em&gt;cat's meow&lt;/em&gt;.</td>
+    </tr>
+    <tr>
+      <td>Italicized text is the _cat's meow_.</td>
+      <td>Italicized text is the &lt;em&gt;cat's meow&lt;/em&gt;.</td>
+    </tr>
+    <tr>
+      <td>A*cat*meow</td>
+      <td>A&lt;em&gt;cat&lt;/em&gt;meow</td>
+    </tr>
+  </tbody>
+</table>
+<h5>Italic Best Practices</h5>
+<p>Markdown applications don't agree on how to handle underscores in the middle of a word. For compatibility, use asterisks to italicize the middle of a word for emphasis.</p>
+<table>
+  <thead>
+    <tr>
+      <th><i class="fas fa-check"></i> Do this</th>
+      <th><i class="fas fa-times"></i> Don't do this</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          A*cat*meow
+      </td>
+      <td>
+          A_cat_meow
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4>Bold and Italic</h4>
+<p>To emphasize text with bold and italics at the same time, add three asterisks or underscores before and after a word or phrase. To bold and italicize the middle of a word for emphasis, add three asterisks without spaces around the letters.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Markdown</th>
+      <th>HTML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>This text is ***really important***.</td>
+      <td>This text is &lt;strong&gt;&lt;em&gt;really important&lt;/em&gt;&lt;/strong&gt;.</td>
+    </tr>
+    <tr>
+      <td>This text is ___really important___.</td>
+      <td>This text is &lt;strong&gt;&lt;em&gt;really important&lt;/em&gt;&lt;/strong&gt;.</td>
+    </tr>
+    <tr>
+      <td>This text is __*really important*__.</td>
+      <td>This text is &lt;strong&gt;&lt;em&gt;really important&lt;/em&gt;&lt;/strong&gt;.</td>
+    </tr>
+    <tr>
+      <td>This text is **_really important_**.</td>
+      <td>This text is &lt;strong&gt;&lt;em&gt;really important&lt;/em&gt;&lt;/strong&gt;.</td>
+    </tr>
+    <tr>
+      <td>This is really***very***important text.</td>
+      <td>This is really&lt;strong&gt;&lt;em&gt;very&lt;/em&gt;&lt;/strong&gt;important text.</td>
+    </tr>
+  </tbody>
+</table>
+<h5>Bold and Italic Best Practices</h5>
+<p>Markdown applications don't agree on how to handle underscores in the middle of a word. For compatibility, use asterisks to bold and italicize the middle of a word for emphasis.</p>
+<table>
+  <thead>
+    <tr>
+      <th><i class="fas fa-check"></i> Do this</th>
+      <th><i class="fas fa-times"></i> Don't do this</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          This is really***very***important text.
+      </td>
+      <td>
+          This is really___very___important text.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4>Blockquotes</h4>
+<p>To create a blockquote, add a <code>&gt;</code> in front of a paragraph.</p>
+<pre><code>&gt; Dorothy followed her through many of the beautiful rooms in her castle.
+</code></pre>
+<p>The rendered output looks like this:</p>
+<blockquote>
+<p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
+</blockquote>
+<h5>Blockquotes with Multiple Paragraphs</h5>
+<p>Blockquotes can contain multiple paragraphs. Add a <code>&gt;</code> on the blank lines between the paragraphs.</p>
+<pre><code>&gt; Dorothy followed her through many of the beautiful rooms in her castle.
+&gt;
+&gt; The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+</code></pre>
+<p>The rendered output looks like this:</p>
+<blockquote>
+<p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
+<p>The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.</p>
+</blockquote>
+<h5>Nested Blockquotes</h5>
+<p>Blockquotes can be nested. Add a <code>&gt;&gt;</code> in front of the paragraph you want to nest.</p>
+<pre><code>&gt; Dorothy followed her through many of the beautiful rooms in her castle.
+&gt;
+&gt;&gt; The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+</code></pre>
+<p>The rendered output looks like this:</p>
+<blockquote>
+<p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
+<blockquote>
+<p>The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.</p>
+</blockquote>
+</blockquote>
+<h5>Blockquotes with Other Elements</h5>
+<p>Blockquotes can contain other Markdown formatted elements. Not all elements can be used — you'll need to experiment to see which ones work.</p>
+<pre><code>&gt; #### The quarterly results look great!
+&gt;
+&gt; - Revenue was off the chart.
+&gt; - Profits were higher than ever.
+&gt;
+&gt;  *Everything* is going according to **plan**.
+</code></pre>
+<p>The rendered output looks like this:</p>
+<blockquote>
+<h4 class="no-anchor">The quarterly results look great!</h4>
+<ul>
+<li>Revenue was off the chart.</li>
+<li>Profits were higher than ever.</li>
+</ul>
+<p><em>Everything</em> is going according to <strong>plan</strong>.</p>
+</blockquote>
+<h4>Lists</h4>
+<p>You can organize items into ordered and unordered lists.</p>
+<h5>Ordered Lists</h5>
+<p>To create an ordered list, add line items with numbers followed by periods. The numbers don't have to be in numerical order, but the list should start with the number one.</p>
+<table>
+  <thead">
+    <tr>
+      <th>Markdown</th>
+      <th>HTML</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+        1. First item<br/>
+        2. Second item<br/>
+        3. Third item<br/>
+        4. Fourth item
+    </td>
+    <td>
+        &lt;ol&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Third item&lt;/li&gt;<br/>
+        &nbsp;&nbsp;&lt;li&gt;Fourth item&lt;/li&gt;<br/>
+        &lt;/ol&gt;
+    </td>
+    </tr>
+    <tr>
+      <td>
+          1. First item<br/>
+          1. Second item<br/>
+          1. Third item<br/>
+          1. Fourth item
+      </td>
+      <td>
+          &lt;ol&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Third item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;Fourth item&lt;/li&gt;<br/>
+          &lt;/ol&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>
+          1. First item<br/>
+          8. Second item<br/>
+          3. Third item<br/>
+          5. Fourth item
+      </td>
+      <td>
+          &lt;ol&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Third item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;Fourth item&lt;/li&gt;<br/>
+          &lt;/ol&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>
+          1. First item<br/>
+          2. Second item<br/>
+          3. Third item<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;1. Indented item<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;2. Indented item<br/>
+          4. Fourth item
+      </td>
+      <td>
+          &lt;ol&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Third item<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Indented item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Indented item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br/>
+          &nbsp;&nbsp;&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;Fourth item&lt;/li&gt;<br/>
+          &lt;/ol&gt;
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4>Ordered List Best Practices</h4>
+<p>CommonMark and a few other lightweight markup languages let you use a parenthesis (<code>)</code>) as a delimiter (e.g., <code>1) First item</code>), but not all Markdown applications support this, so it isn’t a great option from a compatibility perspective. For compatibility, use periods only.</p>
+<table>
+  <thead">
+    <tr>
+      <th><i class="fas fa-check"></i> Do this</th>
+      <th><i class="fas fa-times"></i> Don't do this</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          1. First item<br>
+          2. Second item
+      </td>
+      <td>
+          1) First item<br>
+          2) Second item
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h5>Unordered Lists</h5>
+<p>To create an unordered list, add dashes (<code>-</code>), asterisks (<code>*</code>), or plus signs (<code>+</code>) in front of line items. Indent one or more items to create a nested list.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Markdown</th>
+      <th>HTML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          - First item<br/>
+          - Second item<br/>
+          - Third item<br/>
+          - Fourth item
+      </td>
+      <td>
+          &lt;ul&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;Third item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;Fourth item&lt;/li&gt;<br/>
+          &lt;/ul&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>
+          * First item<br/>
+          * Second item<br>
+          * Third item<br/>
+          * Fourth item
+      </td>
+      <td>
+          &lt;ul&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;Third item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;Fourth item&lt;/li&gt;<br/>
+          &lt;/ul&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>
+          + First item<br/>
+          + Second item<br/>
+          + Third item<br/>
+          + Fourth item
+      </td>
+      <td>
+          &lt;ul&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;Third item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;Fourth item&lt;/li&gt;<br/>
+          &lt;/ul&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>
+          - First item<br/>
+          - Second item<br/>
+          - Third item<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;- Indented item<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;- Indented item<br/>
+          - Fourth item
+      </td>
+      <td>
+          &lt;ol&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&lt;li&gt;Third item<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Indented item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Indented item&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br/>
+          &nbsp;&nbsp;&lt;/li&gt;<br/>
+          &nbsp;&nbsp;&lt;li&gt;Fourth item&lt;/li&gt;<br/>
+          &lt;/ol&gt;
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h5>Unordered List Best Practices</h5>
+<p>Markdown applications don’t agree on how to handle different delimiters in the same list. For compatibility, don't mix and match delimiters in the same list — pick one and stick with it.</p>
+<table>
+  <thead>
+    <tr>
+      <th><i class="fas fa-check"></i> Do this</th>
+      <th><i class="fas fa-times"></i> Don't do this</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          - First item<br>
+          - Second item<br>
+          - Third item<br>
+          - Fourth item
+      </td>
+      <td>
+          + First item<br>
+          * Second item<br>
+          - Third item<br>
+          + Fourth item
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h5>Adding Elements in Lists</h5>
+<p>To add another element in a list while preserving the continuity of the list, indent the element four spaces or one tab, as shown in the following examples.</p>
+<h5>Paragraphs</h5>
+<pre><code>*   This is the first list item.
+*   Here's the second list item.
+
+    I need to add another paragraph below the second list item.
+
+*   And here's the third list item.
+</code></pre>
+<p>The rendered output looks like this:</p>
+<ul>
+<li>
+<p>This is the first list item.</p>
+</li>
+<li>
+<p>Here's the second list item.</p>
+<p>I need to add another paragraph below the second list item.</p>
+</li>
+<li>
+<p>And here's the third list item.</p>
+</li>
+</ul>
+<h5>Blockquotes</h5>
+<pre><code>*   This is the first list item.
+*   Here's the second list item.
+
+    &gt; A blockquote would look great below the second list item.
+
+*   And here's the third list item.
+</code></pre>
+<p>The rendered output looks like this:</p>
+<ul>
+<li>
+<p>This is the first list item.</p>
+</li>
+<li>
+<p>Here's the second list item.</p>
+<blockquote>
+<p>A blockquote would look great below the second list item.</p>
+</blockquote>
+</li>
+<li>
+<p>And here's the third list item.</p>
+</li>
+</ul>
+<h5>Images</h5>
+<pre><code>1.  Open the file containing the Linux mascot.
+2.  Marvel at its beauty.
+
+    ![Flextype](https://camo.githubusercontent.com/a0e5b6039aa6d34aaa5550bf375a9dce9314db6f/68747470733a2f2f696d61676573322e696d67626f782e636f6d2f34392f38642f346970487155636a5f6f2e6a7067)
+
+3.  Close the file.
+</code></pre>
+<p>The rendered output looks like this:</p>
+<ol>
+<li>
+<p>Open the file containing the Linux mascot.</p>
+</li>
+<li>
+<p>Marvel at its beauty.</p>
+<p><img src="https://camo.githubusercontent.com/a0e5b6039aa6d34aaa5550bf375a9dce9314db6f/68747470733a2f2f696d61676573322e696d67626f782e636f6d2f34392f38642f346970487155636a5f6f2e6a7067" alt="Flextype" /></p>
+</li>
+<li>
+<p>Close the file.</p>
+</li>
+</ol>
+<h5>Lists</h5>
+<p>You can nest an unordered list in an ordered list, or vice versa.</p>
+<pre><code>1. First item
+2. Second item
+3. Third item
+    - Indented item
+    - Indented item
+4. Fourth item
+</code></pre>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item
+<ul>
+<li>Indented item</li>
+<li>Indented item</li>
+</ul>
+</li>
+<li>Fourth item</li>
+</ol>
+<h4>Code</h4>
+<p>To denote a word or phrase as code, enclose it in backticks (`).</p>
+<table>
+  <thead>
+    <tr>
+      <th>Markdown</th>
+      <th>HTML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>At the command prompt, type `nano`.</td>
+      <td>At the command prompt, type &lt;code&gt;nano&lt;/code&gt;. </td>
+    </tr>
+  </tbody>
+</table>
+<h4>Horizontal Rules</h4>
+<p>If the word or phrase you want to denote as code includes one or more backticks, you can escape it by enclosing the word or phrase in double backticks (`).</p>
+<table>
+  <thead>
+    <tr>
+      <th>Markdown</th>
+      <th>HTML</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&#96;&#96;Use &#96;code&#96; in your Markdown file.&#96;&#96;</td>
+      <td>&lt;code&gt;Use `code` in your Markdown file.&lt;/code&gt;</td>
+    </tr>
+  </tbody>
+</table>
+<p><i class="fas fa-info-circle"></i> <strong>Note:</strong> To create code blocks without indenting lines, use <a href="/extended-syntax/#fenced-code-blocks">fenced code blocks</a>.</p>
+<h4>Horizontal Rules</h4>
+<p>To create a horizontal rule, use three or more asterisks (<code>***</code>), dashes (<code>---</code>), or underscores (<code>___</code>) on a line by themselves.</p>
+<pre><code class="language-html">***
+
+---
+
+_________________
+</code></pre>
+<h4>Horizontal Rule Best Practices</h4>
+<p>For compatibility, put blank lines before and after horizontal rules.</p>
+<table>
+  <thead>
+    <tr>
+        <th><i class="fas fa-check"></i> Do this</th>
+        <th><i class="fas fa-times"></i> Don't do this</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Try to put a blank line before...<br><br>
+        ---<br><br>
+        ...and after a horizontal rule.
+      </td>
+      <td>
+        Without blank lines, this would be a heading.<br>
+        ---<br>
+        Don't do this!
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4>Links</h4>
+<p>To create a link, enclose the link text in brackets (e.g., <code>[Duck Duck Go]</code>) and then follow it immediately with the URL in parentheses (e.g., <code>(https://duckduckgo.com)</code>).</p>
+<pre><code>My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+</code></pre>
+<p>The rendered output looks like this:</p>
+<p>My favorite search engine is <a href="https://duckduckgo.com">Duck Duck Go</a>.</p>
+<h5>Adding Titles</h5>
+<p>You can optionally add a title for a link. This will appear as a tooltip when the user hovers over the link. To add a title, enclose it in parentheses after the URL.</p>
+<pre><code>My favorite search engine is [Duck Duck Go](https://duckduckgo.com &quot;The best search engine for privacy&quot;).
+</code></pre>
+<p>The rendered output looks like this:</p>
+<p>My favorite search engine is <a href="https://duckduckgo.com" title="The best search engine for privacy">Duck Duck Go</a>.</p>
+<h5>URLs and Email Addresses</h5>
+<p>To quickly turn a URL or email address into a link, enclose it in angle brackets.</p>
+<pre><code>&lt;https://www.markdownguide.org&gt;
+&lt;fake@example.com&gt;
+</code></pre>
+<p>The rendered output looks like this:</p>
+<p><a href="https://www.markdownguide.org">https://www.markdownguide.org</a><br/>
+<a href="mailto:fake@example.com">fake@example.com</a></p>
+<h5>Formatting Links</h5>
+<p>To <a href="#emphasis">emphasize</a> links, add asterisks before and after the brackets and parentheses. To denote links as <a href="#code">code</a>, add backticks in the brackets.</p>
+<pre><code>I love supporting the **[EFF](https://eff.org)**.
+This is the *[Markdown Guide](https://www.markdownguide.org)*.
+See the section on [`code`](#code).
+</code></pre>
+<p>The rendered output looks like this:</p>
+<p>I love supporting the <strong><a href="https://eff.org">EFF</a></strong>.<br/>
+This is the <em><a href="https://www.markdownguide.org">Markdown Guide</a></em>.<br/>
+See the section on <a href="#code"><code>code</code></a>.</p>
+<h5>Reference-style Links</h5>
+<p>Reference-style links are a special kind of link that make URLs easier to display and read in Markdown. Reference-style links are constructed in two parts: the part you keep inline with your text and the part you store somewhere else in the file to keep the text easy to read.</p>
+<h6>Formatting the First Part of the Link</h6>
+<p>The first part of a reference-style link is formatted with two sets of brackets. The first set of brackets surrounds the text that should appear linked. The second set of brackets displays a label used to point to the link you're storing elsewhere in your document.</p>
+<p>Although not required, you can include a space between the first and second set of brackets. The label in the second set of brackets is not case sensitive and can include letters, numbers, spaces, or punctuation.</p>
+<p>This means the following example formats are roughly equivalent for the first part of the link:</p>
+<ul>
+<li>
+<code>[hobbit-hole][1]</code>
+</li>
+<li>
+<code>[hobbit-hole] [1]</code>
+</li>
+</ul>
+<h6>Formatting the Second Part of the Link</h6>
+<p>The second part of a reference-style link is formatted with the following attributes:</p>
+<ol>
+<li>The label, in brackets, followed immediately by a colon and at least one space (e.g., <code>[label]: </code>).</li>
+<li>The URL for the link, which you can optionally enclose in angle brackets.</li>
+<li>The optional title for the link, which you can enclose in double quotes, single quotes, or parentheses.</li>
+</ol>
+<p>This means the following example formats are all roughly equivalent for the second part of the link:</p>
+<ul>
+<li>
+<code>[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle</code>
+</li>
+<li>
+<code>[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle &quot;Hobbit lifestyles&quot;</code>
+</li>
+<li>
+<code>[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle 'Hobbit lifestyles'</code>
+</li>
+<li>
+<code>[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle (Hobbit lifestyles)</code>
+</li>
+<li>
+<code>[1]: &lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&gt; &quot;Hobbit lifestyles&quot;</code>
+</li>
+<li>
+<code>[1]: &lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&gt; 'Hobbit lifestyles'</code>
+</li>
+<li>
+<code>[1]: &lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&gt; (Hobbit lifestyles)</code>
+</li>
+</ul>
+<p>You can place this second part of the link anywhere in your Markdown document. Some people place them immediately after the paragraph in which they appear while other people place them at the end of the document (like endnotes or footnotes).</p>
+<h6>An Example Putting the Parts Together</h6>
+<p>Say you add a URL as a <a href="#links">standard URL link</a> to a paragraph and it looks like this in Markdown:</p>
+<pre><code>In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends
+of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to
+eat: it was a [hobbit-hole](https://en.wikipedia.org/wiki/Hobbit#Lifestyle &quot;Hobbit lifestyles&quot;), and that means comfort.
+</code></pre>
+<p>Though it may point to interesting additional information, the URL as displayed really doesn't add much to the existing raw text other than making it harder to read. To fix that, you could format the URL like this instead:</p>
+<pre><code>In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends
+of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to
+eat: it was a [hobbit-hole][1], and that means comfort.
+
+[1]: &lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&gt; &quot;Hobbit lifestyles&quot;
+</code></pre>
+<p>In both instances above, the rendered output would be identical:</p>
+<blockquote>
+<p>In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to  eat: it was a <a href="https://en.wikipedia.org/wiki/Hobbit#Lifestyle" title="Hobbit lifestyles">hobbit-hole</a>, and that means comfort.</p>
+</blockquote>
+<p>and the HTML for the link would be:</p>
+<pre><code>&lt;a href=&quot;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&quot; title=&quot;Hobbit lifestyles&quot;&gt;hobbit-hole&lt;/a&gt;
+</code></pre>
+<h5>Link Best Practices</h5>
+<p>Markdown applications don't agree on how to handle spaces in the middle of a URL. For compatibility, try to URL encode any spaces with <code>%20</code>.</p>
+<table>
+  <thead>
+    <tr>
+        <th><i class="fas fa-check"></i> Do this</th>
+        <th><i class="fas fa-times"></i> Don't do this</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        [link](https://www.example.com/my%20great%20page)
+      </td>
+      <td>
+        [link](https://www.example.com/my great page)
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4>Images</h4>
+<p>To add an image, add an exclamation mark (<code>!</code>), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title after the URL in the parentheses.</p>
+<pre><code>![Flextype is an open-source Hybrid Content Management System!](https://camo.githubusercontent.com/a0e5b6039aa6d34aaa5550bf375a9dce9314db6f/68747470733a2f2f696d61676573322e696d67626f782e636f6d2f34392f38642f346970487155636a5f6f2e6a7067 &quot;Flextype&quot;)
+</code></pre>
+<p>The rendered output looks like this:</p>
+<img src="https://camo.githubusercontent.com/a0e5b6039aa6d34aaa5550bf375a9dce9314db6f/68747470733a2f2f696d61676573322e696d67626f782e636f6d2f34392f38642f346970487155636a5f6f2e6a7067" alt="Flextype" title="Flextype is an open-source Hybrid Content Management System" />
+<h5>Linking Images</h5>
+<p>To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.</p>
+<pre><code>[![Flextype](https://camo.githubusercontent.com/a0e5b6039aa6d34aaa5550bf375a9dce9314db6f/68747470733a2f2f696d61676573322e696d67626f782e636f6d2f34392f38642f346970487155636a5f6f2e6a7067 &quot;Flextype is an open-source Hybrid Content Management System&quot;)](https://awilum.github.io/flextype)
+</code></pre>
+<p>The rendered output looks like this:</p>
+<p><a href="https://awilum.github.io/flextype"><img src="https://camo.githubusercontent.com/a0e5b6039aa6d34aaa5550bf375a9dce9314db6f/68747470733a2f2f696d61676573322e696d67626f782e636f6d2f34392f38642f346970487155636a5f6f2e6a7067" alt="Flextype" title="
+Flextype is an open-source Hybrid Content Management System" /></a></p>
+<h4>Escaping Characters</h4>
+<p>To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (<code>\</code>) in front of the character.</p>
+<pre><code>\* Without the backslash, this would be a bullet in an unordered list.
+</code></pre>
+<p>The rendered output looks like this:</p>
+<p>* Without the backslash, this would be a bullet in an unordered list.</p>
+<h5>Characters You Can Escape</h5>
+<p>You can use a backslash to escape the following characters.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Character</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\</td>
+      <td>backslash</td>
+    </tr>
+    <tr>
+      <td>&#96;</td>
+      <td>backtick (see also <a href="#escaping-backticks">escaping backticks in code</a>)</td>
+    </tr>
+    <tr>
+      <td>&#42;</td>
+      <td>asterisk</td>
+    </tr>
+    <tr>
+      <td>&#95;</td>
+      <td>underscore</td>
+    </tr>
+    <tr>
+      <td>{ }</td>
+      <td>curly braces</td>
+    </tr>
+    <tr>
+      <td>[ ]</td>
+      <td>brackets</td>
+    </tr>
+    <tr>
+      <td>( )</td>
+      <td>parentheses</td>
+    </tr>
+    <tr>
+      <td>#</td>
+      <td>pound sign</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>plus sign</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>minus sign (hyphen)</td>
+    </tr>
+    <tr>
+      <td>.</td>
+      <td>dot</td>
+    </tr>
+    <tr>
+      <td>!</td>
+      <td>exclamation mark</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>pipe (see also <a href="/extended-syntax/#escaping-pipe-characters-in-tables">escaping pipe in tables</a>)</td>
+    </tr>
+  </tbody>
+</table>
+<h4>HTML</h4>
+<p>Many Markdown applications allow you to use HTML tags in Markdown-formatted text. This is helpful if you prefer certain HTML tags to Markdown syntax. For example, some people find it easier to use HTML tags for images. Using HTML is also helpful when you need to change the attributes of an element, like specifying the color of text or changing the width of an image.</p>
+<p>To use HTML, place the tags in the text of your Markdown-formatted file.</p>
+<pre><code>This **word** is bold. This &lt;em&gt;word&lt;/em&gt; is italic.
+</code></pre>
+<p>The rendered output looks like this:</p>
+<p>This <strong>word</strong> is bold. This <em>word</em> is italic.</p>
+<h5>HTML Best Practices</h5>
+<p>For security reasons, not all Markdown applications support HTML in Markdown documents. When in doubt, check your Markdown application's documentation. Some applications support only a subset of HTML tags.</p>
+<p>Use blank lines to separate block-level HTML elements like <code>&lt;div&gt;</code>, <code>&lt;table&gt;</code>, <code>&lt;pre&gt;</code>, and <code>&lt;p&gt;</code> from the surrounding content. Try not to indent the tags with tabs or spaces — that can interfere with the formatting.</p>
+<p>You can't use Markdown syntax inside block-level HTML tags.</p>
+<p>For example, <code>&lt;p&gt;italic and **bold**&lt;/p&gt;</code> won't work.</p>
+<h3><a name="methods"></a> Methods</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#methods-parse">parse()</a></td>
+            <td>Takes a MARKDOWN encoded string and converts it into a HTML.</td>
+        </tr>
+        <tr>
+            <td><a href="#methods-getCacheID">getCacheID()</a></td>
+            <td>Get Cache ID for MARKDOWN.</td>
+        </tr>
+    </tbody>
+</table>
+<h3>Methods Details</h3>
+<h5><a name="methods-parse"></a> <code>parse()</code></h5>
+<p>Takes a MARKDOWN encoded string and converts it into a HTML.</p>
+<pre><code class="language-php">/**
+ * Takes a MARKDOWN encoded string and converts it into a PHP variable.
+ *
+ * @param string $input A string containing MARKDOWN
+ * @param bool   $cache Cache result data or no. Default is true
+ *
+ * @return mixed The MARKDOWN converted to a PHP value
+ */
+public function parse(string $input, bool $cache = true): string
+</code></pre>
+<p><strong>Examples</strong></p>
+<pre><code class="language-php">$markdown = '**this text is bold**';
+
+$html = flextype('parsers')-&gt;markdown()-&gt;parse($markdown);
+</code></pre>
+<h5><a name="methods-getCacheID"></a> <code>getCacheID()</code></h5>
+<p>Get Cache ID for markdown.</p>
+<pre><code class="language-php">/**
+ * Get Cache ID for markdown.
+ *
+ * @param  string $input Input
+ *
+ * @return string Cache ID
+ *
+ * @access public
+ */
+public function getCacheID(string $input): string
+</code></pre>
+<p><strong>Examples</strong></p>
+<pre><code class="language-php">$markdown = 'text with [message]';
+
+$cache_id = flextype('parsers')-&gt;markdown()-&gt;getCacheID($markdown);
+</code></pre>
+
+        </div>
+            </div>
+</div>
+        </section>
+        <footer class="py-20 text-sm text-center">
+            <p class="m-0">Copyright © <a href="https://awilum.github.io/about">Sergey Romanenko</a></p>
+            <p class="m-0 text-xs">POWERED BY <a href="https://awilum.github.io/flextype"">FLEXTYPE</a></p>
+                                </footer>
+    </main>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    <script>
+        hljs.highlightAll();
+
+        var $tabs = function (target) {
+        var
+            _elemTabs = (typeof target === 'string' ? document.querySelector(target) : target),
+            _eventTabsShow,
+            _showTab = function (tabsLinkTarget) {
+                var tabsPaneTarget, tabsLinkActive, tabsPaneShow;
+                tabsPaneTarget = document.querySelector(tabsLinkTarget.getAttribute('href'));
+                tabsLinkActive = tabsLinkTarget.parentElement.querySelector('.tabs__link_active');
+                tabsPaneShow = tabsPaneTarget.parentElement.querySelector('.tabs__pane_show');
+                
+                if (tabsLinkTarget === tabsLinkActive) {
+                    return;
+                }
+                
+                if (tabsLinkActive !== null) {
+                    tabsLinkActive.classList.remove('tabs__link_active');
+                }
+
+                if (tabsPaneShow !== null) {
+                    tabsPaneShow.classList.remove('tabs__pane_show');
+                }
+                
+                
+                tabsLinkTarget.classList.add('tabs__link_active');
+                tabsPaneTarget.classList.add('tabs__pane_show');
+                document.dispatchEvent(_eventTabsShow);
+            },
+            _switchTabTo = function (tabsLinkIndex) {
+                var tabsLinks = _elemTabs.querySelectorAll('.tabs__link');
+                if (tabsLinks.length > 0) {
+                    if (tabsLinkIndex > tabsLinks.length) {
+                    tabsLinkIndex = tabsLinks.length;
+                    } else if (tabsLinkIndex < 1) {
+                    tabsLinkIndex = 1;
+                    }
+                    _showTab(tabsLinks[tabsLinkIndex - 1]);
+                }
+            };
+
+            _eventTabsShow = new CustomEvent('tab.show', { detail: _elemTabs });
+
+            _elemTabs.addEventListener('click', function(e) {
+                var target = e.target.closest('.tabs__link');
+                // завершаем выполнение функции, если кликнули не по ссылке
+                if (!target) {
+                return;
+                }
+                // отменяем стандартное действие
+                e.preventDefault();
+                _showTab(target);
+        });
+
+        return {
+            showTab: function (target) {
+            _showTab(target);
+            },
+            switchTabTo: function (index) {
+            _switchTabTo(index);
+            }
+        }
+
+        };
+
+        
+        var formatter = new Intl.NumberFormat('en-US');
+        fetch('https://raw.githubusercontent.com/Awilum/awilum/master/github-metrics.json')
+        .then(response => response.json())
+        .then(function(data) {
+            var ghCommits = document.querySelector(".github-commits");
+            var ghLinesAdded = document.querySelector(".github-lines-added");
+            var ghDeleted = document.querySelector(".github-lines-deleted");
+            var ghContibuteTo = document.querySelector(".github-repositories-contributed-to");
+
+            if (ghCommits != null) ghCommits.innerHTML = formatter.format(data.computed.commits);
+            if (ghLinesAdded != null) ghLinesAdded.innerHTML = formatter.format(data.plugins.lines.added);
+            if (ghDeleted != null) ghDeleted.innerHTML = formatter.format(data.plugins.lines.deleted);
+            if (ghContibuteTo != null) ghContibuteTo.innerHTML = formatter.format(data.user.repositoriesContributedTo.totalCount);
+        });
+
+    </script>
+        <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(87767318, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/87767318" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    </body>
+</html>

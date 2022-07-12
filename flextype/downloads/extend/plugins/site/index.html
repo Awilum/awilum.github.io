@@ -14,19 +14,21 @@
         
         <title>Get Site Plugin for Open Source Hybrid Content Management System | Flextype</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800&display=swap" rel="stylesheet">
 
-                
                 
                                     <link href="https://awilum.github.io/project/themes/dev/assets/dist/css/dev.min.css" rel="stylesheet">
                     
             </head>
 <body class="antialiased text-slate-900 dark:text-slate-300 bg-white dark:bg-slate-900">
-    <header class="bg-white dark:bg-slate-800 border-b border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] plate-shadow">
-        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-bold text-center border-r border-slate-900 brand-logo no-underline text-pink-500">
+    <header class="bg-white dark:bg-slate-800 dark:border-slate-500 border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg">
+        <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 dark:border-slate-500 brand-logo no-underline text-pink-500">
             AWILUM
         </a>
-        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-bold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-semibold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
             Blog
         </a>
         <div class="flex justify-center hidden lg:block">
@@ -58,7 +60,7 @@
                     :aria-expanded="open"
                     :aria-controls="$id('dropdown-button')"
                     type="button"
-                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 "
                 >
                     <span>Projects</span>
                 </button>
@@ -70,14 +72,14 @@
                     x-transition.origin.top.left
                     x-on:click.outside="close($refs.button)"
                     :id="$id('dropdown-button')"
-                    style="display: none; box-shadow: 3px 3px 0 #0f172a"
-                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 rounded overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+                    style="display: none;"
+                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 dark:border-slate-500 rounded-lg overflow-hidden z-50 dark:bg-slate-800"
                 >
                     <div>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                        <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +113,7 @@
             :aria-expanded="open"
             :aria-controls="$id('dropdown-button')"
             type="button"
-            class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
+            class="outline-none hover:text-pink-500 dark:border-slate-500 m-0 p-0 px-3 py-2 font-bold text-xs uppercase no-underline border-r border-slate-900 "
         >
             <span>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -174,26 +176,23 @@
             x-transition.origin.top.left
             x-on:click.outside="close($refs.button)"
             :id="$id('dropdown-button')"
-            style="display: none; box-shadow: 3px 3px 0 #0f172a"
-            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 plate-shadow"
+            style="display: none;"
+            class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 dark:border-slate-500 plate-shadow"
         >
             <div>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/blog">
-                    Blog
-                </a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/thermage">Thermage</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/flextype">Flextype</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage">Thermage</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype">Flextype</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp">Glowy PHP</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
                 
             </div>
         </div>
     </div>
 </div>        <div class="flex" style="margin-left: auto;">
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/sponsors">
                 Sponsors
             </a>
-            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 font-bold text-xs uppercase no-underline" href="https://awilum.github.io/about">
+            <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline" href="https://awilum.github.io/about">
                 About
             </a>
         </div>
@@ -216,7 +215,7 @@
             <span class="opacity-50"><a class="no-underline" href="https://awilum.github.io/flextype/downloads/extend/plugins">PLUGINS</a></span>
         </div>
     </div>
-    <div>
+    <div class="plate border border-slate-900 dark:border-slate-500 rounded-lg p-4 plate-shadow">
                 
         
         <div class="flex content-center flex-wrap">
@@ -225,45 +224,190 @@
                     <div class="flex align-middle items-center">
                         <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"/></svg></span>
                         <div class="text-left">
-                            <h4 class="text-2xl pb-0 mb-0 block">Site</h4>
+                            <h4 class="text-2xl pb-0 mb-0 block"></h4>
                             <p class="m-0">
                                 Site plugin to display entries content on the website frontend.
                             </p>
                             <p class="m-0 text-sm">
-                                 <a class="no-underline" href="#"><b>Sergey Romanenko</b></a>
+                                <span class="opacity-50">by</span> <a href=""><b>Sergey Romanenko</b></a>
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <hr class="mb-6 border-b border-slate-800">
+                <hr class="mb-6 border-b border-slate-800 dark:border-slate-500">
 
-                <h4>Installation</h4>
+                <h3>Installation</h3>
 <ol>
-<li>Download &amp; Install all required dependencies.</li>
-<li>Create new folder <code>/project/plugins/site</code>
-</li>
-<li>Download Site Plugin and unzip plugin content to the folder <code>/project/plugins/site</code>
-</li>
+<li>Download &amp; Install all required <a href="https://github.com/flextype-plugins/site#dependencies">dependencies</a>.</li>
+<li>Create new folder <code>project/plugins/site</code>.</li>
+<li>Download <a href="https://github.com/flextype-plugins/site/releases">Site Plugin</a> and unzip plugin content to the folder <code>project</code>.</li>
 </ol>
-<h4>Settings</h4>
-<table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>enabled</td>
-<td>true</td>
-<td>true or false to disable the plugin</td>
-</tr>
-</tbody>
-</table>
-<h4>Twig variables for Site Plugin</h4>
+<h3>Default settings</h3>
+<pre><code class="language-yaml"># enabled: true or false to disable the plugin
+enabled: true
+
+# Site plugin priority
+priority: 10000
+
+# The title of the website
+title: Flextype
+
+# The description of the website
+description: Build fast, flexible, easier to manage websites with Flextype.
+
+# The keywords of the website
+keywords: flextype, php, cms, flat-file cms, flat cms, flatfile cms, html
+
+# The robots of the website
+robots: index, follow
+
+# The name and email address of the website author
+author:
+  email: ''
+  name: ''
+
+# Templates
+templates:
+  directory: &quot;views/templates&quot;
+  engine: view
+  extension: php
+  default: default
+
+# Site static cache
+cache:
+  enabled: false
+
+# Trailing slash
+trailing_slash: false
+
+# The entries settings
+#
+# - main:                 Main entry
+# - error404.title:       Title to display on Error404 page
+# - error404.description: Description to display on Error404 page
+# - error404.content:     Content to display on Error404 page
+# - error404.template:    Template to use on Error404 page
+entries:
+  main: home
+  error404:
+    title: Error 404
+    description: We're sorry but the page you are looking for doesn't appear to exist!
+    content: &quot;&lt;center&gt;We're sorry but the page you are looking for doesn't appear to exist!&lt;/center&gt;&quot;
+    template: default
+
+# Redirects
+redirects: []
+  #- 
+    #from: /foo
+    #to: /bar
+    #to_route_name: home
+    #to_external: https://www.google.com
+    #status: 301
+
+# HTML Compressor and Minifier
+minify:
+
+  # HTML
+  html:
+
+    # enable HTML Compressor and Minifier
+    enabled: false
+
+    # optimize html via &quot;HtmlDomParser()&quot;
+    optimize_via_dom_parser: false
+
+    # remove default HTML comments (depends on &quot;optimize_via_dom_parser(true)&quot;)
+    remove_comments: false
+
+    # sum-up extra whitespace from the Dom (depends on &quot;optimize_via_dom_parser(true)&quot;)
+    sum_up_whitespace: false
+
+    # remove whitespace around tags (depends on &quot;optimize_via_dom_parser(true)&quot;)
+    remove_whitespace_around_tags: false
+
+    # optimize html attributes (depends on &quot;optimize_via_dom_parser(true)&quot;)
+    optimize_attributes: false
+
+    # remove optional &quot;http:&quot;-prefix from attributes (depends on &quot;optimize_attributes(true)&quot;)
+    remove_http_prefix_from_attributes: false
+
+    # remove optional &quot;https:&quot;-prefix from attributes (depends on &quot;optimize_attributes(true)&quot;)
+    remove_https_prefix_from_attributes: false
+
+    # keep &quot;http:&quot;- and &quot;https:&quot;-prefix for all external links 
+    keep_http_and_https_prefix_on_external_attributes: false
+
+    # make some links relative, by removing the domain from attributes
+    make_same_domains_links_relative: false
+
+    # remove defaults (depends on &quot;optimize_via_dom_parser(true)&quot; | disabled by default)
+    remove_default_attributes: false
+
+    # remove deprecated anchor-jump (depends on &quot;optimize_attributes(true)&quot;)
+    remove_deprecated_anchor_name: false
+
+    # remove deprecated charset-attribute - the browser will use the charset from the HTTP-Header, anyway (depends on &quot;optimize_attributes(true)&quot;)
+    remove_deprecated_script_charset_attribute: false
+
+    # remove deprecated script-mime-types (depends on &quot;optimize_attributes(true)&quot;)
+    remove_deprecated_type_from_script_tag: false
+
+    # remove &quot;type=text/css&quot; for css links (depends on &quot;optimize_attributes(true)&quot;)
+    remove_deprecated_type_from_stylesheet_link: false
+
+    # remove &quot;type=text/css&quot; from all links and styles
+    remove_deprecated_type_from_style_and_link_tag: false
+
+    # remove &quot;media=&quot;all&quot; from all links and styles
+    remove_default_media_type_from_style_and_link_tag: false
+
+    # remove type=&quot;submit&quot; from button tags 
+    remove_default_type_from_button: false
+
+    # remove some empty attributes (depends on &quot;optimize_attributes(true)&quot;)
+    remove_empty_attributes: false
+
+    # remove 'value=&quot;&quot;' from empty &lt;input&gt; (depends on &quot;optimize_attributes(true)&quot;)
+    remove_value_from_empty_input: false
+
+    # sort css-class-names, for better gzip results (depends on &quot;optimize_attributes(true)&quot;)
+    sort_css_class_names: false
+
+    # sort html-attributes, for better gzip results (depends on &quot;optimize_attributes(true)&quot;)
+    sort_html_attributes: false
+
+    # remove more (aggressive) spaces in the dom (disabled by default)
+    remove_spaces_between_tags: false
+
+    # remove quotes e.g. class=&quot;lall&quot; =&gt; class=lall
+    remove_omitted_quotes: false
+
+    # remove ommitted html tags e.g. &lt;p&gt;lall&lt;/p&gt; =&gt; &lt;p&gt;lall 
+    remove_omitted_html_tags: false
+
+# Settings for static site generation
+static:
+
+  # Destination for generated static site files (without trailing and without starting slash)
+  path: '_site'
+
+  # Site url (without trailing slash)
+  site_url: ''
+
+  # Ignore lists (without trailing and without starting slash)
+  ignore:
+    entries: []
+    assets: 
+      - src
+</code></pre>
+<p>You may override the default settings in the plugin project configuration file <code>project/config/plugins/site/settings.yaml</code></p>
+<h3>Generate static site</h3>
+<p>You may geneate a static site with help of the following console command:</p>
+<pre><code>./bin/flextype site:generate
+</code></pre>
+<h3>Evailable variables</h3>
+<p>Site plugin shares the following variables in your PHP, Twig, etc., templates:</p>
 <table>
 <thead>
 <tr>
@@ -273,85 +417,24 @@
 </thead>
 <tbody>
 <tr>
-<td>entry</td>
-<td>The entry object with all the information about the current page you are currently on.</td>
-</tr>
-<tr>
-<td>query</td>
-<td>The Query Params</td>
+<td>-</td>
+<td>All entry fields.</td>
 </tr>
 <tr>
 <td>uri</td>
-<td>The URI string</td>
+<td>Current URI.</td>
+</tr>
+<tr>
+<td>request</td>
+<td>Current request data.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Examples:</strong></p>
-<pre><code class="language-twig">{{ entry.title }} {# returns the current entry title #}
-</code></pre>
-<h4>Theming</h4>
-<h4>Theme Installation</h4>
-<ol>
-<li>Unzip theme to the folder <code>/project/themes/</code>
-</li>
-<li>Go to <code>/project/config/settings.yaml</code> and update <code>theme</code> setting with your theme name.</li>
-<li>Save your changes.</li>
-</ol>
-<h4>Theme Configuration</h4>
-<p>You can easily access theme configuration and theme information from your Twig and PHP files.</p>
-<h4>Accessing Theme Information</h4>
-<p>Information from the currently active theme can get from the <code>registry</code> object.</p>
-<p>Example information from <code>/project/themes/noir/theme.yaml</code></p>
-<pre><code class="language-yaml">name: Noir
-version: 1.0.0
-description: Noir theme for Flextype
-author:
-  name: Sergey Romanenko
-  email: sergey.romanenko@flextype.org
-  url: https://flextype.org
-homepage: https://github.com/flextype-themes/noir
-bugs: https://github.com/flextype-themes/noir/issues
-license: MIT
-</code></pre>
-<p>You can reach any of these items via registry <code>themes</code> by using the standard dot-syntax:</p>
-<p>Usage:</p>
-<pre><code class="language-twig">Theme name: {{ flextype.registry.get('themes.noir.manifest.name') }}
-Theme version: {{ flextype.registry.get('themes.noir.manifest.version') }}
-</code></pre>
-<p>Result:</p>
-<pre><code class="language-twig">Theme name: Noir
-Theme version: 1.0.0
-</code></pre>
-<p>You can also reach these same values from a Flextype theme(s) with PHP syntax:</p>
-<p>Usage:</p>
-<pre><code class="language-php">$theme_name = flextype('registry')-&gt;get('themes.noir.manifest.name');
-$theme_version = flextype('registry')-&gt;get('themes.noir.manifest.version');
-</code></pre>
-<h4>Accessing Theme Configuration</h4>
-<p>Themes have default and project configuration files, named <code>settings.yaml</code> located in <code>/project/themes/&lt;themename&gt;/</code> and in <code>/project/config/themes/&lt;themename&gt;/</code></p>
-<p>For example, let us consider the Noir theme and there is a file called <code>settings.yaml</code> in the themes site settings folder. The contents of this configuration file look like this:</p>
-<pre><code class="language-yaml">enabled: true
-</code></pre>
-<p>Let us add some custom theme settings.</p>
-<p>Open <code>/project/config/themes/noir/settings.yaml</code> and add new variable with value <code>highlight: red</code></p>
-<pre><code class="language-yaml">enabled: true
-highlight: red
-</code></pre>
-<p>Then in your theme templates you can access these variable using the <code>themes.noir</code> object:</p>
-<pre><code class="language-twig">&lt;h1 style=&quot;color:{{ flextype.registry.get('themes.noir.settings.highlight') }}&quot;&gt;
-    BUILD FAST, FLEXIBLE, EASIER TO MANAGE WEBSITES WITH FLEXTYPE.
-&lt;/h1&gt;
-</code></pre>
-<p>Result:</p>
-<h1 style="color:red">BUILD FAST, FLEXIBLE, EASIER TO MANAGE WEBSITES WITH FLEXTYPE.</h1>
-<p>In PHP you can access the current theme configuration like this:</p>
-<pre><code class="language-php">$highlight = flextype('registry')-&gt;get('themes.noir.settings.highlight');
-</code></pre>
 
             </div>
             <div class="w-full lg:w-3/12 p-2">
-                <div class="text-left p-6 mb-6 border-slate-800 dark:bg-slate-800 border plate-shadow">
-                    <div class="flex content-center flex-wrap">
+                <div class="text-left mb-6 border-slate-800 dark:border-slate-500 dark:bg-slate-800 border">
+                    <div class="flex content-center flex-wrap p-6 pb-0">
                         <div class="w-full">
                             <p class="m-0 opacity-50">Version</p>
                             <p>1.11.0</p>
@@ -372,61 +455,29 @@ highlight: red
                                 <a href="https://github.com/flextype-plugins/site">Homepage</a><br>                                <a href="https://github.com/flextype-plugins/site">Documentation</a><br>                                <a href="https://github.com/flextype-plugins/site">Changelog</a><br>                                <a href="https://github.com/flextype-plugins/site/issues">Issues</a>                            </p>
                         </div>
                     </div>
-                    <div class="flex content-center flex-wrap">
+                    <div class="flex content-center flex-wrap p-6 pt-0">
                         <div class="w-full">
                             <p class="m-0 opacity-50">Categories</p>
                             <p>
-                                                                                                    <a class="no-underline" href="https://awilum.github.io/flextype/downloads/extend/plugins?category=content">content</a>                                                            </p>
+                                                                                                    <a class="underline" href="https://awilum.github.io/flextype/downloads/extend/plugins?category=content">content</a>                                                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="text-center">
-                    <a class="button"
-                    href="https://github.com/flextype-plugins/site/releases/download/v1.11.0/site-1.11.0.zip">DOWNLOAD</a>
+                    <div class="border-t border-slate-900 ">
+                        <a class="bg-amber-300 dark:bg-amber-800 dark:hover:bg-amber-900 dark:hover:text-white hover:text-slate-900 hover:bg-amber-400 no-underline block text-center py-2"
+                        href="https://github.com/flextype-plugins/site/releases/download/v1.11.0/site-1.11.0.zip">DOWNLOAD</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <hr class="mb-6 border-b border-plate-800">
-
-        <div class="p-2 mb-6">
-            <h4>Other plugins by Sergey Romanenko</h4>
+        </div>
+    
+    <div>
+        <div class="p-2 mt-8">
+            <h4 class="text-2xl">Other plugins by Sergey Romanenko</h4>
                             
                                     <div class="flex content-center flex-wrap mt-5">
-                                                                                <a href="https://awilum.github.io/flextype/downloads/extend/plugins/form" class="w-full p-2 lg:w-6/12 no-underline ">
-                                <div class="flex p-6 align-middle">
-                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></span>
-                                    <div class="text-left">
-                                        <h4 class="text-xl p-0 m-0 block">Form</h4>
-                                        <p class="m-0">
-                                            Form Plugin to render user forms for Flextype.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                                                                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/phpmailer" class="w-full p-2 lg:w-6/12 no-underline ">
-                                <div class="flex p-6 align-middle">
-                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg></span>
-                                    <div class="text-left">
-                                        <h4 class="text-xl p-0 m-0 block">PHP Mailer</h4>
-                                        <p class="m-0">
-                                            PHP Mailer plugin for Flextype.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                                                                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/section" class="w-full p-2 lg:w-6/12 no-underline ">
-                                <div class="flex p-6 align-middle">
-                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M12.41 148.02l232.94 105.67c6.8 3.09 14.49 3.09 21.29 0l232.94-105.67c16.55-7.51 16.55-32.52 0-40.03L266.65 2.31a25.607 25.607 0 0 0-21.29 0L12.41 107.98c-16.55 7.51-16.55 32.53 0 40.04zm487.18 88.28l-58.09-26.33-161.64 73.27c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.51 209.97l-58.1 26.33c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 276.3c16.55-7.5 16.55-32.5 0-40zm0 127.8l-57.87-26.23-161.86 73.37c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.29 337.87 12.41 364.1c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 404.1c16.55-7.5 16.55-32.5 0-40z"/></svg></span>
-                                    <div class="text-left">
-                                        <h4 class="text-xl p-0 m-0 block">Section</h4>
-                                        <p class="m-0">
-                                            Section plugin provides a basic way to work with content sections.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                                                                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/sitemap" class="w-full p-2 lg:w-6/12 no-underline ">
+                                                                                <a href="https://awilum.github.io/flextype/downloads/extend/plugins/sitemap" class="w-full p-2 lg:w-6/12 no-underline ">
                                 <div class="flex p-6 align-middle">
                                     <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M288 0c-69.59 0-126 56.41-126 126 0 56.26 82.35 158.8 113.9 196.02 6.39 7.54 17.82 7.54 24.2 0C331.65 284.8 414 182.26 414 126 414 56.41 357.59 0 288 0zm0 168c-23.2 0-42-18.8-42-42s18.8-42 42-42 42 18.8 42 42-18.8 42-42 42zM20.12 215.95A32.006 32.006 0 0 0 0 245.66v250.32c0 11.32 11.43 19.06 21.94 14.86L160 448V214.92c-8.84-15.98-16.07-31.54-21.25-46.42L20.12 215.95zM288 359.67c-14.07 0-27.38-6.18-36.51-16.96-19.66-23.2-40.57-49.62-59.49-76.72v182l192 64V266c-18.92 27.09-39.82 53.52-59.49 76.72-9.13 10.77-22.44 16.95-36.51 16.95zm266.06-198.51L416 224v288l139.88-55.95A31.996 31.996 0 0 0 576 426.34V176.02c0-11.32-11.43-19.06-21.94-14.86z"/></svg></span>
                                     <div class="text-left">
@@ -437,24 +488,24 @@ highlight: red
                                     </div>
                                 </div>
                             </a>
-                                                                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/accounts" class="w-full p-2 lg:w-6/12 no-underline ">
+                                                                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/feed" class="w-full p-2 lg:w-6/12 no-underline ">
                                 <div class="flex p-6 align-middle">
-                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"/></svg></span>
+                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg></span>
                                     <div class="text-left">
-                                        <h4 class="text-xl p-0 m-0 block">Accounts</h4>
+                                        <h4 class="text-xl p-0 m-0 block">Feed</h4>
                                         <p class="m-0">
-                                            Accounts plugins for Flextype.
+                                            Feed plugin for Flextype supports Atom 1.0, RSS and JSON feed types and allows you to generate feeds for entries.
                                         </p>
                                     </div>
                                 </div>
                             </a>
-                                                                                                            <a href="https://awilum.github.io/flextype/downloads/extend/plugins/redirect" class="w-full p-2 lg:w-6/12 no-underline ">
+                                                                                                                                                                <a href="https://awilum.github.io/flextype/downloads/extend/plugins/twig" class="w-full p-2 lg:w-6/12 no-underline ">
                                 <div class="flex p-6 align-middle">
-                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M502.61 233.32L278.68 9.39c-12.52-12.52-32.83-12.52-45.36 0L9.39 233.32c-12.52 12.53-12.52 32.83 0 45.36l223.93 223.93c12.52 12.53 32.83 12.53 45.36 0l223.93-223.93c12.52-12.53 12.52-32.83 0-45.36zm-100.98 12.56l-84.21 77.73c-5.12 4.73-13.43 1.1-13.43-5.88V264h-96v64c0 4.42-3.58 8-8 8h-32c-4.42 0-8-3.58-8-8v-80c0-17.67 14.33-32 32-32h112v-53.73c0-6.97 8.3-10.61 13.43-5.88l84.21 77.73c3.43 3.17 3.43 8.59 0 11.76z"/></svg></span>
+                                    <span class="icon-svg-large mr-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"/></svg></span>
                                     <div class="text-left">
-                                        <h4 class="text-xl p-0 m-0 block">Redirect</h4>
+                                        <h4 class="text-xl p-0 m-0 block">Twig</h4>
                                         <p class="m-0">
-                                            Simple redirect plugin for Flextype.
+                                            Twig plugin to present Twig template engine for Flextype.
                                         </p>
                                     </div>
                                 </div>
