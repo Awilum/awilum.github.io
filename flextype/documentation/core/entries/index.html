@@ -28,7 +28,7 @@
         <a href="https://awilum.github.io" class="m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 dark:border-slate-500 brand-logo no-underline text-pink-500">
             AWILUM
         </a>
-        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 font-semibold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog">
             Blog
         </a>
         <div class="flex justify-center hidden lg:block">
@@ -204,14 +204,11 @@
   <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 text-pink-500" href="https://awilum.github.io/flextype">Flextype</a>
   <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 " href="https://awilum.github.io/flextype/downloads">Downloads</a>
   <a class="w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline " href="https://awilum.github.io/flextype/documentation">Documentation</a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype">
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype/flextype/discussions">
     GITHUB
   </a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/getflextype">
+  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/_flextype">
     TWITTER
-  </a>
-  <a class="m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://discord.gg/CCKPKVG">
-    DISCORD
   </a>
 </div>
 
@@ -300,6 +297,9 @@
                 <li class="">
                     <a href="https://awilum.github.io/flextype/documentation/rest-api/registry" class="no-underline">Registry</a>
                 </li>
+                <li class="">
+                    <a href="https://awilum.github.io/flextype/documentation/rest-api/query" class="no-underline">Query</a>
+                </li>
             </ul>
         </div>
         <div class="w-full lg:w-9/12">
@@ -360,79 +360,79 @@
                                                                             </ul>
                                                                     </li>
                                                                 <li>
-                                    <a class="no-underline" href="#vars"><span class="mr-1">6.</span> Vars</a>
+                                    <a class="no-underline" href="#directives"><span class="mr-1">6.</span> Directives</a>
+                                                                                                            <ul class="ml-4 mb-0">
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#directive-shortcodes"><span class="mr-1">6.1</span> shortcodes</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#directive-markdown"><span class="mr-1">6.2</span> markdown</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#directive-markdown"><span class="mr-1">6.3</span> textile</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#directive-type"><span class="mr-1">6.4</span> type</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#directive-php"><span class="mr-1">6.5</span> php</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#directive-expression"><span class="mr-1">6.6</span> expression</a>
+                                        </li>
+                                                                            </ul>
+                                                                    </li>
+                                                                <li>
+                                    <a class="no-underline" href="#macros"><span class="mr-1">7.</span> Macros</a>
+                                                                                                            <ul class="ml-4 mb-0">
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#macros-entries"><span class="mr-1">7.1</span> entries</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#macros-registry"><span class="mr-1">7.2</span> registry</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#macros-php"><span class="mr-1">7.3</span> php</a>
+                                        </li>
+                                                                            </ul>
+                                                                    </li>
+                                                                <li>
+                                    <a class="no-underline" href="#expressions"><span class="mr-1">8.</span> Expressions</a>
                                                                                                         </li>
                                                                 <li>
-                                    <a class="no-underline" href="#directives"><span class="mr-1">7.</span> Directives</a>
+                                    <a class="no-underline" href="#methods"><span class="mr-1">9.</span> Methods</a>
                                                                                                             <ul class="ml-4 mb-0">
                                                                                 <li >
-                                            <a class="no-underline text-sm" href="#directive-shortcodes"><span class="mr-1">7.1</span> shortcodes</a>
+                                            <a class="no-underline text-sm" href="#methods-fetch"><span class="mr-1">9.1</span> fetch</a>
                                         </li>
                                                                                 <li >
-                                            <a class="no-underline text-sm" href="#directive-markdown"><span class="mr-1">7.2</span> markdown</a>
+                                            <a class="no-underline text-sm" href="#methods-create"><span class="mr-1">9.2</span> create</a>
                                         </li>
                                                                                 <li >
-                                            <a class="no-underline text-sm" href="#directive-markdown"><span class="mr-1">7.3</span> textile</a>
+                                            <a class="no-underline text-sm" href="#methods-update"><span class="mr-1">9.3</span> update</a>
                                         </li>
                                                                                 <li >
-                                            <a class="no-underline text-sm" href="#directive-type"><span class="mr-1">7.4</span> type</a>
+                                            <a class="no-underline text-sm" href="#methods-move"><span class="mr-1">9.4</span> move</a>
                                         </li>
                                                                                 <li >
-                                            <a class="no-underline text-sm" href="#directive-php"><span class="mr-1">7.5</span> php</a>
+                                            <a class="no-underline text-sm" href="#methods-copy"><span class="mr-1">9.5</span> copy</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-delete"><span class="mr-1">9.6</span> delete</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-has"><span class="mr-1">9.7</span> has</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-getFileLocation"><span class="mr-1">9.8</span> getFileLocation</a>
+                                        </li>
+                                                                                <li >
+                                            <a class="no-underline text-sm" href="#methods-getDirectoryLocation"><span class="mr-1">9.9</span> getDirectoryLocation</a>
                                         </li>
                                                                             </ul>
                                                                     </li>
                                                                 <li>
-                                    <a class="no-underline" href="#macros"><span class="mr-1">8.</span> Macros</a>
-                                                                                                            <ul class="ml-4 mb-0">
-                                                                                <li >
-                                            <a class="no-underline text-sm" href="#macros-entries"><span class="mr-1">8.1</span> entries</a>
-                                        </li>
-                                                                                <li >
-                                            <a class="no-underline text-sm" href="#macros-registry"><span class="mr-1">8.2</span> registry</a>
-                                        </li>
-                                                                                <li >
-                                            <a class="no-underline text-sm" href="#macros-php"><span class="mr-1">8.3</span> php</a>
-                                        </li>
-                                                                            </ul>
-                                                                    </li>
-                                                                <li>
-                                    <a class="no-underline" href="#expressions"><span class="mr-1">9.</span> Expressions</a>
-                                                                                                        </li>
-                                                                <li>
-                                    <a class="no-underline" href="#methods"><span class="mr-1">10.</span> Methods</a>
-                                                                                                            <ul class="ml-4 mb-0">
-                                                                                <li >
-                                            <a class="no-underline text-sm" href="#methods-fetch"><span class="mr-1">10.1</span> fetch</a>
-                                        </li>
-                                                                                <li >
-                                            <a class="no-underline text-sm" href="#methods-create"><span class="mr-1">10.2</span> create</a>
-                                        </li>
-                                                                                <li >
-                                            <a class="no-underline text-sm" href="#methods-update"><span class="mr-1">10.3</span> update</a>
-                                        </li>
-                                                                                <li >
-                                            <a class="no-underline text-sm" href="#methods-move"><span class="mr-1">10.4</span> move</a>
-                                        </li>
-                                                                                <li >
-                                            <a class="no-underline text-sm" href="#methods-copy"><span class="mr-1">10.5</span> copy</a>
-                                        </li>
-                                                                                <li >
-                                            <a class="no-underline text-sm" href="#methods-delete"><span class="mr-1">10.6</span> delete</a>
-                                        </li>
-                                                                                <li >
-                                            <a class="no-underline text-sm" href="#methods-has"><span class="mr-1">10.7</span> has</a>
-                                        </li>
-                                                                                <li >
-                                            <a class="no-underline text-sm" href="#methods-getFileLocation"><span class="mr-1">10.8</span> getFileLocation</a>
-                                        </li>
-                                                                                <li >
-                                            <a class="no-underline text-sm" href="#methods-getDirectoryLocation"><span class="mr-1">10.9</span> getDirectoryLocation</a>
-                                        </li>
-                                                                            </ul>
-                                                                    </li>
-                                                                <li>
-                                    <a class="no-underline" href="#extending"><span class="mr-1">11.</span> Extending</a>
+                                    <a class="no-underline" href="#extending"><span class="mr-1">10.</span> Extending</a>
                                                                                                         </li>
                                                                 </ul>
                             </div>
@@ -440,9 +440,10 @@
                     </div>
                 </div>
             </div>
-                        <p>Entries are the fundamental building blocks of your Flextype powered project. Entries are local <strong>flat files</strong> or <strong>external resources</strong> that can be represented as a PHP array inside the controllers, templates, etc...</p>
-<h3>Entries formats</h3>
-<p>Flextype support several <strong>flat files</strong> formats for entries out of the box.</p>
+                        <p><a name="overview"></a>
+Entries are the fundamental building blocks of your Flextype powered project. Entries are local <strong>flat files</strong> or <strong>external resources</strong> that can be represented as a PHP array inside the controllers, templates, etc...</p>
+<h3><a name="formats"></a> Entries formats</h3>
+<p>Flextype support several <strong>flat files</strong> entries formats.</p>
 <h4>Frontmatter (.md)</h4>
 <div class="file-header"><span class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
   <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
@@ -457,7 +458,7 @@ stars: Richard Dean Anderson, Michael Shanks, Amanda Tapping
 ---
 SG-1 returns from an off-world mission to P9Y-3C3 with Daniel Jackson suffering from what is likely a fatal dose of radiation. On the planet, they dealt with the country of Kelowna and their representative Jonas Quinn. That country was at the same stage of development as the United States in the 1940s and well on their way to creating an atomic weapon using Goa'uld technology found in an ancient temple. Daniel argued against the Kelownans developing such a weapon and is accused of attempting to sabotage the project. As members of the team sit by his deathbed, Daniel receives an unexpected offer from someone they once met off-world.
 </code></pre>
-<p>For <strong>Frontmatter</strong> header you may define custom frontmatter header serializer as <code>yaml</code>, <code>json</code>, <code>json5</code> or <code>neon</code> by adding serializer name after first <code>---</code>. For example:</p>
+<p>For <strong>Frontmatter</strong> header you may define custom frontmatter header serializer as <code>yaml</code>, <code>json</code>, <code>json5</code> or <code>neon</code> by adding serializer name after first <code>---</code>. <br><br>Example:</p>
 <pre><code class="language-yaml">---json
 {
   &quot;title&quot;: &quot;Meridian&quot;,
@@ -524,9 +525,9 @@ content: '''
   content: &quot;SG-1 returns from an off-world mission to P9Y-3C3 with Daniel Jackson suffering from what is likely a fatal dose of radiation. On the planet, they dealt with the country of Kelowna and their representative Jonas Quinn. That country was at the same stage of development as the United States in the 1940s and well on their way to creating an atomic weapon using Goa'uld technology found in an ancient temple. Daniel argued against the Kelownans developing such a weapon and is accused of attempting to sabotage the project. As members of the team sit by his deathbed, Daniel receives an unexpected offer from someone they once met off-world.&quot;
 }
 </code></pre>
-<h3><a name="entries-and-urls-structure"></a> Entries and Urls structure</h3>
+<h3><a name="structure"></a> Entries and Urls structure</h3>
 <p>All project entries are located in the <code>project/entries</code> folder.</p>
-<p>Each entry file should be placed in its folder.</p>
+<p>Each entry file should be placed in its idividual folder.</p>
 <p>Folder names should also be valid <strong>slugs</strong>. Slugs are entirely lowercase, with accented characters replaced by letters from the Latin alphabet and whitespace characters replaced by a dash or an underscore to avoid being encoded.</p>
 <h5>Examples</h5>
 <pre><code># Physical Location
@@ -557,7 +558,6 @@ movies/sg-1/season-5/episode-21
 episode-21
 </code></pre>
 <h3><a name="fields"></a> Fields</h3>
-<p>Several default entry fields are available for each entry.</p>
 <h5><a name="field-visibility"></a> <code>visibility</code></h5>
 <p>Entries visibility is about controlling who can see your entries. Flextype allows you to control the visibility of your entries on an individual basis. By default, all entries are visible.</p>
 <table>
@@ -764,7 +764,7 @@ But this can be changed by setting individual <code>cache</code> for each entry.
     </tbody>
 </table>
 <br>
-<p>You can create custom entry fields using any valid YAML syntax. These would be entry-specific fields and be available for Rest API and any extension such as plugin, theme, etc...</p>
+<p>You can define custom fields.</p>
 <div class="file-header"><i class="far fa-file-alt"></i> project/entries/home/entry.md</div>
 <pre><code>---
 title: My Entry Title
@@ -772,32 +772,15 @@ description: My entry description
 author:
   twitter: &quot;@_flextype&quot;
 ---
-My entry content here.
+My entry content here, author twitter: [[ author.twitter ]]
 </code></pre>
 <p><strong>Examples</strong></p>
-<p>Get field <code>author.twitter</code> in PHP.</p>
-<pre><code class="language-php">echo entries()-&gt;fetch('home')['author.twitter']; // @_flextype
-</code></pre>
-<h3><a name="vars"></a> Vars</h3>
-<p>You may define variables in your entries.</p>
-<pre><code class="language-yaml">---
-vars:
-  title: Meridian
-  ratings:
-    stars: 5
-title: &quot;(var:title)&quot;
-description: As Jackson suffers from a fatal dose of radiation, he struggles with the value of his life while his friends deal with the emotional and diplomatic repercussions.
-director: William Waring
-writers: Brad Wright, Jonathan Glassner
-stars: Richard Dean Anderson, Michael Shanks, Amanda Tapping
----
+<p>Get field <code>author.twitter</code> and field <code>content</code> in PHP.</p>
+<pre><code class="language-php">//=&gt; @_flextype
+echo entries()-&gt;fetch('home')['author.twitter']; 
 
-Title: (var:title)
-
-Rating: (var:ratings.stars) stars.
-
-Content:
-SG-1 returns from an off-world mission to P9Y-3C3 with Daniel Jackson suffering from what is likely a fatal dose of radiation. On the planet, they dealt with the country of Kelowna and their representative Jonas Quinn. That country was at the same stage of development as the United States in the 1940s and well on their way to creating an atomic weapon using Goa'uld technology found in an ancient temple. Daniel argued against the Kelownans developing such a weapon and is accused of attempting to sabotage the project. As members of the team sit by his deathbed, Daniel receives an unexpected offer from someone they once met off-world.
+//=&gt; My entry content here, author twitter: @_flextype
+echo entries()-&gt;fetch('home')['content'];
 </code></pre>
 <h3><a name="directives"></a> Directives</h3>
 <table>
@@ -829,54 +812,62 @@ SG-1 returns from an off-world mission to P9Y-3C3 with Daniel Jackson suffering 
             <td>Set current field type.</td>
         </tr>
         <tr>
-            <td><a href="#directive-expressions">[[ ]]</a></td>
-            <td>Eval expression.</td>
+            <td><a href="#directive-expressions">[[ ]] [% %] [# #]</a></td>
+            <td>Evaluate expression.</td>
         </tr>
     </tbody>
 </table>
 <h3>Directives Details</h3>
 <h5><a name="directive-update"></a> <code>shortcodes</code></h5>
+<p>Parse shortcodes text inside current field.</p>
 <p><strong>Examples</strong></p>
 <pre><code class="language-yaml">---
 discount: &quot;@shortcodes (strings random)&quot; 
 ---
 </code></pre>
 <h5><a name="directive-markdown"></a> <code>markdown</code></h5>
+<p>Parse markdown text inside current field.</p>
 <p><strong>Examples</strong></p>
 <pre><code class="language-yaml">---
 text: &quot;@markdown **bold text here**&quot; 
 ---
 </code></pre>
 <h5><a name="directive-textile"></a> <code>textile</code></h5>
+<p>Parse textile text inside current field.</p>
 <p><strong>Examples</strong></p>
 <pre><code class="language-yaml">---
 text: &quot;@textile **bold text here**&quot; 
 ---
 </code></pre>
 <h5><a name="directive-php"></a> <code>php</code></h5>
+<p>Execute php code inside current field.</p>
 <p><strong>Examples</strong></p>
 <pre><code class="language-yaml">---
 text: &quot;@php echo 'Hello World';&quot; 
 ---
 </code></pre>
 <h5><a name="directive-type"></a> <code>type</code></h5>
+<p>Set current field type.</p>
 <p>Available types: <code>int</code>, <code>integer</code>, <code>float</code>, <code>bool</code>, <code>boolean</code>, <code>array</code>, <code>json</code>, <code>collection</code>, <code>null</code> and <code>string</code>.</p>
 <p><strong>Examples</strong></p>
 <pre><code class="language-yaml">---
-vars: 
+_vars: 
     title: &quot;GT Fury&quot;
     currency: &quot;USD&quot;
     vat: '@type[int] (strings random: &quot;2,1234567890)&quot;'
-title: &quot;(var:title)&quot;
-price: &quot;(calc:'100+(var:vat)')&quot;
-price_with_currency: &quot;(field:price) (var:currency)&quot;
+title: &quot;[[ _vars.title ]]&quot;
+price: &quot;(calc:'100+[[_vars.vat]]')&quot;
+price_with_currency: &quot;[[ price ]] [[ _vars.currency ]]&quot;
 ---
 GT Fury content here...
 </code></pre>
-<h5><a name="directive-expression"></a> <code>[[ ]]</code></h5>
-<p>Eval expression.</p>
+<h5><a name="directive-expression"></a> <code>[[ ]] [% %] [# #]</code></h5>
+<p>Evaluate expression.</p>
 <pre><code class="language-yaml">price: &quot;[[ 100 + var('vat') ]]&quot;
 message: &quot;[[ field('price') &gt; 100 ? 'Price is greater than 100' : 'Price is less than 100' ]]&quot;
+content: |
+  [# This is comment #]
+  [% entries().create('movies/sg-1/season-5/episode-23', {}) %]
 </code></pre>
 <h3><a name="macros"></a> Macros</h3>
 <h5><a name="macros-entries"></a> <code>entries</code></h5>
@@ -1492,6 +1483,12 @@ foreach (entries()-&gt;fetchRecentPosts(5) as $post) {
 }
 </code></pre>
 
+
+            <div class="border-slate-900 dark:border-slate-500 border-t pt-8 mt-8">
+                <a href="https://github.com/awilum-dev/website/blob/1.x/project/entries/flextype/documentation/core/entries/entry.md" class="" target="_blank">
+                    Edit this page
+                </a>
+            </div>
         </div>
     </div>
 </div>
