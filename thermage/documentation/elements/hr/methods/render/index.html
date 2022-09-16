@@ -353,6 +353,7 @@ hr('Stay RAD!')-&gt;render();
         <footer class="py-20 text-sm text-center">
             <p class="m-0">Copyright © <a href="https://awilum.github.io/about">Sergey Romanenko</a></p>
             <p class="m-0 text-xs">POWERED BY <a href="https://awilum.github.io/flextype"">FLEXTYPE</a></p>
+            <p class="m-0 text-xs"><a href="https://awilum.github.io/sitemap.xml"">SITEMAP</a></p>
                                 </footer>
     </main>
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
@@ -425,21 +426,6 @@ hr('Stay RAD!')-&gt;render();
         };
 
         
-        var formatter = new Intl.NumberFormat('en-US');
-        fetch('https://raw.githubusercontent.com/Awilum/awilum/master/github-metrics.json')
-        .then(response => response.json())
-        .then(function(data) {
-            var ghCommits = document.querySelector(".github-commits");
-            var ghLinesAdded = document.querySelector(".github-lines-added");
-            var ghDeleted = document.querySelector(".github-lines-deleted");
-            var ghContibuteTo = document.querySelector(".github-repositories-contributed-to");
-
-            if (ghCommits != null) ghCommits.innerHTML = formatter.format(data.computed.commits);
-            if (ghLinesAdded != null) ghLinesAdded.innerHTML = formatter.format(data.plugins.lines.added);
-            if (ghDeleted != null) ghDeleted.innerHTML = formatter.format(data.plugins.lines.deleted);
-            if (ghContibuteTo != null) ghContibuteTo.innerHTML = formatter.format(data.user.repositoriesContributedTo.totalCount);
-        });
-
     </script>
         <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >

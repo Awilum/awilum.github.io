@@ -3,7 +3,7 @@
 <head>
             <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="The Open Source Hybrid Content Management System with the freedom of a headless CMS and with the full functionality of a traditional CMS">
+        <meta name="description" content="Flextype is Modern Open Source Headless Flat Files Content Management System with powerful functionality to build Dynamic and Static web sites.">
         <meta name="keywords" content="flextype, php, cms, thermage, glowyphp, html">
         <meta name="robots" content="index, follow">
         <meta name="generator" content="Powered by Flextype"/>
@@ -12,7 +12,7 @@
         <meta name="google-site-verification" content="QCOiDmY3CImL3EPYu4WstZRkkOZKPr6LGOstWU1ZGXI" />
         
         
-        <title>Open Source Hybrid Content Management System | Flextype</title>
+        <title>Flextype is Modern Open Source Flat Files Content Management System.</title>
 
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -213,9 +213,9 @@
 </div>
     <!-- introducing section -->
     <div class="container relative mx-auto mb-20">
-        <div class="pt-24">
+        <div class="pt-32">
             <div class="text-center w-full px-20">
-                <h1 class="uppercase text-center text-2xl lg:text-6xl lg:m-0" style="letter-spacing: 4px;">The freedom of a headless CMS with the full functionality of a traditional CMS.</h1>
+                <h1 class="uppercase text-center text-2xl lg:text-6xl lg:m-0" style="letter-spacing: 4px;">Modern Open Source Flat Files Content Management System.</h1>
             </div>
         </div>
     </div>
@@ -388,6 +388,7 @@ and maintained by community!</p>
         <footer class="py-20 text-sm text-center">
             <p class="m-0">Copyright © <a href="https://awilum.github.io/about">Sergey Romanenko</a></p>
             <p class="m-0 text-xs">POWERED BY <a href="https://awilum.github.io/flextype"">FLEXTYPE</a></p>
+            <p class="m-0 text-xs"><a href="https://awilum.github.io/sitemap.xml"">SITEMAP</a></p>
                                 </footer>
     </main>
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
@@ -460,21 +461,6 @@ and maintained by community!</p>
         };
 
         
-        var formatter = new Intl.NumberFormat('en-US');
-        fetch('https://raw.githubusercontent.com/Awilum/awilum/master/github-metrics.json')
-        .then(response => response.json())
-        .then(function(data) {
-            var ghCommits = document.querySelector(".github-commits");
-            var ghLinesAdded = document.querySelector(".github-lines-added");
-            var ghDeleted = document.querySelector(".github-lines-deleted");
-            var ghContibuteTo = document.querySelector(".github-repositories-contributed-to");
-
-            if (ghCommits != null) ghCommits.innerHTML = formatter.format(data.computed.commits);
-            if (ghLinesAdded != null) ghLinesAdded.innerHTML = formatter.format(data.plugins.lines.added);
-            if (ghDeleted != null) ghDeleted.innerHTML = formatter.format(data.plugins.lines.deleted);
-            if (ghContibuteTo != null) ghContibuteTo.innerHTML = formatter.format(data.user.repositoriesContributedTo.totalCount);
-        });
-
     </script>
         <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
