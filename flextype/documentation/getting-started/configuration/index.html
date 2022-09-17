@@ -3,7 +3,7 @@
 <head>
             <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Flextype allows you to configure your site in any way you can dream up, and it’s thanks to the powerful and flexible configuration options that make this possible.">
+        <meta name="description" content="Read the configuration documentation for Modern Open Source Flat Files Flextype CMS">
         <meta name="keywords" content="flextype, php, cms, thermage, glowyphp, html">
         <meta name="robots" content="index, follow">
         <meta name="generator" content="Powered by Flextype"/>
@@ -12,7 +12,7 @@
         <meta name="google-site-verification" content="QCOiDmY3CImL3EPYu4WstZRkkOZKPr6LGOstWU1ZGXI" />
         
         
-        <title>Configuration | Flextype</title>
+        <title>Configuration for Modern Open Source Flat Files Flextype CMS</title>
 
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -372,7 +372,7 @@ date_display_format: 'd-m-Y H:i'
 errors:
 
   # Set true to display errors.
-  display: true
+  display: false
 
   # Editor (emacs, idea, macvim, phpstorm, sublime, textmate, xdebug, vscode, atom, espresso)
   editor: atom
@@ -388,58 +388,11 @@ entries:
   directory: 'entries'
   cache:
     string: &quot;&quot;
-  vars:
-    debug: false
-  expressions:
-    actions:
-      enabled: true
-      class: &quot;Flextype\\Entries\\Expressions\\ActionsExpression&quot;
-    registry:
-      enabled: true
-      class: &quot;Flextype\\Entries\\Expressions\\RegistryExpression&quot;
-    entries:
-      enabled: true
-      class: &quot;Flextype\\Entries\\Expressions\\EntriesExpression&quot;
-    filesystem:
-      enabled: true
-      class: &quot;Flextype\\Entries\\Expressions\\FilesystemExpression&quot;
-    i18n:
-      enabled: true
-      class: &quot;Flextype\\Entries\\Expressions\\I18nExpression&quot;
-    serializers:
-      enabled: true
-      class: &quot;Flextype\\Entries\\Expressions\\SerializersExpression&quot;
-    parsers:
-      enabled: true
-      class: &quot;Flextype\\Entries\\Expressions\\ParsersExpression&quot;
-    slugify:
-      enabled: true
-      class: &quot;Flextype\\Entries\\Expressions\\SlugifyExpression&quot;
-    strings:
-      enabled: true
-      class: &quot;Flextype\\Entries\\Expressions\\StringsExpression&quot;
-    collection:
-      enabled: true
-      class: &quot;Flextype\\Entries\\Expressions\\CollectionExpression&quot;
-    csrf:
-      enabled: true
-      class: &quot;Flextype\\Entries\\Expressions\\CsrfExpression&quot;
-    var:
-      enabled: true
-      class: &quot;Flextype\\Entries\\Expressions\\VarExpression&quot;
-    field:
-      enabled: true
-      class: &quot;Flextype\\Entries\\Expressions\\FieldExpression&quot;
-    const:
-      enabled: true
-      class: &quot;Flextype\\Entries\\Expressions\\ConstExpression&quot;
   directives:
     expressions:
       enabled: true
       enabled_globally: true
       path: &quot;src/flextype/core/Entries/Directives/ExpressionsDirective.php&quot;
-      opening_tag: &quot;[[&quot;
-      closing_tag: &quot;]]&quot;
     shortcodes:
       enabled: true
       enabled_globally: true
@@ -453,7 +406,7 @@ entries:
       enabled_globally: false
       path: &quot;src/flextype/core/Entries/Directives/TextileDirective.php&quot;
     php:
-      enabled: true
+      enabled: false
       enabled_globally: false
       path: &quot;src/flextype/core/Entries/Directives/PhpDirective.php&quot;
     types:
@@ -461,11 +414,8 @@ entries:
       path: &quot;src/flextype/core/Entries/Directives/TypesDirective.php&quot;
   macros:
     debug: false
-    vars:
-      enabled: true
-      path: &quot;src/flextype/core/Entries/Macros/VarsMacros.php&quot;
     php:
-      enabled: true
+      enabled: false
       path: &quot;src/flextype/core/Entries/Macros/PhpMacros.php&quot;
     registry:
       enabled: true
@@ -609,7 +559,7 @@ entries:
 #
 # - drivers.files.cache_slams_timeout: This option defines the cache slams timeout in seconds.
 cache:
-  enabled: false
+  enabled: true
   driver: auto
   drivers:
     apcu: {}
@@ -621,17 +571,6 @@ cache:
       password: ''
       ssl_enabled: false
       ssl_verify: false
-      default_ttl: 900
-    cookie:
-      aware_of_untrustable_data: false
-      limited_memory_by_object: 4096
-      default_ttl: 900
-    couchbase:
-      host: '127.0.0.1'
-      port: 8091
-      username: ''
-      password: ''
-      bucket_name: default
       default_ttl: 900
     couchdb:
       database: 'flextype'
@@ -645,25 +584,20 @@ cache:
       timeout: 10
       default_ttl: 900
     devnull: {}
-    devfalse: {}
-    devtrue: {}
     phparray:
       path: '/data'
       security_key: 'auto'
-      htaccess: true
       secure_file_manipulation: false
       default_ttl: 900
     files:
       path: '/data'
       security_key: 'auto'
-      htaccess: true
       secure_file_manipulation: false
       cache_file_extension: txt
       default_ttl: 900
     leveldb:
       path: '/data'
       security_key: 'auto'
-      htaccess: true
       default_ttl: 900
     memcache:
       host: '127.0.0.1'
@@ -710,15 +644,9 @@ cache:
       database: 0
       opt_prefix: ''
       default_ttl: 900
-    riak:
-      host: '127.0.0.1'
-      port: 8098
-      prefix: 'riak'
-      default_ttl: 900
     sqlite:
       path: '/data'
       security_key: auto
-      htaccess: true
       default_ttl: 900
     ssdb:
       host: 127.0.0.1
@@ -963,8 +891,11 @@ parsers:
         path: &quot;src/flextype/core/Parsers/Shortcodes/EntriesShortcode.php&quot;
         fetch:
           enabled: true
-      php:
+      date:
         enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/DateShortcode.php&quot;
+      php:
+        enabled: false
         path: &quot;src/flextype/core/Parsers/Shortcodes/PhpShortcode.php&quot;
       raw:
         enabled: true
@@ -1015,6 +946,9 @@ parsers:
       field:
         enabled: true
         path: &quot;src/flextype/core/Parsers/Shortcodes/FieldShortcode.php&quot;  
+      fetch:
+        enabled: true
+        path: &quot;src/flextype/core/Parsers/Shortcodes/FetchShortcode.php&quot;
       calc:
         enabled: true
         path: &quot;src/flextype/core/Parsers/Shortcodes/CalcShortcode.php&quot;  
@@ -1024,6 +958,91 @@ parsers:
       type:
         enabled: true
         path: &quot;src/flextype/core/Parsers/Shortcodes/TypeShortcode.php&quot; 
+  expressions:
+    cache:
+      enabled: true
+      string: ''
+    opening_variable_tag: &quot;[[&quot;
+    closing_variable_tag: &quot;]]&quot;
+    opening_block_tag: &quot;[%&quot;
+    closing_block_tag: &quot;%]&quot;
+    opening_comment_tag: &quot;[#&quot;
+    closing_comment_tag: &quot;#]&quot;
+    expressions:
+      math:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\MathExpression&quot;
+      date:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\DateExpression&quot;
+      actions:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\ActionsExpression&quot;
+      registry:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\RegistryExpression&quot;
+      entries:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\EntriesExpression&quot;
+        fetch:
+          enabled: true
+        has:
+          enabled: true
+        registry:
+          enabled: true
+        create:
+          enabled: false
+        move:
+          enabled: false
+        update:
+          enabled: false
+        delete:
+          enabled: false
+      fetch:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\FetchExpression&quot;
+      filesystem:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\FilesystemExpression&quot;
+      i18n:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\I18nExpression&quot;
+      serializers:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\SerializersExpression&quot;
+      parsers:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\ParsersExpression&quot;
+      slugify:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\SlugifyExpression&quot;
+      strings:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\StringsExpression&quot;
+      collection:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\CollectionExpression&quot;
+      csrf:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\CsrfExpression&quot;
+      var:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\VarExpression&quot;
+      field:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\FieldExpression&quot;
+      const:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\ConstExpression&quot;
+      url:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\UrlExpression&quot;
+      when:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\WhenExpression&quot;
+      unless:
+        enabled: true
+        class: &quot;Flextype\\Parsers\\Expressions\\UnlessExpression&quot;
 
 # CORS
 #
@@ -1157,6 +1176,12 @@ api:
   cache:
 
     # Set to true to enable Cache API
+    enabled: true
+
+  # Query API
+  query:
+
+    # Set to true to enable Query API
     enabled: true
 </code></pre>
 <h3>PHP constants</h3>
