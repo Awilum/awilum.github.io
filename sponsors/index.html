@@ -31,59 +31,9 @@
         <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/blog/">
             Blog
         </a>
-        <div class="flex justify-center hidden lg:block">
-            <div
-                x-data="{
-                    open: false,
-                    toggle() {
-                        if (this.open) {
-                            return this.close()
-                        }
-
-                        this.open = true
-                    },
-                    close(focusAfter) {
-                        this.open = false
-
-                        focusAfter && focusAfter.focus()
-                    }
-                }"
-                x-on:keydown.escape.prevent.stop="close($refs.button)"
-                x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
-                x-id="['dropdown-button']"
-                class="relative"
-            >
-                <!-- Button -->
-                <button
-                    x-ref="button"
-                    x-on:click="toggle()"
-                    :aria-expanded="open"
-                    :aria-controls="$id('dropdown-button')"
-                    type="button"
-                    class="outline-none hover:text-pink-500 m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500 "
-                >
-                    <span>Projects</span>
-                </button>
-
-                <!-- Panel -->
-                <div
-                    x-ref="panel"
-                    x-show="open"
-                    x-transition.origin.top.left
-                    x-on:click.outside="close($refs.button)"
-                    :id="$id('dropdown-button')"
-                    style="display: none;"
-                    class="absolute left-0 mt-2 w-44 bg-white border border-slate-900 dark:border-slate-500 rounded-lg overflow-hidden z-50 dark:bg-slate-800"
-                >
-                    <div>
-                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage/">Thermage</a>
-                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype/">Flextype</a>
-                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp/">Glowy PHP</a>
-                        <a class="block px-3 py-2 font-semibold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <a class="m-0 p-0 px-3 py-2 border-r border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block " rel="nofollow" href="https://awilum.github.io/projects/">
+            Projects
+        </a> 
         <div class="flex justify-center lg:hidden">
     <div
         x-data="{
@@ -180,10 +130,8 @@
             class="absolute left-0 mt-2 w-48 bg-white border border-slate-900 rounded shadow-md overflow-hidden z-50 dark:bg-slate-800 dark:border-slate-500 plate-shadow"
         >
             <div>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/thermage/">Thermage</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/flextype/">Flextype</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/glowyphp/">Glowy PHP</a>
-                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-slate-900 dark:border-slate-500" href="https://github.com/faker-javascript">Faker JavaScript</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/blog/">Blog</a>
+                <a class="block px-3 py-2 font-bold text-xs uppercase no-underline border-b border-slate-900 dark:border-slate-500" href="https://awilum.github.io/projects/">Projects</a>
                 
             </div>
         </div>
@@ -262,6 +210,12 @@
             </h3>
             <div>
                 <ul class="m-0 p-0">
+                    <li>
+                        <p>
+                            <div class="font-bold">Binance</div>
+                            <img src="https://iili.io/H9E1thQ.md.jpg" alt="">
+                        </p>
+                    </li>
                     <li>
                         <p>
                             <div class="font-bold">Boosty</div>
