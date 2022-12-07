@@ -147,7 +147,17 @@ public function run(array $params)
                             
   CLI::write($render);
   // ...
-}</code></pre> </div></div></div> </div> <div class="lg:pl-12 lg:w-6/12 text-xl w-full"> Thermage can be used with any Modern PHP Framework: Symfony, Laravel, Yii, CakePHP, CodeIgniter, Phalcon and others. </div></div></div></div></section> <footer class="py-20 text-center text-sm"><p class=m-0>Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a> <p class="m-0 text-xs">POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a> <p class="m-0 text-xs"><a href=https://awilum.github.io/sitemap.xml>SITEMAP</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script defer src=//unpkg.com/alpinejs></script> <script>hljs.highlightAll();
+}</code></pre> </div></div></div> </div> <div class="lg:pl-12 lg:w-6/12 text-xl w-full"> Thermage can be used with any Modern PHP Framework: Symfony, Laravel, Yii, CakePHP, CodeIgniter, Phalcon and others. </div></div></div></div></section> <footer class="py-20 text-center text-sm"><p class=m-0>Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a> <p class="m-0 text-xs">POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a> <p class="m-0 text-xs"><a href=https://awilum.github.io/sitemap.xml>SITEMAP</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script>function showModal(id) {
+            document.getElementById('modal-content-' + id).style.display = 'block';
+            document.getElementById('modal-' + id).style.display = 'flex';
+        }
+
+        function closeModal(id) {
+            document.getElementById('modal-content-' + id).style.display = 'none';
+            document.getElementById('modal-' + id).style.display = 'none';
+        }
+
+        hljs.highlightAll();
 
         var $tabs = function (target) {
         var

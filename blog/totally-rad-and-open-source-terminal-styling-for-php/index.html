@@ -21,7 +21,17 @@ render (
 </code></pre> <p><img alt=cliapp src=%5Burl%5D/project/themes/dev/assets/src/img/entries/blog/totally-rad-and-open-source-terminal-styling-for-php/cliapp-1.png> <p>BTW you may use Thermage Magic Classes API to create the same div element; see the example below: <pre><code class="language-php">render (
   div('Stay RAD!', 'py-2 color-green bg-purple text-align-center bold')
 );
-</code></pre> <p>Thermage provides a rich library of built in <a href=https://awilum.github.io/thermage/documentation/elements>components(elements)</a>. You may use any of them to create your Console APP. <p>I will post more tutorials about Thermage usage for Console APPs development in PHP. <h3>Resources</h3> <p>Repository: <a href=https://github.com/thermage/thermage>https://github.com/thermage/thermage</a><br> Documentation: <a href=https://awilum.github.io/thermage>https://awilum.github.io/thermage</a> <div class="border-slate-800 border-t-2 mt-6 pt-6"><strong>Date:</strong> February 16, 2022 09:45 <strong class=ml-2>Tags:</strong> <a href=https://awilum.github.io/blog/tags/thermage>thermage</a>, <a href=https://awilum.github.io/blog/tags/php>php</a> </div></div> </section> <footer class="py-20 text-center text-sm"><p class=m-0>Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a> <p class="m-0 text-xs">POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a> <p class="m-0 text-xs"><a href=https://awilum.github.io/sitemap.xml>SITEMAP</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script defer src=//unpkg.com/alpinejs></script> <script>hljs.highlightAll();
+</code></pre> <p>Thermage provides a rich library of built in <a href=https://awilum.github.io/thermage/documentation/elements>components(elements)</a>. You may use any of them to create your Console APP. <p>I will post more tutorials about Thermage usage for Console APPs development in PHP. <h3>Resources</h3> <p>Repository: <a href=https://github.com/thermage/thermage>https://github.com/thermage/thermage</a><br> Documentation: <a href=https://awilum.github.io/thermage>https://awilum.github.io/thermage</a> <div class="border-slate-800 border-t-2 mt-6 pt-6"><strong>Date:</strong> February 16, 2022 09:45 <strong class=ml-2>Tags:</strong> <a href=https://awilum.github.io/blog/tags/thermage>thermage</a>, <a href=https://awilum.github.io/blog/tags/php>php</a> </div></div> </section> <footer class="py-20 text-center text-sm"><p class=m-0>Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a> <p class="m-0 text-xs">POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a> <p class="m-0 text-xs"><a href=https://awilum.github.io/sitemap.xml>SITEMAP</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script>function showModal(id) {
+            document.getElementById('modal-content-' + id).style.display = 'block';
+            document.getElementById('modal-' + id).style.display = 'flex';
+        }
+
+        function closeModal(id) {
+            document.getElementById('modal-content-' + id).style.display = 'none';
+            document.getElementById('modal-' + id).style.display = 'none';
+        }
+
+        hljs.highlightAll();
 
         var $tabs = function (target) {
         var

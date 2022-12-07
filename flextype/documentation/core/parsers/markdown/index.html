@@ -36,7 +36,17 @@
     - Indented item
 4. Fourth item
 </code></pre> <ol><li>First item <li>Second item <li>Third item <ul><li>Indented item <li>Indented item</ul> <li>Fourth item</ol> <h4>Code</h4> <p>To denote a word or phrase as code, enclose it in backticks (`). <table><thead><tr><th>Markdown <th>HTML </thead> <tbody><tr><td>At the command prompt, type `nano`. <td>At the command prompt, type &lt;code&gt;nano&lt;/code&gt;. </tbody></table> <h4>Horizontal Rules</h4> <p>If the word or phrase you want to denote as code includes one or more backticks, you can escape it by enclosing the word or phrase in double backticks (`). <table><thead><tr><th>Markdown <th>HTML </thead> <tbody><tr><td>&#96;&#96;Use &#96;code&#96; in your Markdown file.&#96;&#96; <td>&lt;code&gt;Use `code` in your Markdown file.&lt;/code&gt; </tbody></table> <p><i class="fa-info-circle fas"></i> <strong>Note:</strong> To create code blocks without indenting lines, use <a href=/extended-syntax/#fenced-code-blocks>fenced code blocks</a>. <h4>Horizontal Rules</h4> <p>To create a horizontal rule, use three or more asterisks (<code>***</code>), dashes (<code>---</code>), or underscores (<code>___</code>) on a line by themselves. <pre><code class="language-html">***
-</code></pre> <div class="border-slate-900 border-t dark:border-slate-500 mt-8 pt-8"><a href=https://github.com/awilum-dev/website/blob/1.x/project/entries/flextype/documentation/core/parsers/markdown/entry.md target=_blank> Edit this page </a> </div></div></div></div></section> <footer class="py-20 text-center text-sm"><p class=m-0>Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a> <p class="m-0 text-xs">POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a> <p class="m-0 text-xs"><a href=https://awilum.github.io/sitemap.xml>SITEMAP</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script defer src=//unpkg.com/alpinejs></script> <script>hljs.highlightAll();
+</code></pre> <div class="border-slate-900 border-t dark:border-slate-500 mt-8 pt-8"><a href=https://github.com/awilum-dev/website/blob/1.x/project/entries/flextype/documentation/core/parsers/markdown/entry.md target=_blank> Edit this page </a> </div></div></div></div></section> <footer class="py-20 text-center text-sm"><p class=m-0>Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a> <p class="m-0 text-xs">POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a> <p class="m-0 text-xs"><a href=https://awilum.github.io/sitemap.xml>SITEMAP</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script>function showModal(id) {
+            document.getElementById('modal-content-' + id).style.display = 'block';
+            document.getElementById('modal-' + id).style.display = 'flex';
+        }
+
+        function closeModal(id) {
+            document.getElementById('modal-content-' + id).style.display = 'none';
+            document.getElementById('modal-' + id).style.display = 'none';
+        }
+
+        hljs.highlightAll();
 
         var $tabs = function (target) {
         var

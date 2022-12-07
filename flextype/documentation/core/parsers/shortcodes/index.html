@@ -126,7 +126,17 @@ public function getCacheID(string $input, string $string = ''): string
 </code></pre> <p><strong>Examples</strong> <pre><code class="language-php">$shortcode = 'text with (message)';
 
 $cache_id = parsers()-&gt;shortcodes()-&gt;getCacheID($shortcode);
-</code></pre> <div class="border-slate-900 border-t dark:border-slate-500 mt-8 pt-8"><a href=https://github.com/awilum-dev/website/blob/1.x/project/entries/flextype/documentation/core/parsers/shortcodes/entry.md target=_blank> Edit this page </a> </div></div></div></div></section> <footer class="py-20 text-center text-sm"><p class=m-0>Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a> <p class="m-0 text-xs">POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a> <p class="m-0 text-xs"><a href=https://awilum.github.io/sitemap.xml>SITEMAP</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script defer src=//unpkg.com/alpinejs></script> <script>hljs.highlightAll();
+</code></pre> <div class="border-slate-900 border-t dark:border-slate-500 mt-8 pt-8"><a href=https://github.com/awilum-dev/website/blob/1.x/project/entries/flextype/documentation/core/parsers/shortcodes/entry.md target=_blank> Edit this page </a> </div></div></div></div></section> <footer class="py-20 text-center text-sm"><p class=m-0>Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a> <p class="m-0 text-xs">POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a> <p class="m-0 text-xs"><a href=https://awilum.github.io/sitemap.xml>SITEMAP</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script>function showModal(id) {
+            document.getElementById('modal-content-' + id).style.display = 'block';
+            document.getElementById('modal-' + id).style.display = 'flex';
+        }
+
+        function closeModal(id) {
+            document.getElementById('modal-content-' + id).style.display = 'none';
+            document.getElementById('modal-' + id).style.display = 'none';
+        }
+
+        hljs.highlightAll();
 
         var $tabs = function (target) {
         var

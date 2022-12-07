@@ -37,7 +37,17 @@ $data = serializers()-&gt;frontmatter()-&gt;encode($data);
     SG-1 returns from an off-world mission to P9Y-3C3 with Daniel Jackson suffering from what is likely a fatal dose of radiation. On the planet, they dealt with the country of Kelowna and their representative Jonas Quinn. That country was at the same stage of development as the United States in the 1940s and well on their way to creating an atomic weapon using Goa'uld technology found in an ancient temple. Daniel argued against the Kelownans developing such a weapon and is accused of attempting to sabotage the project. As members of the team sit by his deathbed, Daniel receives an unexpected offer from someone they once met off-world.&quot;
 
 $data = serializers()-&gt;frontmatter()-&gt;decode($frontmatter);
-</code></pre> <div class="border-slate-900 border-t dark:border-slate-500 mt-8 pt-8"><a href=https://github.com/awilum-dev/website/blob/1.x/project/entries/flextype/documentation/core/serializers/frontmatter/entry.md target=_blank> Edit this page </a> </div></div></div></div></section> <footer class="py-20 text-center text-sm"><p class=m-0>Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a> <p class="m-0 text-xs">POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a> <p class="m-0 text-xs"><a href=https://awilum.github.io/sitemap.xml>SITEMAP</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script defer src=//unpkg.com/alpinejs></script> <script>hljs.highlightAll();
+</code></pre> <div class="border-slate-900 border-t dark:border-slate-500 mt-8 pt-8"><a href=https://github.com/awilum-dev/website/blob/1.x/project/entries/flextype/documentation/core/serializers/frontmatter/entry.md target=_blank> Edit this page </a> </div></div></div></div></section> <footer class="py-20 text-center text-sm"><p class=m-0>Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a> <p class="m-0 text-xs">POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a> <p class="m-0 text-xs"><a href=https://awilum.github.io/sitemap.xml>SITEMAP</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script>function showModal(id) {
+            document.getElementById('modal-content-' + id).style.display = 'block';
+            document.getElementById('modal-' + id).style.display = 'flex';
+        }
+
+        function closeModal(id) {
+            document.getElementById('modal-content-' + id).style.display = 'none';
+            document.getElementById('modal-' + id).style.display = 'none';
+        }
+
+        hljs.highlightAll();
 
         var $tabs = function (target) {
         var

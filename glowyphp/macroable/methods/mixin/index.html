@@ -30,7 +30,17 @@ $macroableClass-&gt;mixinMethod();
 $macroableClass-&gt;anotherMixinMethod();
 </code></pre> <h4>The above example will output:</h4> <pre><code>mixinMethod
 anotherMixinMethod
-</code></pre></div> <div class="lg:pl-10 lg:w-3/12 pb-4 pt-4"><div class="lg:max-h-screen lg:overflow-y-auto lg:sticky lg:top-0"><h4 class=mb-2>Getting Started</h4> <ul><li class=mb-2><a href=https://awilum.github.io/glowyphp/macroable/getting-started/installation/>Installation</a> <li class=mb-2><a href=https://awilum.github.io/glowyphp/macroable/getting-started/usage/>Usage</a></ul> <h4 class="mb-2 mt-4">Methods</h4> <ul><li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/macroable/methods/hasMacro/> hasMacro <small class="base-color block opacity-75"> Checks if macro is registered. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/macroable/methods/macro/> macro <small class="base-color block opacity-75"> Register a custom macro. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/macroable/methods/mixin/> mixin <small class="base-color block opacity-75"> Mix another object into the class. </small> </a> </ul></div> </div></div></section> <footer class="py-20 text-center text-sm"><p class=m-0>Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a> <p class="m-0 text-xs">POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a> <p class="m-0 text-xs"><a href=https://awilum.github.io/sitemap.xml>SITEMAP</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script defer src=//unpkg.com/alpinejs></script> <script>hljs.highlightAll();
+</code></pre></div> <div class="lg:pl-10 lg:w-3/12 pb-4 pt-4"><div class="lg:max-h-screen lg:overflow-y-auto lg:sticky lg:top-0"><h4 class=mb-2>Getting Started</h4> <ul><li class=mb-2><a href=https://awilum.github.io/glowyphp/macroable/getting-started/installation/>Installation</a> <li class=mb-2><a href=https://awilum.github.io/glowyphp/macroable/getting-started/usage/>Usage</a></ul> <h4 class="mb-2 mt-4">Methods</h4> <ul><li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/macroable/methods/hasMacro/> hasMacro <small class="base-color block opacity-75"> Checks if macro is registered. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/macroable/methods/macro/> macro <small class="base-color block opacity-75"> Register a custom macro. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/macroable/methods/mixin/> mixin <small class="base-color block opacity-75"> Mix another object into the class. </small> </a> </ul></div> </div></div></section> <footer class="py-20 text-center text-sm"><p class=m-0>Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a> <p class="m-0 text-xs">POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a> <p class="m-0 text-xs"><a href=https://awilum.github.io/sitemap.xml>SITEMAP</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script>function showModal(id) {
+            document.getElementById('modal-content-' + id).style.display = 'block';
+            document.getElementById('modal-' + id).style.display = 'flex';
+        }
+
+        function closeModal(id) {
+            document.getElementById('modal-content-' + id).style.display = 'none';
+            document.getElementById('modal-' + id).style.display = 'none';
+        }
+
+        hljs.highlightAll();
 
         var $tabs = function (target) {
         var
