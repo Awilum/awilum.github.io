@@ -1,17 +1,204 @@
-<!DOCTYPE html><html lang=en_US><head><meta charset=utf-8><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name=viewport><meta content="Read the documentation about using YAML in Modern Open Source Flat Files Flextype CMS" name=description><meta content="flextype, php, cms, thermage, glowyphp, html" name=keywords><meta content="index, follow" name=robots><meta content="Powered by Flextype" name=generator><meta content=43db5e67acec9539 name=yandex-verification><meta content=XyouR0hgvSfKtO4fRBGJ5NCcbivoHxHdTIfeqFElADo name=google-site-verification><meta content=QCOiDmY3CImL3EPYu4WstZRkkOZKPr6LGOstWU1ZGXI name=google-site-verification><title>YAML for Modern Open Source Flat Files Flextype CMS</title><link href=https://fonts.googleapis.com rel=preconnect><link crossorigin="" href=https://fonts.gstatic.com rel=preconnect><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel=stylesheet><link href=https://awilum.github.io/project/assets/dist/css/dev.min.css rel=stylesheet> <body class="antialiased text-gray-800" style="background: rgb(252, 250, 244);"><header class="bg-white border-b border-l border-r border-slate-900 border-t container flex items-center max-w-[1200px] mx-auto rounded-bl-lg rounded-br-lg" style=overflow:hidden><a class="border-r border-slate-900 brand-logo font-semibold m-0 nav-link no-underline p-0 p-6 px-3 py-2 text-center text-xs" href=https://awilum.github.io/> AWILUM </a> <div class=flex style="margin-left: auto;"><a class="active border-l border-slate-900 font-semibold lg:block m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/projects/ rel=nofollow><span class="hidden lg:block">Projects</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-folder" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"></path></svg> </span></a> <a class="border-l border-slate-900 font-semibold lg:block m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/courses/ rel=nofollow><span class="hidden lg:block">Courses</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-books" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <rect height=16 rx=1 width=4 x=5 y=4></rect> <rect height=16 rx=1 width=4 x=9 y=4></rect> <path d="M5 8h4"></path> <path d="M9 16h4"></path> <path d="M13.803 4.56l2.184 -.53c.562 -.135 1.133 .19 1.282 .732l3.695 13.418a1.02 1.02 0 0 1 -.634 1.219l-.133 .041l-2.184 .53c-.562 .135 -1.133 -.19 -1.282 -.732l-3.695 -13.418a1.02 1.02 0 0 1 .634 -1.219l.133 -.041z"></path> <path d="M14 9l4 -1"></path> <path d="M16 16l3.923 -.98"></path></svg> </span></a> <a class="border-l border-slate-900 font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/donate/><span class="hidden lg:block">Donate</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-heart" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path></svg> </span></a> <a class="border-l border-slate-900 font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/about/><span class="hidden lg:block">About</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-user-circle" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <circle cx=12 cy=12 r=9></circle> <circle cx=12 cy=10 r=3></circle> <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path></svg> </span></a></div></header> <main class="container lg:px-0 max-w-[1200px] mx-auto px-4" role=main><section><div class="bg-white border border-slate-900 dark:bg-slate-800 dark:border-slate-500 flex justify-around lg:max-w-[780px] mt-14 mx-auto overflow-hidden rounded-md"><a class="active border-r border-slate-900 dark:border-slate-500 font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-center text-xs uppercase w-full" href=https://awilum.github.io/flextype/>Flextype</a> <a class="border-r border-slate-900 dark:border-slate-500 font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-center text-xs uppercase w-full" href=https://awilum.github.io/flextype/downloads/>Downloads</a> <a class="font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-center text-xs uppercase w-full" href=https://awilum.github.io/flextype/documentation/>Documentation</a> <a class="border-l border-slate-900 dark:border-slate-500 font-semibold hidden lg:block m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://github.com/flextype/flextype/discussions> GITHUB </a> <a class="border-l border-slate-900 dark:border-slate-500 font-semibold hidden lg:block m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://twitter.com/_flextype> TWITTER </a></div> <div class="container lg:px-0 mx-auto pb-24 px-4"><div class="mb-24 mt-24 text-center uppercase"><div><h1 class="lg:text-6xl mb-0 text-3xl"><a class=no-underline href=https://awilum.github.io/flextype/documentation/core/serializers/yaml/>YAML</a></h1> </div> </div> <div class="flex flex-col-reverse lg:flex-row relative"><div class="lg:w-3/12 w-full"><h4 class="mt-0 pt-0">Getting Started</h4> <ul class="list-none m-0 p-0"><li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/what-is-flextype/>What is Flextype?</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/requirements/>Requirements</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/installation/>Installation</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/configuration/>Configuration</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/folder-structure/>Folder Structure</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/api/>API Reference</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/coc/>Code of Conduct</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/getting-help/>Getting Help</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/license/>License</a> </ul> <h4 class=pt-8>Core Concepts</h4> <ul class="list-none m-0 p-0"><li><a class=no-underline href=https://awilum.github.io/flextype/documentation/core/entries/>Entries</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/core/parsers/>Parsers</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/core/serializers/>Serializers</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/core/registry/>Registry</a> </ul> <h4 class=pt-8>Console</h4> <ul class="list-none m-0 p-0"><li><a class=no-underline href=https://awilum.github.io/flextype/documentation/console/entries/>Entries</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/console/tokens/>Tokens</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/console/cache/>Cache</a> </ul> <h4 class=pt-8>Rest API</h4> <ul class="list-none m-0 p-0"><li><a class=no-underline href=https://awilum.github.io/flextype/documentation/rest-api/introduction/>Introduction</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/rest-api/entries/>Entries</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/rest-api/tokens/>Tokens</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/rest-api/cache/>Cache</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/rest-api/registry/>Registry</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/rest-api/query/>Query</a> </ul></div> <div class="lg:w-9/12 w-full"><p>YAML (YAML Ain't Markup) is a human friendly data serialization language. <p>Flextype uses YAML because it's as close to plain English as data serialization and configuration formats get. It has no curly braces, it allows you to omit quotation marks for strings in most cases, and it relies on indentation for structure, which makes it incredibly readable compared to other languages, such as JSON and XML. <p>YAML is used extensively in Flextype for its configuration files, fieldsets, and also in entries settings. <h3><a name=basic-rules></a> Basic Rules</h3> <p>There are some rules that YAML has in place to avoid issues related to ambiguity in relation to various languages and editing programs. These rules make it possible for a single YAML file to be interpreted consistently, regardless of which application and/or library is being used to interpret it. <ul><li>YAML files should end in .yaml whenever possible in Flextype. <li>YAML is case sensitive. <li>YAML does not allow the use of tabs. Spaces are used instead as tabs are not universally supported.</ul> <h3><a name=collections></a> Collections</h3> <h4>Simple Sequence</h4> <p>You can specify a list in YAML by placing each member of the list on a new line with an opening dash. These lists are called sequences. <pre><code class="language-yaml">- apple
+<!doctype html>
+<html lang="en_US">
+<head>
+            <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Read the documentation about using YAML in Modern Open Source Flat Files Flextype CMS">
+        <meta name="keywords" content="flextype, php, cms, thermage, glowyphp, html">
+        <meta name="robots" content="index, follow">
+        <meta name="generator" content="Powered by Flextype"/>
+        <meta name="yandex-verification" content="43db5e67acec9539" />
+        <meta name="google-site-verification" content="XyouR0hgvSfKtO4fRBGJ5NCcbivoHxHdTIfeqFElADo" />
+        <meta name="google-site-verification" content="QCOiDmY3CImL3EPYu4WstZRkkOZKPr6LGOstWU1ZGXI" />
+        
+        
+        <title>YAML for Modern Open Source Flat Files Flextype CMS</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+        
+                                    <link href="/project/assets/dist/css/dev.min.css" rel="stylesheet">
+                    
+            </head>
+<body class="antialiased text-gray-800" style="background: rgb(252, 250, 244);">
+    <header class="bg-white border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg" style="overflow:hidden">
+        <a href="/" class="nav-link  m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 brand-logo no-underline">
+            AWILUM.GITHUB.IO
+        </a>
+        <div class="flex" style="margin-left: auto;">
+            <a class="nav-link active m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline lg:block" rel="nofollow" href="/projects/">
+                <span class="hidden lg:block">Projects</span>
+                <span class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"></path>
+                     </svg>
+                </span>
+            </a> 
+            <a class="nav-link  m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="/donate/">
+                <span class="hidden lg:block">Donate</span>
+                <span class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+                    </svg>
+                </span>
+            </a>
+            <a class="nav-link  m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="/about/">
+                <span class="hidden lg:block">About</span>
+                <span class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <circle cx="12" cy="10" r="3"></circle>
+                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+                    </svg>
+                </span>
+            </a>
+            <a class="nav-link m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="https://awilum.ru">
+                <span class="hidden lg:block">RU</span>
+                <span class="lg:hidden">
+                    RU
+                </span>
+            </a>
+        </div>
+    </header>
+    
+    <main role="main" class="container mx-auto max-w-[1200px] px-4 lg:px-0">
+        <section>
+            <div class="flex justify-around bg-white dark:bg-slate-800  dark:border-slate-500 border rounded-md mt-14 border-slate-900 mx-auto lg:max-w-[780px] overflow-hidden">
+  <a class="nav-link active w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500" href="/flextype/">Flextype</a>
+  <a class="nav-link w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500" href="/flextype/downloads/">Downloads</a>
+  <a class="nav-link w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline" href="/flextype/documentation/">Documentation</a>
+  <a class="nav-link m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype/flextype/discussions">
+    GITHUB
+  </a>
+  <a class="nav-link m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/_flextype">
+    TWITTER
+  </a>
+</div>
+
+<div class="container mx-auto pb-24 px-4 lg:px-0">
+    <div class="uppercase text-center mt-24 mb-24">
+        <div>
+            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="/flextype/documentation/core/serializers/yaml/">YAML</a></h1>
+        </div>
+            </div>
+    <div class="flex flex-col-reverse lg:flex-row relative">
+        <div class="w-full lg:w-3/12">
+            <h4 class="mt-0 pt-0">Getting Started</h4>
+            <ul class="m-0 p-0 list-none">
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/what-is-flextype/" class="no-underline">What is Flextype?</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/requirements/" class="no-underline">Requirements</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/installation/" class="no-underline">Installation</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/configuration/" class="no-underline">Configuration</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/folder-structure/" class="no-underline">Folder Structure</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/api/" class="no-underline">API Reference</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/coc/" class="no-underline">Code of Conduct</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/getting-help/" class="no-underline">Getting Help</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/license/" class="no-underline">License</a>
+                </li>
+            </ul>
+            <h4 class="pt-8">Core Concepts</h4>
+            <ul class="m-0 p-0 list-none">
+                                <li class="">
+                    <a href="/flextype/documentation/core/entries/" class="no-underline">Entries</a>
+                </li>
+                                <li class="">
+                    <a href="/flextype/documentation/core/parsers/" class="no-underline">Parsers</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/core/serializers/" class="no-underline">Serializers</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/core/registry/" class="no-underline">Registry</a>
+                </li>
+            </ul>
+            <h4 class="pt-8">Console</h4>
+            <ul class="m-0 p-0 list-none">
+                <li class="">
+                    <a href="/flextype/documentation/console/entries/" class="no-underline">Entries</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/console/tokens/" class="no-underline">Tokens</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/console/cache/" class="no-underline">Cache</a>
+                </li>
+            </ul>
+            <h4 class="pt-8">Rest API</h4>
+            <ul class="m-0 p-0 list-none">
+                <li class="">
+                    <a href="/flextype/documentation/rest-api/introduction/" class="no-underline">Introduction</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/rest-api/entries/" class="no-underline">Entries</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/rest-api/tokens/" class="no-underline">Tokens</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/rest-api/cache/" class="no-underline">Cache</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/rest-api/registry/" class="no-underline">Registry</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/rest-api/query/" class="no-underline">Query</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w-full lg:w-9/12">
+                        <p>YAML (YAML Ain't Markup) is a human friendly data serialization language.</p>
+<p>Flextype uses YAML because it's as close to plain English as data serialization and configuration formats get. It has no curly braces, it allows you to omit quotation marks for strings in most cases, and it relies on indentation for structure, which makes it incredibly readable compared to other languages, such as JSON and XML.</p>
+<p>YAML is used extensively in Flextype for its configuration files, fieldsets, and also in entries settings.</p>
+<h3><a name="basic-rules"></a> Basic Rules</h3>
+<p>There are some rules that YAML has in place to avoid issues related to ambiguity in relation to various languages and editing programs. These rules make it possible for a single YAML file to be interpreted consistently, regardless of which application and/or library is being used to interpret it.</p>
+<ul>
+<li>YAML files should end in .yaml whenever possible in Flextype.</li>
+<li>YAML is case sensitive.</li>
+<li>YAML does not allow the use of tabs. Spaces are used instead as tabs are not universally supported.</li>
+</ul>
+<h3><a name="collections"></a> Collections</h3>
+<h4>Simple Sequence</h4>
+<p>You can specify a list in YAML by placing each member of the list on a new line with an opening dash. These lists are called sequences.</p>
+<pre><code class="language-yaml">- apple
 - banana
 - carrot
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [0] =&gt; apple
     [1] =&gt; banana
     [2] =&gt; carrot
 )
-</code></pre> <h4>Nested Sequences</h4> <p>You can include a sequence within another sequence by giving the sequence an empty dash, followed by an indented list. <pre><code class="language-yaml">-
+</code></pre>
+<h4>Nested Sequences</h4>
+<p>You can include a sequence within another sequence by giving the sequence an empty dash, followed by an indented list.</p>
+<pre><code class="language-yaml">-
  - foo
  - bar
  - baz
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [0] =&gt; Array
         (
@@ -20,14 +207,18 @@
             [2] =&gt; baz
         )
 )
-</code></pre> <h4>Mixed Sequences</h4> <p>Sequences can contain any YAML data, including strings and other sequences. <pre><code class="language-yaml">- apple
+</code></pre>
+<h4>Mixed Sequences</h4>
+<p>Sequences can contain any YAML data, including strings and other sequences.</p>
+<pre><code class="language-yaml">- apple
 -
  - foo
  - bar
  - x123
 - banana
 - carrot
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [0] =&gt; apple
     [1] =&gt; Array
@@ -39,11 +230,15 @@
     [2] =&gt; banana
     [3] =&gt; carrot
 )
-</code></pre> <h4>Deeply Nested Sequences</h4> <p>Sequences can be nested even deeper, with each level of indentation representing a level of depth. <pre><code class="language-yaml">-
+</code></pre>
+<h4>Deeply Nested Sequences</h4>
+<p>Sequences can be nested even deeper, with each level of indentation representing a level of depth.</p>
+<pre><code class="language-yaml">-
  -
   - uno
   - dos
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [0] =&gt; Array
         (
@@ -54,16 +249,23 @@
                 )
         )
 )
-</code></pre> <h4>Simple Mapping</h4> <p>You can add a keyed list (also known as a dictionary or hash) to your document by placing each member of the list on a new line, with a colon seperating the key from its value. In YAML, this type of list is called a mapping. <pre><code class="language-yaml">Array
+</code></pre>
+<h4>Simple Mapping</h4>
+<p>You can add a keyed list (also known as a dictionary or hash) to your document by placing each member of the list on a new line, with a colon seperating the key from its value. In YAML, this type of list is called a mapping.</p>
+<pre><code class="language-yaml">Array
 (
     [foo] =&gt; whatever
     [bar] =&gt; stuff
 )
-</code></pre> <h4>Sequence in a Mapping</h4> <p>A value in a mapping can be a sequence. <pre><code class="language-yaml">foo: whatever
+</code></pre>
+<h4>Sequence in a Mapping</h4>
+<p>A value in a mapping can be a sequence.</p>
+<pre><code class="language-yaml">foo: whatever
 bar:
  - uno
  - dos
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [foo] =&gt; whatever
     [bar] =&gt; Array
@@ -72,12 +274,16 @@ bar:
             [1] =&gt; dos
         )
 )
-</code></pre> <h4>Nested Mappings</h4> <p>A value in a mapping can be another mapping. <pre><code class="language-yaml">foo: whatever
+</code></pre>
+<h4>Nested Mappings</h4>
+<p>A value in a mapping can be another mapping.</p>
+<pre><code class="language-yaml">foo: whatever
 bar:
  fruit: apple
  name: steve
  sport: baseball
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [foo] =&gt; whatever
     [bar] =&gt; Array
@@ -87,7 +293,10 @@ bar:
             [sport] =&gt; baseball
         )
 )
-</code></pre> <h4>Mixed Mapping</h4> <p>A mapping can contain any assortment of mappings and sequences as values. <pre><code class="language-yaml">foo: whatever
+</code></pre>
+<h4>Mixed Mapping</h4>
+<p>A mapping can contain any assortment of mappings and sequences as values.</p>
+<pre><code class="language-yaml">foo: whatever
 bar:
  -
    fruit: apple
@@ -98,7 +307,8 @@ bar:
    python: rocks
    perl: papers
    ruby: scissorses
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [foo] =&gt; whatever
     [bar] =&gt; Array
@@ -118,9 +328,13 @@ bar:
                 )
         )
 )
-</code></pre> <h4>Mapping-in-Sequence Shortcut</h4> <p>If you are adding a mapping to a sequence, you can place the mapping on the same line as the dash as a shortcut. <pre><code class="language-yaml">- work_on_YAML:
+</code></pre>
+<h4>Mapping-in-Sequence Shortcut</h4>
+<p>If you are adding a mapping to a sequence, you can place the mapping on the same line as the dash as a shortcut.</p>
+<pre><code class="language-yaml">- work_on_YAML:
    - work on Store
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [0] =&gt; Array
         (
@@ -130,11 +344,15 @@ bar:
                 )
         )
 )
-</code></pre> <h4>Sequence-in-Mapping Shortcut</h4> <p>The dash in a sequence counts as indentation, so you can add a sequence inside of a mapping without needing spaces as indentation. <pre><code class="language-yaml">allow:
+</code></pre>
+<h4>Sequence-in-Mapping Shortcut</h4>
+<p>The dash in a sequence counts as indentation, so you can add a sequence inside of a mapping without needing spaces as indentation.</p>
+<pre><code class="language-yaml">allow:
 - 'localhost'
 - '%.sourceforge.net'
 - '%.freepan.org'
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [allow] =&gt; Array
         (
@@ -143,13 +361,21 @@ bar:
             [2] =&gt; %.freepan.org
         )
 )
-</code></pre> <h4>Merge key</h4> <p>A merge key <code>&lt;&lt;</code> can be used in a mapping to insert other mappings. If the value associated with the merge key is a mapping, each of its key/value pairs is inserted into the current mapping. <pre><code class="language-yaml">mapping:
+</code></pre>
+<h4>Merge key</h4>
+<p>A merge key <code>&lt;&lt;</code> can be used in a mapping to insert other mappings. If the value associated with the merge key is a mapping, each of its key/value pairs is inserted into the current mapping.</p>
+<pre><code class="language-yaml">mapping:
   name: Joe
   job: Accountant
   &lt;&lt;:
     age: 38
-</code></pre> <h3><a name=inline-collections></a> Inline Collections</h3> <h4>Simple Inline Array</h4> <p>Sequences can be contained on a single line, using the inline syntax. Separate each entry with commas and enclose in square brackets. <pre><code class="language-yaml">seq: [ a, b, c ]
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<h3><a name="inline-collections"></a> Inline Collections</h3>
+<h4>Simple Inline Array</h4>
+<p>Sequences can be contained on a single line, using the inline syntax. Separate each entry with commas and enclose in square brackets.</p>
+<pre><code class="language-yaml">seq: [ a, b, c ]
+</code></pre>
+<pre><code class="language-php">Array
 (
     [seq] =&gt; Array
         (
@@ -158,8 +384,12 @@ bar:
             [2] =&gt; c
         )
 )
-</code></pre> <h4>Simple Inline Hash</h4> <p>Mapping can also be contained on a single line, using the inline syntax. Each key-value pair is separated by a colon, with a comma between each entry in the mapping. Enclose with curly braces. <pre><code class="language-yaml">hash: { name: Steve, foo: bar }
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<h4>Simple Inline Hash</h4>
+<p>Mapping can also be contained on a single line, using the inline syntax. Each key-value pair is separated by a colon, with a comma between each entry in the mapping. Enclose with curly braces.</p>
+<pre><code class="language-yaml">hash: { name: Steve, foo: bar }
+</code></pre>
+<pre><code class="language-php">Array
 (
     [hash] =&gt; Array
         (
@@ -167,14 +397,18 @@ bar:
             [foo] =&gt; bar
         )
 )
-</code></pre> <h4>Multi-line Inline Collections</h4> <p>Both inline sequences and inline mappings can span multiple lines, provided that you indent the additional lines. <pre><code class="language-yaml">languages: [ Ruby,
+</code></pre>
+<h4>Multi-line Inline Collections</h4>
+<p>Both inline sequences and inline mappings can span multiple lines, provided that you indent the additional lines.</p>
+<pre><code class="language-yaml">languages: [ Ruby,
              Perl,
              Python ]
 websites: { YAML: yaml.org,
             Ruby: ruby-lang.org,
             Python: python.org,
             Perl: use.perl.org }
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [languages] =&gt; Array
         (
@@ -190,34 +424,56 @@ websites: { YAML: yaml.org,
             [Perl] =&gt; use.perl.org
         )
 )
-</code></pre> <h3><a name=datatypes></a> Datatypes</h3> <p>Values in YAML’s key-value pairs are scalar. They act like the scalar types in languages like Perl, Javascript, and Python. It’s usually good enough to enclose strings in quotes, leave numbers unquoted, and let the parser figure it out. <p>But that’s only the tip of the iceberg. YAML is capable of a great deal more. <h4>Key-Value Pairs and Dictionaries</h4> <p>The key-value is YAML’s basic building block. Every item in a YAML document is a member of at least one dictionary. The key is always a string. The value is a scalar so that it can be any datatype. <p>So, as we’ve already seen, the value can be a string, a number, or another dictionary. <h4>Strings</h4> <p>YAML strings are Unicode. In most situations, you don’t have to specify them in quotes.<br> Any group of characters beginning with an alphabetic or numeric character is a string, unless it belongs to one of the groups below (such as an Integer or Time). <pre><code class="language-yaml">foo: this is a normal string
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<h3><a name="datatypes"></a> Datatypes</h3>
+<p>Values in YAML’s key-value pairs are scalar. They act like the scalar types in languages like Perl, Javascript, and Python. It’s usually good enough to enclose strings in quotes, leave numbers unquoted, and let the parser figure it out.</p>
+<p>But that’s only the tip of the iceberg. YAML is capable of a great deal more.</p>
+<h4>Key-Value Pairs and Dictionaries</h4>
+<p>The key-value is YAML’s basic building block. Every item in a YAML document is a member of at least one dictionary. The key is always a string. The value is a scalar so that it can be any datatype.</p>
+<p>So, as we’ve already seen, the value can be a string, a number, or another dictionary.</p>
+<h4>Strings</h4>
+<p>YAML strings are Unicode. In most situations, you don’t have to specify them in quotes.<br>
+Any group of characters beginning with an alphabetic or numeric character is a string, unless it belongs to one of the groups below (such as an Integer or Time).</p>
+<pre><code class="language-yaml">foo: this is a normal string
+</code></pre>
+<pre><code class="language-php">Array
 (
     [foo] =&gt; this is a normal string
 )
-</code></pre> <p>If we want escape sequences handled, we need to use double quotes. <pre><code class="language-yaml">foo: &quot;this is not a normal string\n&quot;
+</code></pre>
+<p>If we want escape sequences handled, we need to use double quotes.</p>
+<pre><code class="language-yaml">foo: &quot;this is not a normal string\n&quot;
 bar: this is not a normal string\n
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [foo] =&gt; this is not a normal string
 
     [bar] =&gt; this is not a normal string\n
 )
-</code></pre> <p>YAML processes the first value as ending with a carriage return and linefeed. Since the second value is not quoted, YAML treats the <code>\n</code> as two characters. <p>YAML will not escape strings with single quotes, but the single quotes do avoid having string contents interpreted as document formatting. <p>String values can span more than one line. With the fold (greater than) character, you can specify a string in a block. But it’s interpreted without the newlines. <pre><code class="language-yaml">foo: &gt;
+</code></pre>
+<p>YAML processes the first value as ending with a carriage return and linefeed. Since the second value is not quoted, YAML treats the <code>\n</code> as two characters.</p>
+<p>YAML will not escape strings with single quotes, but the single quotes do avoid having string contents interpreted as document formatting.</p>
+<p>String values can span more than one line. With the fold (greater than) character, you can specify a string in a block. But it’s interpreted without the newlines.</p>
+<pre><code class="language-yaml">foo: &gt;
   this is not a normal string it
   spans more than
   one line
   see?
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [foo] =&gt; this is not a normal string it spans more than one line see?
 )
-</code></pre> <p>The block (pipe) character has a similar function, but YAML interprets the field exactly as is. So, we see the newlines where they are in the document. <pre><code class="language-yaml">foo: |
+</code></pre>
+<p>The block (pipe) character has a similar function, but YAML interprets the field exactly as is. So, we see the newlines where they are in the document.</p>
+<pre><code class="language-yaml">foo: |
   this is not a normal string it
   spans more than
   one line
   see?
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [foo] =&gt; this is not a normal string it
 spans more than
@@ -225,13 +481,17 @@ one line
 see?
 
 )
-</code></pre> <h4>Integers</h4> <p>An integer is a series of numbers, optionally starting with a positive or negative sign. Integers may also contain commas for readability. <pre><code class="language-yaml">zero: 0
+</code></pre>
+<h4>Integers</h4>
+<p>An integer is a series of numbers, optionally starting with a positive or negative sign. Integers may also contain commas for readability.</p>
+<pre><code class="language-yaml">zero: 0
 simple: 12
 one_thousand: 1,000
 negative_one_thousand: -1,000
 universe: 25
 answer: 42
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [zero] =&gt; 0
     [simple] =&gt; 12
@@ -240,53 +500,82 @@ answer: 42
     [universe] =&gt; 25
     [answer] =&gt; 42
 )
-</code></pre> <h5>Integers as Map Keys</h5> <p>An integer can be used a dictionary key. <pre><code class="language-yaml">1: one
+</code></pre>
+<h5>Integers as Map Keys</h5>
+<p>An integer can be used a dictionary key.</p>
+<pre><code class="language-yaml">1: one
 2: two
 3: three
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [1] =&gt; one
     [2] =&gt; two
     [3] =&gt; three
 )
-</code></pre> <h4>Floats</h4> <p>Floats are represented by numbers with decimals, allowing for scientific notation, as well as positive and negative infinity and &quot;not a number.&quot; <pre><code class="language-yaml">a_simple_float: 2.00
+</code></pre>
+<h4>Floats</h4>
+<p>Floats are represented by numbers with decimals, allowing for scientific notation, as well as positive and negative infinity and &quot;not a number.&quot;</p>
+<pre><code class="language-yaml">a_simple_float: 2.00
 larger_float: 1,000.09
 scientific_notation: 1.00009e+3
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [a_simple_float] =&gt; 2
     [larger_float] =&gt; 1,000.09
     [scientific_notation] =&gt; 1000.09
 )
-</code></pre> <h4>Time</h4> <p>You can represent timestamps by using ISO8601 format, or a variation which allows spaces between the date, time and time zone. <pre><code class="language-yaml">iso8601: 2001-12-14t21:59:43.10-05:00
+</code></pre>
+<h4>Time</h4>
+<p>You can represent timestamps by using ISO8601 format, or a variation which allows spaces between the date, time and time zone.</p>
+<pre><code class="language-yaml">iso8601: 2001-12-14t21:59:43.10-05:00
 space_seperated: 2001-12-14 21:59:43.10 -05:00
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [iso8601] =&gt; 1008385183
     [space_seperated] =&gt; 1008385183
 )
-</code></pre> <h4>Date</h4> <p>A date can be represented by its year, month and day in ISO8601 order. <pre><code class="language-yaml">date: 1976-07-31
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<h4>Date</h4>
+<p>A date can be represented by its year, month and day in ISO8601 order.</p>
+<pre><code class="language-yaml">date: 1976-07-31
+</code></pre>
+<pre><code class="language-php">Array
 (
     [date] =&gt; 207619200
 )
-</code></pre> <h4>Nulls</h4> <p>You enter nulls with a tilde or the unquoted null string literal. <pre><code class="language-yaml">foo: ~
+</code></pre>
+<h4>Nulls</h4>
+<p>You enter nulls with a tilde or the unquoted null string literal.</p>
+<pre><code class="language-yaml">foo: ~
 bar: null
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [foo] =&gt;
     [bar] =&gt;
 )
-</code></pre> <h4>Booleans</h4> <p>YAML indicates boolean values with the keywords <code>true</code>. False is indicated with <code>false</code>. <pre><code class="language-yaml">foo: true
+</code></pre>
+<h4>Booleans</h4>
+<p>YAML indicates boolean values with the keywords <code>true</code>. False is indicated with <code>false</code>.</p>
+<pre><code class="language-yaml">foo: true
 bar: false
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [foo] =&gt; 1
     [bar] =&gt;
 )
-</code></pre> <h4>Arrays</h4> <p>You can specify arrays or lists on a single line. <pre><code class="language-yaml">items: [ 1, 2, 3, 4, 5 ]
+</code></pre>
+<h4>Arrays</h4>
+<p>You can specify arrays or lists on a single line.</p>
+<pre><code class="language-yaml">items: [ 1, 2, 3, 4, 5 ]
 names: [ &quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot; ]
-</code></pre> <p>Or, you can put them on multiple lines. <pre><code class="language-yaml">items:
+</code></pre>
+<p>Or, you can put them on multiple lines.</p>
+<pre><code class="language-yaml">items:
   - 1
   - 2
   - 3
@@ -297,24 +586,39 @@ names:
   - &quot;two&quot;
   - &quot;three&quot;
   - &quot;four&quot;
-</code></pre> <p>The multiple line format is useful for lists that contain complex objects instead of scalars. <pre><code class="language-yaml">items:
+</code></pre>
+<p>The multiple line format is useful for lists that contain complex objects instead of scalars.</p>
+<pre><code class="language-yaml">items:
   - things:
       thing1: huey
       things2: dewey
       thing3: louie
   - other things:
       key: value
-</code></pre> <p>An array can contain any valid YAML value. The values in a list do not have to be the same type. <h4>Dictionaries</h4> <p>We covered dictionaries above, but there’s more to them. <p>Like arrays, you can put dictionaries inline. We saw this format above. It’s how python prints dictionaries. <pre><code class="language-yaml">foo: { thing1: huey, thing2: louie, thing3: dewey }
-</code></pre> <h3><a name=blocks></a> Blocks</h3> <h4>Single ending newline</h4> <p>A pipe character, followed by an indented block of text is treated as a literal block, in which newlines are preserved throughout the block, including the final newline. <pre><code class="language-yaml">this: |
+</code></pre>
+<p>An array can contain any valid YAML value. The values in a list do not have to be the same type.</p>
+<h4>Dictionaries</h4>
+<p>We covered dictionaries above, but there’s more to them.</p>
+<p>Like arrays, you can put dictionaries inline. We saw this format above. It’s how python prints dictionaries.</p>
+<pre><code class="language-yaml">foo: { thing1: huey, thing2: louie, thing3: dewey }
+</code></pre>
+<h3><a name="blocks"></a> Blocks</h3>
+<h4>Single ending newline</h4>
+<p>A pipe character, followed by an indented block of text is treated as a literal block, in which newlines are preserved throughout the block, including the final newline.</p>
+<pre><code class="language-yaml">this: |
     Foo
     Bar
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [this] =&gt; Foo
 Bar
 
 )
-</code></pre> <h4>The '+' indicator</h4> <p>The '+' indicator says to keep newlines at the end of text blocks. <pre><code class="language-yaml">normal: |
+</code></pre>
+<h4>The '+' indicator</h4>
+<p>The '+' indicator says to keep newlines at the end of text blocks.</p>
+<pre><code class="language-yaml">normal: |
   extra new lines not kept
 
 preserving: |+
@@ -322,7 +626,8 @@ preserving: |+
 
 
 dummy: value
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [normal] =&gt; extra new lines not kept
 
@@ -332,7 +637,10 @@ dummy: value
 
     [dummy] =&gt; value
 )
-</code></pre> <h4>Three trailing newlines in literals</h4> <p>To give you more control over how space is preserved in text blocks, YAML has the keep '+' and chomp '-' indicators. The keep indicator will preserve all ending newlines, while the chomp indicator will strip all ending newlines. <pre><code class="language-yaml">clipped: |
+</code></pre>
+<h4>Three trailing newlines in literals</h4>
+<p>To give you more control over how space is preserved in text blocks, YAML has the keep '+' and chomp '-' indicators. The keep indicator will preserve all ending newlines, while the chomp indicator will strip all ending newlines.</p>
+<pre><code class="language-yaml">clipped: |
     This has one newline.
 
 
@@ -352,7 +660,8 @@ kept: |+
 
 
 same as &quot;kept&quot; above: &quot;This has four newlines.\n\n\n\n&quot;
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [clipped] =&gt; This has one newline.
 
@@ -369,27 +678,35 @@ same as &quot;kept&quot; above: &quot;This has four newlines.\n\n\n\n&quot;
 
 
 
-</code></pre> <h4>Extra trailing newlines with spaces</h4> <p>Normally, only a single newline is kept from the end of a literal block, unless the keep '+' character is used in combination with the pipe. The following example will preserve all ending whitespace since the last line of both literal blocks contains spaces which extend past the indentation level. <pre><code class="language-yaml">this: |
+</code></pre>
+<h4>Extra trailing newlines with spaces</h4>
+<p>Normally, only a single newline is kept from the end of a literal block, unless the keep '+' character is used in combination with the pipe. The following example will preserve all ending whitespace since the last line of both literal blocks contains spaces which extend past the indentation level.</p>
+<pre><code class="language-yaml">this: |
     Foo
 
 
 kept: |+
     Foo
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [this] =&gt; Foo
 
     [kept] =&gt; Foo
 
 )
-</code></pre> <h4>Folded Block in a Sequence</h4> <p>A greater-then character, followed by an indented block of text is treated as a folded block, in which lines of text separated by a single newline are concatenated as a single line. <pre><code class="language-yaml">- apple
+</code></pre>
+<h4>Folded Block in a Sequence</h4>
+<p>A greater-then character, followed by an indented block of text is treated as a folded block, in which lines of text separated by a single newline are concatenated as a single line.</p>
+<pre><code class="language-yaml">- apple
 - banana
 - &gt;
     can't you see
     the beauty of yaml?
     hmm
 - dog
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [0] =&gt; apple
     [1] =&gt; banana
@@ -397,18 +714,24 @@ kept: |+
 
     [3] =&gt; dog
 )
-</code></pre> <h4>Folded Block as a Mapping Value</h4> <p>Both literal and folded blocks can be used in collections, as values in a sequence or a mapping. <pre><code class="language-yaml">quote: &gt;
+</code></pre>
+<h4>Folded Block as a Mapping Value</h4>
+<p>Both literal and folded blocks can be used in collections, as values in a sequence or a mapping.</p>
+<pre><code class="language-yaml">quote: &gt;
     Mark McGwire's
     year was crippled
     by a knee injury.
 source: espn
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [quote] =&gt; Mark McGwire's year was crippled by a knee injury.
 
     [source] =&gt; espn
 )
-</code></pre> <h4>Three trailing newlines in folded blocks</h4> <pre><code class="language-yaml">clipped: &gt;
+</code></pre>
+<h4>Three trailing newlines in folded blocks</h4>
+<pre><code class="language-yaml">clipped: &gt;
     This has one newline.
 
 
@@ -428,7 +751,8 @@ kept: &gt;+
 
 
 same as &quot;kept&quot; above: &quot;This has four newlines.\n\n\n\n&quot;
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [clipped] =&gt; This has one newline.
 
@@ -447,12 +771,17 @@ same as &quot;kept&quot; above: &quot;This has four newlines.\n\n\n\n&quot;
 
 
 )
-</code></pre> <h3><a name=aliases-and-anchors></a> Aliases and Anchors</h3> <h4>Simple Alias Example</h4> <p>If you need to refer to the same item of data twice, you can give that item an alias. The alias is a plain string, starting with an ampersand. The item may then be referred to by the alias throughout your document by using an asterisk before the name of the alias. This is called an anchor. <pre><code class="language-yaml">- &amp;showell Steve
+</code></pre>
+<h3><a name="aliases-and-anchors"></a> Aliases and Anchors</h3>
+<h4>Simple Alias Example</h4>
+<p>If you need to refer to the same item of data twice, you can give that item an alias. The alias is a plain string, starting with an ampersand. The item may then be referred to by the alias throughout your document by using an asterisk before the name of the alias. This is called an anchor.</p>
+<pre><code class="language-yaml">- &amp;showell Steve
 - Clark
 - Brian
 - Oren
 - *showell
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [0] =&gt; Steve
     [1] =&gt; Clark
@@ -460,12 +789,16 @@ same as &quot;kept&quot; above: &quot;This has four newlines.\n\n\n\n&quot;
     [3] =&gt; Oren
     [4] =&gt; Steve
 )
-</code></pre> <h4>Alias of a Mapping</h4> <p>An alias can be used on any item of data, including sequences, mappings, and other complex data types. <pre><code>- &amp;hello
+</code></pre>
+<h4>Alias of a Mapping</h4>
+<p>An alias can be used on any item of data, including sequences, mappings, and other complex data types.</p>
+<pre><code>- &amp;hello
     Meat: pork
     Starch: potato
 - banana
 - *hello
-</code></pre> <pre><code class="language-php">Array
+</code></pre>
+<pre><code class="language-php">Array
 (
     [0] =&gt; Array
         (
@@ -479,7 +812,31 @@ same as &quot;kept&quot; above: &quot;This has four newlines.\n\n\n\n&quot;
             [Starch] =&gt; potato
         )
 )
-</code></pre> <h3><a name=methods></a> Methods</h3> <table><thead><tr><th>Name <th>Description </thead> <tbody><tr><td><a href=#methods-encode>encode</a> <td>Dumps a PHP value to a YAML string.<br><br>The dump method, when supplied with an array, will do its best to convert the array into friendly YAML. <tr><td><a href=#methods-decode>decode</a> <td>Parses YAML into a PHP value.</tbody></table> <h3>Methods Details</h3> <h5><a name="methods-encode"></a> <code>encode</code></h5> <p>Dumps a PHP value to a YAML string.<br><br>The dump method, when supplied with an array, will do its best to convert the array into friendly YAML. <p><strong>Examples</strong> <pre><code class="language-php">$data = [
+</code></pre>
+<h3><a name="methods"></a> Methods</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#methods-encode">encode</a></td>
+            <td>Dumps a PHP value to a YAML string.<br><br>The dump method, when supplied with an array, will do its best to convert the array into friendly YAML.</td>
+        </tr>
+        <tr>
+            <td><a href="#methods-decode">decode</a></td>
+            <td>Parses YAML into a PHP value.</td>
+        </tr>
+    </tbody>
+</table>
+<h3>Methods Details</h3>
+<h5><a name="methods-encode"></a> <code>encode</code></h5>
+<p>Dumps a PHP value to a YAML string.<br><br>The dump method, when supplied with an array, will do its best to convert the array into friendly YAML.</p>
+<p><strong>Examples</strong></p>
+<pre><code class="language-php">$data = [
                 'title' =&gt; 'Revelations',
                 'description' =&gt; 'While still dealing with the loss of Daniel Jackson the SGC is contacted by the Asgard who require assistance dealing with Anubis, who seems to have new shield technology that can repel Asgard weapons.',
                 'director' =&gt; 'Martin Wood',
@@ -490,7 +847,11 @@ same as &quot;kept&quot; above: &quot;This has four newlines.\n\n\n\n&quot;
 
 $yaml = serializers()-&gt;yaml()-&gt;encode($data);
 
-</code></pre> <h5><a name="methods-decode"></a> <code>decode</code></h5> <p>Parses YAML into a PHP value. <p><strong>Examples</strong> <pre><code class="language-php">$yaml = &quot;
+</code></pre>
+<h5><a name="methods-decode"></a> <code>decode</code></h5>
+<p>Parses YAML into a PHP value.</p>
+<p><strong>Examples</strong></p>
+<pre><code class="language-php">$yaml = &quot;
     title: Meridian
     description: As Jackson suffers from a fatal dose of radiation, he struggles with the value of his life while his friends deal with the emotional and diplomatic repercussions.
     director: William Waring
@@ -499,7 +860,45 @@ $yaml = serializers()-&gt;yaml()-&gt;encode($data);
     content: SG-1 returns from an off-world mission to P9Y-3C3 with Daniel Jackson suffering from what is likely a fatal dose of radiation. On the planet, they dealt with the country of Kelowna and their representative Jonas Quinn. That country was at the same stage of development as the United States in the 1940s and well on their way to creating an atomic weapon using Goa'uld technology found in an ancient temple. Daniel argued against the Kelownans developing such a weapon and is accused of attempting to sabotage the project. As members of the team sit by his deathbed, Daniel receives an unexpected offer from someone they once met off-world.&quot;;
 
 $data = serializers()-&gt;yaml()-&gt;decode($yaml);
-</code></pre> <h3><a name=resources-and-further-documentation></a> Resources and Further Documentation</h3> <ul><li><a href=https://yaml.org/spec/1.2/spec.html>Official YAML 1.2 Documentation</a> <li><a href=https://yaml.org/refcard.html>YAML Reference Card</a> <li><a href=https://www.yamllint.com>YAML Lint</a> </ul> <div class="border-slate-900 border-t dark:border-slate-500 mt-8 pt-8"><a href=https://github.com/awilum-dev/website/blob/1.x/project/entries/flextype/documentation/core/serializers/yaml/entry.md target=_blank> Edit this page </a> </div></div></div></div></section> <footer class="py-20 text-center text-sm"><p class="m-0 text-xs"> POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a><span class=px-2>|</span> <a href=https://awilum.github.io/sitemap.xml>SITEMAP</a><span class=px-2>|</span> <a href=https://github.com/Awilum/dev target=_blank>SOURCE CODE</a><span class=px-2>|</span> TOTAL PAGES: 744 <p class="m-0 mt-2 text-xs">Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script>function showModal(id) {
+</code></pre>
+<h3><a name="resources-and-further-documentation"></a> Resources and Further Documentation</h3>
+<ul>
+<li>
+<a href="https://yaml.org/spec/1.2/spec.html">Official YAML 1.2 Documentation</a>
+</li>
+<li>
+<a href="https://yaml.org/refcard.html">YAML Reference Card</a>
+</li>
+<li>
+<a href="https://www.yamllint.com">YAML Lint</a>
+</li>
+</ul>
+
+
+            <div class="border-slate-900 dark:border-slate-500 border-t pt-8 mt-8">
+                <a href="https://github.com/awilum-dev/website/blob/1.x/project/entries/flextype/documentation/core/serializers/yaml/entry.md" class="" target="_blank">
+                    Edit this page
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+        </section>
+        <footer class="py-20 text-sm text-center">
+            <p class="m-0 text-xs">
+                POWERED BY <a href="/flextype/">FLEXTYPE</a><span class="px-2">|</span>
+                <a href="/sitemap.xml">SITEMAP</a><span class="px-2">|</span>
+                <a target="_blank" href="https://github.com/Awilum/dev">SOURCE CODE</a><span class="px-2">|</span>
+                TOTAL PAGES: 744
+            </p>
+            <p class="m-0 mt-2 text-xs">Copyright © <a href="/about/">Sergey Romanenko</a></p>
+                                </footer>
+    </main>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+
+        
+        function showModal(id) {
             document.getElementById('modal-content-' + id).style.display = 'block';
             document.getElementById('modal-' + id).style.display = 'flex';
         }
@@ -572,7 +971,13 @@ $data = serializers()-&gt;yaml()-&gt;decode($yaml);
             }
         }
 
-        };</script> <script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        };
+
+        
+    </script>
+        <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
     
@@ -580,4 +985,9 @@ $data = serializers()-&gt;yaml()-&gt;decode($yaml);
             clickmap:true,
             trackLinks:true,
             accurateTrackBounce:true
-        });</script> <noscript><div><img alt="" src=https://mc.yandex.ru/watch/87767318 style="position:absolute; left:-9999px;"></div></noscript>
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/87767318" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    </body>
+</html>

@@ -1,12 +1,359 @@
-<!DOCTYPE html><html lang=en_US><head><meta charset=utf-8><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name=viewport><meta content="Read the documentation about Entries REST API for Modern Open Source Flat Files Flextype CMS" name=description><meta content="flextype, php, cms, thermage, glowyphp, html" name=keywords><meta content="index, follow" name=robots><meta content="Powered by Flextype" name=generator><meta content=43db5e67acec9539 name=yandex-verification><meta content=XyouR0hgvSfKtO4fRBGJ5NCcbivoHxHdTIfeqFElADo name=google-site-verification><meta content=QCOiDmY3CImL3EPYu4WstZRkkOZKPr6LGOstWU1ZGXI name=google-site-verification><title>Entries Rest API for Modern Open Source Flat Files Flextype CMS</title><link href=https://fonts.googleapis.com rel=preconnect><link crossorigin="" href=https://fonts.gstatic.com rel=preconnect><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel=stylesheet><link href=https://awilum.github.io/project/assets/dist/css/dev.min.css rel=stylesheet> <body class="antialiased text-gray-800" style="background: rgb(252, 250, 244);"><header class="bg-white border-b border-l border-r border-slate-900 border-t container flex items-center max-w-[1200px] mx-auto rounded-bl-lg rounded-br-lg" style=overflow:hidden><a class="border-r border-slate-900 brand-logo font-semibold m-0 nav-link no-underline p-0 p-6 px-3 py-2 text-center text-xs" href=https://awilum.github.io/> AWILUM </a> <div class=flex style="margin-left: auto;"><a class="active border-l border-slate-900 font-semibold lg:block m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/projects/ rel=nofollow><span class="hidden lg:block">Projects</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-folder" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"></path></svg> </span></a> <a class="border-l border-slate-900 font-semibold lg:block m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/courses/ rel=nofollow><span class="hidden lg:block">Courses</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-books" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <rect height=16 rx=1 width=4 x=5 y=4></rect> <rect height=16 rx=1 width=4 x=9 y=4></rect> <path d="M5 8h4"></path> <path d="M9 16h4"></path> <path d="M13.803 4.56l2.184 -.53c.562 -.135 1.133 .19 1.282 .732l3.695 13.418a1.02 1.02 0 0 1 -.634 1.219l-.133 .041l-2.184 .53c-.562 .135 -1.133 -.19 -1.282 -.732l-3.695 -13.418a1.02 1.02 0 0 1 .634 -1.219l.133 -.041z"></path> <path d="M14 9l4 -1"></path> <path d="M16 16l3.923 -.98"></path></svg> </span></a> <a class="border-l border-slate-900 font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/donate/><span class="hidden lg:block">Donate</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-heart" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path></svg> </span></a> <a class="border-l border-slate-900 font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/about/><span class="hidden lg:block">About</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-user-circle" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <circle cx=12 cy=12 r=9></circle> <circle cx=12 cy=10 r=3></circle> <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path></svg> </span></a></div></header> <main class="container lg:px-0 max-w-[1200px] mx-auto px-4" role=main><section><div class="bg-white border border-slate-900 dark:bg-slate-800 dark:border-slate-500 flex justify-around lg:max-w-[780px] mt-14 mx-auto overflow-hidden rounded-md"><a class="active border-r border-slate-900 dark:border-slate-500 font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-center text-xs uppercase w-full" href=https://awilum.github.io/flextype/>Flextype</a> <a class="border-r border-slate-900 dark:border-slate-500 font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-center text-xs uppercase w-full" href=https://awilum.github.io/flextype/downloads/>Downloads</a> <a class="font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-center text-xs uppercase w-full" href=https://awilum.github.io/flextype/documentation/>Documentation</a> <a class="border-l border-slate-900 dark:border-slate-500 font-semibold hidden lg:block m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://github.com/flextype/flextype/discussions> GITHUB </a> <a class="border-l border-slate-900 dark:border-slate-500 font-semibold hidden lg:block m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://twitter.com/_flextype> TWITTER </a></div> <div class="container lg:px-0 mx-auto pb-24 px-4"><div class="mb-24 mt-24 text-center uppercase"><div><h1 class="lg:text-6xl mb-0 text-3xl"><a class=no-underline href=https://awilum.github.io/flextype/documentation/rest-api/entries/>Entries</a></h1> </div> </div> <div class="flex flex-col-reverse lg:flex-row relative"><div class="lg:w-3/12 w-full"><h4 class="mt-0 pt-0">Getting Started</h4> <ul class="list-none m-0 p-0"><li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/what-is-flextype/>What is Flextype?</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/requirements/>Requirements</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/installation/>Installation</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/configuration/>Configuration</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/folder-structure/>Folder Structure</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/api/>API Reference</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/coc/>Code of Conduct</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/getting-help/>Getting Help</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/getting-started/license/>License</a> </ul> <h4 class=pt-8>Core Concepts</h4> <ul class="list-none m-0 p-0"><li><a class=no-underline href=https://awilum.github.io/flextype/documentation/core/entries/>Entries</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/core/parsers/>Parsers</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/core/serializers/>Serializers</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/core/registry/>Registry</a> </ul> <h4 class=pt-8>Console</h4> <ul class="list-none m-0 p-0"><li><a class=no-underline href=https://awilum.github.io/flextype/documentation/console/entries/>Entries</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/console/tokens/>Tokens</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/console/cache/>Cache</a> </ul> <h4 class=pt-8>Rest API</h4> <ul class="list-none m-0 p-0"><li><a class=no-underline href=https://awilum.github.io/flextype/documentation/rest-api/introduction/>Introduction</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/rest-api/entries/>Entries</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/rest-api/tokens/>Tokens</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/rest-api/cache/>Cache</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/rest-api/registry/>Registry</a> <li><a class=no-underline href=https://awilum.github.io/flextype/documentation/rest-api/query/>Query</a> </ul></div> <div class="lg:w-9/12 w-full"><p>The Flextype Entries API organized around Representational State Transfer (REST) for delivering entries from Flextype to apps, websites and other. Entries is delivered as JSON data. <h3><a name=endpoints></a> Endpoints</h3> <table><thead><tr><th>Method <th>Endpoint <th>Route name <th>Description </thead> <tbody><tr><td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(59 130 246); color: white;">GET</span> <td><a href=#endpoint-fetch>/api/v1/entries</a> <td>entries.fetch <td>Fetch entry . <tr><td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(34 197 94); color: white;">POST</span> <td><a href=#endpoint-create>/api/v1/entries</a> <td>entries.create <td>Create entry. <tr><td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(20 184 166); color: white;">PATCH</span> <td><a href=#endpoint-update>/api/v1/entries</a> <td>entries.update <td>Update entry. <tr><td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(249 115 22); color: white;">PUT</span> <td><a href=#endpoint-move>/api/v1/entries</a> <td>entries.move <td>Move entry . <tr><td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(249 115 22); color: white;">PUT</span> <td><a href=#endpoint-copy>/api/v1/entries/copy</a> <td>entries.copy <td>Copy entry . <tr><td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(244 63 94); color: white;">DELETE</span> <td><a href=#endpoint-delete>/api/v1/entries</a> <td>entries.delete <td>Delete entry .</tbody></table> <br> <h5><a name="endpoint-fetch"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(59 130 246); color: white;">GET</span> <code>/api/v1/entries</code></h5> <p>Fetch entry or entries collection. <h5>Fetch single entry</h5> <div class=file-header>Request</div> <pre><code>GET /api/v1/entries?id=YOUR_ENTRY_ID&amp;[options]&amp;token=YOUR_ENTRIES_TOKEN
-</code></pre> <h5>Query</h5> <table><thead><tr><th>Name <th> <th>Description </thead> <tbody><tr><td>id <td>REQUIRED <td>Valid Entry ID <tr><td>options <td>OPTIONAL <td>A set of valid arguments to search and sort specific needed entries. <tr><td>token <td>REQUIRED <td>Valid Entries Token.</tbody></table> <h5>Result</h5> <p>Returns the item object for the given unique identifier. <h5>Examples</h5> <p>Fetch Movies Entry <div class=file-header>Request</div> <pre><code>GET /api/v1/entries?id=movies&amp;token=6f047babd1894064fbf7662080a9a2f0
-</code></pre> <h5>Fetch entries collection</h5> <div class=file-header>Request</div> <pre><code>GET /api/v1/entries?id=YOUR_ENTRY_ID&amp;options[collection]=true&amp;token=YOUR_ENTRIES_TOKEN
-</code></pre> <h5>Query</h5> <table><thead><tr><th>Name <th> <th>Description </thead> <tbody><tr><td>id <td>REQUIRED <td>Valid Entry ID <tr><td>options <td>OPTIONAL <td>A set of valid arguments to search and sort specific needed entries. <tr><td>token <td>REQUIRED <td>Valid Entries Token.</tbody></table> <h5>Result</h5> <p>Returns an array of item objects. <h5>Examples</h5> <p>Fetch Movies Collection <div class=file-header>Request</div> <pre><code>GET /api/v1/entries?id=movies&amp;options[collection]=true&amp;token=6f047babd1894064fbf7662080a9a2f0
-</code></pre> <p>Fetch Movies Collection where <strong>director</strong> is equal to <strong>Cathy Yan</strong> <div class=file-header>Request</div> <pre><code>GET /api/v1/entries?id=movies&amp;options[collection]=true&amp;options[filter][where][0][key]=director&amp;options[filter][where][9][operator]=eq&amp;options[filter][where][0][value]=Cathy+Yan&amp;token=6f047babd1894064fbf7662080a9a2f0
-</code></pre> <p>Fetch Movies Collection where <strong>director</strong> is equal to <strong>Cathy Yan</strong> and where year is equal to <strong>2020</strong> and where genre is contains <strong>action</strong> <div class=file-header>Request</div> <pre><code>GET /api/v1/entries?id=movies&amp;options[collection]=true&amp;options[filter][where][0][key]=director&amp;options[filter][where][0][operator]=eq&amp;options[filter][where][0][value]=Cathy+Yan&amp;options[filter][where][1][key]=year&amp;options[filter][where][1][operator]=eq&amp;options[filter][where][1][value]=2020&amp;options[filter][where][2][key]=genre&amp;options[filter][where][1][operator]=contains&amp;options[filter][where][1][value]=drama&amp;token=6f047babd1894064fbf7662080a9a2f0
-</code></pre> <h5>Options</h5> <p>You can send options for the query to search items in a collection that matches the specific filter's conditions. <p><code>options</code> is an array of valid values for <a href="s://github.com/flextype/flextype/blob/dev/src/flextype/Support/Helpers/FilterHelper.php">filter()</a> and <a href="s://github.com/flextype/flextype/blob/dev/src/flextype/Support/Helpers/FindHelper.php">find()</a> helpers.</p> <br> <h5><a name="endpoint-create"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(34 197 94); color: white;">POST</span> <code>/api/v1/entries</code></h5> <p>Create entry. <div class=file-header>Request</div> <pre><code>POST /api/v1/entries
-</code></pre> <h5>Body</h5> <table><thead><tr><th>Name <th> <th>Description </thead> <tbody><tr><td>id <td>REQUIRED <td>Unique identifier of the entry. <tr><td>token <td>REQUIRED <td>Valid Entries token. <tr><td>access_token <td>REQUIRED <td>Valid Access token. <tr><td>data <td>REQUIRED <td>Data to store for the entry.</tbody></table> <h5>Result</h5> <p>Returns the entry item object for the entry item that was just created. <h5>Examples</h5> <p>Create new entry <strong>platform</strong> <div class=file-header>Request</div> <pre><code>POST /api/v1/entries
-</code></pre> <div class=file-header>Body</div> <pre><code class="language-json">{
+<!doctype html>
+<html lang="en_US">
+<head>
+            <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Read the documentation about Entries REST API for Modern Open Source Flat Files Flextype CMS">
+        <meta name="keywords" content="flextype, php, cms, thermage, glowyphp, html">
+        <meta name="robots" content="index, follow">
+        <meta name="generator" content="Powered by Flextype"/>
+        <meta name="yandex-verification" content="43db5e67acec9539" />
+        <meta name="google-site-verification" content="XyouR0hgvSfKtO4fRBGJ5NCcbivoHxHdTIfeqFElADo" />
+        <meta name="google-site-verification" content="QCOiDmY3CImL3EPYu4WstZRkkOZKPr6LGOstWU1ZGXI" />
+        
+        
+        <title>Entries Rest API for Modern Open Source Flat Files Flextype CMS</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+        
+                                    <link href="/project/assets/dist/css/dev.min.css" rel="stylesheet">
+                    
+            </head>
+<body class="antialiased text-gray-800" style="background: rgb(252, 250, 244);">
+    <header class="bg-white border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg" style="overflow:hidden">
+        <a href="/" class="nav-link  m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 brand-logo no-underline">
+            AWILUM.GITHUB.IO
+        </a>
+        <div class="flex" style="margin-left: auto;">
+            <a class="nav-link active m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline lg:block" rel="nofollow" href="/projects/">
+                <span class="hidden lg:block">Projects</span>
+                <span class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"></path>
+                     </svg>
+                </span>
+            </a> 
+            <a class="nav-link  m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="/donate/">
+                <span class="hidden lg:block">Donate</span>
+                <span class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+                    </svg>
+                </span>
+            </a>
+            <a class="nav-link  m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="/about/">
+                <span class="hidden lg:block">About</span>
+                <span class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <circle cx="12" cy="10" r="3"></circle>
+                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+                    </svg>
+                </span>
+            </a>
+            <a class="nav-link m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="https://awilum.ru">
+                <span class="hidden lg:block">RU</span>
+                <span class="lg:hidden">
+                    RU
+                </span>
+            </a>
+        </div>
+    </header>
+    
+    <main role="main" class="container mx-auto max-w-[1200px] px-4 lg:px-0">
+        <section>
+            <div class="flex justify-around bg-white dark:bg-slate-800  dark:border-slate-500 border rounded-md mt-14 border-slate-900 mx-auto lg:max-w-[780px] overflow-hidden">
+  <a class="nav-link active w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500" href="/flextype/">Flextype</a>
+  <a class="nav-link w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500" href="/flextype/downloads/">Downloads</a>
+  <a class="nav-link w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline" href="/flextype/documentation/">Documentation</a>
+  <a class="nav-link m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://github.com/flextype/flextype/discussions">
+    GITHUB
+  </a>
+  <a class="nav-link m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/_flextype">
+    TWITTER
+  </a>
+</div>
+
+<div class="container mx-auto pb-24 px-4 lg:px-0">
+    <div class="uppercase text-center mt-24 mb-24">
+        <div>
+            <h1 class="text-3xl lg:text-6xl mb-0"><a class="no-underline" href="/flextype/documentation/rest-api/entries/">Entries</a></h1>
+        </div>
+            </div>
+    <div class="flex flex-col-reverse lg:flex-row relative">
+        <div class="w-full lg:w-3/12">
+            <h4 class="mt-0 pt-0">Getting Started</h4>
+            <ul class="m-0 p-0 list-none">
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/what-is-flextype/" class="no-underline">What is Flextype?</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/requirements/" class="no-underline">Requirements</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/installation/" class="no-underline">Installation</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/configuration/" class="no-underline">Configuration</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/folder-structure/" class="no-underline">Folder Structure</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/api/" class="no-underline">API Reference</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/coc/" class="no-underline">Code of Conduct</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/getting-help/" class="no-underline">Getting Help</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/getting-started/license/" class="no-underline">License</a>
+                </li>
+            </ul>
+            <h4 class="pt-8">Core Concepts</h4>
+            <ul class="m-0 p-0 list-none">
+                                <li class="">
+                    <a href="/flextype/documentation/core/entries/" class="no-underline">Entries</a>
+                </li>
+                                <li class="">
+                    <a href="/flextype/documentation/core/parsers/" class="no-underline">Parsers</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/core/serializers/" class="no-underline">Serializers</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/core/registry/" class="no-underline">Registry</a>
+                </li>
+            </ul>
+            <h4 class="pt-8">Console</h4>
+            <ul class="m-0 p-0 list-none">
+                <li class="">
+                    <a href="/flextype/documentation/console/entries/" class="no-underline">Entries</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/console/tokens/" class="no-underline">Tokens</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/console/cache/" class="no-underline">Cache</a>
+                </li>
+            </ul>
+            <h4 class="pt-8">Rest API</h4>
+            <ul class="m-0 p-0 list-none">
+                <li class="">
+                    <a href="/flextype/documentation/rest-api/introduction/" class="no-underline">Introduction</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/rest-api/entries/" class="no-underline">Entries</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/rest-api/tokens/" class="no-underline">Tokens</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/rest-api/cache/" class="no-underline">Cache</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/rest-api/registry/" class="no-underline">Registry</a>
+                </li>
+                <li class="">
+                    <a href="/flextype/documentation/rest-api/query/" class="no-underline">Query</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w-full lg:w-9/12">
+                        <p>The Flextype Entries API organized around Representational State Transfer (REST) for delivering entries from Flextype to apps, websites and other. Entries is delivered as JSON data.</p>
+<h3><a name="endpoints"></a> Endpoints</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Method</th>
+            <th>Endpoint</th>
+            <th>Route name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(59 130 246); color: white;">GET</span></td>
+            <td><a href="#endpoint-fetch">/api/v1/entries</a></td>
+            <td>entries.fetch</td>
+            <td>Fetch entry .</td>
+        </tr>
+        <tr>
+            <td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(34 197 94); color: white;">POST</span></td>
+            <td><a href="#endpoint-create">/api/v1/entries</a></td>
+            <td>entries.create</td>
+            <td>Create entry.</td>
+        </tr>
+        <tr>
+            <td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(20 184 166); color: white;">PATCH</span></td>
+            <td><a href="#endpoint-update">/api/v1/entries</td>
+            <td>entries.update</td>
+            <td>Update entry.</td>
+        </tr>
+        <tr>
+            <td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(249 115 22); color: white;">PUT</span></td>
+            <td><a href="#endpoint-move">/api/v1/entries</a></td>
+            <td>entries.move</td>
+            <td>Move entry .</td>
+        </tr>
+        <tr>
+            <td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(249 115 22); color: white;">PUT</span></td>
+            <td><a href="#endpoint-copy">/api/v1/entries/copy</a></td>
+            <td>entries.copy</td>
+            <td>Copy entry .</td>
+        </tr>
+        <tr>
+            <td><span class="text-decoration-none text-sm" style="padding: 3px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(244 63 94); color: white;">DELETE</span></td>
+            <td><a href="#endpoint-delete">/api/v1/entries</a></td>
+            <td>entries.delete</td>
+            <td>Delete entry .</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<h5><a name="endpoint-fetch"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(59 130 246); color: white;">GET</span> <code>/api/v1/entries</code></h5>
+<p>Fetch entry or entries collection.</p>
+<h5>Fetch single entry</h5>
+<div class="file-header">Request</div>
+<pre><code>GET /api/v1/entries?id=YOUR_ENTRY_ID&amp;[options]&amp;token=YOUR_ENTRIES_TOKEN
+</code></pre>
+<h5>Query</h5>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th></th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>id</td>
+            <td>REQUIRED</td>
+            <td>Valid Entry ID</td>
+        </tr>
+        <tr>
+            <td>options</td>
+            <td>OPTIONAL</td>
+            <td>A set of valid arguments to search and sort specific needed entries.</td>
+        </tr>
+        <tr>
+            <td>token</td>
+            <td>REQUIRED</td>
+            <td>Valid Entries Token.</td>
+        </tr>
+    </tbody>
+</table>
+<h5>Result</h5>
+<p>Returns the item object for the given unique identifier.</p>
+<h5>Examples</h5>
+<p>Fetch Movies Entry</p>
+<div class="file-header">Request</div>
+<pre><code>GET /api/v1/entries?id=movies&amp;token=6f047babd1894064fbf7662080a9a2f0
+</code></pre>
+<h5>Fetch entries collection</h5>
+<div class="file-header">Request</div>
+<pre><code>GET /api/v1/entries?id=YOUR_ENTRY_ID&amp;options[collection]=true&amp;token=YOUR_ENTRIES_TOKEN
+</code></pre>
+<h5>Query</h5>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th></th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>id</td>
+            <td>REQUIRED</td>
+            <td>Valid Entry ID</td>
+        </tr>
+        <tr>
+            <td>options</td>
+            <td>OPTIONAL</td>
+            <td>A set of valid arguments to search and sort specific needed entries.</td>
+        </tr>
+        <tr>
+            <td>token</td>
+            <td>REQUIRED</td>
+            <td>Valid Entries Token.</td>
+        </tr>
+    </tbody>
+</table>
+<h5>Result</h5>
+<p>Returns an array of item objects.</p>
+<h5>Examples</h5>
+<p>Fetch Movies Collection</p>
+<div class="file-header">Request</div>
+<pre><code>GET /api/v1/entries?id=movies&amp;options[collection]=true&amp;token=6f047babd1894064fbf7662080a9a2f0
+</code></pre>
+<p>Fetch Movies Collection where <strong>director</strong> is equal to <strong>Cathy Yan</strong></p>
+<div class="file-header">Request</div>
+<pre><code>GET /api/v1/entries?id=movies&amp;options[collection]=true&amp;options[filter][where][0][key]=director&amp;options[filter][where][9][operator]=eq&amp;options[filter][where][0][value]=Cathy+Yan&amp;token=6f047babd1894064fbf7662080a9a2f0
+</code></pre>
+<p>Fetch Movies Collection where <strong>director</strong> is equal to <strong>Cathy Yan</strong> and where year is equal to <strong>2020</strong> and where genre is contains <strong>action</strong></p>
+<div class="file-header">Request</div>
+<pre><code>GET /api/v1/entries?id=movies&amp;options[collection]=true&amp;options[filter][where][0][key]=director&amp;options[filter][where][0][operator]=eq&amp;options[filter][where][0][value]=Cathy+Yan&amp;options[filter][where][1][key]=year&amp;options[filter][where][1][operator]=eq&amp;options[filter][where][1][value]=2020&amp;options[filter][where][2][key]=genre&amp;options[filter][where][1][operator]=contains&amp;options[filter][where][1][value]=drama&amp;token=6f047babd1894064fbf7662080a9a2f0
+</code></pre>
+<h5>Options</h5>
+<p>You can send options for the query to search items in a collection that matches the specific filter's conditions.</p>
+<p><code>options</code> is an array of valid values for <a href="s://github.com/flextype/flextype/blob/dev/src/flextype/Support/Helpers/FilterHelper.php">filter()</a> and <a href="s://github.com/flextype/flextype/blob/dev/src/flextype/Support/Helpers/FindHelper.php">find()</a> helpers.</p>
+<br>
+<h5><a name="endpoint-create"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(34 197 94); color: white;">POST</span> <code>/api/v1/entries</code></h5>
+<p>Create entry.</p>
+<div class="file-header">Request</div>
+<pre><code>POST /api/v1/entries
+</code></pre>
+<h5>Body</h5>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th></th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>id</td>
+            <td>REQUIRED</td>
+            <td>Unique identifier of the entry.</td>
+        </tr>
+        <tr>
+            <td>token</td>
+            <td>REQUIRED</td>
+            <td>Valid Entries token.</td>
+        </tr>
+        <tr>
+            <td>access_token</td>
+            <td>REQUIRED</td>
+            <td>Valid Access token.</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>REQUIRED</td>
+            <td>Data to store for the entry.</td>
+        </tr>
+    </tbody>
+</table>
+<h5>Result</h5>
+<p>Returns the entry item object for the entry item that was just created.</p>
+<h5>Examples</h5>
+<p>Create new entry <strong>platform</strong></p>
+<div class="file-header">Request</div>
+<pre><code>POST /api/v1/entries
+</code></pre>
+<div class="file-header">Body</div>
+<pre><code class="language-json">{
 	&quot;id&quot;: &quot;movies/platform&quot;,
 	&quot;token&quot;: &quot;f3acf199a9ac120d3bfd604e1e382456&quot;,
 	&quot;access_token&quot;: &quot;bbc4417d171e38099bd129aeca279018&quot;,
@@ -15,7 +362,9 @@
 		&quot;content&quot;: &quot;The Platform (Spanish: El hoyo, transl. The Hole) is a Spanish science fiction horror-thriller film, directed by Galder Gaztelu-Urrutia and released in 2019.&quot;
 	}
 }
-</code></pre> <div class="file-header flex justify-between"><div>Response</div> <div class=text-right>200 OK</div></div> <pre><code class="language-json">{
+</code></pre>
+<div class="file-header flex justify-between"><div>Response</div> <div class="text-right">200 OK</div></div>
+<pre><code class="language-json">{
     &quot;data&quot;: {
         &quot;title&quot;: &quot;Platform&quot;,
         &quot;uuid&quot;: &quot;7e724722-da2f-410f-abd2-f44fbea1f6f0&quot;,
@@ -30,9 +379,54 @@
         &quot;slug&quot;: &quot;movies/platform&quot;
     }
 }
-</code></pre> <br> <h5><a name="endpoint-update"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(20 184 166); color: white;">PATCH</span> <code>/api/v1/entries</code></h5> <p>Update entry. <div class=file-header>Request</div> <pre><code>PATCH /api/v1/entries
-</code></pre> <h5>Body</h5> <table><thead><tr><th>Name <th> <th>Description </thead> <tbody><tr><td>id <td>REQUIRED <td>Unique identifier of the entry. <tr><td>token <td>REQUIRED <td>Valid Entries token. <tr><td>access_token <td>REQUIRED <td>Valid Access token. <tr><td>data <td>REQUIRED <td>Data to store for the entry.</tbody></table> <h5>Result</h5> <p>Returns the entry item object for the entry item that was just updated. <h5>Examples</h5> <p>Update content for entry <strong>platform</strong> <div class=file-header>Request</div> <pre><code>PATCH /api/v1/entries
-</code></pre> <div class=file-header>Body</div> <pre><code class="language-json">{
+</code></pre>
+<br>
+<h5><a name="endpoint-update"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(20 184 166); color: white;">PATCH</span> <code>/api/v1/entries</code></h5>
+<p>Update entry.</p>
+<div class="file-header">Request</div>
+<pre><code>PATCH /api/v1/entries
+</code></pre>
+<h5>Body</h5>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th></th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>id</td>
+            <td>REQUIRED</td>
+            <td>Unique identifier of the entry.</td>
+        </tr>
+        <tr>
+            <td>token</td>
+            <td>REQUIRED</td>
+            <td>Valid Entries token.</td>
+        </tr>
+        <tr>
+            <td>access_token</td>
+            <td>REQUIRED</td>
+            <td>Valid Access token.</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>REQUIRED</td>
+            <td>Data to store for the entry.</td>
+        </tr>
+    </tbody>
+</table>
+<h5>Result</h5>
+<p>Returns the entry item object for the entry item that was just updated.</p>
+<h5>Examples</h5>
+<p>Update content for entry <strong>platform</strong></p>
+<div class="file-header">Request</div>
+<pre><code>PATCH /api/v1/entries
+</code></pre>
+<div class="file-header">Body</div>
+<pre><code class="language-json">{
 	&quot;id&quot;: &quot;movies/platform&quot;,
 	&quot;token&quot;: &quot;f3acf199a9ac120d3bfd604e1e382456&quot;,
 	&quot;access_token&quot;: &quot;bbc4417d171e38099bd129aeca279018&quot;,
@@ -40,7 +434,9 @@
 		&quot;content&quot;: &quot;A vertical prison with one cell per level. Two people per cell. One only food platform and two minutes per day to feed from up to down. An endless nightmare trapped in The Hole.&quot;
 	}
 }
-</code></pre> <div class="file-header flex justify-between"><div>Response</div> <div class=text-right>200 OK</div></div> <pre><code class="language-json">{
+</code></pre>
+<div class="file-header flex justify-between"><div>Response</div> <div class="text-right">200 OK</div></div>
+<pre><code class="language-json">{
     &quot;data&quot;: {
         &quot;title&quot;: &quot;Platform&quot;,
         &quot;uuid&quot;: &quot;7e724722-da2f-410f-abd2-f44fbea1f6f0&quot;,
@@ -55,15 +451,62 @@
         &quot;slug&quot;: &quot;movies/platform&quot;
     }
 }
-</code></pre> <br> <h5><a name="endpoint-move"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(249 115 22); color: white;">PUT</span> <code>/api/v1/entries</code></h5> <p>Move entry. <div class=file-header>Request</div> <pre><code>PUT /api/v1/entries
-</code></pre> <h5>Body</h5> <table><thead><tr><th>Name <th> <th>Description </thead> <tbody><tr><td>id <td>REQUIRED <td>Unique identifier of the entry. <tr><td>new_id <td>REQUIRED <td>New Unique identifier of the entry. <tr><td>token <td>REQUIRED <td>Valid Entries token. <tr><td>access_token <td>REQUIRED <td>Valid Access token.</tbody></table> <h5>Result</h5> <p>Returns the entry item object for the entry item that was just moved. <h5>Examples</h5> <p>Move entry <strong>platform</strong> to the <strong>the-platform</strong> <div class=file-header>Request</div> <pre><code>PUT /api/v1/entries
-</code></pre> <div class=file-header>Body</div> <pre><code class="language-json">{
+</code></pre>
+<br>
+<h5><a name="endpoint-move"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(249 115 22); color: white;">PUT</span> <code>/api/v1/entries</code></h5>
+<p>Move entry.</p>
+<div class="file-header">Request</div>
+<pre><code>PUT /api/v1/entries
+</code></pre>
+<h5>Body</h5>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th></th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>id</td>
+            <td>REQUIRED</td>
+            <td>Unique identifier of the entry.</td>
+        </tr>
+        <tr>
+            <td>new_id</td>
+            <td>REQUIRED</td>
+            <td>New Unique identifier of the entry.</td>
+        </tr>
+        <tr>
+            <td>token</td>
+            <td>REQUIRED</td>
+            <td>Valid Entries token.</td>
+        </tr>
+        <tr>
+            <td>access_token</td>
+            <td>REQUIRED</td>
+            <td>Valid Access token.</td>
+        </tr>
+    </tbody>
+</table>
+<h5>Result</h5>
+<p>Returns the entry item object for the entry item that was just moved.</p>
+<h5>Examples</h5>
+<p>Move entry <strong>platform</strong> to the <strong>the-platform</strong></p>
+<div class="file-header">Request</div>
+<pre><code>PUT /api/v1/entries
+</code></pre>
+<div class="file-header">Body</div>
+<pre><code class="language-json">{
 	&quot;id&quot;: &quot;movies/platform&quot;,
     &quot;new_id&quot;: &quot;movies/the-platform&quot;,
 	&quot;token&quot;: &quot;f3acf199a9ac120d3bfd604e1e382456&quot;,
 	&quot;access_token&quot;: &quot;bbc4417d171e38099bd129aeca279018&quot;
 }
-</code></pre> <div class="file-header flex justify-between"><div>Response</div> <div class=text-right>200 OK</div></div> <pre><code class="language-json">{
+</code></pre>
+<div class="file-header flex justify-between"><div>Response</div> <div class="text-right">200 OK</div></div>
+<pre><code class="language-json">{
     &quot;data&quot;: {
         &quot;title&quot;: &quot;Platform&quot;,
         &quot;uuid&quot;: &quot;7e724722-da2f-410f-abd2-f44fbea1f6f0&quot;,
@@ -78,14 +521,21 @@
         &quot;slug&quot;: &quot;movies/the-platform&quot;
     }
 }
-</code></pre> <p>Move entry <strong>movies/the-platform</strong> to the <strong>movies/2019/the-platform</strong> <div class=file-header>Request</div> <pre><code>PUT /api/v1/entries
-</code></pre> <div class=file-header>Body</div> <pre><code class="language-json">{
+</code></pre>
+<p>Move entry <strong>movies/the-platform</strong> to the <strong>movies/2019/the-platform</strong></p>
+<div class="file-header">Request</div>
+<pre><code>PUT /api/v1/entries
+</code></pre>
+<div class="file-header">Body</div>
+<pre><code class="language-json">{
 	&quot;id&quot;: &quot;movies/the-platform&quot;,
     &quot;new_id&quot;: &quot;movies/2019/the-platform&quot;,
 	&quot;token&quot;: &quot;f3acf199a9ac120d3bfd604e1e382456&quot;,
 	&quot;access_token&quot;: &quot;bbc4417d171e38099bd129aeca279018&quot;
 }
-</code></pre> <div class="file-header flex justify-between"><div>Response</div> <div class=text-right>200 OK</div></div> <pre><code class="language-json">{
+</code></pre>
+<div class="file-header flex justify-between"><div>Response</div> <div class="text-right">200 OK</div></div>
+<pre><code class="language-json">{
     &quot;data&quot;: {
         &quot;title&quot;: &quot;Platform&quot;,
         &quot;uuid&quot;: &quot;7e724722-da2f-410f-abd2-f44fbea1f6f0&quot;,
@@ -100,15 +550,62 @@
         &quot;slug&quot;: &quot;movies/2019/the-platform&quot;
     }
 }
-</code></pre> <br> <h5><a name="endpoint-copy"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(249 115 22); color: white;">PUT</span> <code>/api/v1/entries/copy</code></h5> <p>Copy entry . <div class=file-header>Request</div> <pre><code>PUT /api/v1/entries/copy
-</code></pre> <h5>Body</h5> <table><thead><tr><th>Name <th> <th>Description </thead> <tbody><tr><td>id <td>REQUIRED <td>Unique identifier of the entry. <tr><td>new_id <td>REQUIRED <td>New Unique identifier of the entry. <tr><td>token <td>REQUIRED <td>Valid Entries token. <tr><td>access_token <td>REQUIRED <td>Valid Access token.</tbody></table> <h5>Result</h5> <p>Returns the entry item object for the entry item that was just copied. <h5>Examples</h5> <p>Copy for entry <strong>movies/2019/the-platform</strong> to <strong>movies/horror/the-platform</strong> <div class=file-header>Request</div> <pre><code>PUT /api/v1/entries/copy
-</code></pre> <div class=file-header>Body</div> <pre><code class="language-json">{
+</code></pre>
+<br>
+<h5><a name="endpoint-copy"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(249 115 22); color: white;">PUT</span> <code>/api/v1/entries/copy</code></h5>
+<p>Copy entry .</p>
+<div class="file-header">Request</div>
+<pre><code>PUT /api/v1/entries/copy
+</code></pre>
+<h5>Body</h5>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th></th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>id</td>
+            <td>REQUIRED</td>
+            <td>Unique identifier of the entry.</td>
+        </tr>
+        <tr>
+            <td>new_id</td>
+            <td>REQUIRED</td>
+            <td>New Unique identifier of the entry.</td>
+        </tr>
+        <tr>
+            <td>token</td>
+            <td>REQUIRED</td>
+            <td>Valid Entries token.</td>
+        </tr>
+        <tr>
+            <td>access_token</td>
+            <td>REQUIRED</td>
+            <td>Valid Access token.</td>
+        </tr>
+    </tbody>
+</table>
+<h5>Result</h5>
+<p>Returns the entry item object for the entry item that was just copied.</p>
+<h5>Examples</h5>
+<p>Copy for entry <strong>movies/2019/the-platform</strong> to <strong>movies/horror/the-platform</strong></p>
+<div class="file-header">Request</div>
+<pre><code>PUT /api/v1/entries/copy
+</code></pre>
+<div class="file-header">Body</div>
+<pre><code class="language-json">{
 	&quot;id&quot;: &quot;movies/2019/the-platform&quot;,
     &quot;new_id&quot;: &quot;movies/horror/the-platform&quot;,
 	&quot;token&quot;: &quot;f3acf199a9ac120d3bfd604e1e382456&quot;,
 	&quot;access_token&quot;: &quot;bbc4417d171e38099bd129aeca279018&quot;
 }
-</code></pre> <div class="file-header flex justify-between"><div>Response</div> <div class=text-right>200 OK</div></div> <pre><code class="language-json">{
+</code></pre>
+<div class="file-header flex justify-between"><div>Response</div> <div class="text-right">200 OK</div></div>
+<pre><code class="language-json">{
     &quot;data&quot;: {
         &quot;title&quot;: &quot;Platform&quot;,
         &quot;uuid&quot;: &quot;7e724722-da2f-410f-abd2-f44fbea1f6f0&quot;,
@@ -123,14 +620,80 @@
         &quot;slug&quot;: &quot;movies/horror/the-platform&quot;
     }
 }
-</code></pre> <br> <h5><a name="endpoint-delete"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(244 63 94); color: white;">DELETE</span> <code>/api/v1/entries</code></h5> <p>Delete entry. <div class=file-header>Request</div> <pre><code>DELETE /api/v1/entries
-</code></pre> <h5>Body</h5> <table><thead><tr><th>Name <th> <th>Description </thead> <tbody><tr><td>id <td>REQUIRED <td>Unique identifier of the entry. <tr><td>token <td>REQUIRED <td>Valid Entries token. <tr><td>access_token <td>REQUIRED <td>Valid Access token.</tbody></table> <h5>Result</h5> <p>Returns an empty body with status 204 <h5>Examples</h5> <p>Delete entry <strong>movies/horror/the-platform</strong> <div class=file-header>Request</div> <pre><code>DELETE /api/v1/entries
-</code></pre> <div class=file-header>Body</div> <pre><code class="language-json">{
+</code></pre>
+<br>
+<h5><a name="endpoint-delete"></a> <span class="text-decoration-none text-sm" style="padding: 4.5px 5px; font-size: 0.75em; opacity: .9; border-radius: 0.5rem; background: rgb(244 63 94); color: white;">DELETE</span> <code>/api/v1/entries</code></h5>
+<p>Delete entry.</p>
+<div class="file-header">Request</div>
+<pre><code>DELETE /api/v1/entries
+</code></pre>
+<h5>Body</h5>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th></th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>id</td>
+            <td>REQUIRED</td>
+            <td>Unique identifier of the entry.</td>
+        </tr>
+        <tr>
+            <td>token</td>
+            <td>REQUIRED</td>
+            <td>Valid Entries token.</td>
+        </tr>
+        <tr>
+            <td>access_token</td>
+            <td>REQUIRED</td>
+            <td>Valid Access token.</td>
+        </tr>
+    </tbody>
+</table>
+<h5>Result</h5>
+<p>Returns an empty body with  status 204</p>
+<h5>Examples</h5>
+<p>Delete entry <strong>movies/horror/the-platform</strong></p>
+<div class="file-header">Request</div>
+<pre><code>DELETE /api/v1/entries
+</code></pre>
+<div class="file-header">Body</div>
+<pre><code class="language-json">{
 	&quot;id&quot;: &quot;movies/horror/the-platform&quot;,
 	&quot;token&quot;: &quot;f3acf199a9ac120d3bfd604e1e382456&quot;,
 	&quot;access_token&quot;: &quot;bbc4417d171e38099bd129aeca279018&quot;
 }
-</code></pre> <div class="border-slate-900 border-t dark:border-slate-500 mt-8 pt-8"><a href=https://github.com/awilum-dev/website/blob/1.x/project/entries/flextype/documentation/rest-api/entries/entry.md target=_blank> Edit this page </a> </div></div></div></div></section> <footer class="py-20 text-center text-sm"><p class="m-0 text-xs"> POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a><span class=px-2>|</span> <a href=https://awilum.github.io/sitemap.xml>SITEMAP</a><span class=px-2>|</span> <a href=https://github.com/Awilum/dev target=_blank>SOURCE CODE</a><span class=px-2>|</span> TOTAL PAGES: 744 <p class="m-0 mt-2 text-xs">Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script>function showModal(id) {
+</code></pre>
+
+
+            <div class="border-slate-900 dark:border-slate-500 border-t pt-8 mt-8">
+                <a href="https://github.com/awilum-dev/website/blob/1.x/project/entries/flextype/documentation/rest-api/entries/entry.md" class="" target="_blank">
+                    Edit this page
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+        </section>
+        <footer class="py-20 text-sm text-center">
+            <p class="m-0 text-xs">
+                POWERED BY <a href="/flextype/">FLEXTYPE</a><span class="px-2">|</span>
+                <a href="/sitemap.xml">SITEMAP</a><span class="px-2">|</span>
+                <a target="_blank" href="https://github.com/Awilum/dev">SOURCE CODE</a><span class="px-2">|</span>
+                TOTAL PAGES: 744
+            </p>
+            <p class="m-0 mt-2 text-xs">Copyright © <a href="/about/">Sergey Romanenko</a></p>
+                                </footer>
+    </main>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+
+        
+        function showModal(id) {
             document.getElementById('modal-content-' + id).style.display = 'block';
             document.getElementById('modal-' + id).style.display = 'flex';
         }
@@ -203,7 +766,13 @@
             }
         }
 
-        };</script> <script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        };
+
+        
+    </script>
+        <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
     
@@ -211,4 +780,9 @@
             clickmap:true,
             trackLinks:true,
             accurateTrackBounce:true
-        });</script> <noscript><div><img alt="" src=https://mc.yandex.ru/watch/87767318 style="position:absolute; left:-9999px;"></div></noscript>
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/87767318" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    </body>
+</html>

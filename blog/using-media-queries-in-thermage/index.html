@@ -1,15 +1,96 @@
-<!DOCTYPE html><html lang=en_US><head><meta charset=utf-8><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name=viewport><meta content="Developer with a strong will for learning and researching new technologies and architectural solutions. Founder of Thermage, Flextype, Glowy PHP, Faker JavaScript, Dart Packages and other." name=description><meta content="flextype, php, cms, thermage, glowyphp, html" name=keywords><meta content="index, follow" name=robots><meta content="Powered by Flextype" name=generator><meta content=43db5e67acec9539 name=yandex-verification><meta content=XyouR0hgvSfKtO4fRBGJ5NCcbivoHxHdTIfeqFElADo name=google-site-verification><meta content=QCOiDmY3CImL3EPYu4WstZRkkOZKPr6LGOstWU1ZGXI name=google-site-verification><title>Using media queries in Thermage | Sergey Romanenko</title><link href=https://fonts.googleapis.com rel=preconnect><link crossorigin="" href=https://fonts.gstatic.com rel=preconnect><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel=stylesheet><link href=https://awilum.github.io/project/assets/dist/css/dev.min.css rel=stylesheet> <body class="antialiased text-gray-800" style="background: rgb(252, 250, 244);"><header class="bg-white border-b border-l border-r border-slate-900 border-t container flex items-center max-w-[1200px] mx-auto rounded-bl-lg rounded-br-lg" style=overflow:hidden><a class="border-r border-slate-900 brand-logo font-semibold m-0 nav-link no-underline p-0 p-6 px-3 py-2 text-center text-xs" href=https://awilum.github.io/> AWILUM </a> <div class=flex style="margin-left: auto;"><a class="active border-l border-slate-900 font-semibold lg:block m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/projects/ rel=nofollow><span class="hidden lg:block">Projects</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-folder" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"></path></svg> </span></a> <a class="border-l border-slate-900 font-semibold lg:block m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/courses/ rel=nofollow><span class="hidden lg:block">Courses</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-books" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <rect height=16 rx=1 width=4 x=5 y=4></rect> <rect height=16 rx=1 width=4 x=9 y=4></rect> <path d="M5 8h4"></path> <path d="M9 16h4"></path> <path d="M13.803 4.56l2.184 -.53c.562 -.135 1.133 .19 1.282 .732l3.695 13.418a1.02 1.02 0 0 1 -.634 1.219l-.133 .041l-2.184 .53c-.562 .135 -1.133 -.19 -1.282 -.732l-3.695 -13.418a1.02 1.02 0 0 1 .634 -1.219l.133 -.041z"></path> <path d="M14 9l4 -1"></path> <path d="M16 16l3.923 -.98"></path></svg> </span></a> <a class="border-l border-slate-900 font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/donate/><span class="hidden lg:block">Donate</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-heart" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path></svg> </span></a> <a class="border-l border-slate-900 font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/about/><span class="hidden lg:block">About</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-user-circle" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <circle cx=12 cy=12 r=9></circle> <circle cx=12 cy=10 r=3></circle> <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path></svg> </span></a></div></header> <main class="container lg:px-0 max-w-[1200px] mx-auto px-4" role=main><section><div class="blog-post lg:px-28 px-6"><h2 class="font-bold mb-16 mt-16 text-5xl">Using media queries in Thermage</h2> <p><a href=https://github.com/thermage/thermage/releases/tag/v0.16.0>Thermage 0.16.0</a> brings media queries for terminal.<br> Media queries in Thermage allow you to set specific styles for specific screen sizes. <p>Thermage has these predefined media queries: <pre><code class="language-php">'media' =&gt; [
+<!doctype html>
+<html lang="en_US">
+<head>
+            <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Developer with a strong will for learning and researching new technologies and architectural solutions. Founder of Thermage, Flextype, Glowy PHP, Faker JavaScript, Dart Packages and other.">
+        <meta name="keywords" content="flextype, php, cms, thermage, glowyphp, html">
+        <meta name="robots" content="index, follow">
+        <meta name="generator" content="Powered by Flextype"/>
+        <meta name="yandex-verification" content="43db5e67acec9539" />
+        <meta name="google-site-verification" content="XyouR0hgvSfKtO4fRBGJ5NCcbivoHxHdTIfeqFElADo" />
+        <meta name="google-site-verification" content="QCOiDmY3CImL3EPYu4WstZRkkOZKPr6LGOstWU1ZGXI" />
+        
+        
+        <title>Using media queries in Thermage | Sergey Romanenko</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+        
+                                    <link href="/project/assets/dist/css/dev.min.css" rel="stylesheet">
+                    
+            </head>
+<body class="antialiased text-gray-800" style="background: rgb(252, 250, 244);">
+    <header class="bg-white border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg" style="overflow:hidden">
+        <a href="/" class="nav-link  m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 brand-logo no-underline">
+            AWILUM.GITHUB.IO
+        </a>
+        <div class="flex" style="margin-left: auto;">
+            <a class="nav-link active m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline lg:block" rel="nofollow" href="/projects/">
+                <span class="hidden lg:block">Projects</span>
+                <span class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"></path>
+                     </svg>
+                </span>
+            </a> 
+            <a class="nav-link  m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="/donate/">
+                <span class="hidden lg:block">Donate</span>
+                <span class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+                    </svg>
+                </span>
+            </a>
+            <a class="nav-link  m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="/about/">
+                <span class="hidden lg:block">About</span>
+                <span class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <circle cx="12" cy="10" r="3"></circle>
+                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+                    </svg>
+                </span>
+            </a>
+            <a class="nav-link m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="https://awilum.ru">
+                <span class="hidden lg:block">RU</span>
+                <span class="lg:hidden">
+                    RU
+                </span>
+            </a>
+        </div>
+    </header>
+    
+    <main role="main" class="container mx-auto max-w-[1200px] px-4 lg:px-0">
+        <section>
+            <div class="blog-post px-6 lg:px-28">
+    <h2 class="text-5xl mt-16 mb-16 font-bold">Using media queries in Thermage</h2>
+    <p><a href="https://github.com/thermage/thermage/releases/tag/v0.16.0">Thermage 0.16.0</a> brings media queries for terminal.<br />
+Media queries in Thermage allow you to set specific styles for specific screen sizes.</p>
+<p>Thermage has these predefined media queries:</p>
+<pre><code class="language-php">'media' =&gt; [
     'xs' =&gt; ['min' =&gt; 0, 'max' =&gt; 81],    // 577px
     'sm' =&gt; ['min' =&gt; 82, 'max' =&gt; 90],   // 640px
     'md' =&gt; ['min' =&gt; 91, 'max' =&gt; 108],  // 766px
     'lg' =&gt; ['min' =&gt; 109, 'max' =&gt; 145], // 1025px
     'xl' =&gt; ['min' =&gt; 146, 'max' =&gt; 181], // 1280px
 ],
-</code></pre> <p>Let's create a simple CLI APP with a simple styles for specific media queries. <p>Create <code>cliapp</code> directory for your demo project and <code>app.php</code> file. <pre><code>$ mkdir cliapp
+</code></pre>
+<p>Let's create a simple CLI APP with a simple styles for specific media queries.</p>
+<p>Create <code>cliapp</code> directory for your demo project and <code>app.php</code> file.</p>
+<pre><code>$ mkdir cliapp
 $ cd cliapp
 $ touch app.php
-</code></pre> <p>Install Thermage with <a href=https://getcomposer.org>Composer</a>. <pre><code>$ composer require thermage/thermage
-</code></pre> <p>Open <code>app.php</code> with <code>nano</code> editor or any other you like. <pre><code class="language-php">&lt;?php 
+</code></pre>
+<p>Install Thermage with <a href="https://getcomposer.org">Composer</a>.</p>
+<pre><code>$ composer require thermage/thermage
+</code></pre>
+<p>Open <code>app.php</code> with <code>nano</code> editor or any other you like.</p>
+<pre><code class="language-php">&lt;?php 
 
 use function Thermage\render;
 use function Thermage\div;
@@ -19,14 +100,41 @@ require_once __DIR__ . '/vendor/autoload.php';
 render (
   div('Stay RAD!', 'text-align-center p-4 bg-red sm:bg-yellow md:bg-green lg:bg-blue')
 );
-</code></pre> <p>Save the <code>app.php</code> file and execute it in the console. <pre><code>$ php app.php
-</code></pre> <p>The example above will render a <code>div</code> element with a yellow background for small screen sizes, green background for medium screen sizes, and a blue background for large screen sizes; for all others, you will see a <code>div</code> element with a red background. <p>Also, you may set these magic classes for specific media queries using a fluent interface. <pre><code class="language-php">render (
+</code></pre>
+<p>Save the <code>app.php</code> file and execute it in the console.</p>
+<pre><code>$ php app.php
+</code></pre>
+<p>The example above will render a <code>div</code> element with a yellow background for small screen sizes, green background for medium screen sizes, and a blue background for large screen sizes; for all others, you will see a <code>div</code> element with a red background.</p>
+<p>Also, you may set these magic classes for specific media queries using a fluent interface.</p>
+<pre><code class="language-php">render (
   div('Stay RAD!', 'text-align-center p-4 bg-red')
     -&gt;media('sm', 'bg-yellow')
     -&gt;media('md', 'bg-green')
     -&gt;media('lg', 'bg-blue')
 );
-</code></pre> <div class="border-slate-800 border-t-2 mt-6 pt-6"><strong>Date:</strong> February 17, 2022 09:45 <strong class=ml-2>Tags:</strong> <a href=https://awilum.github.io/blog/tags/thermage>thermage</a>, <a href=https://awilum.github.io/blog/tags/php>php</a> </div></div> </section> <footer class="py-20 text-center text-sm"><p class="m-0 text-xs"> POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a><span class=px-2>|</span> <a href=https://awilum.github.io/sitemap.xml>SITEMAP</a><span class=px-2>|</span> <a href=https://github.com/Awilum/dev target=_blank>SOURCE CODE</a><span class=px-2>|</span> TOTAL PAGES: 744 <p class="m-0 mt-2 text-xs">Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script>function showModal(id) {
+</code></pre>
+
+    <div class="pt-6 mt-6 border-t-2 border-slate-800">
+        <strong>Date:</strong> February 17, 2022 09:45
+        <strong class="ml-2">Tags:</strong>
+                                <a href="/blog/tags/thermage">thermage</a>,                        <a href="/blog/tags/php">php</a>                        </div>
+</div>
+        </section>
+        <footer class="py-20 text-sm text-center">
+            <p class="m-0 text-xs">
+                POWERED BY <a href="/flextype/">FLEXTYPE</a><span class="px-2">|</span>
+                <a href="/sitemap.xml">SITEMAP</a><span class="px-2">|</span>
+                <a target="_blank" href="https://github.com/Awilum/dev">SOURCE CODE</a><span class="px-2">|</span>
+                TOTAL PAGES: 744
+            </p>
+            <p class="m-0 mt-2 text-xs">Copyright © <a href="/about/">Sergey Romanenko</a></p>
+                                </footer>
+    </main>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+
+        
+        function showModal(id) {
             document.getElementById('modal-content-' + id).style.display = 'block';
             document.getElementById('modal-' + id).style.display = 'flex';
         }
@@ -99,7 +207,13 @@ render (
             }
         }
 
-        };</script> <script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        };
+
+        
+    </script>
+        <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
     
@@ -107,4 +221,9 @@ render (
             clickmap:true,
             trackLinks:true,
             accurateTrackBounce:true
-        });</script> <noscript><div><img alt="" src=https://mc.yandex.ru/watch/87767318 style="position:absolute; left:-9999px;"></div></noscript>
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/87767318" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    </body>
+</html>

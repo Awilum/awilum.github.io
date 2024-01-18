@@ -1,4 +1,102 @@
-<!DOCTYPE html><html lang=en_US><head><meta charset=utf-8><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name=viewport><meta content="Replace all dashes characters in the string with the given value." name=description><meta content="flextype, php, cms, thermage, glowyphp, html" name=keywords><meta content="index, follow" name=robots><meta content="Powered by Flextype" name=generator><meta content=43db5e67acec9539 name=yandex-verification><meta content=XyouR0hgvSfKtO4fRBGJ5NCcbivoHxHdTIfeqFElADo name=google-site-verification><meta content=QCOiDmY3CImL3EPYu4WstZRkkOZKPr6LGOstWU1ZGXI name=google-site-verification><title>replacePunctuations | Sergey Romanenko</title><link href=https://fonts.googleapis.com rel=preconnect><link crossorigin="" href=https://fonts.gstatic.com rel=preconnect><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel=stylesheet><link href=https://awilum.github.io/project/assets/dist/css/dev.min.css rel=stylesheet> <body class="antialiased text-gray-800" style="background: rgb(252, 250, 244);"><header class="bg-white border-b border-l border-r border-slate-900 border-t container flex items-center max-w-[1200px] mx-auto rounded-bl-lg rounded-br-lg" style=overflow:hidden><a class="border-r border-slate-900 brand-logo font-semibold m-0 nav-link no-underline p-0 p-6 px-3 py-2 text-center text-xs" href=https://awilum.github.io/> AWILUM </a> <div class=flex style="margin-left: auto;"><a class="active border-l border-slate-900 font-semibold lg:block m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/projects/ rel=nofollow><span class="hidden lg:block">Projects</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-folder" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"></path></svg> </span></a> <a class="border-l border-slate-900 font-semibold lg:block m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/courses/ rel=nofollow><span class="hidden lg:block">Courses</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-books" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <rect height=16 rx=1 width=4 x=5 y=4></rect> <rect height=16 rx=1 width=4 x=9 y=4></rect> <path d="M5 8h4"></path> <path d="M9 16h4"></path> <path d="M13.803 4.56l2.184 -.53c.562 -.135 1.133 .19 1.282 .732l3.695 13.418a1.02 1.02 0 0 1 -.634 1.219l-.133 .041l-2.184 .53c-.562 .135 -1.133 -.19 -1.282 -.732l-3.695 -13.418a1.02 1.02 0 0 1 .634 -1.219l.133 -.041z"></path> <path d="M14 9l4 -1"></path> <path d="M16 16l3.923 -.98"></path></svg> </span></a> <a class="border-l border-slate-900 font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/donate/><span class="hidden lg:block">Donate</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-heart" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path></svg> </span></a> <a class="border-l border-slate-900 font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://awilum.github.io/about/><span class="hidden lg:block">About</span> <span class=lg:hidden><svg xmlns=http://www.w3.org/2000/svg class="icon icon-tabler icon-tabler-user-circle" fill=none height=18 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2 viewbox="0 0 24 24" width=18><path d="M0 0h24v24H0z" fill=none stroke=none></path> <circle cx=12 cy=12 r=9></circle> <circle cx=12 cy=10 r=3></circle> <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path></svg> </span></a></div></header> <main class="container lg:px-0 max-w-[1200px] mx-auto px-4" role=main><section><div class="bg-white border border-slate-900 dark:bg-slate-800 dark:border-slate-500 flex justify-around lg:max-w-[300px] mt-10 mx-auto overflow-hidden rounded-lg"><a class="active border-r border-slate-900 dark:border-slate-500 font-semibold m-0 nav-link no-underline p-0 px-3 py-2 text-center text-xs uppercase w-full" href=https://awilum.github.io/glowyphp/>Glowy PHP</a> <a class="border-slate-900 dark:border-slate-500 font-semibold hidden lg:block m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://github.com/glowyphp> GITHUB </a> <a class="border-l border-slate-900 dark:border-slate-500 font-semibold hidden lg:block m-0 nav-link no-underline p-0 px-3 py-2 text-xs uppercase" href=https://twitter.com/glowyphp> TWITTER </a></div> <div class="mb-24 mt-24 text-center"><h1 class="lg:text-6xl mb-0 text-3xl"><a class=no-underline href=https://awilum.github.io/glowyphp/strings/methods/replacePunctuations/>replacePunctuations</a></h1> <div class="lg:text-lg text-sm"><span class=opacity-50><a class=no-underline href=https://awilum.github.io/glowyphp/>PACKAGES</a></span> <span class=opacity-50>/</span> <span class=opacity-50><a class="no-underline uppercase" href=https://awilum.github.io/glowyphp/strings/>Strings</a></span> <span class=opacity-50>/</span> <span class=opacity-50><a class="no-underline uppercase" href=https://awilum.github.io/glowyphp/strings/methods/>METHODS</a></span></div></div> <div class="flex flex-wrap lg:px-0 px-4"><div class="lg:w-9/12 w-full"><pre><code class="language-php">/**
+<!doctype html>
+<html lang="en_US">
+<head>
+            <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Replace all dashes characters in the string with the given value.">
+        <meta name="keywords" content="flextype, php, cms, thermage, glowyphp, html">
+        <meta name="robots" content="index, follow">
+        <meta name="generator" content="Powered by Flextype"/>
+        <meta name="yandex-verification" content="43db5e67acec9539" />
+        <meta name="google-site-verification" content="XyouR0hgvSfKtO4fRBGJ5NCcbivoHxHdTIfeqFElADo" />
+        <meta name="google-site-verification" content="QCOiDmY3CImL3EPYu4WstZRkkOZKPr6LGOstWU1ZGXI" />
+        
+        
+        <title>replacePunctuations | Sergey Romanenko</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+        
+                                    <link href="/project/assets/dist/css/dev.min.css" rel="stylesheet">
+                    
+            </head>
+<body class="antialiased text-gray-800" style="background: rgb(252, 250, 244);">
+    <header class="bg-white border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg" style="overflow:hidden">
+        <a href="/" class="nav-link  m-0 p-0 p-6 py-2 px-3 text-xs font-semibold text-center border-r border-slate-900 brand-logo no-underline">
+            AWILUM.GITHUB.IO
+        </a>
+        <div class="flex" style="margin-left: auto;">
+            <a class="nav-link active m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline lg:block" rel="nofollow" href="/projects/">
+                <span class="hidden lg:block">Projects</span>
+                <span class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"></path>
+                     </svg>
+                </span>
+            </a> 
+            <a class="nav-link  m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="/donate/">
+                <span class="hidden lg:block">Donate</span>
+                <span class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+                    </svg>
+                </span>
+            </a>
+            <a class="nav-link  m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="/about/">
+                <span class="hidden lg:block">About</span>
+                <span class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <circle cx="12" cy="10" r="3"></circle>
+                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+                    </svg>
+                </span>
+            </a>
+            <a class="nav-link m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="https://awilum.ru">
+                <span class="hidden lg:block">RU</span>
+                <span class="lg:hidden">
+                    RU
+                </span>
+            </a>
+        </div>
+    </header>
+    
+    <main role="main" class="container mx-auto max-w-[1200px] px-4 lg:px-0">
+        <section>
+                <div class="flex justify-around bg-white dark:bg-slate-800 border rounded-lg mt-10 border-slate-900 dark:border-slate-500 mx-auto lg:max-w-[300px] overflow-hidden">
+  <a class="nav-link active w-full text-center m-0 p-0 px-3 py-2 font-semibold text-xs uppercase no-underline border-r border-slate-900 dark:border-slate-500" href="/glowyphp/">Glowy PHP</a>
+  <a class="nav-link m-0 p-0 px-3 py-2 border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://github.com/glowyphp">
+    GITHUB
+  </a>
+  <a class="nav-link m-0 p-0 px-3 py-2 border-l border-slate-900 dark:border-slate-500 font-semibold text-xs uppercase no-underline hidden lg:block" href="https://twitter.com/glowyphp">
+    TWITTER
+  </a>
+</div>
+
+
+
+            
+                    
+                    
+    
+    <div class="text-center mt-24 mb-24">
+        <h1 class="text-3xl lg:text-6xl mb-0 "><a class="no-underline" href="/glowyphp/strings/methods/replacePunctuations/">replacePunctuations</a></h1>
+        <div class="text-sm lg:text-lg">
+            <span class="opacity-50"><a class="no-underline" href="/glowyphp/">PACKAGES</a></span>
+                        <span class="opacity-50">/</span>
+            <span class="opacity-50"><a class="no-underline uppercase" href="/glowyphp/strings/">Strings</a></span>
+            <span class="opacity-50">/</span>
+            <span class="opacity-50"><a class="no-underline uppercase" href="/glowyphp/strings/methods/">METHODS</a></span>
+                                </div>
+    </div>
+
+    <div class="flex flex-wrap px-4 lg:px-0">
+        <div class="w-full lg:w-9/12">
+            <pre><code class="language-php">/**
  * Replace all punctuations characters in the string with the given value.
  *
  * @param string $replacement Value to replace punctuations characters with replacement. Default is ''
@@ -7,7 +105,9 @@
  * @return self Returns instance of The Strings class.
  */
 public function replacePunctuations(string $replacement = '', bool $strict = false): self
-</code></pre> <h4>Examples</h4> <pre><code class="language-php">// Replace all punctuations characters in the string
+</code></pre>
+<h4>Examples</h4>
+<pre><code class="language-php">// Replace all punctuations characters in the string
 $string1 = Strings::create('Fòô. bàřs, bàřs')-&gt;replacePunctuations();
 
 // Replace all punctuations characters in the string with -
@@ -21,12 +121,1013 @@ echo $string1;
 echo $string2;
 
 echo $string3;
-</code></pre> <h4>The above example will output:</h4> <pre><code class="language-text">Fòô bàřs bàřs
+</code></pre>
+<h4>The above example will output:</h4>
+<pre><code class="language-text">Fòô bàřs bàřs
 
 Fòô- bàřs- bàřs
 
 Fòô-bàřs-bàřs
-</code></pre></div> <div class="lg:pl-10 lg:w-3/12 pb-4 pt-4"><div class="lg:max-h-screen lg:overflow-y-auto lg:sticky lg:top-0"><h4 class=mb-2>Getting Started</h4> <ul><li class=mb-2><a href=https://awilum.github.io/glowyphp/strings/getting-started/installation/>Installation</a> <li class=mb-2><a href=https://awilum.github.io/glowyphp/strings/getting-started/usage/>Usage</a></ul> <h4 class="mb-2 mt-4">Methods</h4> <ul><li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/after/> after <small class="base-color block opacity-75"> Return the remainder of a string after the first occurrence of a given value. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/afterLast/> afterLast <small class="base-color block opacity-75"> Return the remainder of a string after the first occurrence of a given value. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/append/> append <small class="base-color block opacity-75"> Append the given values to the string </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/at/> at <small class="base-color block opacity-75"> Returns the character at $index, with indexes starting at 0. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/base64Decode/> base64Decode <small class="base-color block opacity-75"> Decodes data encoded with MIME base64 </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/base64Encode/> base64Encode <small class="base-color block opacity-75"> Encodes data with MIME base64. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/before/> before <small class="base-color block opacity-75"> Get the portion of a string before the first occurrence of a given value. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/beforeLast/> beforeLast <small class="base-color block opacity-75"> Get the portion of a string before the last occurrence of a given value. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/between/> between <small class="base-color block opacity-75"> Get the portion of a string between two given values. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/camel/> camel <small class="base-color block opacity-75"> Convert a string to camel case. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/capitalize/> capitalize <small class="base-color block opacity-75"> Converts the first character of every word of string to upper case and the others to lower case. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/chars/> chars <small class="base-color block opacity-75"> Returns an array consisting of the characters in the string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/charsFrequency/> charsFrequency <small class="base-color block opacity-75"> Get chars usage frequency array. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/contains/> contains <small class="base-color block opacity-75"> Determine if a given string contains a given substring. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/containsAll/> containsAll <small class="base-color block opacity-75"> Determine if a given string contains all array values. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/containsAny/> containsAny <small class="base-color block opacity-75"> Determine if a given string contains any of array values. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/copy/> copy <small class="base-color block opacity-75"> Creates a new Strings object with the same string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/count/> count <small class="base-color block opacity-75"> Returns the length of the string, analog to length(). </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/countSubString/> count <small class="base-color block opacity-75"> Returns the number of occurrences of $substring in the given string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/crc32/> crc32 <small class="base-color block opacity-75"> Generate the crc32 polynomial from the input string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/create/> create <small class="base-color block opacity-75"> Create a new stringable object from the given string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/echo/> echo <small class="base-color block opacity-75"> Echo the string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/endsWith/> endsWith <small class="base-color block opacity-75"> Determine if a given string ends with a given substring. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/finish/> finish <small class="base-color block opacity-75"> Cap a string with a single instance of a given value. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/firstSegment/> firstSegment <small class="base-color block opacity-75"> Get the first segment from a string based on a delimiter. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/format/> format <small class="base-color block opacity-75"> Return the formatted string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/getEncoding/> getEncoding <small class="base-color block opacity-75"> Get character encoding. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/getIterator/> getIterator <small class="base-color block opacity-75"> Returns a new ArrayIterator, thus implementing the IteratorAggregate interface. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/hash/> hash <small class="base-color block opacity-75"> Generate a hash string from the input string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/increment/> increment <small class="base-color block opacity-75"> Add&#039;s _1 to a string or increment the ending number to allow _2, _3, etc. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/indexOf/> indexOf <small class="base-color block opacity-75"> Returns the index of the first occurrence of $needle in the string, and false if not found. Accepts an optional offset from which to begin the search. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/indexOfLast/> indexOfLast <small class="base-color block opacity-75"> Returns the index of the last occurrence of $needle in the string, and false if not found. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/insert/> insert <small class="base-color block opacity-75"> Inserts $substring into the string at the $index provided. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isAlpha/> isAlpha <small class="base-color block opacity-75"> Returns true if the string contains only alphabetic chars, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isAlphanumeric/> isAlphanumeric <small class="base-color block opacity-75"> Returns true if the string contains only alphabetic and numeric chars, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isAscii/> isAscii <small class="base-color block opacity-75"> Returns true if the string contains ASCII, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isBase64/> isBase64 <small class="base-color block opacity-75"> Returns true if the string is base64 encoded, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isBlank/> isBlank <small class="base-color block opacity-75"> Returns true if the string contains only whitespace chars, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isBoolean/> isBoolean <small class="base-color block opacity-75"> Determine whether the string is Boolean. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isDigit/> isDigit <small class="base-color block opacity-75"> Returns true if the string contains only digit chars, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isEmail/> isEmail <small class="base-color block opacity-75"> Returns true if the string is email and it is valid, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isEmpty/> isEmpty <small class="base-color block opacity-75"> Returns true if the string is url and it is valid, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isEqual/> isEqual <small class="base-color block opacity-75"> Determine whether the string is equals to $string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isFalse/> isFalse <small class="base-color block opacity-75"> Determine whether the string is Boolean and it is FALSE. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isHexadecimal/> isHexadecimal <small class="base-color block opacity-75"> Returns true if the string contains only hexadecimal chars, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isHTML/> isHTML <small class="base-color block opacity-75"> Determine whether the string is IP and it is a valid IP address. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isIP/> isIP <small class="base-color block opacity-75"> Determine whether the string is IP and it is a valid IP address. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isJson/> isJson <small class="base-color block opacity-75"> Returns true if the string is JSON, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isLower/> isLower <small class="base-color block opacity-75"> Returns true if the string contains only lower case chars, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isMAC/> isMAC <small class="base-color block opacity-75"> Determine whether the string is MAC address and it is a valid MAC address. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isNumeric/> isNumeric <small class="base-color block opacity-75"> Returns true if the string is a number or a numeric strings, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isPrintable/> isPrintable <small class="base-color block opacity-75"> Returns true if the string contains only printable (non-invisible) chars, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isPunctuation/> isPunctuation <small class="base-color block opacity-75"> Returns true if the string contains only punctuation chars, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isSerialized/> isSerialized <small class="base-color block opacity-75"> Returns true if the string contains only punctuation chars, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isSimilar/> isSimilar <small class="base-color block opacity-75"> Check if two strings are similar. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isTrue/> isTrue <small class="base-color block opacity-75"> Determine whether the string is Boolean and it is TRUE. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isUpper/> isUpper <small class="base-color block opacity-75"> Returns true if the string contains only upper case chars, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/isUrl/> isUrl <small class="base-color block opacity-75"> Returns true if the string is url and it is valid, false otherwise. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/kebab/> kebab <small class="base-color block opacity-75"> Convert a string to kebab case. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/lastSegment/> lastSegment <small class="base-color block opacity-75"> Get the last segment from a string based on a delimiter. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/length/> length <small class="base-color block opacity-75"> Return the length of the given string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/limit/> limit <small class="base-color block opacity-75"> Limit the number of characters in a string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/lines/> lines <small class="base-color block opacity-75"> Get array of individual lines in the string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/lower/> lower <small class="base-color block opacity-75"> Convert the given string to lower-case. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/md5/> md5 <small class="base-color block opacity-75"> Generate a md5 hash string from the input string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/move/> move <small class="base-color block opacity-75"> Move substring of desired $length to $destination index of the original string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/normalizeNewLines/> normalizeNewLines <small class="base-color block opacity-75"> Standardize line endings to unix-like. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/normalizeSpaces/> normalizeSpaces <small class="base-color block opacity-75"> Normalize white-spaces to a single space. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/offsetExists/> offsetExists <small class="base-color block opacity-75"> Returns whether or not a character exists at an index. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/offsetGet/> offsetGet <small class="base-color block opacity-75"> Returns the character at the given index. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/offsetUnset/> offsetSet <small class="base-color block opacity-75"> Implements part of the ArrayAccess interface, but throws an exception when called. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/offsetSet/> offsetUnset <small class="base-color block opacity-75"> Implements part of the ArrayAccess interface, but throws an exception when called. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/padBoth/> padBoth <small class="base-color block opacity-75"> Pad both sides of a string with another. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/padLeft/> padLeft <small class="base-color block opacity-75"> Pad the left side of a string with another. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/padRight/> padRight <small class="base-color block opacity-75"> Pad the right side of a string with another. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/pipe/> pipe <small class="base-color block opacity-75"> Passes the strings to the given callback and return the result. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/prepend/> prepend <small class="base-color block opacity-75"> Prepend the given values to the string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/quotesToEntities/> quotesToEntities <small class="base-color block opacity-75"> Convert single and double quotes to entities. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/random/> random <small class="base-color block opacity-75"> Creates a random string of characters. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/reduceSlashes/> reduceSlashes <small class="base-color block opacity-75"> Reduces multiple slashes in a string to single slashes. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/repeat/> repeat <small class="base-color block opacity-75"> Returns a repeated string given a multiplier. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/replace/> replace <small class="base-color block opacity-75"> Replace the given value in the given string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/replaceArray/> replaceArray <small class="base-color block opacity-75"> Replace a given value in the string sequentially with an array. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/replaceDashes/> replaceDashes <small class="base-color block opacity-75"> Replace all dashes characters in the string with the given value. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/replaceFirst/> replaceFirst <small class="base-color block opacity-75"> Replace the first occurrence of a given value in the string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/replaceLast/> replaceLast <small class="base-color block opacity-75"> Replace the last occurrence of a given value in the string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/replaceNonAlpha/> replaceNonAlpha <small class="base-color block opacity-75"> Replace none alpha characters in the string with the given value. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/replaceNonAlphanumeric/> replaceNonAlphanumeric <small class="base-color block opacity-75"> Replace none alphanumeric characters in the string with the given value. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/replacePunctuations/> replacePunctuations <small class="base-color block opacity-75"> Replace all dashes characters in the string with the given value. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/reverse/> reverse <small class="base-color block opacity-75"> Reverses string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/segment/> segment <small class="base-color block opacity-75"> Get a segment from a string based on a delimiter. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/segments/> segments <small class="base-color block opacity-75"> Get array of segments from a string based on a delimiter. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/setEncoding/> setEncoding <small class="base-color block opacity-75"> Set the character encoding. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/sha1/> sha1 <small class="base-color block opacity-75"> Generate a sha1 hash string from the input string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/sha256/> sha256 <small class="base-color block opacity-75"> Generate a sha256 hash string from the input string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/shuffle/> shuffle <small class="base-color block opacity-75"> Randomly shuffles a string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/similarity/> similarity <small class="base-color block opacity-75"> Calculate the similarity between two strings. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/snake/> snake <small class="base-color block opacity-75"> Convert a string to snake case. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/start/> start <small class="base-color block opacity-75"> Begin a string with a single instance of a given value. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/startsWith/> startsWith <small class="base-color block opacity-75"> Determine if a given string starts with a given substring. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/stripQuotes/> stripQuotes <small class="base-color block opacity-75"> Removes single and double quotes from a string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/stripSpaces/> stripSpaces <small class="base-color block opacity-75"> Strip all whitespaces from the given string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/studly/> studly <small class="base-color block opacity-75"> Convert a string to studly caps case. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/substr/> substr <small class="base-color block opacity-75"> Return the length of the given string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/toArray/> toArray <small class="base-color block opacity-75"> Return Strings object as array based on a delimiter. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/toBoolean/> toBoolean <small class="base-color block opacity-75"> Returns a boolean representation of the given logical string value. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/toFloat/> toFloat <small class="base-color block opacity-75"> Return Strings object as float. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/toInteger/> toInteger <small class="base-color block opacity-75"> Return Strings object as integer. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/toString/> toString <small class="base-color block opacity-75"> Return Strings object as string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/trim/> trim <small class="base-color block opacity-75"> Strip whitespace (or other characters) from the beginning and end of a string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/trimLeft/> trimLeft <small class="base-color block opacity-75"> Strip whitespace (or other characters) from the beginning of a string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/trimRight/> trimRight <small class="base-color block opacity-75"> Strip whitespace (or other characters) from the end of a string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/trimSlashes/> trimSlashes <small class="base-color block opacity-75"> Removes any leading and trailing slashes from a string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/ucfirst/> ucfirst <small class="base-color block opacity-75"> Converts the first character of a string to upper case and leaves the other characters unchanged. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/upper/> upper <small class="base-color block opacity-75"> Convert the given string to upper-case. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/words/> words <small class="base-color block opacity-75"> Get words from the string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/wordsCount/> wordsCount <small class="base-color block opacity-75"> Get words count from the string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/wordsFrequency/> wordsFrequency <small class="base-color block opacity-75"> Get words usage frequency array. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/wordsLimit/> wordsLimit <small class="base-color block opacity-75"> Limit the number of words in a string. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/wordsSortAsc/> wordsSortAsc <small class="base-color block opacity-75"> Sort words in string ascending. </small> </a> <li class="list-none mb-2 ml-0"><a class=block href=https://awilum.github.io/glowyphp/strings/methods/wordsSortDesc/> wordsSortDesc <small class="base-color block opacity-75"> Sort words in string descending. </small> </a> </ul></div> </div></div></section> <footer class="py-20 text-center text-sm"><p class="m-0 text-xs"> POWERED BY <a href=https://awilum.github.io/flextype/>FLEXTYPE</a><span class=px-2>|</span> <a href=https://awilum.github.io/sitemap.xml>SITEMAP</a><span class=px-2>|</span> <a href=https://github.com/Awilum/dev target=_blank>SOURCE CODE</a><span class=px-2>|</span> TOTAL PAGES: 744 <p class="m-0 mt-2 text-xs">Copyright © <a href=https://awilum.github.io/about/>Sergey Romanenko</a></footer></main> <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script> <script>function showModal(id) {
+</code></pre>
+
+                    </div>
+        <div class="pt-4 pb-4 lg:pl-10 lg:w-3/12">
+            <div class="lg:sticky lg:top-0 lg:overflow-y-auto lg:max-h-screen">
+                <h4 class="mb-2">Getting Started</h4>
+                <ul>
+                                        <li class="mb-2"><a href="/glowyphp/strings/getting-started/installation/">Installation</a></li>
+                                        <li class="mb-2"><a href="/glowyphp/strings/getting-started/usage/">Usage</a></li>
+                                    </ul>
+                <h4 class="mt-4 mb-2">Methods</h4>
+                                    <ul>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/after/" class="block">
+                                after
+                                <small class="opacity-75 block base-color">
+                                    Return the remainder of a string after the first occurrence of a given value.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/afterLast/" class="block">
+                                afterLast
+                                <small class="opacity-75 block base-color">
+                                    Return the remainder of a string after the first occurrence of a given value.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/append/" class="block">
+                                append
+                                <small class="opacity-75 block base-color">
+                                    Append the given values to the string
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/at/" class="block">
+                                at
+                                <small class="opacity-75 block base-color">
+                                    Returns the character at $index, with indexes starting at 0.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/base64Decode/" class="block">
+                                base64Decode
+                                <small class="opacity-75 block base-color">
+                                    Decodes data encoded with MIME base64
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/base64Encode/" class="block">
+                                base64Encode
+                                <small class="opacity-75 block base-color">
+                                    Encodes data with MIME base64.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/before/" class="block">
+                                before
+                                <small class="opacity-75 block base-color">
+                                    Get the portion of a string before the first occurrence of a given value.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/beforeLast/" class="block">
+                                beforeLast
+                                <small class="opacity-75 block base-color">
+                                    Get the portion of a string before the last occurrence of a given value.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/between/" class="block">
+                                between
+                                <small class="opacity-75 block base-color">
+                                    Get the portion of a string between two given values.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/camel/" class="block">
+                                camel
+                                <small class="opacity-75 block base-color">
+                                    Convert a string to camel case.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/capitalize/" class="block">
+                                capitalize
+                                <small class="opacity-75 block base-color">
+                                    Converts the first character of every word of string to upper case and the others to lower case.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/chars/" class="block">
+                                chars
+                                <small class="opacity-75 block base-color">
+                                    Returns an array consisting of the characters in the string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/charsFrequency/" class="block">
+                                charsFrequency
+                                <small class="opacity-75 block base-color">
+                                    Get chars usage frequency array.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/contains/" class="block">
+                                contains
+                                <small class="opacity-75 block base-color">
+                                    Determine if a given string contains a given substring.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/containsAll/" class="block">
+                                containsAll
+                                <small class="opacity-75 block base-color">
+                                    Determine if a given string contains all array values.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/containsAny/" class="block">
+                                containsAny
+                                <small class="opacity-75 block base-color">
+                                    Determine if a given string contains any of array values.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/copy/" class="block">
+                                copy
+                                <small class="opacity-75 block base-color">
+                                    Creates a new Strings object with the same string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/count/" class="block">
+                                count
+                                <small class="opacity-75 block base-color">
+                                    Returns the length of the string, analog to length().
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/countSubString/" class="block">
+                                count
+                                <small class="opacity-75 block base-color">
+                                    Returns the number of occurrences of $substring in the given string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/crc32/" class="block">
+                                crc32
+                                <small class="opacity-75 block base-color">
+                                    Generate the crc32 polynomial from the input string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/create/" class="block">
+                                create
+                                <small class="opacity-75 block base-color">
+                                    Create a new stringable object from the given string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/echo/" class="block">
+                                echo
+                                <small class="opacity-75 block base-color">
+                                    Echo the string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/endsWith/" class="block">
+                                endsWith
+                                <small class="opacity-75 block base-color">
+                                    Determine if a given string ends with a given substring.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/finish/" class="block">
+                                finish
+                                <small class="opacity-75 block base-color">
+                                    Cap a string with a single instance of a given value.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/firstSegment/" class="block">
+                                firstSegment
+                                <small class="opacity-75 block base-color">
+                                    Get the first segment from a string based on a delimiter.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/format/" class="block">
+                                format
+                                <small class="opacity-75 block base-color">
+                                    Return the formatted string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/getEncoding/" class="block">
+                                getEncoding
+                                <small class="opacity-75 block base-color">
+                                    Get character encoding.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/getIterator/" class="block">
+                                getIterator
+                                <small class="opacity-75 block base-color">
+                                    Returns a new ArrayIterator, thus implementing the IteratorAggregate interface.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/hash/" class="block">
+                                hash
+                                <small class="opacity-75 block base-color">
+                                    Generate a hash string from the input string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/increment/" class="block">
+                                increment
+                                <small class="opacity-75 block base-color">
+                                    Add&#039;s _1 to a string or increment the ending number to allow _2, _3, etc.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/indexOf/" class="block">
+                                indexOf
+                                <small class="opacity-75 block base-color">
+                                    Returns the index of the first occurrence of $needle in the string, and false if not found. Accepts an optional offset from which to begin the search.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/indexOfLast/" class="block">
+                                indexOfLast
+                                <small class="opacity-75 block base-color">
+                                    Returns the index of the last occurrence of $needle in the string, and false if not found.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/insert/" class="block">
+                                insert
+                                <small class="opacity-75 block base-color">
+                                    Inserts $substring into the string at the $index provided.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isAlpha/" class="block">
+                                isAlpha
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string contains only alphabetic chars, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isAlphanumeric/" class="block">
+                                isAlphanumeric
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string contains only alphabetic and numeric chars, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isAscii/" class="block">
+                                isAscii
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string contains ASCII, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isBase64/" class="block">
+                                isBase64
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string is base64 encoded, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isBlank/" class="block">
+                                isBlank
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string contains only whitespace chars, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isBoolean/" class="block">
+                                isBoolean
+                                <small class="opacity-75 block base-color">
+                                    Determine whether the string is Boolean.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isDigit/" class="block">
+                                isDigit
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string contains only digit chars, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isEmail/" class="block">
+                                isEmail
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string is email and it is valid, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isEmpty/" class="block">
+                                isEmpty
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string is url and it is valid, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isEqual/" class="block">
+                                isEqual
+                                <small class="opacity-75 block base-color">
+                                    Determine whether the string is equals to $string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isFalse/" class="block">
+                                isFalse
+                                <small class="opacity-75 block base-color">
+                                    Determine whether the string is Boolean and it is FALSE.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isHexadecimal/" class="block">
+                                isHexadecimal
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string contains only hexadecimal chars, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isHTML/" class="block">
+                                isHTML
+                                <small class="opacity-75 block base-color">
+                                    Determine whether the string is IP and it is a valid IP address.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isIP/" class="block">
+                                isIP
+                                <small class="opacity-75 block base-color">
+                                    Determine whether the string is IP and it is a valid IP address.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isJson/" class="block">
+                                isJson
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string is JSON, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isLower/" class="block">
+                                isLower
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string contains only lower case chars, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isMAC/" class="block">
+                                isMAC
+                                <small class="opacity-75 block base-color">
+                                    Determine whether the string is MAC address and it is a valid MAC address.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isNumeric/" class="block">
+                                isNumeric
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string is a number or a numeric strings, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isPrintable/" class="block">
+                                isPrintable
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string contains only printable (non-invisible) chars, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isPunctuation/" class="block">
+                                isPunctuation
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string contains only punctuation chars, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isSerialized/" class="block">
+                                isSerialized
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string contains only punctuation chars, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isSimilar/" class="block">
+                                isSimilar
+                                <small class="opacity-75 block base-color">
+                                    Check if two strings are similar.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isTrue/" class="block">
+                                isTrue
+                                <small class="opacity-75 block base-color">
+                                    Determine whether the string is Boolean and it is TRUE.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isUpper/" class="block">
+                                isUpper
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string contains only upper case chars, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/isUrl/" class="block">
+                                isUrl
+                                <small class="opacity-75 block base-color">
+                                    Returns true if the string is url and it is valid, false otherwise.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/kebab/" class="block">
+                                kebab
+                                <small class="opacity-75 block base-color">
+                                    Convert a string to kebab case.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/lastSegment/" class="block">
+                                lastSegment
+                                <small class="opacity-75 block base-color">
+                                    Get the last segment from a string based on a delimiter.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/length/" class="block">
+                                length
+                                <small class="opacity-75 block base-color">
+                                    Return the length of the given string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/limit/" class="block">
+                                limit
+                                <small class="opacity-75 block base-color">
+                                    Limit the number of characters in a string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/lines/" class="block">
+                                lines
+                                <small class="opacity-75 block base-color">
+                                    Get array of individual lines in the string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/lower/" class="block">
+                                lower
+                                <small class="opacity-75 block base-color">
+                                    Convert the given string to lower-case.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/md5/" class="block">
+                                md5
+                                <small class="opacity-75 block base-color">
+                                    Generate a md5 hash string from the input string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/move/" class="block">
+                                move
+                                <small class="opacity-75 block base-color">
+                                    Move substring of desired $length to $destination index of the original string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/normalizeNewLines/" class="block">
+                                normalizeNewLines
+                                <small class="opacity-75 block base-color">
+                                    Standardize line endings to unix-like.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/normalizeSpaces/" class="block">
+                                normalizeSpaces
+                                <small class="opacity-75 block base-color">
+                                    Normalize white-spaces to a single space.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/offsetExists/" class="block">
+                                offsetExists
+                                <small class="opacity-75 block base-color">
+                                    Returns whether or not a character exists at an index.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/offsetGet/" class="block">
+                                offsetGet
+                                <small class="opacity-75 block base-color">
+                                    Returns the character at the given index.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/offsetUnset/" class="block">
+                                offsetSet
+                                <small class="opacity-75 block base-color">
+                                    Implements part of the ArrayAccess interface, but throws an exception when called.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/offsetSet/" class="block">
+                                offsetUnset
+                                <small class="opacity-75 block base-color">
+                                    Implements part of the ArrayAccess interface, but throws an exception when called.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/padBoth/" class="block">
+                                padBoth
+                                <small class="opacity-75 block base-color">
+                                    Pad both sides of a string with another.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/padLeft/" class="block">
+                                padLeft
+                                <small class="opacity-75 block base-color">
+                                    Pad the left side of a string with another.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/padRight/" class="block">
+                                padRight
+                                <small class="opacity-75 block base-color">
+                                    Pad the right side of a string with another.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/pipe/" class="block">
+                                pipe
+                                <small class="opacity-75 block base-color">
+                                    Passes the strings to the given callback and return the result.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/prepend/" class="block">
+                                prepend
+                                <small class="opacity-75 block base-color">
+                                    Prepend the given values to the string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/quotesToEntities/" class="block">
+                                quotesToEntities
+                                <small class="opacity-75 block base-color">
+                                    Convert single and double quotes to entities.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/random/" class="block">
+                                random
+                                <small class="opacity-75 block base-color">
+                                    Creates a random string of characters.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/reduceSlashes/" class="block">
+                                reduceSlashes
+                                <small class="opacity-75 block base-color">
+                                    Reduces multiple slashes in a string to single slashes.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/repeat/" class="block">
+                                repeat
+                                <small class="opacity-75 block base-color">
+                                    Returns a repeated string given a multiplier.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/replace/" class="block">
+                                replace
+                                <small class="opacity-75 block base-color">
+                                    Replace the given value in the given string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/replaceArray/" class="block">
+                                replaceArray
+                                <small class="opacity-75 block base-color">
+                                    Replace a given value in the string sequentially with an array.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/replaceDashes/" class="block">
+                                replaceDashes
+                                <small class="opacity-75 block base-color">
+                                    Replace all dashes characters in the string with the given value.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/replaceFirst/" class="block">
+                                replaceFirst
+                                <small class="opacity-75 block base-color">
+                                    Replace the first occurrence of a given value in the string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/replaceLast/" class="block">
+                                replaceLast
+                                <small class="opacity-75 block base-color">
+                                    Replace the last occurrence of a given value in the string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/replaceNonAlpha/" class="block">
+                                replaceNonAlpha
+                                <small class="opacity-75 block base-color">
+                                    Replace none alpha characters in the string with the given value.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/replaceNonAlphanumeric/" class="block">
+                                replaceNonAlphanumeric
+                                <small class="opacity-75 block base-color">
+                                    Replace none alphanumeric characters in the string with the given value.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/replacePunctuations/" class="block">
+                                replacePunctuations
+                                <small class="opacity-75 block base-color">
+                                    Replace all dashes characters in the string with the given value.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/reverse/" class="block">
+                                reverse
+                                <small class="opacity-75 block base-color">
+                                    Reverses string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/segment/" class="block">
+                                segment
+                                <small class="opacity-75 block base-color">
+                                    Get a segment from a string based on a delimiter.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/segments/" class="block">
+                                segments
+                                <small class="opacity-75 block base-color">
+                                    Get array of segments from a string based on a delimiter.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/setEncoding/" class="block">
+                                setEncoding
+                                <small class="opacity-75 block base-color">
+                                    Set the character encoding.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/sha1/" class="block">
+                                sha1
+                                <small class="opacity-75 block base-color">
+                                    Generate a sha1 hash string from the input string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/sha256/" class="block">
+                                sha256
+                                <small class="opacity-75 block base-color">
+                                    Generate a sha256 hash string from the input string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/shuffle/" class="block">
+                                shuffle
+                                <small class="opacity-75 block base-color">
+                                    Randomly shuffles a string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/similarity/" class="block">
+                                similarity
+                                <small class="opacity-75 block base-color">
+                                    Calculate the similarity between two strings.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/snake/" class="block">
+                                snake
+                                <small class="opacity-75 block base-color">
+                                    Convert a string to snake case.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/start/" class="block">
+                                start
+                                <small class="opacity-75 block base-color">
+                                    Begin a string with a single instance of a given value.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/startsWith/" class="block">
+                                startsWith
+                                <small class="opacity-75 block base-color">
+                                    Determine if a given string starts with a given substring.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/stripQuotes/" class="block">
+                                stripQuotes
+                                <small class="opacity-75 block base-color">
+                                    Removes single and double quotes from a string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/stripSpaces/" class="block">
+                                stripSpaces
+                                <small class="opacity-75 block base-color">
+                                    Strip all whitespaces from the given string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/studly/" class="block">
+                                studly
+                                <small class="opacity-75 block base-color">
+                                    Convert a string to studly caps case.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/substr/" class="block">
+                                substr
+                                <small class="opacity-75 block base-color">
+                                    Return the length of the given string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/toArray/" class="block">
+                                toArray
+                                <small class="opacity-75 block base-color">
+                                    Return Strings object as array based on a delimiter.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/toBoolean/" class="block">
+                                toBoolean
+                                <small class="opacity-75 block base-color">
+                                    Returns a boolean representation of the given logical string value.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/toFloat/" class="block">
+                                toFloat
+                                <small class="opacity-75 block base-color">
+                                    Return Strings object as float.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/toInteger/" class="block">
+                                toInteger
+                                <small class="opacity-75 block base-color">
+                                    Return Strings object as integer.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/toString/" class="block">
+                                toString
+                                <small class="opacity-75 block base-color">
+                                    Return Strings object as string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/trim/" class="block">
+                                trim
+                                <small class="opacity-75 block base-color">
+                                    Strip whitespace (or other characters) from the beginning and end of a string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/trimLeft/" class="block">
+                                trimLeft
+                                <small class="opacity-75 block base-color">
+                                    Strip whitespace (or other characters) from the beginning of a string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/trimRight/" class="block">
+                                trimRight
+                                <small class="opacity-75 block base-color">
+                                    Strip whitespace (or other characters) from the end of a string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/trimSlashes/" class="block">
+                                trimSlashes
+                                <small class="opacity-75 block base-color">
+                                    Removes any leading and trailing slashes from a string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/ucfirst/" class="block">
+                                ucfirst
+                                <small class="opacity-75 block base-color">
+                                    Converts the first character of a string to upper case and leaves the other characters unchanged.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/upper/" class="block">
+                                upper
+                                <small class="opacity-75 block base-color">
+                                    Convert the given string to upper-case.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/words/" class="block">
+                                words
+                                <small class="opacity-75 block base-color">
+                                    Get words from the string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/wordsCount/" class="block">
+                                wordsCount
+                                <small class="opacity-75 block base-color">
+                                    Get words count from the string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/wordsFrequency/" class="block">
+                                wordsFrequency
+                                <small class="opacity-75 block base-color">
+                                    Get words usage frequency array.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/wordsLimit/" class="block">
+                                wordsLimit
+                                <small class="opacity-75 block base-color">
+                                    Limit the number of words in a string.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/wordsSortAsc/" class="block">
+                                wordsSortAsc
+                                <small class="opacity-75 block base-color">
+                                    Sort words in string ascending.
+                                </small>
+                            </a>
+                        </li>
+                                                <li class="mb-2 list-none ml-0">
+                            <a href="/glowyphp/strings/methods/wordsSortDesc/" class="block">
+                                wordsSortDesc
+                                <small class="opacity-75 block base-color">
+                                    Sort words in string descending.
+                                </small>
+                            </a>
+                        </li>
+                                            </ul>
+                            </div>
+        </div>
+    </div>
+        </section>
+        <footer class="py-20 text-sm text-center">
+            <p class="m-0 text-xs">
+                POWERED BY <a href="/flextype/">FLEXTYPE</a><span class="px-2">|</span>
+                <a href="/sitemap.xml">SITEMAP</a><span class="px-2">|</span>
+                <a target="_blank" href="https://github.com/Awilum/dev">SOURCE CODE</a><span class="px-2">|</span>
+                TOTAL PAGES: 744
+            </p>
+            <p class="m-0 mt-2 text-xs">Copyright © <a href="/about/">Sergey Romanenko</a></p>
+                                </footer>
+    </main>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+
+        
+        function showModal(id) {
             document.getElementById('modal-content-' + id).style.display = 'block';
             document.getElementById('modal-' + id).style.display = 'flex';
         }
@@ -99,7 +1200,13 @@ Fòô-bàřs-bàřs
             }
         }
 
-        };</script> <script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        };
+
+        
+    </script>
+        <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
     
@@ -107,4 +1214,9 @@ Fòô-bàřs-bàřs
             clickmap:true,
             trackLinks:true,
             accurateTrackBounce:true
-        });</script> <noscript><div><img alt="" src=https://mc.yandex.ru/watch/87767318 style="position:absolute; left:-9999px;"></div></noscript>
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/87767318" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    </body>
+</html>
