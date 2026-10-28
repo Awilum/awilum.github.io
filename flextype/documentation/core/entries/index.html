@@ -10,16 +10,16 @@
         <meta name="yandex-verification" content="43db5e67acec9539" />
         <meta name="google-site-verification" content="XyouR0hgvSfKtO4fRBGJ5NCcbivoHxHdTIfeqFElADo" />
         <meta name="google-site-verification" content="QCOiDmY3CImL3EPYu4WstZRkkOZKPr6LGOstWU1ZGXI" />
-        
-        
+
+
         <title>Entries for Modern Open Source Flat Files Flextype CMS</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-        
+
                                     <link href="/project/assets/dist/css/dev.min.css" rel="stylesheet">
-                    
+
             </head>
 <body class="antialiased text-gray-800" style="background: rgb(252, 250, 244);">
     <header class="bg-white border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg" style="overflow:hidden">
@@ -35,7 +35,7 @@
                         <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"></path>
                      </svg>
                 </span>
-            </a> 
+            </a>
             <a class="nav-link  m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="/donate/">
                 <span class="hidden lg:block">Donate</span>
                 <span class="lg:hidden">
@@ -56,15 +56,15 @@
                     </svg>
                 </span>
             </a>
-            <a class="nav-link m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="https://awilum.ru">
-                <span class="hidden lg:block">RU</span>
+            <a class="nav-link m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="https://sergeyromanenko.com">
+                <span class="hidden lg:block">SERGEYROMANENKO.COM</span>
                 <span class="lg:hidden">
-                    RU
+                    SERGEYROMANENKO.COM
                 </span>
             </a>
         </div>
     </header>
-    
+
     <main role="main" class="container mx-auto max-w-[1200px] px-4 lg:px-0">
         <section>
             <div class="flex justify-around bg-white dark:bg-slate-800  dark:border-slate-500 border rounded-md mt-14 border-slate-900 mx-auto lg:max-w-[780px] overflow-hidden">
@@ -501,7 +501,7 @@ My entry content here, author twitter: ] author.twitter ]
 <p><strong>Examples</strong></p>
 <p>Get field <code>author.twitter</code> and field <code>content</code> in PHP.</p>
 <pre><code class="language-php">//=&gt; @_flextype
-echo entries()-&gt;fetch('home')['author.twitter']; 
+echo entries()-&gt;fetch('home')['author.twitter'];
 
 //=&gt; My entry content here, author twitter: @_flextype
 echo entries()-&gt;fetch('home')['content'];
@@ -546,28 +546,28 @@ echo entries()-&gt;fetch('home')['content'];
 <p>Parse shortcodes text inside current field.</p>
 <p><strong>Examples</strong></p>
 <pre><code class="language-yaml">---
-discount: &quot;@shortcodes (strings random)&quot; 
+discount: &quot;@shortcodes (strings random)&quot;
 ---
 </code></pre>
 <h5><a name="directive-markdown"></a> <code>markdown</code></h5>
 <p>Parse markdown text inside current field.</p>
 <p><strong>Examples</strong></p>
 <pre><code class="language-yaml">---
-text: &quot;@markdown **bold text here**&quot; 
+text: &quot;@markdown **bold text here**&quot;
 ---
 </code></pre>
 <h5><a name="directive-textile"></a> <code>textile</code></h5>
 <p>Parse textile text inside current field.</p>
 <p><strong>Examples</strong></p>
 <pre><code class="language-yaml">---
-text: &quot;@textile **bold text here**&quot; 
+text: &quot;@textile **bold text here**&quot;
 ---
 </code></pre>
 <h5><a name="directive-php"></a> <code>php</code></h5>
 <p>Execute php code inside current field.</p>
 <p><strong>Examples</strong></p>
 <pre><code class="language-yaml">---
-text: &quot;@php echo 'Hello World';&quot; 
+text: &quot;@php echo 'Hello World';&quot;
 ---
 </code></pre>
 <h5><a name="directive-type"></a> <code>type</code></h5>
@@ -575,7 +575,7 @@ text: &quot;@php echo 'Hello World';&quot;
 <p>Available types: <code>int</code>, <code>integer</code>, <code>float</code>, <code>bool</code>, <code>boolean</code>, <code>array</code>, <code>json</code>, <code>collection</code>, <code>null</code> and <code>string</code>.</p>
 <p><strong>Examples</strong></p>
 <pre><code class="language-yaml">&amp;minus;&amp;minus;&amp;minus;
-_vars: 
+_vars:
     title: &quot;GT Fury&quot;
     currency: &quot;USD&quot;
     vat: '@type[int]  (strings random: &quot;2,1234567890)&quot;'
@@ -631,7 +631,7 @@ macros:
   php: |
     $entry = entries()-&gt;registry()-&gt;get('methods.fetch');
     $entry['result']['posts'] = entries()-&gt;fetch('blog', ['collection' =&gt; true, 'filter' =&gt; ['sort_by' =&gt; ['key' =&gt; 'date', 'direction' =&gt; 'ASC']]])-&gt;toArray();
-    entries()-&gt;registry()-&gt;set('methods.fetch', $entry); 
+    entries()-&gt;registry()-&gt;set('methods.fetch', $entry);
 </code></pre>
 <h3><a name="expressions"></a> Expressions</h3>
 <p>Flextype uses Symfony Expression Language Component, which provides an engine that can compile and evaluate expressions.</p>
@@ -640,7 +640,7 @@ macros:
 <p>Expressions can be seen as a very restricted PHP sandbox and are immune to external injections as you must explicitly declare which variables are available in an expression.</p>
 <p><strong>Examples</strong></p>
 <pre><code class="language-yaml">---
-vars: 
+vars:
     title: &quot;GT Fury&quot;
     currency: &quot;USD&quot;
     vat: &quot;@type[int] $[ strings().random(2, 1234567890) ]&quot;
@@ -1230,7 +1230,7 @@ foreach (entries()-&gt;fetchRecentPosts(5) as $post) {
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
 
-        
+
         function showModal(id) {
             document.getElementById('modal-content-' + id).style.display = 'block';
             document.getElementById('modal-' + id).style.display = 'flex';
@@ -1252,11 +1252,11 @@ foreach (entries()-&gt;fetchRecentPosts(5) as $post) {
                 tabsPaneTarget = document.querySelector(tabsLinkTarget.getAttribute('href'));
                 tabsLinkActive = tabsLinkTarget.parentElement.querySelector('.tabs__link_active');
                 tabsPaneShow = tabsPaneTarget.parentElement.querySelector('.tabs__pane_show');
-                
+
                 if (tabsLinkTarget === tabsLinkActive) {
                     return;
                 }
-                
+
                 if (tabsLinkActive !== null) {
                     tabsLinkActive.classList.remove('tabs__link_active');
                 }
@@ -1264,8 +1264,8 @@ foreach (entries()-&gt;fetchRecentPosts(5) as $post) {
                 if (tabsPaneShow !== null) {
                     tabsPaneShow.classList.remove('tabs__pane_show');
                 }
-                
-                
+
+
                 tabsLinkTarget.classList.add('tabs__link_active');
                 tabsPaneTarget.classList.add('tabs__pane_show');
                 document.dispatchEvent(_eventTabsShow);
@@ -1306,14 +1306,14 @@ foreach (entries()-&gt;fetchRecentPosts(5) as $post) {
 
         };
 
-        
+
     </script>
         <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-    
+
         ym(87767318, "init", {
             clickmap:true,
             trackLinks:true,

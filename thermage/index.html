@@ -10,16 +10,16 @@
         <meta name="yandex-verification" content="43db5e67acec9539" />
         <meta name="google-site-verification" content="XyouR0hgvSfKtO4fRBGJ5NCcbivoHxHdTIfeqFElADo" />
         <meta name="google-site-verification" content="QCOiDmY3CImL3EPYu4WstZRkkOZKPr6LGOstWU1ZGXI" />
-        
-        
+
+
         <title>Thermage | Sergey Romanenko</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-        
+
                                     <link href="/project/assets/dist/css/dev.min.css" rel="stylesheet">
-                    
+
             </head>
 <body class="antialiased text-gray-800" style="background: rgb(252, 250, 244);">
     <header class="bg-white border-b border-t border-l border-r border-slate-900 flex items-center container mx-auto max-w-[1200px] rounded-br-lg rounded-bl-lg" style="overflow:hidden">
@@ -35,7 +35,7 @@
                         <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"></path>
                      </svg>
                 </span>
-            </a> 
+            </a>
             <a class="nav-link  m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="/donate/">
                 <span class="hidden lg:block">Donate</span>
                 <span class="lg:hidden">
@@ -56,15 +56,15 @@
                     </svg>
                 </span>
             </a>
-            <a class="nav-link m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="https://awilum.ru">
-                <span class="hidden lg:block">RU</span>
+            <a class="nav-link m-0 p-0 px-3 py-2 border-l border-slate-900 font-semibold text-xs uppercase no-underline" href="https://sergeyromanenko.com">
+                <span class="hidden lg:block">SERGEYROMANENKO.COM</span>
                 <span class="lg:hidden">
-                    RU
+                    SERGEYROMANENKO.COM
                 </span>
             </a>
         </div>
     </header>
-    
+
     <main role="main" class="container mx-auto max-w-[1200px] px-4 lg:px-0">
         <section>
                 <div class="flex justify-around bg-white dark:bg-slate-800 border rounded-lg mt-14 border-slate-900 mx-auto max-w-[450px] dark:border-slate-500 overflow-hidden">
@@ -224,7 +224,7 @@
                   <div class="py-3 px-4 bd-cyan400"></div>
                   <div class="py-3 px-4 bd-cyan500"></div>
                   <div class="py-3 px-4 bd-cyan600"></div>
-                  <div class="py-3 px-4 bd-cyan700"></div>  
+                  <div class="py-3 px-4 bd-cyan700"></div>
                   <div class="py-3 px-4 bd-cyan800"></div>
                   <div class="py-3 px-4 bd-cyan900"></div>
                 </div>
@@ -380,7 +380,7 @@ use Thermage\Themes\RadTheme;
 Thermage::setTheme(new RadTheme());</code></pre>
               </div>
             </div>
-          </div>        
+          </div>
         </div>
         <div class="w-full lg:w-6/12 text-xl lg:pl-12">
           Thermage provides ability to create and use custom themes to change the style of command line output with preconfigured themes variables.
@@ -392,10 +392,10 @@ Thermage::setTheme(new RadTheme());</code></pre>
       <h4 class="text-lg lg:text-2xl flex items-center uppercase border-black border-b-2 dark:border-slate-300" style="padding-bottom: 20px; margin-bottom: 40px; letter-spacing: 5px;">Shortcodes</h4>
       <div class="lg:flex">
         <div class="w-full lg:w-6/12">
-        
+
 
 <pre>
-<code class="hljs hljs-shortcode">[b]Bold text[/b] 
+<code class="hljs hljs-shortcode">[b]Bold text[/b]
 [i]Italic text[/i]
 [u]Underilne text[/u]
 [s]Strikethrough text[/s]
@@ -415,7 +415,7 @@ and more :)</code></pre>
       <div class="lg:flex">
 
         <div class="w-full lg:w-6/12">
-            
+
           <div class="frameworks">
             <div style="padding-bottom: 20px;">
               <div class="tabs__nav">
@@ -435,7 +435,7 @@ and more :)</code></pre>
 use function Thermage\div;
 use function Thermage\render;
 
-// ... 
+// ...
 
 render(
     div('Stay RAD!')
@@ -452,9 +452,9 @@ render(
 use function Thermage\div;
 use function Thermage\renderToString;
 
-// ... 
+// ...
 
-protected function execute(InputInterface $input, 
+protected function execute(InputInterface $input,
                            OutputInterface $output): int
 {
   $render = renderToString(div('Stay RAD!')
@@ -465,7 +465,7 @@ protected function execute(InputInterface $input,
                             ->italic());
 
   $output->write($render);
-      
+
   // ...
 }</code></pre>
               </div>
@@ -475,7 +475,7 @@ protected function execute(InputInterface $input,
 use function Thermage\div;
 use function Thermage\renderToString;
 
-// ... 
+// ...
 
 public function handle()
 {
@@ -485,9 +485,9 @@ public function handle()
                             ->bgPink700()
                             ->bold()
                             ->italic());
-                            
+
   $this->output->writeln($render);
-      
+
   // ...
 }</code></pre>
               </div>
@@ -497,7 +497,7 @@ public function handle()
 use function Thermage\div;
 use function Thermage\renderToString;
 
-// ... 
+// ...
 
 public function actionName()
 {
@@ -507,9 +507,9 @@ public function actionName()
                             ->bgPink700()
                             ->bold()
                             ->italic());
-                            
+
   $this->stdout($render);
-      
+
   // ...
 }</code></pre>
               </div>
@@ -519,7 +519,7 @@ public function actionName()
 use function Thermage\div;
 use function Thermage\renderToString;
 
-// ... 
+// ...
 
 public function execute(Arguments $args, ConsoleIo $io)
 {
@@ -529,9 +529,9 @@ public function execute(Arguments $args, ConsoleIo $io)
                             ->bgPink700()
                             ->bold()
                             ->italic());
-                            
+
   $io->output($render);
-      
+
   // ...
 }</code></pre>
               </div>
@@ -541,7 +541,7 @@ public function execute(Arguments $args, ConsoleIo $io)
 use function Thermage\div;
 use function Thermage\renderToString;
 
-// ... 
+// ...
 
 public function run(array $params)
 {
@@ -551,14 +551,14 @@ public function run(array $params)
                             ->bgPink700()
                             ->bold()
                             ->italic());
-                            
+
   CLI::write($render);
   // ...
 }</code></pre>
               </div>
             </div>
           </div>
-  
+
         </div>
         <div class="w-full lg:w-6/12 text-xl lg:pl-12">
           Thermage can be used with any Modern PHP Framework: Symfony, Laravel, Yii, CakePHP, CodeIgniter, Phalcon and others.
@@ -580,7 +580,7 @@ public function run(array $params)
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
 
-        
+
         function showModal(id) {
             document.getElementById('modal-content-' + id).style.display = 'block';
             document.getElementById('modal-' + id).style.display = 'flex';
@@ -602,11 +602,11 @@ public function run(array $params)
                 tabsPaneTarget = document.querySelector(tabsLinkTarget.getAttribute('href'));
                 tabsLinkActive = tabsLinkTarget.parentElement.querySelector('.tabs__link_active');
                 tabsPaneShow = tabsPaneTarget.parentElement.querySelector('.tabs__pane_show');
-                
+
                 if (tabsLinkTarget === tabsLinkActive) {
                     return;
                 }
-                
+
                 if (tabsLinkActive !== null) {
                     tabsLinkActive.classList.remove('tabs__link_active');
                 }
@@ -614,8 +614,8 @@ public function run(array $params)
                 if (tabsPaneShow !== null) {
                     tabsPaneShow.classList.remove('tabs__pane_show');
                 }
-                
-                
+
+
                 tabsLinkTarget.classList.add('tabs__link_active');
                 tabsPaneTarget.classList.add('tabs__pane_show');
                 document.dispatchEvent(_eventTabsShow);
@@ -659,14 +659,14 @@ public function run(array $params)
                     $tabs('.components');
             $tabs('.themes');
             $tabs('.frameworks');
-        
+
     </script>
         <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-    
+
         ym(87767318, "init", {
             clickmap:true,
             trackLinks:true,
