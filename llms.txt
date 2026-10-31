@@ -1,0 +1,42 @@
+# Awilum — GitHub & Open Source Portfolio
+
+> GitHub and open-source portfolio of Sergey Romanenko (Awilum): public repositories, libraries, developer tools, and technical documentation.
+
+## Main pages
+- [Home](https://awilum.github.io/)
+- [Projects](https://awilum.github.io/projects/)
+- [Blog](https://awilum.github.io/blog/)
+- [About](https://awilum.github.io/about/)
+- [Search](https://awilum.github.io/search/)
+
+## Projects
+- [asmcss-mixin-lang](https://awilum.github.io/projects/asmcss-mixin-lang/)
+- [asmcss-mixin-w](https://awilum.github.io/projects/asmcss-mixin-w/)
+- [awilum.github.io](https://awilum.github.io/projects/awilum-github-io/)
+- [awilum.ru](https://awilum.github.io/projects/awilum-ru/)
+- [awilum.src](https://awilum.github.io/projects/awilum-src/)
+- [awilum](https://awilum.github.io/projects/awilum/)
+- [capheden](https://awilum.github.io/projects/capheden/)
+- [craft-benchmark](https://awilum.github.io/projects/craft-benchmark/)
+- [craft-nice](https://awilum.github.io/projects/craft-nice/)
+- [craft-reading-time](https://awilum.github.io/projects/craft-reading-time/)
+- [Faker JavaScript](https://awilum.github.io/projects/faker-javascript/)
+- [Flextype](https://awilum.github.io/projects/flextype/)
+- [Glowy PHP](https://awilum.github.io/projects/glowyphp/)
+- [html5-arkanoid](https://awilum.github.io/projects/html5-arkanoid/)
+- [is](https://awilum.github.io/projects/is/)
+- [markdown](https://awilum.github.io/projects/markdown/)
+- [MasterBlocks](https://awilum.github.io/projects/masterblocks/)
+- [responsive-email-template](https://awilum.github.io/projects/responsive-email-template/)
+- [scope](https://awilum.github.io/projects/scope/)
+- [sergeyromanenko.com](https://awilum.github.io/projects/sergeyromanenko-com/)
+- [sql-from-zero-to-hero.website](https://awilum.github.io/projects/sql-from-zero-to-hero-website/)
+- [sql-introduction](https://awilum.github.io/projects/sql-introduction/)
+- [test.demo](https://awilum.github.io/projects/test-demo/)
+- [Thermage](https://awilum.github.io/projects/thermage/)
+- [wp-api-explorer](https://awilum.github.io/projects/wp-api-explorer/)
+- [wp-html-minifier](https://awilum.github.io/projects/wp-html-minifier/)
+- [zine](https://awilum.github.io/projects/zine/)
+
+## Documentation
+- Project documentation is available under each project and via direct routes such as https://awilum.github.io/flextype/documentation/
